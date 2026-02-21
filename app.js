@@ -100,8 +100,8 @@ const assets = [
     type: "carrier",
     class: "Nimitz-class",
     lat: 22.5, lng: 62.0,
-    prevLat: 15.0, prevLng: 115.0,
-    prevLabel: "South China Sea (Jan 2026)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Arabian Sea — ~500 nm south of Iran",
     mission: "Deployed Nov 5, 2025. Redirected from South China Sea to Arabian Sea amid Iran tensions. On Feb 3, an F-35C from CVW-9 shot down an Iranian Shahed-139 drone. Third time CSG-3 redirected from Indo-Pacific to Middle East.",
     strikeGroup: "CSG-3 / CVW-9 (incl. F-35C)",
@@ -135,8 +135,8 @@ const assets = [
     type: "carrier",
     class: "Nimitz-class",
     lat: 32.7, lng: -117.2,
-    prevLat: 31.5, prevLng: -120.0,
-    prevLabel: "Pacific Ocean workups (Feb 8)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "San Diego — pre-deployment workups",
     mission: "Pre-deployment workups (COMPTUEX). Previous deployment lasted 278 days. Earliest deploy late spring 2026. Possible Western Pacific or Middle East.",
     strikeGroup: "CSG-9 / CVW-11",
@@ -153,8 +153,8 @@ const assets = [
     type: "carrier",
     class: "Nimitz-class",
     lat: 36.5, lng: -74.5,
-    prevLat: 36.8, prevLng: -76.3,
-    prevLabel: "Norfolk (Jan 15)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Atlantic Ocean — COMPTUEX, ~100nm off East Coast",
     mission: "COMPTUEX workups. Pentagon ordered spin-up for potential Middle East deployment Feb 11. Could be deployed in weeks if expedited. WSJ: 'could potentially expedite those exercises.'",
     strikeGroup: "CSG-10 / CVW-7",
@@ -165,109 +165,6 @@ const assets = [
     ],
     updated: "Feb 11, 2026"
   },
-  {
-    id: "cvn75",
-    name: "USS Harry S. Truman (CVN-75)",
-    type: "carrier",
-    class: "Nimitz-class",
-    lat: 36.95, lng: -76.33,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Naval Station Norfolk — returned Feb 18 from 8-month deployment",
-    mission: "Just returned Feb 18, 2026 after 8-month deployment. Pre-RCOH. RCOH begins June 2026 at Newport News (~4.5 years). Unavailable for operations.",
-    strikeGroup: "CSG-8",
-    confidence: "confirmed",
-    sources: [
-      {name: "19FortyFive Jan 8", url: "https://www.19fortyfive.com/2026/01/the-u-s-navy-is-about-to-lose-a-nuclear-aircraft-carrier-for-at-least-4-years/"}
-    ],
-    updated: "Feb 18, 2026"
-  },
-  {
-    id: "cvn76",
-    name: "USS Ronald Reagan (CVN-76)",
-    type: "carrier",
-    class: "Nimitz-class",
-    lat: 47.56, lng: -122.63,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Naval Base Kitsap-Bremerton, WA — dry dock, 17-month PIA",
-    mission: "Maintenance period since April 2025, expected completion late 2026. Not available for sea duty.",
-    strikeGroup: "N/A",
-    confidence: "confirmed",
-    sources: [
-      {name: "Stars and Stripes Apr 2025", url: "https://www.stripes.com/branches/navy/2025-04-02/reagan-aircraft-carrier-kitsap-dry-dock-17345149.html"}
-    ],
-    updated: "Feb 8, 2026"
-  },
-  {
-    id: "cvn69",
-    name: "USS Dwight D. Eisenhower (CVN-69)",
-    type: "carrier",
-    class: "Nimitz-class",
-    lat: 36.82, lng: -76.29,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Norfolk Naval Shipyard — PIA maintenance since Jan 2025",
-    mission: "Planned Incremental Availability. Not available for deployment.",
-    strikeGroup: "N/A",
-    confidence: "confirmed",
-    sources: [
-      {name: "Navy.mil Jan 2025", url: "https://www.navy.mil/Press-Office/News-Stories/Article/4028611/uss-dwight-d-eisenhower-transits-to-norfolk-naval-shipyard-nnsy-for-a-planned-i/"}
-    ],
-    updated: "Feb 13, 2026"
-  },
-  {
-    id: "cvn70",
-    name: "USS Carl Vinson (CVN-70)",
-    type: "carrier",
-    class: "Nimitz-class",
-    lat: 32.69, lng: -117.20,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "NAS North Island, San Diego — post-deployment maintenance",
-    mission: "Post-deployment maintenance following 269-day deployment (longest in Carl Vinson history). Not available for sea operations.",
-    strikeGroup: "CSG-1",
-    confidence: "confirmed",
-    sources: [
-      {name: "DVIDS Feb 19", url: "https://www.dvidshub.net/image/9529764/uss-carl-vinson-cvn-70-conducts-daily-operations"}
-    ],
-    updated: "Feb 19, 2026"
-  },
-  {
-    id: "cvn74",
-    name: "USS John C. Stennis (CVN-74)",
-    type: "carrier",
-    class: "Nimitz-class",
-    lat: 36.98, lng: -76.43,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Newport News Shipbuilding — RCOH since May 2021",
-    mission: "Mid-life Refueling and Complex Overhaul. Completion expected Oct 2026. Exited dry dock April 2024, now in outfitting/testing.",
-    strikeGroup: "N/A",
-    confidence: "confirmed",
-    sources: [
-      {name: "USNI News Jun 2024", url: "https://news.usni.org/2024/06/18/carrier-uss-john-c-stennis-overhaul-delayed-work-will-take-more-than-5-years-to-complete"}
-    ],
-    updated: "Feb 20, 2026"
-  },
-  {
-    id: "cvn68",
-    name: "USS Nimitz (CVN-68)",
-    type: "carrier",
-    class: "Nimitz-class (lead ship)",
-    lat: 47.56, lng: -122.65,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Naval Base Kitsap-Bremerton, WA — pre-decommissioning",
-    mission: "Final homecoming Dec 16, 2025. 51 years of service. Decommissioning ceremony scheduled May 2026. First Nimitz-class to be decommissioned.",
-    strikeGroup: "N/A (decommissioning)",
-    confidence: "confirmed",
-    sources: [
-      {name: "USNI News Mar 2025", url: "https://news.usni.org/2025/03/04/uss-nimitz-more-than-3000-sailors-will-move-to-norfolk-in-2026"}
-    ],
-    updated: "Dec 16, 2025"
-  },
-
   // === AMPHIBIOUS READY GROUPS ===
   {
     id: "lhd7",
@@ -311,8 +208,8 @@ const assets = [
     type: "bomber",
     class: "B-52H",
     lat: 13.58, lng: 144.93,
-    prevLat: 48.42, prevLng: -101.35,
-    prevLabel: "Minot AFB, ND (home)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Andersen AFB, Guam — Bomber Task Force rotation",
     mission: "23rd Expeditionary Bomb Squadron from Minot AFB. Feb 16-18: conducted escort missions with JASDF fighters (7th, 8th, 9th Air Wings). First combined B-52/JASDF flights of 2026.",
     strikeGroup: "PACAF BTF",
@@ -328,8 +225,8 @@ const assets = [
     type: "bomber",
     class: "B-52H",
     lat: -7.31, lng: 72.43,
-    prevLat: 32.51, prevLng: -93.66,
-    prevLabel: "Barksdale AFB, LA (home)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Diego Garcia — 4 aircraft deployed since May 2025",
     mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite.",
     strikeGroup: "AFGSC deployed",
@@ -346,8 +243,8 @@ const assets = [
     type: "bomber",
     class: "B-2A Spirit",
     lat: 38.73, lng: -93.55,
-    prevLat: -7.31, prevLng: 72.43,
-    prevLabel: "Diego Garcia (returned May 2025)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Whiteman AFB, MO — home base",
     mission: "19 total fleet (~10-12 operational). Returned from Diego Garcia after May 2025 B-52 swap. Conducted Operation Midnight Hammer (June 2025): 7 B-2s struck Fordow and Natanz with 14 GBU-57 MOPs. UK reportedly blocking basing for Iran ops. MOP restocking underway ($100M+ Boeing contract).",
     strikeGroup: "509th/510th Bomb Wing",
@@ -383,8 +280,8 @@ const assets = [
     type: "fighter",
     class: "F-22A Raptor",
     lat: 52.41, lng: 0.56,
-    prevLat: 37.08, prevLng: -76.36,
-    prevLabel: "Langley AFB, VA (home)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "RAF Lakenheath/Mildenhall, UK — staging for Middle East",
     mission: "12 F-22s from 1st Fighter Wing, Langley. Wave 1: 6 arrived Feb 17 at Lakenheath. Wave 2: 6 sighted Feb 20 at Mildenhall with ferry tanks. Heading to CENTCOM. Same staging pattern as pre-Midnight Hammer (June 2025).",
     strikeGroup: "1st Fighter Wing",
@@ -401,8 +298,8 @@ const assets = [
     type: "fighter",
     class: "F-35A Lightning II",
     lat: 31.83, lng: 36.79,
-    prevLat: 52.41, prevLng: 0.56,
-    prevLabel: "RAF Lakenheath, UK (staging)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Muwaffaq Salti AB, Jordan — confirmed by satellite",
     mission: "18 F-35As visible in Planet Labs satellite imagery Feb 17. Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. Total ~30. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). SEAD role critical for any Iran operation.",
     strikeGroup: "Multiple wings",
@@ -419,8 +316,8 @@ const assets = [
     type: "fighter",
     class: "F-15E Strike Eagle",
     lat: 31.85, lng: 36.85,
-    prevLat: 52.41, prevLng: 0.56,
-    prevLabel: "RAF Lakenheath, UK (48th FW home)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Muwaffaq Salti AB, Jordan",
     mission: "3 squadrons including 12 from 48th FW RAF Lakenheath (494th FS) and Mountain Home AFB. Only USAF fighter certified for GBU-28 and GBU-72 deep-penetrating bunker busters — critical for Iran hardened targets.",
     strikeGroup: "48th FW / 366th FW",
@@ -457,8 +354,8 @@ const assets = [
     type: "tanker",
     class: "KC-46A / KC-135",
     lat: 24.06, lng: 45.52,
-    prevLat: 44.8, prevLng: -68.8,
-    prevLabel: "Bangor ANGB, ME (departure)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Prince Sultan AB, Saudi Arabia + en route",
     mission: "40+ tankers surged across the Atlantic Feb 15-18 per OSINT. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid (vulnerability).",
     strikeGroup: "CENTCOM AOR",
@@ -494,8 +391,8 @@ const assets = [
     type: "surveillance",
     class: "E-3G Sentry",
     lat: 24.10, lng: 45.60,
-    prevLat: 35.42, prevLng: -97.38,
-    prevLabel: "Tinker AFB, OK (home) / Elmendorf, AK",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Prince Sultan AB, Saudi Arabia + staging at Ramstein",
     mission: "37.5% of entire E-3 fleet deployed in ~48 hours. 4 from Tinker AFB via Ramstein. 2 from Elmendorf via RAF Mildenhall. Kadena stripped of ALL AWACS coverage. Alaska reduced to 1 E-3. >50% of mission-capable aircraft deployed.",
     strikeGroup: "552nd ACW",
@@ -530,8 +427,8 @@ const assets = [
     type: "surveillance",
     class: "U-2S",
     lat: 51.68, lng: -1.79,
-    prevLat: 39.13, prevLng: -121.44,
-    prevLabel: "Beale AFB, CA (home)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "RAF Fairford, UK — 2 aircraft. 1 departed Feb 17 toward Middle East",
     mission: "Regular ISR rotation station. DRAGON86 arrived Feb 19 from Beale. Another U-2 departed Feb 17 toward suspected Cyprus/Middle East staging. Operates above 70,000ft with ASARS, SYERS, SIGINT.",
     strikeGroup: "9th RW",
@@ -564,8 +461,8 @@ const assets = [
     type: "surveillance",
     class: "P-8A Poseidon",
     lat: 26.0, lng: 56.5,
-    prevLat: 37.40, prevLng: 14.92,
-    prevLabel: "NAS Sigonella (staging)",
+    prevLat: null, prevLng: null,
+    prevLabel: null,
     location: "Strait of Hormuz patrol + Mediterranean transit",
     mission: "Continuously patrolling Strait of Hormuz. 2 additional P-8s (VP-10) arrived from Sigonella ~Feb 9 at Isa AB (Bahrain) and Thumrait AB (Oman). 2 more spotted over Mediterranean Feb 20.",
     strikeGroup: "VP-10",
@@ -1056,56 +953,41 @@ const assets = [
 // SVG MARKER GENERATORS — Simple & Clean
 // ============================================================
 
-function createSVGMarker(type, color, isConfirmed, size) {
+function createSVGString(type, color, isConfirmed, size) {
   size = size || 32;
   const s = size;
   const half = s / 2;
   const dash = isConfirmed ? '' : 'stroke-dasharray="3,2"';
   const fO = isConfirmed ? '0.95' : '0.5';
   const sO = isConfirmed ? '1' : '0.6';
-  const uid = `m${Math.random().toString(36).substr(2,6)}`;
 
-  // Simple centered icon paths — drawn at 24x24 viewBox then placed in center
   const icons = {
-    // AIRCRAFT CARRIER — classic ship side-view: hull + deck + island tower
     hexagon: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M-12,2 L-10,-1 -8,-3 8,-3 10,-1 12,2 10,4 -10,4 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="1" ${dash}/>
       <rect x="-8" y="-3" width="16" height="1" fill="${color}" fill-opacity="${fO}" opacity="0.6"/>
       <rect x="3" y="-7" width="3" height="4" rx="0.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.7" ${dash}/>
       <line x1="-8" y1="-3" x2="8" y2="-3" stroke="${color}" stroke-width="1.2" opacity="${sO}"/>
     </g>`,
-
-    // BOMBER — big swept wing, like a B-2 or B-52 top-down
     bomber: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M0,-10 L2,-6 12,2 10,4 2,2 1,6 4,10 2,10 0,7 -2,10 -4,10 -1,6 -2,2 -10,4 -12,2 -2,-6 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
     </g>`,
-
-    // FIGHTER — small sleek jet, classic triangle-ish
     triangle: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M0,-10 L2,-5 9,1 8,3 2,1 1,5 4,9 2,9 0,6 -2,9 -4,9 -1,5 -2,1 -8,3 -9,1 -2,-5 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
     </g>`,
-
-    // TANKER — fuel drop / gas pump shape
     diamond: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M0,-9 C4,-4 7,0 7,4 C7,8 4,10 0,10 C-4,10 -7,8 -7,4 C-7,0 -4,-4 0,-9 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="1" ${dash}/>
       <text x="0" y="5" text-anchor="middle" font-size="9" font-weight="bold" font-family="sans-serif" fill="#0d1117" opacity="0.7">F</text>
     </g>`,
-
-    // SURVEILLANCE — eye icon
     eye: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M-11,0 C-6,-7 6,-7 11,0 C6,7 -6,7 -11,0 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
       <circle cx="0" cy="0" r="4" fill="#0d1117" opacity="0.6"/>
       <circle cx="0" cy="0" r="2" fill="${color}" opacity="0.9"/>
     </g>`,
-
-    // SUBMARINE — pill/cigar shape with conning tower
     invtriangle: `<g transform="translate(${half},${half}) scale(${s/32})">
       <ellipse cx="0" cy="2" rx="11" ry="4" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
       <rect x="-2" y="-4" width="4" height="6" rx="1" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.7" ${dash}/>
       <line x1="0" y1="-6" x2="0" y2="-4" stroke="${color}" stroke-width="1" opacity="${sO}"/>
     </g>`,
-
-    // GROUND BASE — castle turret
     square: `<g transform="translate(${half},${half}) scale(${s/32})">
       <rect x="-8" y="-2" width="16" height="12" rx="1" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
       <rect x="-9" y="-2" width="4" height="3" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
@@ -1117,8 +999,6 @@ function createSVGMarker(type, color, isConfirmed, size) {
       <rect x="7" y="-6" width="3" height="1.5" fill="${color}" fill-opacity="${fO}"/>
       <rect x="-1" y="-9" width="2" height="2" fill="${color}" fill-opacity="${fO}"/>
     </g>`,
-
-    // MISSILE DEFENSE — rocket / missile pointing up
     shield: `<g transform="translate(${half},${half}) scale(${s/32})">
       <rect x="-2" y="-4" width="4" height="12" rx="1.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
       <polygon points="0,-10 -3,-4 3,-4" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
@@ -1126,15 +1006,11 @@ function createSVGMarker(type, color, isConfirmed, size) {
       <polygon points="2,8 5,12 2,10" fill="${color}" fill-opacity="${fO}"/>
       <line x1="-2" y1="0" x2="2" y2="0" stroke="#0d1117" stroke-width="0.8" opacity="0.4"/>
     </g>`,
-
-    // AMPHIBIOUS — ship with flat deck / landing craft
     pentagon: `<g transform="translate(${half},${half}) scale(${s/32})">
       <path d="M-11,3 L-9,-1 -7,-3 7,-3 9,-1 11,3 9,5 -9,5 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
       <rect x="-4" y="-6" width="8" height="3" rx="0.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
       <line x1="-7" y1="-3" x2="7" y2="-3" stroke="${color}" stroke-width="1" opacity="${sO}"/>
     </g>`,
-
-    // DRONE — small propeller craft, simple X shape
     smalldiamond: `<g transform="translate(${half},${half}) scale(${s/32})">
       <ellipse cx="0" cy="0" rx="3" ry="2" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
       <line x1="0" y1="0" x2="-8" y2="-6" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
@@ -1146,8 +1022,6 @@ function createSVGMarker(type, color, isConfirmed, size) {
       <circle cx="-8" cy="6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
       <circle cx="8" cy="6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
     </g>`,
-
-    // SPECIAL NAVAL — anchor symbol
     hexoutline: `<g transform="translate(${half},${half}) scale(${s/32})">
       <circle cx="0" cy="-7" r="3" fill="none" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
       <line x1="0" y1="-4" x2="0" y2="10" stroke="${color}" stroke-width="1.5" opacity="${sO}" ${dash}/>
@@ -1159,21 +1033,24 @@ function createSVGMarker(type, color, isConfirmed, size) {
   const shapeKey = ASSET_TYPES[type] ? ASSET_TYPES[type].shape : 'square';
   const icon = icons[shapeKey] || icons.square;
 
-  return `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <filter id="${uid}" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="1.5" result="blur"/>
-        <feFlood flood-color="${color}" flood-opacity="0.4" result="c"/>
-        <feComposite in="c" in2="blur" operator="in" result="glow"/>
-        <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
-      </filter>
-    </defs>
-    <g filter="url(#${uid})">${icon}</g>
-  </svg>`;
+  return `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" xmlns="http://www.w3.org/2000/svg">${icon}</svg>`;
+}
+
+function svgToDataUri(svgString) {
+  return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+}
+
+function createMapIcon(type, color, isConfirmed) {
+  const svg = createSVGString(type, color, isConfirmed, 38);
+  return L.icon({
+    iconUrl: svgToDataUri(svg),
+    iconSize: [38, 38],
+    iconAnchor: [19, 19]
+  });
 }
 
 function createSmallSVGForLegend(type, color) {
-  return createSVGMarker(type, color, true, 22);
+  return createSVGString(type, color, true, 22);
 }
 
 
@@ -1182,7 +1059,7 @@ function createSmallSVGForLegend(type, color) {
 // ============================================================
 
 const map = L.map('map', {
-  center: [28, 35],
+  center: [30, 40],
   zoom: 3,
   minZoom: 2,
   maxZoom: 14,
@@ -1218,10 +1095,9 @@ let selectedAssetId = null;
 // ============================================================
 
 function applyOffsets(assetList) {
-  // Group by approximate location (rounded to 0.5 degrees)
   const groups = {};
   assetList.forEach(a => {
-    const key = `${Math.round(a.lat * 2) / 2}_${Math.round(a.lng * 2) / 2}`;
+    const key = `${Math.round(a.lat * 4) / 4}_${Math.round(a.lng * 4) / 4}`;
     if (!groups[key]) groups[key] = [];
     groups[key].push(a);
   });
@@ -1229,9 +1105,9 @@ function applyOffsets(assetList) {
   Object.values(groups).forEach(group => {
     if (group.length <= 1) return;
     const angleStep = (2 * Math.PI) / group.length;
-    const radius = 0.25 + (group.length * 0.06); // degrees offset
+    const radius = 0.08 + (group.length * 0.03);
     group.forEach((a, i) => {
-      if (i === 0) return; // first stays put
+      if (i === 0) return;
       a.lat += radius * Math.cos(angleStep * i);
       a.lng += radius * Math.sin(angleStep * i);
     });
@@ -1268,17 +1144,20 @@ assets.forEach(asset => {
   if (!typeInfo) return;
   const isConfirmed = asset.confidence === 'confirmed';
   const color = typeInfo.color;
-  const svgHtml = createSVGMarker(asset.type, color, isConfirmed, 38);
 
-  const icon = L.divIcon({
-    className: `asset-marker ${isConfirmed ? 'confirmed' : 'unconfirmed'}`,
-    html: `<div style="--glow-color: ${color}55">${svgHtml}<div class="asset-label">${getShortName(asset.name)}</div></div>`,
-    iconSize: [38, 38],
-    iconAnchor: [19, 19]
-  });
+  const icon = createMapIcon(asset.type, color, isConfirmed);
 
-  const marker = L.marker([asset.lat, asset.lng], { icon: icon })
+  const marker = L.marker([asset.lat, asset.lng], { icon: icon, riseOnHover: true })
     .on('click', () => openDetailPanel(asset));
+
+  // Use Leaflet tooltip for label instead of DOM label
+  marker.bindTooltip(getShortName(asset.name), {
+    permanent: true,
+    direction: 'bottom',
+    offset: [0, 12],
+    className: 'asset-tooltip',
+    opacity: 1
+  });
 
   // Movement line
   let line = null;
@@ -1363,9 +1242,17 @@ function renderMarkers() {
       lineLayerGroup.addLayer(entry.originMarker);
     }
   });
+
+  // Update tooltip visibility after re-rendering
+  setTimeout(function() {
+    if (typeof updateLabelVisibility === 'function') updateLabelVisibility();
+  }, 50);
 }
 
 renderMarkers();
+
+// Initial label visibility (hide tooltips at low zoom)
+setTimeout(function() { updateLabelVisibility(); }, 100);
 
 
 // ============================================================
@@ -1571,9 +1458,9 @@ updateStats();
 
 function updateLabelVisibility() {
   const zoom = map.getZoom();
-  const labels = document.querySelectorAll('.asset-label');
-  labels.forEach(label => {
-    label.style.display = zoom >= 4 ? 'block' : 'none';
+  const show = zoom >= 4;
+  document.querySelectorAll('.asset-tooltip').forEach(el => {
+    el.style.display = show ? 'block' : 'none';
   });
 }
 
