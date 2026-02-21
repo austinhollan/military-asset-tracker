@@ -1543,3 +1543,61 @@ openDetailPanel = function(asset) {
     }, 50);
   }
 };
+
+
+// ============================================================
+// NEWS TICKER
+// ============================================================
+
+function buildTicker() {
+  const tickerEl = document.getElementById('ticker-content');
+  if (!tickerEl) return;
+
+  // Sort assets by recency — put the most recently updated first
+  const sorted = [...assets].sort((a, b) => {
+    const da = parseUpdateDate(a.updated);
+    const db = parseUpdateDate(b.updated);
+    return db - da;
+  });
+
+  // Take top 20 most recently updated for the ticker
+  const recent = sorted.slice(0, 20);
+
+  // Build ticker items (duplicated for infinite scroll)
+  function buildItems() {
+    return recent.map(asset => {
+      const typeInfo = ASSET_TYPES[asset.type];
+      const isConf = asset.confidence === 'confirmed';
+      const shortLoc = asset.location.split(' — ')[0].substring(0, 50);
+      return `<span class="ticker-item" data-id="${asset.id}" onclick="tickerClick('${asset.id}')">` +
+        `<span class="ticker-dot ${isConf ? 'confirmed' : 'unconfirmed'}"></span>` +
+        `<span style="color:${typeInfo.color}">${getShortName(asset.name)}</span> ` +
+        `${shortLoc} ` +
+        `<span class="ticker-time">${asset.updated}</span>` +
+        `</span><span class="ticker-sep">│</span>`;
+    }).join('');
+  }
+
+  // Duplicate content for seamless infinite scroll
+  tickerEl.innerHTML = buildItems() + buildItems();
+}
+
+function parseUpdateDate(str) {
+  // Handle various formats: "Feb 20, 2026", "Feb 2026", "May 2025 (status unclear)", "Sep 2025 (last known)"
+  const cleaned = str.replace(/\s*\(.*\)/, '');
+  const d = new Date(cleaned);
+  return isNaN(d.getTime()) ? new Date(2020, 0, 1) : d;
+}
+
+function tickerClick(assetId) {
+  const asset = assets.find(a => a.id === assetId);
+  if (asset) {
+    openDetailPanel(asset);
+    map.setView([asset.lat, asset.lng], Math.max(map.getZoom(), 5), { animate: true });
+  }
+}
+
+// Make tickerClick available globally
+window.tickerClick = tickerClick;
+
+buildTicker();
