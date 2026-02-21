@@ -1,4 +1,4 @@
-     // ============================================================
+// ============================================================
 // US MILITARY ASSET TRACKER — app.js
 // ============================================================
 
@@ -1094,10 +1094,16 @@ let selectedAssetId = null;
 // OFFSET OVERLAPPING MARKERS
 // ============================================================
 
+// Store original positions before offsetting (for movement lines)
+assets.forEach(a => {
+  a._origLat = a.lat;
+  a._origLng = a.lng;
+});
+
 function applyOffsets(assetList) {
   const groups = {};
   assetList.forEach(a => {
-    const key = `${Math.round(a.lat * 4) / 4}_${Math.round(a.lng * 4) / 4}`;
+    const key = `${Math.round(a._origLat * 4) / 4}_${Math.round(a._origLng * 4) / 4}`;
     if (!groups[key]) groups[key] = [];
     groups[key].push(a);
   });
@@ -1108,13 +1114,38 @@ function applyOffsets(assetList) {
     const radius = 0.08 + (group.length * 0.03);
     group.forEach((a, i) => {
       if (i === 0) return;
-      a.lat += radius * Math.cos(angleStep * i);
-      a.lng += radius * Math.sin(angleStep * i);
+      a.lat = a._origLat + radius * Math.cos(angleStep * i);
+      a.lng = a._origLng + radius * Math.sin(angleStep * i);
     });
   });
 }
 
 applyOffsets(assets);
+
+// Generate a great-circle arc between two points
+function greatCircleArc(lat1, lng1, lat2, lng2, numPoints) {
+  numPoints = numPoints || 40;
+  const toRad = Math.PI / 180;
+  const toDeg = 180 / Math.PI;
+  const φ1 = lat1 * toRad, λ1 = lng1 * toRad;
+  const φ2 = lat2 * toRad, λ2 = lng2 * toRad;
+  const d = 2 * Math.asin(Math.sqrt(
+    Math.pow(Math.sin((φ2 - φ1) / 2), 2) +
+    Math.cos(φ1) * Math.cos(φ2) * Math.pow(Math.sin((λ2 - λ1) / 2), 2)
+  ));
+  if (d < 0.001) return [[lat1, lng1], [lat2, lng2]];
+  const pts = [];
+  for (let i = 0; i <= numPoints; i++) {
+    const f = i / numPoints;
+    const A = Math.sin((1 - f) * d) / Math.sin(d);
+    const B = Math.sin(f * d) / Math.sin(d);
+    const x = A * Math.cos(φ1) * Math.cos(λ1) + B * Math.cos(φ2) * Math.cos(λ2);
+    const y = A * Math.cos(φ1) * Math.sin(λ1) + B * Math.cos(φ2) * Math.sin(λ2);
+    const z = A * Math.sin(φ1) + B * Math.sin(φ2);
+    pts.push([Math.atan2(z, Math.sqrt(x * x + y * y)) * toDeg, Math.atan2(y, x) * toDeg]);
+  }
+  return pts;
+}
 
 
 // ============================================================
@@ -1159,57 +1190,51 @@ assets.forEach(asset => {
     opacity: 1
   });
 
-  // Movement line
+  // Movement line — great circle arc from origin to ORIGINAL (pre-offset) position
   let line = null;
+  let movementLayers = [];
   if (asset.prevLat !== null && asset.prevLng !== null) {
-    const dashArray = isConfirmed ? '12 6' : '6 8';
-    line = L.polyline(
-      [[asset.prevLat, asset.prevLng], [asset.lat, asset.lng]],
-      {
-        color: color,
-        weight: isConfirmed ? 2 : 1.5,
-        opacity: isConfirmed ? 0.55 : 0.3,
-        dashArray: dashArray,
-        lineCap: 'round'
-      }
-    );
-
-    // Add arrowhead at end
-    const arrowIcon = L.divIcon({
-      className: 'arrow-marker',
-      html: `<svg width="14" height="14" viewBox="0 0 14 14"><polygon points="7,0 14,14 7,10 0,14" fill="${color}" opacity="${isConfirmed ? 0.6 : 0.35}"/></svg>`,
-      iconSize: [14, 14],
-      iconAnchor: [7, 7]
+    const arcPoints = greatCircleArc(asset.prevLat, asset.prevLng, asset._origLat, asset._origLng, 50);
+    const dashArray = isConfirmed ? '10 5' : '5 7';
+    line = L.polyline(arcPoints, {
+      color: color,
+      weight: isConfirmed ? 1.8 : 1.2,
+      opacity: isConfirmed ? 0.45 : 0.22,
+      dashArray: dashArray,
+      lineCap: 'round',
+      lineJoin: 'round'
     });
+    movementLayers.push(line);
 
-    // Calculate angle for arrow rotation
-    const dx = asset.lng - asset.prevLng;
-    const dy = asset.lat - asset.prevLat;
-    const angle = Math.atan2(dx, dy) * (180 / Math.PI);
-
-    const midLat = (asset.prevLat + asset.lat) / 2;
-    const midLng = (asset.prevLng + asset.lng) / 2;
+    // Arrowhead near destination (at 85% along the arc)
+    const arrIdx = Math.floor(arcPoints.length * 0.85);
+    const arrPrev = arcPoints[Math.max(0, arrIdx - 2)];
+    const arrPt = arcPoints[arrIdx];
+    const adx = arrPt[1] - arrPrev[1];
+    const ady = arrPt[0] - arrPrev[0];
+    const arrAngle = Math.atan2(adx, ady) * (180 / Math.PI);
 
     const arrowMarkerIcon = L.divIcon({
       className: 'arrow-marker',
-      html: `<svg width="16" height="16" viewBox="0 0 16 16" style="transform: rotate(${-angle + 180}deg); filter: drop-shadow(0 0 3px ${color}40);"><polygon points="8,0 16,16 8,11 0,16" fill="${color}" opacity="${isConfirmed ? 0.65 : 0.35}"/></svg>`,
-      iconSize: [16, 16],
-      iconAnchor: [8, 8]
+      html: `<svg width="12" height="12" viewBox="0 0 12 12" style="transform:rotate(${-arrAngle + 180}deg)"><polygon points="6,0 12,12 6,8 0,12" fill="${color}" opacity="${isConfirmed ? 0.55 : 0.3}"/></svg>`,
+      iconSize: [12, 12],
+      iconAnchor: [6, 6]
     });
+    const arrowMarker = L.marker(arrPt, { icon: arrowMarkerIcon, interactive: false });
+    movementLayers.push(arrowMarker);
 
-    const arrowMarker = L.marker([midLat, midLng], { icon: arrowMarkerIcon, interactive: false });
-
-    // Origin dot — marks where the piece "was" (board game style)
+    // Origin dot
     const originIcon = L.divIcon({
       className: 'arrow-marker',
-      html: `<svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3" fill="none" stroke="${color}" stroke-width="1.2" opacity="${isConfirmed ? 0.5 : 0.25}"/><circle cx="5" cy="5" r="1" fill="${color}" opacity="${isConfirmed ? 0.5 : 0.25}"/></svg>`,
-      iconSize: [10, 10],
-      iconAnchor: [5, 5]
+      html: `<svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="2.5" fill="none" stroke="${color}" stroke-width="1" opacity="${isConfirmed ? 0.45 : 0.2}"/><circle cx="4" cy="4" r="0.8" fill="${color}" opacity="${isConfirmed ? 0.45 : 0.2}"/></svg>`,
+      iconSize: [8, 8],
+      iconAnchor: [4, 4]
     });
     const originMarker = L.marker([asset.prevLat, asset.prevLng], { icon: originIcon, interactive: false });
+    movementLayers.push(originMarker);
 
     markerLayers[asset.id] = {
-      marker, line, arrowMarker, originMarker, type: asset.type,
+      marker, movementLayers, type: asset.type,
       filterGroup: typeInfo.filterGroup
     };
 
@@ -1217,7 +1242,7 @@ assets.forEach(asset => {
   }
 
   markerLayers[asset.id] = {
-    marker, line: null, arrowMarker: null, originMarker: null, type: asset.type,
+    marker, movementLayers: [], type: asset.type,
     filterGroup: typeInfo.filterGroup
   };
 });
@@ -1232,14 +1257,8 @@ function renderMarkers() {
     if (!activeFilters.has(typeInfo.filterGroup)) return;
 
     allLayerGroup.addLayer(entry.marker);
-    if (entry.line) {
-      lineLayerGroup.addLayer(entry.line);
-    }
-    if (entry.arrowMarker) {
-      lineLayerGroup.addLayer(entry.arrowMarker);
-    }
-    if (entry.originMarker) {
-      lineLayerGroup.addLayer(entry.originMarker);
+    if (entry.movementLayers) {
+      entry.movementLayers.forEach(layer => lineLayerGroup.addLayer(layer));
     }
   });
 
