@@ -84,16 +84,17 @@ const assets = [
     prevLat: 30.0, prevLng: -40.0,
     prevLabel: "North Atlantic (Feb 13)",
     movementDate: "2026-02-20",
-    location: "Mediterranean Sea — transited Strait of Gibraltar ~Feb 20",
-    mission: "Deployment Day 241+. Redirected from Caribbean (Operation South Spear / capture of Maduro) toward Middle East per President Trump's orders. En route to CENTCOM AOR to reinforce USS Abraham Lincoln. On track to break post-Cold War deployment record (294 days) by mid-April 2026.",
-    strikeGroup: "CSG-12 / CVW-8",
+    location: "Western Mediterranean — transited Strait of Gibraltar Feb 20",
+    mission: "Deployment Day 242+. Redirected from Caribbean (Operation South Spear / capture of Maduro) toward Middle East per President Trump's orders. Escorted by destroyers USS Mahan (DDG-72), USS Bainbridge (DDG-96), and USS Winston S. Churchill (DDG-81). CVW-8 embarked: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). P-8A from Sigonella monitored Gibraltar transit. En route to eastern Mediterranean / CENTCOM AOR. On track to break post-Cold War deployment record (294 days) by mid-April 2026.",
+    strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
-      {name: "USNI News Feb 20", url: "https://news.usni.org/2026/02/20/uss-gerald-r-ford-now-in-the-mediterranean-sea-2"},
-      {name: "Forbes Feb 20", url: "https://www.forbes.com/sites/petersuciu/2026/02/20/us-navy-supercarrier-uss-gerald-r-ford-now-in-the-mediterranean/"},
-      {name: "Zona Militar Feb 18", url: "https://www.zona-militar.com/en/2026/02/18/the-nuclear-powered-aircraft-carrier-uss-gerald-r-ford-departed-the-caribbean-to-reinforce-the-u-s-military-presence-in-the-middle-east/"}
+      {name: "Stars and Stripes Feb 20", url: "https://www.stripes.com/branches/navy/2026-02-20/ford-middle-east-mediterranean-iran-20813486.html"},
+      {name: "ItaMilRadar Feb 20", url: "https://www.itamilradar.com/2026/02/20/us-carrier-strike-group-12-enters-the-mediterranean-via-gibraltar-signaling-rapid-airpower-option-toward-iran/"},
+      {name: "USNI Fleet Tracker Feb 17", url: "https://news.usni.org/2026/02/17/usni-news-fleet-and-marine-tracker-feb-17-2026"},
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 21, 2026"
   },
   {
     id: "cvn72",
@@ -307,7 +308,7 @@ const assets = [
     prevLabel: "Burlington ANGB, VT / multi-origin (Feb 2026)",
     movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan — confirmed by satellite",
-    mission: "18 F-35As visible in Planet Labs satellite imagery Feb 17. Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. Total ~30. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). SEAD role critical for any Iran operation.",
+    mission: "18 F-35As visible in Planet Labs satellite imagery Feb 17. Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. Total ~30. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). Feb 20: Confirmed US pulled F-35s + other assets from NATO Cold Response 2026 in Norway (Norwegian defense officials). SEAD role critical for any Iran operation.",
     strikeGroup: "Multiple wings",
     confidence: "confirmed",
     sources: [
@@ -391,6 +392,27 @@ const assets = [
       {name: "USAFE", url: "https://www.usafe.af.mil/"}
     ],
     updated: "Feb 2026"
+  },
+
+  // === LAJES FIELD STAGING ===
+  {
+    id: "lajes_staging",
+    name: "Lajes Field Staging (KC-46/F-16/C-17)",
+    type: "tanker",
+    class: "KC-46A / F-16CJ / C-17",
+    lat: 38.76, lng: -27.09,
+    prevLat: 34.05, prevLng: -80.97,
+    prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
+    movementDate: "2026-02-19",
+    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
+    mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. At least 11 KC-46A Pegasus tankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Includes KC-46 that aborted takeoff last month. Lajes is critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Tankers fueling the rapid fighter flow to CENTCOM AOR.",
+    strikeGroup: "AMC / ANG",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
+      {name: "Instagram OSINT Feb 17", url: "https://www.instagram.com/p/DU3KzMtiH4P/"}
+    ],
+    updated: "Feb 21, 2026"
   },
 
   // === SURVEILLANCE / ISR ===
@@ -694,14 +716,16 @@ const assets = [
     lat: 25.12, lng: 51.32,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Qatar — ~10,000+ personnel (surging)",
-    mission: "Largest US base in Middle East. CENTCOM forward HQ. 379th AEW. 100+ aircraft. Struck by Iran June 23, 2025 (retaliation for Midnight Hammer). Partial personnel evacuation underway Feb 2026. THAAD + Patriot defending.",
+    location: "Qatar — dispersal underway, tanker drawdown visible",
+    mission: "Largest US base in Middle East. CENTCOM forward HQ. 379th AEW. Struck by Iran June 23, 2025 (retaliation for Midnight Hammer). Feb 20-21: NYT reports hundreds of troops evacuated (Pentagon denies via Fox News — contradictory reports). Satellite imagery shows continuous decline in tanker aircraft vs. increase at Prince Sultan AB. Vulnerability to Iranian ballistic missiles driving asset dispersal to Jordan and Saudi Arabia. THAAD + Patriot still defending.",
     strikeGroup: "CENTCOM/379th AEW",
     confidence: "confirmed",
     sources: [
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
+      {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
       {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 21, 2026"
   },
   {
     id: "camp_humphreys",
@@ -762,14 +786,15 @@ const assets = [
     lat: 26.22, lng: 50.60,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Bahrain — ~9,000 DoD personnel",
-    mission: "HQ US Naval Forces Central Command (NAVCENT). 5th Fleet. Secures Persian Gulf/Red Sea shipping. Partial evacuation reported Feb 2026.",
+    location: "Bahrain — ~9,000 DoD personnel (evacuations reported)",
+    mission: "HQ US Naval Forces Central Command (NAVCENT). 5th Fleet. Secures Persian Gulf/Red Sea shipping. Feb 20-21: NYT reports evacuations at Bahrain bases housing 5th Fleet (Pentagon denies via Fox News — contradictory reports). Vulnerability concerns amid Iran tensions.",
     strikeGroup: "NAVCENT / 5th Fleet",
     confidence: "confirmed",
     sources: [
+      {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
       {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 21, 2026"
   },
   {
     id: "rota",

@@ -427,7 +427,7 @@
   <div class="container">
     <div class="summary-bar">
       <span><span class="summary-count" id="update-count">0</span> UPDATES</span>
-      <span>DATA AS OF FEB 20, 2026</span>
+      <span>DATA AS OF FEB 21, 2026</span>
     </div>
     <div id="updates-list"></div>
   </div>
@@ -480,7 +480,7 @@
         .then(r => r.text())
         .then(text => {
           // Extract the assets array and ASSET_TYPES from app.js
-          const match = text.match(/const assets = \[([\\s\\S]*?)\n\];/);
+          const match = text.match(/const assets = \[([\s\S]*?)\n\];/);
           if (match) {
             try {
               const assetsStr = '[' + match[1] + ']';
