@@ -83,6 +83,7 @@ const assets = [
     lat: 36.0, lng: -5.5,
     prevLat: 30.0, prevLng: -40.0,
     prevLabel: "North Atlantic (Feb 13)",
+    movementDate: "2026-02-20",
     location: "Mediterranean Sea — transited Strait of Gibraltar ~Feb 20",
     mission: "Deployment Day 241+. Redirected from Caribbean (Operation South Spear / capture of Maduro) toward Middle East per President Trump's orders. En route to CENTCOM AOR to reinforce USS Abraham Lincoln. On track to break post-Cold War deployment record (294 days) by mid-April 2026.",
     strikeGroup: "CSG-12 / CVW-8",
@@ -102,6 +103,7 @@ const assets = [
     lat: 22.5, lng: 62.0,
     prevLat: 15.0, prevLng: 115.0,
     prevLabel: "South China Sea (Jan 2026)",
+    movementDate: "2026-01-20",
     location: "Arabian Sea — ~500 nm south of Iran",
     mission: "Deployed Nov 5, 2025. Redirected from South China Sea to Arabian Sea amid Iran tensions. On Feb 3, an F-35C from CVW-9 shot down an Iranian Shahed-139 drone. Third time CSG-3 redirected from Indo-Pacific to Middle East.",
     strikeGroup: "CSG-3 / CVW-9 (incl. F-35C)",
@@ -210,6 +212,7 @@ const assets = [
     lat: 13.58, lng: 144.93,
     prevLat: 48.42, prevLng: -101.35,
     prevLabel: "Minot AFB, ND (home station)",
+    movementDate: "2026-02-16",
     location: "Andersen AFB, Guam — Bomber Task Force rotation",
     mission: "23rd Expeditionary Bomb Squadron from Minot AFB. Feb 16-18: conducted escort missions with JASDF fighters (7th, 8th, 9th Air Wings). First combined B-52/JASDF flights of 2026.",
     strikeGroup: "PACAF BTF",
@@ -227,6 +230,7 @@ const assets = [
     lat: -7.31, lng: 72.43,
     prevLat: 32.50, prevLng: -93.66,
     prevLabel: "Barksdale AFB, LA (May 2025)",
+    movementDate: "2025-05-15",
     location: "Diego Garcia — 4 aircraft deployed since May 2025",
     mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite.",
     strikeGroup: "AFGSC deployed",
@@ -282,6 +286,7 @@ const assets = [
     lat: 52.41, lng: 0.56,
     prevLat: 37.08, prevLng: -76.36,
     prevLabel: "Langley AFB, VA (Feb 15-17)",
+    movementDate: "2026-02-17",
     location: "RAF Lakenheath/Mildenhall, UK — staging for Middle East",
     mission: "12 F-22s from 1st Fighter Wing, Langley. Wave 1: 6 arrived Feb 17 at Lakenheath. Wave 2: 6 sighted Feb 20 at Mildenhall with ferry tanks. Heading to CENTCOM. Same staging pattern as pre-Midnight Hammer (June 2025).",
     strikeGroup: "1st Fighter Wing",
@@ -300,6 +305,7 @@ const assets = [
     lat: 31.83, lng: 36.79,
     prevLat: 44.47, prevLng: -73.15,
     prevLabel: "Burlington ANGB, VT / multi-origin (Feb 2026)",
+    movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan — confirmed by satellite",
     mission: "18 F-35As visible in Planet Labs satellite imagery Feb 17. Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. Total ~30. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). SEAD role critical for any Iran operation.",
     strikeGroup: "Multiple wings",
@@ -318,6 +324,7 @@ const assets = [
     lat: 31.85, lng: 36.85,
     prevLat: 52.41, prevLng: 0.56,
     prevLabel: "RAF Lakenheath, UK (48th FW)",
+    movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan",
     mission: "3 squadrons including 12 from 48th FW RAF Lakenheath (494th FS) and Mountain Home AFB. Only USAF fighter certified for GBU-28 and GBU-72 deep-penetrating bunker busters — critical for Iran hardened targets.",
     strikeGroup: "48th FW / 366th FW",
@@ -336,6 +343,7 @@ const assets = [
     lat: 31.80, lng: 36.73,
     prevLat: 46.03, prevLng: 12.60,
     prevLabel: "Aviano AB, Italy / Spangdahlem AB, Germany",
+    movementDate: "2026-02-17",
     location: "Muwaffaq Salti AB, Jordan + en route",
     mission: "12 visible at Muwaffaq Salti (satellite). 12 each from Aviano and Spangdahlem surging. 12 from McEntire ANGB departing via Azores Feb 17. Total ~48 F-16s in transit/deployed.",
     strikeGroup: "Multiple wings",
@@ -356,6 +364,7 @@ const assets = [
     lat: 24.06, lng: 45.52,
     prevLat: 35.34, prevLng: -77.96,
     prevLabel: "Seymour Johnson AFB, NC / CONUS bases (Feb 15-18)",
+    movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + en route",
     mission: "40+ tankers surged across the Atlantic Feb 15-18 per OSINT. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid (vulnerability).",
     strikeGroup: "CENTCOM AOR",
@@ -393,6 +402,7 @@ const assets = [
     lat: 24.10, lng: 45.60,
     prevLat: 35.42, prevLng: -97.38,
     prevLabel: "Tinker AFB, OK (4 aircraft) + Elmendorf, AK (2)",
+    movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + staging at Ramstein",
     mission: "37.5% of entire E-3 fleet deployed in ~48 hours. 4 from Tinker AFB via Ramstein. 2 from Elmendorf via RAF Mildenhall. Kadena stripped of ALL AWACS coverage. Alaska reduced to 1 E-3. >50% of mission-capable aircraft deployed.",
     strikeGroup: "552nd ACW",
@@ -429,6 +439,7 @@ const assets = [
     lat: 51.68, lng: -1.79,
     prevLat: 39.13, prevLng: -121.44,
     prevLabel: "Beale AFB, CA (Feb 19)",
+    movementDate: "2026-02-19",
     location: "RAF Fairford, UK — 2 aircraft. 1 departed Feb 17 toward Middle East",
     mission: "Regular ISR rotation station. DRAGON86 arrived Feb 19 from Beale. Another U-2 departed Feb 17 toward suspected Cyprus/Middle East staging. Operates above 70,000ft with ASARS, SYERS, SIGINT.",
     strikeGroup: "9th RW",
@@ -463,6 +474,7 @@ const assets = [
     lat: 26.0, lng: 56.5,
     prevLat: 37.40, prevLng: 14.92,
     prevLabel: "NAS Sigonella, Italy (VP-10, ~Feb 9)",
+    movementDate: "2026-02-09",
     location: "Strait of Hormuz patrol + Mediterranean transit",
     mission: "Continuously patrolling Strait of Hormuz. 2 additional P-8s (VP-10) arrived from Sigonella ~Feb 9 at Isa AB (Bahrain) and Thumrait AB (Oman). 2 more spotted over Mediterranean Feb 20.",
     strikeGroup: "VP-10",
@@ -515,6 +527,7 @@ const assets = [
     lat: 31.88, lng: 36.82,
     prevLat: 17.0, prevLng: -65.0,
     prevLabel: "Caribbean / SOUTHCOM (Feb 2026)",
+    movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan — electronic warfare",
     mission: "6 Growlers visible at Muwaffaq Salti in satellite imagery. Electronic warfare / SEAD support. Came from SOUTHCOM Caribbean operations.",
     strikeGroup: "USN EW",
@@ -534,6 +547,7 @@ const assets = [
     lat: 29.0, lng: 50.0,
     prevLat: 35.0, prevLng: 33.0,
     prevLabel: "Mediterranean (2024)",
+    movementDate: "2024-06-01",
     location: "CENTCOM — between Mediterranean & Persian Gulf",
     mission: "Continuously deployed since Aug 2024. Participated in Operation Midnight Hammer (June 2025), firing 30+ Tomahawks at Isfahan. OSINT reports (Feb 18-20) indicate continued CENTCOM operations. Navy has not confirmed exact location.",
     strikeGroup: "CENTCOM attached",
@@ -552,6 +566,7 @@ const assets = [
     lat: 15.0, lng: 120.0,
     prevLat: 14.79, prevLng: 120.27,
     prevLabel: "Subic Bay, Philippines (Sep 2025)",
+    movementDate: "2025-09-29",
     location: "Western Pacific (last known)",
     mission: "Active in Western Pacific 2025. Port visits: Guam (Apr), Brisbane (Jul), Subic Bay, Philippines (Sep 2025 — rare surfacing photographed). Retirement potentially extended past FY2026.",
     strikeGroup: "SUBRON 19",
@@ -570,6 +585,7 @@ const assets = [
     lat: 25.0, lng: 125.0,
     prevLat: 35.28, prevLng: 139.67,
     prevLabel: "Yokosuka, Japan (Dec 16, 2025)",
+    movementDate: "2025-12-16",
     location: "Western Pacific — operating with Lincoln CSG",
     mission: "Port visit to Yokosuka Dec 16, 2025. Operating with USS Abraham Lincoln CSG in Western Pacific / South China Sea before Lincoln was redirected to Arabian Sea.",
     strikeGroup: "DEVRON 5",
@@ -1235,7 +1251,8 @@ assets.forEach(asset => {
 
     markerLayers[asset.id] = {
       marker, movementLayers, type: asset.type,
-      filterGroup: typeInfo.filterGroup
+      filterGroup: typeInfo.filterGroup,
+      movementDate: asset.movementDate || null
     };
 
     return;
@@ -1243,13 +1260,18 @@ assets.forEach(asset => {
 
   markerLayers[asset.id] = {
     marker, movementLayers: [], type: asset.type,
-    filterGroup: typeInfo.filterGroup
+    filterGroup: typeInfo.filterGroup,
+    movementDate: null
   };
 });
+
+let activeTimelineHours = null; // null = ALL (show all movement lines)
 
 function renderMarkers() {
   allLayerGroup.clearLayers();
   lineLayerGroup.clearLayers();
+
+  const now = new Date();
 
   Object.values(markerLayers).forEach(entry => {
     const typeInfo = ASSET_TYPES[entry.type];
@@ -1257,8 +1279,19 @@ function renderMarkers() {
     if (!activeFilters.has(typeInfo.filterGroup)) return;
 
     allLayerGroup.addLayer(entry.marker);
-    if (entry.movementLayers) {
-      entry.movementLayers.forEach(layer => lineLayerGroup.addLayer(layer));
+    if (entry.movementLayers && entry.movementLayers.length > 0) {
+      // Check timeline filter
+      let showMovement = true;
+      if (activeTimelineHours !== null && entry.movementDate) {
+        const moveDate = new Date(entry.movementDate + 'T12:00:00Z');
+        const hoursAgo = (now - moveDate) / (1000 * 60 * 60);
+        showMovement = hoursAgo <= activeTimelineHours;
+      } else if (activeTimelineHours !== null && !entry.movementDate) {
+        showMovement = false; // No date info — hide if filtering
+      }
+      if (showMovement) {
+        entry.movementLayers.forEach(layer => lineLayerGroup.addLayer(layer));
+      }
     }
   });
 
@@ -1620,3 +1653,74 @@ function tickerClick(assetId) {
 window.tickerClick = tickerClick;
 
 buildTicker();
+
+
+// ============================================================
+// MOVEMENT TIMELINE FILTER
+// ============================================================
+
+const TIMELINE_OPTIONS = [
+  { label: 'ALL', hours: null },
+  { label: '12H', hours: 12 },
+  { label: '24H', hours: 24 },
+  { label: '36H', hours: 36 },
+  { label: '48H', hours: 48 },
+  { label: '72H', hours: 72 },
+  { label: '7D', hours: 168 },
+  { label: '14D+', hours: 336 }
+];
+
+function buildTimelineFilter() {
+  const container = document.getElementById('timeline-buttons');
+  if (!container) return;
+  container.innerHTML = '';
+
+  TIMELINE_OPTIONS.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'timeline-btn' + (activeTimelineHours === opt.hours ? ' active' : '');
+    btn.textContent = opt.label;
+    btn.dataset.hours = opt.hours === null ? 'all' : opt.hours;
+    btn.addEventListener('click', () => {
+      activeTimelineHours = opt.hours;
+      updateTimelineUI();
+      renderMarkers();
+      updateMovementCount();
+    });
+    container.appendChild(btn);
+  });
+}
+
+function updateTimelineUI() {
+  document.querySelectorAll('.timeline-btn').forEach(btn => {
+    const val = btn.dataset.hours;
+    const isActive = (val === 'all' && activeTimelineHours === null) ||
+                     (val !== 'all' && parseInt(val) === activeTimelineHours);
+    btn.classList.toggle('active', isActive);
+  });
+}
+
+function updateMovementCount() {
+  const now = new Date();
+  let visibleMovements = 0;
+  Object.values(markerLayers).forEach(entry => {
+    if (!entry.movementLayers || entry.movementLayers.length === 0) return;
+    const typeInfo = ASSET_TYPES[entry.type];
+    if (!typeInfo || !activeFilters.has(typeInfo.filterGroup)) return;
+    if (activeTimelineHours === null) {
+      visibleMovements++;
+    } else if (entry.movementDate) {
+      const moveDate = new Date(entry.movementDate + 'T12:00:00Z');
+      const hoursAgo = (now - moveDate) / (1000 * 60 * 60);
+      if (hoursAgo <= activeTimelineHours) visibleMovements++;
+    }
+  });
+  // Update the timeline label to show count
+  const label = document.querySelector('.timeline-label');
+  if (label) {
+    const suffix = activeTimelineHours === null ? '' : ` (${visibleMovements})`;
+    label.textContent = 'MOVEMENT TIMELINE' + suffix;
+  }
+}
+
+buildTimelineFilter();
+updateMovementCount();
