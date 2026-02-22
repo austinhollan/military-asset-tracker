@@ -80,21 +80,22 @@ const assets = [
     name: "USS Gerald R. Ford (CVN-78)",
     type: "carrier",
     class: "Ford-class",
-    lat: 36.0, lng: -5.5,
-    prevLat: 30.0, prevLng: -40.0,
-    prevLabel: "North Atlantic (Feb 13)",
-    movementDate: "2026-02-20",
-    location: "Western Mediterranean — transited Strait of Gibraltar Feb 20",
-    mission: "Deployment Day 242+. Redirected from Caribbean (Operation South Spear / capture of Maduro) toward Middle East per President Trump's orders. Escorted by destroyers USS Mahan (DDG-72), USS Bainbridge (DDG-96), and USS Winston S. Churchill (DDG-81). CVW-8 embarked: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). P-8A from Sigonella monitored Gibraltar transit. En route to eastern Mediterranean / CENTCOM AOR. On track to break post-Cold War deployment record (294 days) by mid-April 2026.",
+    lat: 35.5, lng: 18.0,
+    prevLat: 36.0, prevLng: -5.5,
+    prevLabel: "Strait of Gibraltar (Feb 20)",
+    movementDate: "2026-02-21",
+    location: "Eastern Mediterranean — heading east toward Crete, ETA strike range Feb 22-23",
+    mission: "Deployment Day 243+. Transited Strait of Gibraltar Feb 20, now moving east through Mediterranean toward planned position near Crete. Escorted by destroyers USS Mahan (DDG-72), USS Bainbridge (DDG-96), and USS Winston S. Churchill (DDG-81). CVW-8 embarked: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Combined with Lincoln CSG in Arabian Sea = largest US naval concentration near Iran since 2003. Analysts report possibly 4 CSGs converging on region. On track to break post-Cold War deployment record.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
       {name: "Stars and Stripes Feb 20", url: "https://www.stripes.com/branches/navy/2026-02-20/ford-middle-east-mediterranean-iran-20813486.html"},
       {name: "ItaMilRadar Feb 20", url: "https://www.itamilradar.com/2026/02/20/us-carrier-strike-group-12-enters-the-mediterranean-via-gibraltar-signaling-rapid-airpower-option-toward-iran/"},
       {name: "USNI Fleet Tracker Feb 17", url: "https://news.usni.org/2026/02/17/usni-news-fleet-and-marine-tracker-feb-17-2026"},
-      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
+      {name: "The Media Line Feb 21", url: "https://themedialine.org/top-stories/largest-us-military-buildup-since-2003-raises-prospect-of-multi-week-strike-on-iran/"}
     ],
-    updated: "Feb 21, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "cvn72",
@@ -233,14 +234,14 @@ const assets = [
     prevLabel: "Barksdale AFB, LA (May 2025)",
     movementDate: "2025-05-15",
     location: "Diego Garcia — 4 aircraft deployed since May 2025",
-    mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite.",
+    mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite. Feb 21: UK PM Starmer denied US use of Diego Garcia for bomber strikes against Iran.",
     strikeGroup: "AFGSC deployed",
     confidence: "unconfirmed",
     sources: [
       {name: "The War Zone", url: "https://www.twz.com/air/b-52s-join-b-2s-on-diego-garcia10-bombers-now-on-indian-ocean-island"},
       {name: "The Week Feb 20", url: "https://www.theweek.in/news/middle-east/2026/02/20/no-b-2s-for-iran-trumps-magnificent-bombers-face-hurdle-as-uk-denies-base-access.html"}
     ],
-    updated: "May 2025 (status unclear)"
+    updated: "Feb 22, 2026"
   },
   {
     id: "b2_whiteman",
@@ -289,14 +290,15 @@ const assets = [
     prevLabel: "Langley AFB, VA (Feb 15-17)",
     movementDate: "2026-02-17",
     location: "RAF Lakenheath/Mildenhall, UK — staging for Middle East",
-    mission: "12 F-22s from 1st Fighter Wing, Langley. Wave 1: 6 arrived Feb 17 at Lakenheath. Wave 2: 6 sighted Feb 20 at Mildenhall with ferry tanks. Heading to CENTCOM. Same staging pattern as pre-Midnight Hammer (June 2025).",
+    mission: "12 F-22s from 1st Fighter Wing, Langley. Wave 1: 6 arrived Feb 17 at Lakenheath. Wave 2: 6 sighted Feb 20 at Mildenhall with ferry tanks. Heading to CENTCOM. All 12 F-22As confirmed on tarmac at Lakenheath. Brief delay due to tanker issue resolved. Departing for Middle East Monday Feb 23. Same staging pattern as pre-Midnight Hammer (June 2025).",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
-      {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-raptors-sighted-in-uk-may-indicate-possible-reinforcement-of-middle-east-airpower-posture"}
+      {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-raptors-sighted-in-uk-may-indicate-possible-reinforcement-of-middle-east-airpower-posture"},
+      {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025356418384327035"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "f35_jordan",
@@ -308,14 +310,15 @@ const assets = [
     prevLabel: "Burlington ANGB, VT / multi-origin (Feb 2026)",
     movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan — confirmed by satellite",
-    mission: "18 F-35As visible in Planet Labs satellite imagery Feb 17. Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. Total ~30. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). Feb 20: Confirmed US pulled F-35s + other assets from NATO Cold Response 2026 in Norway (Norwegian defense officials). SEAD role critical for any Iran operation.",
+    mission: "30 F-35As now confirmed at Muwaffaq Salti (18 additional arrived from RAF Lakenheath). Vermont ANG 134th FS (SEAD specialists) contributed ~12 aircraft. These jets came from Operation Absolute Resolve (Venezuela) and Cold Response (Norway). Feb 20: Confirmed US pulled F-35s + other assets from NATO Cold Response 2026 in Norway (Norwegian defense officials). SEAD role critical for any Iran operation.",
     strikeGroup: "Multiple wings",
     confidence: "confirmed",
     sources: [
       {name: "CNN Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
-      {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/f-35s-deploy-middle-east-us-talks-iran/"}
+      {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/f-35s-deploy-middle-east-us-talks-iran/"},
+      {name: "Army Recognition Feb 21", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-sends-18-more-f-35a-fighter-jets-from-uk-to-middle-east-as-iran-nuclear-talks-begin"}
     ],
-    updated: "Feb 17, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "f15e_jordan",
@@ -338,7 +341,7 @@ const assets = [
   },
   {
     id: "f16_jordan",
-    name: "F-16 Fighting Falcons (~48 aircraft)",
+    name: "F-16C/CJ Fighting Falcons (~48 aircraft)",
     type: "fighter",
     class: "F-16C/D",
     lat: 31.80, lng: 36.73,
@@ -346,20 +349,21 @@ const assets = [
     prevLabel: "Aviano AB, Italy / Spangdahlem AB, Germany",
     movementDate: "2026-02-17",
     location: "Muwaffaq Salti AB, Jordan + en route",
-    mission: "12 visible at Muwaffaq Salti (satellite). 12 each from Aviano and Spangdahlem surging. 12 from McEntire ANGB departing via Azores Feb 17. Total ~48 F-16s in transit/deployed.",
+    mission: "48+ F-16s deployed/in transit. Includes 24 specialized F-16CJ 'Wild Weasel' SEAD variants from Spangdahlem AB (Germany) and McEntire ANGB (South Carolina) carrying AN/ASQ-213 HARM Targeting Systems and 'Angry Kitten' ALQ-184 EW pods for Suppression of Enemy Air Defenses (SEAD). 12 visible at Muwaffaq Salti (satellite). Total ~48 F-16s.",
     strikeGroup: "Multiple wings",
     confidence: "confirmed",
     sources: [
       {name: "The War Zone", url: "https://www.twz.com/news-features/final-pieces-moving-into-place-for-potential-attack-on-iran"},
-      {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"}
+      {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
+      {name: "The War Zone (Angry Kitten)", url: "https://www.twz.com/air/f-16s-heading-to-middle-east-equipped-with-angry-kitten-electronic-warfare-pods"}
     ],
-    updated: "Feb 17, 2026"
+    updated: "Feb 22, 2026"
   },
 
   // === TANKERS ===
   {
     id: "tankers_surge",
-    name: "KC-46A/KC-135 Tanker Surge (40+)",
+    name: "KC-46A/KC-135 Tanker Surge (50+)",
     type: "tanker",
     class: "KC-46A / KC-135",
     lat: 24.06, lng: 45.52,
@@ -367,14 +371,14 @@ const assets = [
     prevLabel: "Seymour Johnson AFB, NC / CONUS bases (Feb 15-18)",
     movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + en route",
-    mission: "40+ tankers surged across the Atlantic Feb 15-18 per OSINT. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid (vulnerability).",
+    mission: "50+ tankers now positioned along Atlantic and Mediterranean bomber/fighter routes. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid.",
     strikeGroup: "CENTCOM AOR",
     confidence: "confirmed",
     sources: [
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
       {name: "ACC Official", url: "https://www.acc.af.mil/News/Article-Display/Article/4400254/next-generation-air-tankers-arrive-in-centcom-aor/"}
     ],
-    updated: "Feb 18, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "tankers_mildenhall",
@@ -397,22 +401,22 @@ const assets = [
   // === LAJES FIELD STAGING ===
   {
     id: "lajes_staging",
-    name: "Lajes Field Staging (KC-46/F-16/C-17)",
+    name: "Lajes Field Staging (KC-46/KC-135/F-16/C-17)",
     type: "tanker",
-    class: "KC-46A / F-16CJ / C-17",
+    class: "KC-46A / KC-135 / F-16CJ / C-17",
     lat: 38.76, lng: -27.09,
     prevLat: 34.05, prevLng: -80.97,
     prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
     movementDate: "2026-02-19",
     location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
-    mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. At least 11 KC-46A Pegasus tankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Includes KC-46 that aborted takeoff last month. Lajes is critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Tankers fueling the rapid fighter flow to CENTCOM AOR.",
+    mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials.",
     strikeGroup: "AMC / ANG",
     confidence: "confirmed",
     sources: [
       {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
       {name: "Instagram OSINT Feb 17", url: "https://www.instagram.com/p/DU3KzMtiH4P/"}
     ],
-    updated: "Feb 21, 2026"
+    updated: "Feb 22, 2026"
   },
 
   // === SURVEILLANCE / ISR ===
@@ -463,13 +467,13 @@ const assets = [
     prevLabel: "Beale AFB, CA (Feb 19)",
     movementDate: "2026-02-19",
     location: "RAF Fairford, UK — 2 aircraft. 1 departed Feb 17 toward Middle East",
-    mission: "Regular ISR rotation station. DRAGON86 arrived Feb 19 from Beale. Another U-2 departed Feb 17 toward suspected Cyprus/Middle East staging. Operates above 70,000ft with ASARS, SYERS, SIGINT.",
+    mission: "Regular ISR rotation station. DRAGON86 arrived Feb 19 from Beale. Another U-2 departed Feb 17 toward suspected Cyprus/Middle East staging. Operates above 70,000ft with ASARS, SYERS, SIGINT. Note: UK PM Starmer denied US use of RAF Fairford for bomber strikes against Iran (Feb 21).",
     strikeGroup: "9th RW",
     confidence: "confirmed",
     sources: [
       {name: "ItaMilRadar Feb 19", url: "https://www.itamilradar.com/2026/02/19/usaf-u-2-dragon-lady-arrives-at-raf-fairford-possible-transit-signals-continued-isr-posture-shift/"}
     ],
-    updated: "Feb 19, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "rq4_sigonella",
@@ -498,14 +502,15 @@ const assets = [
     prevLabel: "NAS Sigonella, Italy (VP-10, ~Feb 9)",
     movementDate: "2026-02-09",
     location: "Strait of Hormuz patrol + Mediterranean transit",
-    mission: "Continuously patrolling Strait of Hormuz. 2 additional P-8s (VP-10) arrived from Sigonella ~Feb 9 at Isa AB (Bahrain) and Thumrait AB (Oman). 2 more spotted over Mediterranean Feb 20.",
+    mission: "Continuously patrolling Strait of Hormuz. 2 additional P-8s (VP-10) arrived from Sigonella ~Feb 9 at Isa AB (Bahrain) and Thumrait AB (Oman). 2 more spotted over Mediterranean Feb 20. Rare night-time aerial refueling of P-8A by KC-135T observed south of Crete, indicating high-priority continuous sub-hunting/surveillance in Eastern Mediterranean.",
     strikeGroup: "VP-10",
     confidence: "confirmed",
     sources: [
       {name: "CNN Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
-      {name: "The Aviationist Feb 11", url: "https://theaviationist.com/2026/02/11/vt-ang-f35s-depart-ln-for-middle-east/"}
+      {name: "The Aviationist Feb 11", url: "https://theaviationist.com/2026/02/11/vt-ang-f35s-depart-ln-for-middle-east/"},
+      {name: "ItaMilRadar (night ops)", url: "https://www.itamilradar.com/2026/01/02/us-navy-p-8a-awaits-kc-135r-refuelling-south-of-crete-signalling-extended-night-time-surveillance-in-the-eastern-mediterranean/"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "e11a_saudi",
@@ -858,14 +863,14 @@ const assets = [
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "Kuwait/Jordan/Qatar area — surging",
-    mission: "Additional THAAD batteries deploying to Middle East (CNN Jan 29). Protecting Al Udeid, al-Dhafra, key bases from Iranian ballistic missiles. Limited global inventory (~8 batteries total).",
+    mission: "12 THAAD and Patriot air defense systems deploying to Middle East. Protecting Al Udeid, al-Dhafra, Muwaffaq Salti, Prince Sultan AB, and key bases from Iranian ballistic missiles. Limited global inventory (~8 THAAD batteries total, multiple Patriot batteries surging).",
     strikeGroup: "CENTCOM ADA",
     confidence: "unconfirmed",
     sources: [
       {name: "Army Recognition", url: "https://armyrecognition.com/news/army-news/2026/u-s-deploys-more-thaad-air-defense-missiles-to-middle-east-amid-possible-military-action-against-iran"},
       {name: "CNN", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "aegis_romania",
@@ -909,15 +914,15 @@ const assets = [
     lat: 31.83, lng: 36.76,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Azraq, Jordan — MAJOR SURGE hub. ~3,800 + surge personnel",
-    mission: "Feb 2026 MAJOR SURGE: per satellite imagery every visible spot filled. Total: ~30 F-35As, 18 F-15Es, 12 F-16s, 6 EA-18Gs, 2 MQ-9s. Expanded air defense perimeter visible. Patriot batteries + possible THAAD. New primary forward strike hub.",
+    location: "Azraq, Jordan — 70+ combat aircraft, MAJOR SURGE hub",
+    mission: "Feb 21 MAJOR SURGE: 70+ combat aircraft confirmed. Includes ~30 F-35As, 18 F-15Es, 12+ F-16s, 12 A-10C Thunderbolt IIs (newly arrived from Moody AFB), 6 EA-18Gs, 2+ MQ-9s. Every visible parking spot filled per satellite. Expanded air defense perimeter. Patriot batteries + possible THAAD. Primary forward strike hub for any Iran operation.",
     strikeGroup: "CENTCOM Strike Hub",
     confidence: "confirmed",
     sources: [
       {name: "CNN Satellite Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
       {name: "The War Zone", url: "https://www.twz.com/news-features/final-pieces-moving-into-place-for-potential-attack-on-iran"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "diego_garcia_base",
@@ -928,13 +933,13 @@ const assets = [
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "British Indian Ocean Territory — B-52 capable, ~3,000 personnel",
-    mission: "Airfield with B-2/B-52 capable runways. Fuel depots. Maritime pre-positioning. Trump named as Iran strike staging base (Feb 18). Used for B-2 missions in Midnight Hammer. UK-Mauritius sovereignty dispute.",
+    mission: "Airfield with B-2/B-52 capable runways. Fuel depots. Maritime pre-positioning. Trump named as Iran strike staging base (Feb 18). Used for B-2 missions in Midnight Hammer. Feb 21: UK PM Starmer REFUSED US requests to use Diego Garcia for B-2/B-52 bomber strikes against Iran, citing international law. Trump criticized UK's Chagos sovereignty transfer as 'big mistake'. UK-Mauritius sovereignty dispute ongoing.",
     strikeGroup: "USINDOPACOM / CENTCOM",
     confidence: "confirmed",
     sources: [
       {name: "Chatham House", url: "https://www.chathamhouse.org/2026/02/us-military-base-diego-garcia-what-its-strategic-importance"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 22, 2026"
   },
   {
     id: "edca_philippines",
@@ -986,6 +991,79 @@ const assets = [
       {name: "Task & Purpose", url: "https://taskandpurpose.com/news/us-kenya-manda-bay-somalia/"}
     ],
     updated: "Jan 2026"
+  },
+
+  // === NEW ASSETS (Feb 22, 2026) ===
+  {
+    id: "e4b_nightwatch",
+    name: "E-4B Nightwatch ('Doomsday Plane')",
+    type: "surveillance",
+    class: "E-4B NAOC",
+    lat: 38.89, lng: -77.03,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Washington D.C. area — flew with rare callsign ORDER01",
+    mission: "National Airborne Operations Center. Feb 21: Flew to D.C. using rare callsign 'ORDER01' (standard is 'ORDER6') via unusual coastal route. OSINT analysts flagged as significant command-and-control posture shift. E-4B is the president's airborne command post for nuclear war/national emergencies. Only 4 aircraft in fleet.",
+    strikeGroup: "USSTRATCOM / NCA",
+    confidence: "confirmed",
+    sources: [
+      {name: "OSINT tracking Feb 21", url: "https://x.com/sentdefender"}
+    ],
+    updated: "Feb 22, 2026"
+  },
+  {
+    id: "airlift_surge",
+    name: "C-17/C-5M Airlift Surge (38+ heavy transports)",
+    type: "tanker",
+    class: "C-17A / C-5M",
+    lat: 49.0, lng: 12.0,
+    prevLat: 31.0, prevLng: -84.0,
+    prevLabel: "Fort Hood TX / East Coast CONUS (Feb 20-21)",
+    movementDate: "2026-02-21",
+    location: "Europe-to-Middle East corridor — 31 C-17s + 7 C-5Ms tracked",
+    mission: "Unusually high tempo airlift: 31 C-17 Globemaster IIIs and 7 C-5M Super Galaxies tracked between Europe and Middle East in 24 hours. 10+ additional C-17s departed East Coast evening of Feb 21, most from Fort Hood. Significant increase over normal logistical baselines. Supporting rapid forward deployment of personnel, munitions, and air defense systems.",
+    strikeGroup: "AMC / TRANSCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "BBC Feb 21", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"},
+      {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025374290451833157"}
+    ],
+    updated: "Feb 22, 2026"
+  },
+  {
+    id: "a10_jordan",
+    name: "A-10C Thunderbolt II (12 aircraft)",
+    type: "fighter",
+    class: "A-10C Thunderbolt II",
+    lat: 31.87, lng: 36.83,
+    prevLat: 31.04, prevLng: -83.19,
+    prevLabel: "Moody AFB, GA",
+    movementDate: "2026-02-21",
+    location: "Muwaffaq Salti AB, Jordan",
+    mission: "12 A-10C ground-attack aircraft from 23rd Wing, Moody AFB deployed to Jordan. 30mm GAU-8 Avenger rotary cannon. Close air support and battlefield interdiction role. Adds CAS capability to the predominantly air superiority/SEAD package at Muwaffaq Salti.",
+    strikeGroup: "23rd Wing",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 21", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
+    ],
+    updated: "Feb 22, 2026"
+  },
+  {
+    id: "lhd3_kearsarge",
+    name: "USS Kearsarge (LHD-3)",
+    type: "amphibious",
+    class: "Wasp-class LHD (F-35B capable)",
+    lat: 36.0, lng: -72.0,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Atlantic — newly F-35B qualified",
+    mission: "Feb 10: Completed first-ever F-35B flight operations with VMFA-542. Atlantic amphibious forces now fifth-gen capable. Potential rapid deployment asset for Middle East if needed. Could serve as light carrier with F-35B stealth fighters.",
+    strikeGroup: "VMFA-542 / 2nd Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "Military Leak Feb 21", url: "https://militaryleak.com/2026/02/21/amphibious-assault-ship-uss-kearsarge-lhd-3-conducts-f-35b-flight-operations-for-the-first-time/"}
+    ],
+    updated: "Feb 22, 2026"
   }
 ];
 
