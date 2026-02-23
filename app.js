@@ -80,22 +80,25 @@ const assets = [
     name: "USS Gerald R. Ford (CVN-78)",
     type: "carrier",
     class: "Ford-class",
-    lat: 35.5, lng: 18.0,
+    lat: 37.5, lng: 15.0,
     prevLat: 36.0, prevLng: -5.5,
     prevLabel: "Strait of Gibraltar (Feb 20)",
-    movementDate: "2026-02-21",
-    location: "Eastern Mediterranean — heading east toward Crete, ETA strike range Feb 22-23",
-    mission: "Deployment Day 243+. Transited Strait of Gibraltar Feb 20, now moving east through Mediterranean toward planned position near Crete. Escorted by destroyers USS Mahan (DDG-72), USS Bainbridge (DDG-96), and USS Winston S. Churchill (DDG-81). CVW-8 embarked: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Combined with Lincoln CSG in Arabian Sea = largest US naval concentration near Iran since 2003. Analysts report possibly 4 CSGs converging on region. On track to break post-Cold War deployment record.",
+    movementDate: "2026-02-22",
+    location: "South of Italy, Mediterranean — expected to position off Israel shortly",
+    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
+      {name: "New York Times Feb 22", url: "https://www.nytimes.com/2026/02/22/us/politics/trump-considers-targeted-strike-against-iran-followed-by-larger-attack.html"},
+      {name: "OSINTdefender (Churchill transit)", url: "https://x.com/sentdefender/status/2025706655501910527"},
       {name: "Stars and Stripes Feb 20", url: "https://www.stripes.com/branches/navy/2026-02-20/ford-middle-east-mediterranean-iran-20813486.html"},
       {name: "ItaMilRadar Feb 20", url: "https://www.itamilradar.com/2026/02/20/us-carrier-strike-group-12-enters-the-mediterranean-via-gibraltar-signaling-rapid-airpower-option-toward-iran/"},
       {name: "USNI Fleet Tracker Feb 17", url: "https://news.usni.org/2026/02/17/usni-news-fleet-and-marine-tracker-feb-17-2026"},
       {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
       {name: "The Media Line Feb 21", url: "https://themedialine.org/top-stories/largest-us-military-buildup-since-2003-raises-prospect-of-multi-week-strike-on-iran/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Moved south of Italy, heading toward Israel"
   },
   {
     id: "cvn72",
@@ -114,7 +117,8 @@ const assets = [
       {name: "Forbes Feb 5", url: "https://www.forbes.com/sites/petersuciu/2026/02/05/the-abraham-lincoln-carrier-strike-group-is-operating-near-iran/"},
       {name: "19FortyFive Feb 12", url: "https://www.19fortyfive.com/2026/02/supercarrier-surge-the-u-s-navy-is-preparing-to-send-multiple-aircraft-carriers-to-strike-iran/"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 20, 2026",
+    changeSummary: "Stationed in Arabian Sea near Iran"
   },
   {
     id: "cvn73",
@@ -131,7 +135,8 @@ const assets = [
     sources: [
       {name: "Navy.mil Dec 2025", url: "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/4357262/george-washington-returns-to-yokosuka/"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 20, 2026",
+    changeSummary: "In maintenance at Yokosuka, Japan"
   },
   {
     id: "cvn71",
@@ -149,7 +154,8 @@ const assets = [
       {name: "DVIDS Feb 14", url: "https://www.dvidshub.net/unit/USSTR-CVN71"},
       {name: "Forbes Jan 24", url: "https://www.forbes.com/sites/petersuciu/2026/01/24/us-navy-supercarrier-departed-san-diego-beginning-pacific-deployment/"}
     ],
-    updated: "Feb 14, 2026"
+    updated: "Feb 14, 2026",
+    changeSummary: "Pre-deployment workups in San Diego"
   },
   {
     id: "cvn77",
@@ -167,7 +173,8 @@ const assets = [
       {name: "The War Zone Feb 11", url: "https://www.twz.com/news-features/second-carrier-strike-group-ordered-to-spin-up-for-deployment-to-middle-east-report"},
       {name: "OSINT @ianellisjones", url: "https://x.com/ianellisjones/status/2012324333025169649"}
     ],
-    updated: "Feb 11, 2026"
+    updated: "Feb 11, 2026",
+    changeSummary: "COMPTUEX workups, potential ME deployment ordered"
   },
   // === AMPHIBIOUS READY GROUPS ===
   {
@@ -185,7 +192,8 @@ const assets = [
     sources: [
       {name: "19FortyFive Feb 17", url: "https://www.19fortyfive.com/2026/02/u-s-navy-mini-aircraft-carrier-assault-ship-uss-iwo-jima-could-be-out-of-action-until-february-2028/"}
     ],
-    updated: "Feb 17, 2026"
+    updated: "Feb 17, 2026",
+    changeSummary: "Operating in Caribbean, SOUTHCOM ops"
   },
   {
     id: "lha7",
@@ -202,7 +210,8 @@ const assets = [
     sources: [
       {name: "USMC Video Feb 2", url: "https://www.youtube.com/watch?v=DxNgJ0k4_Mc"}
     ],
-    updated: "Feb 2, 2026"
+    updated: "Feb 2, 2026",
+    changeSummary: "Forward-deployed in Philippine Sea"
   },
 
   // === STRATEGIC BOMBERS ===
@@ -222,7 +231,8 @@ const assets = [
     sources: [
       {name: "Zona Militar Feb 19", url: "https://www.zona-militar.com/en/2026/02/19/japanese-f-15-and-f-2-fighters-escorted-u-s-air-force-b-52h-bombers-in-the-pacific-for-the-first-time-in-2026/"}
     ],
-    updated: "Feb 18, 2026"
+    updated: "Feb 18, 2026",
+    changeSummary: "Bomber task force rotation to Guam"
   },
   {
     id: "b52_diego",
@@ -241,7 +251,8 @@ const assets = [
       {name: "The War Zone", url: "https://www.twz.com/air/b-52s-join-b-2s-on-diego-garcia10-bombers-now-on-indian-ocean-island"},
       {name: "The Week Feb 20", url: "https://www.theweek.in/news/middle-east/2026/02/20/no-b-2s-for-iran-trumps-magnificent-bombers-face-hurdle-as-uk-denies-base-access.html"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "UK denied base access for Iran strikes"
   },
   {
     id: "b2_whiteman",
@@ -259,7 +270,8 @@ const assets = [
       {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/pentagon-restock-massive-ordinance-penetrator-bombs-dropped-b-2s-iran/"},
       {name: "The Week Feb 20 (UK basing)", url: "https://www.theweek.in/news/middle-east/2026/02/20/no-b-2s-for-iran-trumps-magnificent-bombers-face-hurdle-as-uk-denies-base-access.html"}
     ],
-    updated: "Feb 20, 2026"
+    updated: "Feb 20, 2026",
+    changeSummary: "MOP restocking underway, UK blocking basing"
   },
   {
     id: "b21_edwards",
@@ -276,7 +288,8 @@ const assets = [
     sources: [
       {name: "USAF Official", url: "https://www.af.mil/News/Article-Display/Article/4301502/us-air-force-announces-arrival-of-second-b-21-test-aircraft-at-edwards-afb/"}
     ],
-    updated: "Feb 18, 2026"
+    updated: "Feb 18, 2026",
+    changeSummary: "Flight test campaign, not operational"
   },
 
   // === FIGHTERS ===
@@ -298,7 +311,8 @@ const assets = [
       {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-raptors-sighted-in-uk-may-indicate-possible-reinforcement-of-middle-east-airpower-posture"},
       {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025356418384327035"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "12 Raptors departing UK for Middle East Monday"
   },
   {
     id: "f35_jordan",
@@ -318,7 +332,8 @@ const assets = [
       {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/f-35s-deploy-middle-east-us-talks-iran/"},
       {name: "Army Recognition Feb 21", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-sends-18-more-f-35a-fighter-jets-from-uk-to-middle-east-as-iran-nuclear-talks-begin"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "30 stealth fighters confirmed at Jordan"
   },
   {
     id: "f15e_jordan",
@@ -337,7 +352,8 @@ const assets = [
       {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/f-35s-deploy-middle-east-us-talks-iran/"},
       {name: "BBC", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "18 Strike Eagles deployed for bunker-busting"
   },
   {
     id: "f16_jordan",
@@ -357,7 +373,8 @@ const assets = [
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
       {name: "The War Zone (Angry Kitten)", url: "https://www.twz.com/air/f-16s-heading-to-middle-east-equipped-with-angry-kitten-electronic-warfare-pods"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Wild Weasel SEAD jets with Angry Kitten pods"
   },
 
   // === TANKERS ===
@@ -378,7 +395,8 @@ const assets = [
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
       {name: "ACC Official", url: "https://www.acc.af.mil/News/Article-Display/Article/4400254/next-generation-air-tankers-arrive-in-centcom-aor/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "50+ tankers surged, compensating for UK denials"
   },
   {
     id: "tankers_mildenhall",
@@ -395,7 +413,8 @@ const assets = [
     sources: [
       {name: "USAFE", url: "https://www.usafe.af.mil/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Supporting transatlantic fighter flow to ME"
   },
 
   // === LAJES FIELD STAGING ===
@@ -416,7 +435,8 @@ const assets = [
       {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
       {name: "Instagram OSINT Feb 17", url: "https://www.instagram.com/p/DU3KzMtiH4P/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Largest-ever US aircraft surge at Azores"
   },
 
   // === SURVEILLANCE / ISR ===
@@ -437,7 +457,8 @@ const assets = [
       {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-deploys-nearly-40-of-entire-e-3-sentry-awacs-fleet-to-middle-east-for-potential-war-against-iran"},
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"}
     ],
-    updated: "Feb 18, 2026"
+    updated: "Feb 18, 2026",
+    changeSummary: "37.5% of AWACS fleet deployed to Saudi"
   },
   {
     id: "rc135_mildenhall",
@@ -455,7 +476,8 @@ const assets = [
       {name: "ItaMilRadar Jan 30", url: "https://www.itamilradar.com/2026/01/30/uk-rc-135-and-us-p-8a-operate-together-over-the-black-sea-tightening-natos-isr-net-near-russias-southern-flank/"},
       {name: "Army Recognition Jan 6", url: "https://armyrecognition.com/news/aerospace-news/2026/u-s-rc-135w-rivet-joint-reconnaissance-aircraft-conducts-intelligence-mission-near-venezuela"}
     ],
-    updated: "Jan 30, 2026"
+    updated: "Jan 30, 2026",
+    changeSummary: "SIGINT missions over Black Sea and CENTCOM"
   },
   {
     id: "u2_fairford",
@@ -473,7 +495,8 @@ const assets = [
     sources: [
       {name: "ItaMilRadar Feb 19", url: "https://www.itamilradar.com/2026/02/19/usaf-u-2-dragon-lady-arrives-at-raf-fairford-possible-transit-signals-continued-isr-posture-shift/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "ISR rotation; UK denied bomber base access"
   },
   {
     id: "rq4_sigonella",
@@ -490,7 +513,8 @@ const assets = [
     sources: [
       {name: "Army Recognition Feb 3", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-deploys-rq-4b-global-hawk-for-surveillance-mission-over-the-black-sea"}
     ],
-    updated: "Feb 3, 2026"
+    updated: "Feb 3, 2026",
+    changeSummary: "Black Sea surveillance from Sigonella"
   },
   {
     id: "p8_hormuz",
@@ -510,7 +534,8 @@ const assets = [
       {name: "The Aviationist Feb 11", url: "https://theaviationist.com/2026/02/11/vt-ang-f35s-depart-ln-for-middle-east/"},
       {name: "ItaMilRadar (night ops)", url: "https://www.itamilradar.com/2026/01/02/us-navy-p-8a-awaits-kc-135r-refuelling-south-of-crete-signalling-extended-night-time-surveillance-in-the-eastern-mediterranean/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Night refueling south of Crete, sub-hunting ops"
   },
   {
     id: "e11a_saudi",
@@ -527,7 +552,8 @@ const assets = [
     sources: [
       {name: "CNN Satellite", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Comms relay nodes deployed to Prince Sultan"
   },
   {
     id: "mq9_jordan",
@@ -544,7 +570,8 @@ const assets = [
     sources: [
       {name: "The War Zone", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Reaper drones at Muwaffaq Salti"
   },
   {
     id: "ea18g_jordan",
@@ -562,7 +589,8 @@ const assets = [
     sources: [
       {name: "The War Zone", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Electronic warfare jets at Jordan"
   },
 
   // === SUBMARINES ===
@@ -583,7 +611,8 @@ const assets = [
       {name: "JFeed Feb 18", url: "https://www.jfeed.com/news-world/uss-georgia-submarine-iran"},
       {name: "National Interest (Midnight Hammer)", url: "https://nationalinterest.org/blog/buzz/this-ohio-class-submarine-blasted-iran-with-cruise-missiles-during-operation-midnight-hammer"}
     ],
-    updated: "Feb 18, 2026"
+    updated: "Feb 18, 2026",
+    changeSummary: "Continuously deployed since Aug 2024, CENTCOM"
   },
   {
     id: "ssgn726",
@@ -602,7 +631,8 @@ const assets = [
       {name: "USNI News Sep 2025", url: "https://news.usni.org/2025/09/29/u-s-guided-missile-sub-makes-rare-appearance-in-the-philippines"},
       {name: "National Security Journal", url: "https://nationalsecurityjournal.org/the-u-s-navys-great-ohio-class-ssgn-submarine-comeback-has-begun/"}
     ],
-    updated: "Sep 2025 (last known)"
+    updated: "Sep 2025 (last known)",
+    changeSummary: "Western Pacific, last seen Subic Bay Sep 2025"
   },
   {
     id: "ssn21",
@@ -621,7 +651,8 @@ const assets = [
       {name: "DVIDS Dec 2025", url: "https://www.dvidshub.net/image/9458368/uss-seawolf-ssn-21-pulls-into-fleet-activities-yokosuka"},
       {name: "19FortyFive", url: "https://www.19fortyfive.com/2026/01/the-u-s-navy-sent-a-nuclear-aircraft-carrier-and-seawolf-class-stealth-sub-into-chinas-backyard/"}
     ],
-    updated: "Dec 2025"
+    updated: "Dec 2025",
+    changeSummary: "Operating with Lincoln CSG in Western Pacific"
   },
   {
     id: "ssbn_bangor",
@@ -639,7 +670,8 @@ const assets = [
       {name: "SSP Official", url: "https://www.ssp.navy.mil/About-Us/SSP-Mission/Sustainment/"},
       {name: "Seapower Magazine", url: "https://seapowermagazine.org/successful-trident-ii-d5-life-extension-d5le-launches-demonstrate-continued-readiness-of-nations-sea-based-deterrent/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Continuous Pacific deterrence patrols"
   },
   {
     id: "ssbn_kingsbay",
@@ -656,7 +688,8 @@ const assets = [
     sources: [
       {name: "SSP Official", url: "https://www.ssp.navy.mil/About-Us/SSP-Mission/Sustainment/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Continuous Atlantic deterrence patrols"
   },
 
   // === SPECIAL NAVAL ===
@@ -675,7 +708,8 @@ const assets = [
     sources: [
       {name: "HII Official Jan 2026", url: "https://hii.com/news/hii-completes-builders-sea-trials-for-uss-zumwalt-ddg-1000/"}
     ],
-    updated: "Jan 21, 2026"
+    updated: "Jan 21, 2026",
+    changeSummary: "Hypersonic weapon install, sea trials complete"
   },
   {
     id: "lcs32",
@@ -692,7 +726,8 @@ const assets = [
     sources: [
       {name: "CENTCOM Official", url: "https://www.centcom.mil/MEDIA/igphoto/2002555983/"}
     ],
-    updated: "Feb 2, 2026"
+    updated: "Feb 2, 2026",
+    changeSummary: "Forward deployed in Arabian Gulf"
   },
 
   // === MAJOR BASES ===
@@ -711,7 +746,8 @@ const assets = [
     sources: [
       {name: "CEPA", url: "https://cepa.org/article/going-going-the-us-base-network-in-europe/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Staging AWACS and transiting assets to ME"
   },
   {
     id: "al_udeid",
@@ -730,7 +766,8 @@ const assets = [
       {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
       {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
-    updated: "Feb 21, 2026"
+    updated: "Feb 21, 2026",
+    changeSummary: "Tanker drawdown, dispersal to Jordan/Saudi"
   },
   {
     id: "camp_humphreys",
@@ -747,7 +784,8 @@ const assets = [
     sources: [
       {name: "CRS Report", url: "https://www.everycrsreport.com/files/2026-02-05_IF12604_f36b7c6fadf8166b14633da7b1fe0635a054fbcc.html"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Largest US overseas base, USFK HQ"
   },
   {
     id: "kadena",
@@ -764,7 +802,8 @@ const assets = [
     sources: [
       {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-deploys-nearly-40-of-entire-e-3-sentry-awacs-fleet-to-middle-east-for-potential-war-against-iran"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "All AWACS stripped for Middle East surge"
   },
   {
     id: "camp_lemonnier",
@@ -781,7 +820,8 @@ const assets = [
     sources: [
       {name: "Camp Lemonnier Official", url: "https://cnreurafcent.cnic.navy.mil/Installations/Camp-Lemonnier-Djibouti/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Only permanent US base in Africa"
   },
   {
     id: "nsa_bahrain",
@@ -799,7 +839,8 @@ const assets = [
       {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
       {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
-    updated: "Feb 21, 2026"
+    updated: "Feb 21, 2026",
+    changeSummary: "Contradictory evacuation reports, 5th Fleet HQ"
   },
   {
     id: "rota",
@@ -816,7 +857,8 @@ const assets = [
     sources: [
       {name: "Defense Priorities", url: "https://www.defensepriorities.org/explainers/aligning-global-military-posture-with-us-interests/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "4 Aegis BMD destroyers homeported"
   },
 
   // === MISSILE DEFENSE ===
@@ -835,7 +877,8 @@ const assets = [
     sources: [
       {name: "MDAA", url: "https://www.missiledefenseadvocacy.org/defense-systems/terminal-high-altitude-area-defense-thaad/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Permanent THAAD battery, 48 interceptors"
   },
   {
     id: "thaad_guam",
@@ -852,7 +895,8 @@ const assets = [
     sources: [
       {name: "Defense News GAO", url: "https://www.defensenews.com/pentagon/2025/05/28/no-clear-plan-for-supporting-guam-missile-defense-system-gao-finds/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "Permanent since 2016, expansion planned"
   },
   {
     id: "thaad_me",
@@ -870,7 +914,8 @@ const assets = [
       {name: "Army Recognition", url: "https://armyrecognition.com/news/army-news/2026/u-s-deploys-more-thaad-air-defense-missiles-to-middle-east-amid-possible-military-action-against-iran"},
       {name: "CNN", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "12 THAAD and Patriot systems deploying"
   },
   {
     id: "aegis_romania",
@@ -887,7 +932,8 @@ const assets = [
     sources: [
       {name: "US Navy", url: "https://www.navy.mil/Press-Office/News-Stories/Article/3620258/the-aegis-ashore-missile-defense-system-in-naval-support-facility-redizkowo-pol/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "SM-3 interceptors operational since 2016"
   },
   {
     id: "aegis_poland",
@@ -904,7 +950,8 @@ const assets = [
     sources: [
       {name: "Defence Industry EU", url: "https://defence-industry.eu/u-s-navy-appoints-new-commander-at-redzikowo-aegis-ashore-missile-defence-facility-in-poland/"}
     ],
-    updated: "Dec 2025"
+    updated: "Dec 2025",
+    changeSummary: "NATO EPAA network, operational"
   },
   {
     id: "muwaffaq_base",
@@ -922,7 +969,8 @@ const assets = [
       {name: "CNN Satellite Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
       {name: "The War Zone", url: "https://www.twz.com/news-features/final-pieces-moving-into-place-for-potential-attack-on-iran"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "70+ combat aircraft, primary forward strike hub"
   },
   {
     id: "diego_garcia_base",
@@ -939,7 +987,8 @@ const assets = [
     sources: [
       {name: "Chatham House", url: "https://www.chathamhouse.org/2026/02/us-military-base-diego-garcia-what-its-strategic-importance"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "UK refused access for bomber strikes"
   },
   {
     id: "edca_philippines",
@@ -956,7 +1005,8 @@ const assets = [
     sources: [
       {name: "PACOM EDCA", url: "https://www.pacom.mil/Media/NEWS/Article/3350502/philippines-us-announce-locations-of-four-new-edca-sites/"}
     ],
-    updated: "Feb 2026"
+    updated: "Feb 2026",
+    changeSummary: "9 EDCA sites, Taiwan contingency posture"
   },
   {
     id: "mrf_darwin",
@@ -973,7 +1023,8 @@ const assets = [
     sources: [
       {name: "PACOM", url: "https://www.pacom.mil/Media/NEWS/Article/1918439/us-marines-reach-2500-in-darwin-for-first-time/"}
     ],
-    updated: "2025"
+    updated: "2025",
+    changeSummary: "2,500 Marines with HIMARS, max strength"
   },
   {
     id: "manda_bay",
@@ -990,7 +1041,8 @@ const assets = [
     sources: [
       {name: "Task & Purpose", url: "https://taskandpurpose.com/news/us-kenya-manda-bay-somalia/"}
     ],
-    updated: "Jan 2026"
+    updated: "Jan 2026",
+    changeSummary: "$70M runway expansion, Somalia counterterror"
   },
 
   // === NEW ASSETS (Feb 22, 2026) ===
@@ -1009,7 +1061,8 @@ const assets = [
     sources: [
       {name: "OSINT tracking Feb 21", url: "https://x.com/sentdefender"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Rare ORDER01 callsign, command posture shift"
   },
   {
     id: "airlift_surge",
@@ -1028,7 +1081,8 @@ const assets = [
       {name: "BBC Feb 21", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"},
       {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025374290451833157"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "38+ heavy transports Europe-to-ME corridor"
   },
   {
     id: "a10_jordan",
@@ -1046,7 +1100,8 @@ const assets = [
     sources: [
       {name: "The War Zone Feb 21", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "12 ground-attack aircraft deployed to Jordan"
   },
   {
     id: "lhd3_kearsarge",
@@ -1063,7 +1118,8 @@ const assets = [
     sources: [
       {name: "Military Leak Feb 21", url: "https://militaryleak.com/2026/02/21/amphibious-assault-ship-uss-kearsarge-lhd-3-conducts-f-35b-flight-operations-for-the-first-time/"}
     ],
-    updated: "Feb 22, 2026"
+    updated: "Feb 22, 2026",
+    changeSummary: "Newly F-35B qualified, fifth-gen capable"
   }
 ];
 
@@ -1718,17 +1774,34 @@ function buildTicker() {
   // Take top 20 most recently updated for the ticker
   const recent = sorted.slice(0, 20);
 
+  // Relative time helper
+  function relativeTime(dateStr) {
+    const d = parseUpdateDate(dateStr);
+    if (d.getFullYear() <= 2020) return '';
+    const now = new Date();
+    const diffMs = now - d;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHrs = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    if (diffMins < 60) return diffMins + 'm ago';
+    if (diffHrs < 24) return diffHrs + 'h ago';
+    if (diffDays < 30) return diffDays + 'd ago';
+    return '';
+  }
+
   // Build ticker items (duplicated for infinite scroll)
   function buildItems() {
     return recent.map(asset => {
       const typeInfo = ASSET_TYPES[asset.type];
       const isConf = asset.confidence === 'confirmed';
       const shortLoc = asset.location.split(' — ')[0].substring(0, 50);
+      const rel = relativeTime(asset.updated);
+      const timeDisplay = rel ? `${asset.updated} <span class="ticker-rel">${rel}</span>` : asset.updated;
       return `<span class="ticker-item" data-id="${asset.id}" onclick="tickerClick('${asset.id}')">` +
         `<span class="ticker-dot ${isConf ? 'confirmed' : 'unconfirmed'}"></span>` +
         `<span style="color:${typeInfo.color}">${getShortName(asset.name)}</span> ` +
         `${shortLoc} ` +
-        `<span class="ticker-time">${asset.updated}</span>` +
+        `<span class="ticker-time">${timeDisplay}</span>` +
         `</span><span class="ticker-sep">│</span>`;
     }).join('');
   }
