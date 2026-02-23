@@ -203,7 +203,7 @@
 
     .card-main {
       flex: 1;
-      padding: 12px 16px;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -244,6 +244,24 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .card-summary {
+      font-size: 11px;
+      color: var(--amber);
+      margin-top: 4px;
+      font-style: italic;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      opacity: 0.85;
+    }
+
+    .card-rel {
+      color: var(--amber);
+      font-size: 9px;
+      margin-left: 4px;
+      font-weight: 600;
     }
 
     .card-meta {
@@ -504,6 +522,20 @@
     let allAssets = [];
     let currentFilter = 'all';
 
+    function relativeTime(dateStr) {
+      const d = parseUpdateDate(dateStr);
+      if (d.getFullYear() <= 2020) return '';
+      const now = new Date();
+      const diffMs = now - d;
+      const diffMins = Math.floor(diffMs / 60000);
+      const diffHrs = Math.floor(diffMs / 3600000);
+      const diffDays = Math.floor(diffMs / 86400000);
+      if (diffMins < 60) return diffMins + 'm ago';
+      if (diffHrs < 24) return diffHrs + 'h ago';
+      if (diffDays < 30) return diffDays + 'd ago';
+      return '';
+    }
+
     function renderUpdates() {
       const list = document.getElementById('updates-list');
       const countEl = document.getElementById('update-count');
@@ -524,13 +556,16 @@
         const typeInfo = ASSET_TYPES[asset.type] || { label: 'Unknown', color: '#888' };
         const isConf = asset.confidence === 'confirmed';
         const shortLoc = asset.location.split(' — ')[0];
+        const rel = relativeTime(asset.updated);
+        const relHtml = rel ? `<span class="card-rel">${rel}</span>` : '';
+        const summaryHtml = asset.changeSummary ? `<div class="card-summary">${asset.changeSummary}</div>` : '';
 
         const sources = (asset.sources || []).map(s =>
           `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`
         ).join(' &bull; ');
 
         const movement = (asset.prevLat !== null && asset.prevLabel)
-          ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} → Current position</div></div>`
+          ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} \u2192 Current position</div></div>`
           : '';
 
         return `
@@ -542,22 +577,23 @@
                 <div class="card-info">
                   <div class="card-name">${asset.name}</div>
                   <div class="card-location">${shortLoc}</div>
+                  ${summaryHtml}
                 </div>
                 <div class="card-meta">
-                  <span class="card-date">${asset.updated}</span>
+                  <span class="card-date">${asset.updated} ${relHtml}</span>
                   <span class="card-badge ${isConf ? 'confirmed' : 'unconfirmed'}">${isConf ? 'CONFIRMED' : 'UNCONFIRMED'}</span>
                 </div>
-                <div class="card-expand-icon">▾</div>
+                <div class="card-expand-icon">\u25BE</div>
               </div>
               <div class="card-detail">
                 <div class="detail-row">
                   <div class="detail-row-label">TYPE / CLASS</div>
-                  <div class="detail-row-value">${typeInfo.label} — ${asset.class || 'N/A'}</div>
+                  <div class="detail-row-value">${typeInfo.label} \u2014 ${asset.class || 'N/A'}</div>
                 </div>
                 ${asset.strikeGroup ? `<div class="detail-row"><div class="detail-row-label">STRIKE GROUP / UNIT</div><div class="detail-row-value">${asset.strikeGroup}</div></div>` : ''}
                 <div class="detail-row">
                   <div class="detail-row-label">LOCATION</div>
-                  <div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}°N, ${asset.lng.toFixed(2)}°${asset.lng >= 0 ? 'E' : 'W'}</span></div>
+                  <div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}\u00b0N, ${asset.lng.toFixed(2)}\u00b0${asset.lng >= 0 ? 'E' : 'W'}</span></div>
                 </div>
                 ${movement}
                 <div class="detail-row">
@@ -565,7 +601,7 @@
                   <div class="detail-row-value">${asset.mission}</div>
                 </div>
                 ${sources ? `<div class="detail-row"><div class="detail-row-label">SOURCES</div><div class="detail-row-value">${sources}</div></div>` : ''}
-                <a href="./index.html" class="map-link-btn">VIEW ON MAP ▸</a>
+                <a href="./index.html" class="map-link-btn">VIEW ON MAP \u25b8</a>
               </div>
             </div>
           </div>

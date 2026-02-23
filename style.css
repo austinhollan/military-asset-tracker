@@ -576,7 +576,7 @@ html, body {
   display: flex;
   gap: 0;
   white-space: nowrap;
-  animation: ticker-scroll 90s linear infinite;
+  animation: ticker-scroll 180s linear infinite;
   will-change: transform;
 }
 
@@ -623,6 +623,12 @@ html, body {
 .ticker-time {
   color: var(--text-muted);
   font-size: 9px;
+}
+
+.ticker-rel {
+  color: var(--amber-dim);
+  font-size: 9px;
+  margin-left: 3px;
 }
 
 .ticker-sep {
