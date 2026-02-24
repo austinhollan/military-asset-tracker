@@ -1,1 +1,4 @@
-CONTENT_PLACEHOLDER_APP_JS
+// ============================================================
+// US MILITARY ASSET TRACKER — app.js
+// ============================================================
+CONTENT_TOO_LARGE_SEE_WORKSPACE
