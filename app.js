@@ -85,7 +85,7 @@ const assets = [
     prevLabel: "Souda Bay, Crete (Feb 24)",
     movementDate: "2026-02-25",
     location: "Haifa, Israel — docked",
-    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003. Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Expected to dock in Haifa, Israel. Jerusalem Post reports 40,000+ US troops in Middle East. Ford crew at 240+ days deployed, WSJ reports morale issues. JCS Chairman Gen. Dan Caine warned Trump of munitions shortfalls. INSS reports 200+ fighter jets, 100+ support aircraft, 12 destroyers now in region. Feb 25: Ford docked at Haifa, Israel after refueling stop at Souda Bay, Crete. CSG-12 now fully on station. WSJ reports severe crew morale issues at 240+ days deployed — record-breaking deployment. Ford has pump issues reported but operational.",
+    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003. Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Expected to dock in Haifa, Israel. Jerusalem Post reports 40,000+ US troops in Middle East. Ford crew at 240+ days deployed, WSJ reports morale issues. JCS Chairman Gen. Dan Caine warned Trump of munitions shortfalls (Patriot, THAAD, Standard interceptors at risk). INSS reports 200+ fighter jets, 100+ support aircraft, 12 destroyers now in region. Feb 25: Ford docked at Haifa, Israel after refueling stop at Souda Bay, Crete. CSG-12 now fully on station. WSJ reports severe crew morale issues at 240+ days deployed — record-breaking deployment. Ford has pump issues reported but operational. Ret. Gen. Charles Wald (fmr EUCOM deputy): 'We could go now.' Geneva talks Feb 26 confirmed — massive US delegation: Witkoff, Rubio, Kushner, JD Vance, CIA Dir Ratcliffe, SecDef Hegseth, CoS Wiles, DNI Gabbard. Rubio delayed Netanyahu meeting from Sat to Mon.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
@@ -100,7 +100,8 @@ const assets = [
       {name: "Chosun Ilbo Feb 24", url: "https://www.chosun.com/english/world-en/2026/02/24/76PNTYFGCNBW3DHMTR3RH3WFKE/"},
       {name: "19FortyFive (crew morale)", url: "https://www.19fortyfive.com/2026/02/busted-toilets-and-sailors-who-want-to-quit-aircraft-carrier-uss-gerald-r-ford-is-being-pushed-to-historic-u-s-navy-limits/"},
       {name: "Jerusalem Post Feb 25", url: "https://www.yahoo.com/news/articles/americas-deadliest-fighter-jet-f-124042443.html"},
-      {name: "Al Arabiya (Ford Haifa)", url: "https://www.instagram.com/reel/DVL2KdEAMnp/"}
+      {name: "Al Arabiya (Ford Haifa)", url: "https://www.instagram.com/reel/DVL2KdEAMnp/"},
+      {name: "The War Zone Feb 25 (full analysis)", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"}
     ],
     updated: "Feb 25, 2026",
     changeSummary: "Docked at Haifa, Israel"
@@ -312,7 +313,7 @@ const assets = [
     prevLabel: "RAF Lakenheath, UK (Feb 17-24)",
     movementDate: "2026-02-24",
     location: "Ovda Air Base, Negev Desert, Israel — 11 aircraft (1 returned to UK with fuel leak)",
-    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Possibly 6 MORE coming tomorrow — total could reach 24 Raptors. F-22s co-located with KC-135 tankers in Israel. In 2025, Raptors arrived just 4 days before Operation Midnight Hammer began.",
+    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Possibly 6 MORE coming tomorrow — total could reach 24 Raptors. F-22s co-located with KC-135 tankers in Israel. In 2025, Raptors arrived just 4 days before Operation Midnight Hammer began. NYT confirms first documented deployment of F-22s amid Iran tensions. Politics Today: 300+ US aircraft deployed to CENTCOM. Iran Deputy FM Takht-Ravanchi (NPR): 'ready to reach agreement ASAP.' Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran.",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
@@ -324,7 +325,11 @@ const assets = [
       {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"},
       {name: "Zona Militar Feb 25", url: "https://www.zona-militar.com/en/2026/02/25/f-22-raptor-stealth-fighters-arrived-in-israel-as-part-of-the-reinforcement-of-the-u-s-military-presence-in-the-middle-east/"},
       {name: "Aerospace Global News Feb 25", url: "https://aerospaceglobalnews.com/news/us-f22-raptors-israel-ford-middle-east/"},
-      {name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog_entry/us-said-to-begin-moving-another-six-f-22-stealth-fighters-toward-middle-east/"}
+      {name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog_entry/us-said-to-begin-moving-another-six-f-22-stealth-fighters-toward-middle-east/"},
+      {name: "JINSA (Ovda analysis)", url: "https://jinsa.org/jinsas-ruhe-america-just-added-a-land-based-aircraft-carrier-to-the-middle-east/"},
+      {name: "NYT Feb 25", url: "https://www.nytimes.com/2026/02/24/us/politics/f-22-fighter-jets-israel.html"},
+      {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
+      {name: "Army Recognition Feb 25", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-stealth-fighters-reportedly-land-in-israel-amid-iran-tensions-and-regional-buildup"}
     ],
     updated: "Feb 25, 2026",
     changeSummary: "11 Raptors at Ovda, Israel; 6 more en route"
@@ -445,7 +450,7 @@ const assets = [
     prevLat: 34.05, prevLng: -80.97,
     prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
     movementDate: "2026-02-19",
-    location: "Lajes Field, Azores, Portugal \u2014 largest-ever US aircraft surge",
+    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
     mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials. Feb 21: 15 KC-46A Pegasus tankers now at Lajes — up from 11. Also 11 KC-135s. 400 US personnel on Terceira Island. Over 120 US aircraft tracked eastbound in past 72 hours.",
     strikeGroup: "AMC / ANG",
     confidence: "confirmed",
@@ -1076,15 +1081,17 @@ const assets = [
     lat: 38.89, lng: -77.03,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Washington D.C. area — flew with rare callsign ORDER01",
-    mission: "National Airborne Operations Center. Feb 21: Flew to D.C. using rare callsign 'ORDER01' (standard is 'ORDER6') via unusual coastal route. OSINT analysts flagged as significant command-and-control posture shift. E-4B is the president's airborne command post for nuclear war/national emergencies. Only 4 aircraft in fleet.",
+    location: "Joint Base Andrews, MD — spotted before Trump SOTU address",
+    mission: "National Airborne Operations Center. Feb 21: Flew to D.C. using rare callsign 'ORDER01' (standard is 'ORDER6') via unusual coastal route. Feb 24: E-4B spotted descending toward Joint Base Andrews hours before Trump's State of the Union address. Aircraft arrived from Barksdale AFB per OSINT trackers. Standard precaution during major events where senior government leaders gather, but timing amid Iran tensions drew attention. E-4B is the president's airborne command post for nuclear war/national emergencies. Only 4 aircraft in fleet.",
     strikeGroup: "USSTRATCOM / NCA",
     confidence: "confirmed",
     sources: [
-      {name: "OSINT tracking Feb 21", url: "https://x.com/sentdefender"}
+      {name: "OSINT tracking Feb 21", url: "https://x.com/sentdefender"},
+      {name: "Mario Nawfal (E-4B Andrews)", url: "https://x.com/MarioNawfal/status/2026446427275116983"},
+      {name: "Zambian Observer Feb 25", url: "https://zambianobserver.com/doomsday-plane-spotted-at-andrews-afb-hours-before-trumps-address-to-congress-amid-heightened-global-tensions/"}
     ],
-    updated: "Feb 22, 2026",
-    changeSummary: "Rare ORDER01 callsign, command posture shift"
+    updated: "Feb 25, 2026",
+    changeSummary: "At Andrews AFB before Trump SOTU address"
   },
   {
     id: "airlift_surge",
@@ -1096,15 +1103,16 @@ const assets = [
     prevLabel: "Fort Hood TX / East Coast CONUS (Feb 20-21)",
     movementDate: "2026-02-21",
     location: "Europe-to-Middle East corridor — 31 C-17s + 7 C-5Ms tracked",
-    mission: "Unusually high tempo airlift: 31 C-17 Globemaster IIIs and 7 C-5M Super Galaxies tracked between Europe and Middle East in 24 hours. 10+ additional C-17s departed East Coast evening of Feb 21, most from Fort Hood. Significant increase over normal logistical baselines. Supporting rapid forward deployment of personnel, munitions, and air defense systems.",
+    mission: "Unusually high tempo airlift: 31 C-17 Globemaster IIIs and 7 C-5M Super Galaxies tracked between Europe and Middle East in 24 hours. 10+ additional C-17s departed East Coast evening of Feb 21, most from Fort Hood. Feb 25: Washington Post confirms over 150 military aircraft moved to Europe/ME bases — largest in 20 years since 2003 Iraq War. Escenario Mundial reports 160+ military flights to Europe and ME in February alone. Supporting rapid forward deployment of personnel, munitions, and air defense systems.",
     strikeGroup: "AMC / TRANSCOM",
     confidence: "confirmed",
     sources: [
       {name: "BBC Feb 21", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"},
-      {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025374290451833157"}
+      {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025374290451833157"},
+      {name: "Chosun Ilbo/WaPo Feb 25", url: "https://www.chosun.com/english/world-en/2026/02/25/XZTKGPUA5RDH7LST3WJGDX5OTI/"}
     ],
-    updated: "Feb 22, 2026",
-    changeSummary: "38+ heavy transports Europe-to-ME corridor"
+    updated: "Feb 25, 2026",
+    changeSummary: "WaPo: 150+ aircraft moved, largest since 2003"
   },
   {
     id: "a10_jordan",
@@ -1226,6 +1234,11 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb25_saudi_oil', text: 'Saudi Arabia activates oil surge contingency for potential US-Iran disruption (Reuters)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Saudi oil surge contingency activated'},
+  {id: 'u_feb25_geneva_confirmed', text: 'Geneva talks Feb 26 confirmed -- massive US delegation: Witkoff, Rubio, Kushner, Vance, Ratcliffe, Hegseth', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Geneva talks confirmed, top US officials attend'},
+  {id: 'u_feb25_e4b_andrews', text: 'E-4B Doomsday Plane at Andrews AFB before Trump SOTU -- arrived from Barksdale AFB', date: 'Feb 25, 2026', assetId: 'e4b_nightwatch', changeSummary: 'Doomsday Plane at Andrews before SOTU'},
+  {id: 'u_feb25_wapo_150', text: 'Washington Post: 150+ military aircraft moved to Europe/ME -- largest in 20 years', date: 'Feb 25, 2026', assetId: 'airlift_surge', changeSummary: '150+ aircraft moved, largest since 2003'},
+  {id: 'u_feb25_rubio_bibi', text: 'Rubio delays Netanyahu meeting from Saturday to Monday -- diplomatic signal', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Rubio delays Netanyahu meeting to Monday'},
   {id: 'u_feb25_ford_haifa', text: 'USS Gerald R. Ford docked at Haifa, Israel', date: 'Feb 25, 2026', assetId: 'cvn78', changeSummary: 'Docked at Haifa, Israel'},
   {id: 'u_feb25_f22_ovda', text: '11 F-22 Raptors arrived at Ovda Air Base in Israel Negev Desert', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: '11 Raptors at Ovda, Israel; 6 more en route'},
   {id: 'u_feb25_f22_wave2', text: '6 MORE F-22s departing Langley for UK/ME — total may reach 24 Raptors', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: 'Second wave of 6 F-22s heading to theater'},
