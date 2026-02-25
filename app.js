@@ -402,7 +402,7 @@ const assets = [
   // === TANKERS ===
   {
     id: "tankers_surge",
-    name: "KC-46A/KC-135 Tanker Surge (50+)",
+    name: "KC-46A/KC-135 Tanker Surge (75+ deployed, 108 total)",
     type: "tanker",
     class: "KC-46A / KC-135",
     lat: 24.06, lng: 45.52,
@@ -410,16 +410,18 @@ const assets = [
     prevLabel: "Seymour Johnson AFB, NC / CONUS bases (Feb 15-18)",
     movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + en route",
-    mission: "50+ tankers now positioned along Atlantic and Mediterranean bomber/fighter routes. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 50+ tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s.",
+    mission: "75 KC-46A/KC-135 tankers deployed or en route per Politics Today analysis. Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 108 tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s. Feb 25: 270+ C-17/C-5 cargo flights have supported buildup since early January, delivering personnel, aircraft components, and THAAD/Patriot systems.",
     strikeGroup: "CENTCOM AOR",
     confidence: "confirmed",
     sources: [
       {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
       {name: "ACC Official", url: "https://www.acc.af.mil/News/Article-Display/Article/4400254/next-generation-air-tankers-arrive-in-centcom-aor/"},
-      {name: "AIRLIVE Feb 21", url: "https://airlive.net/military/2026/02/21/a-massive-number-of-us-air-force-tankers-have-been-spotted-at-lajes-field-in-the-azores/"}
+      {name: "AIRLIVE Feb 21", url: "https://airlive.net/military/2026/02/21/a-massive-number-of-us-air-force-tankers-have-been-spotted-at-lajes-field-in-the-azores/"},
+      {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
+      {name: "Responsible Statecraft", url: "https://responsiblestatecraft.org/iran-war-gulf-states/"}
     ],
-    updated: "Feb 24, 2026",
-    changeSummary: "15 KC-46A tankers at Azores; 50+ total in air bridge"
+    updated: "Feb 25, 2026",
+    changeSummary: "108 tankers in/heading to theater; 270+ cargo flights"
   },
   {
     id: "tankers_mildenhall",
@@ -864,7 +866,7 @@ const assets = [
     confidence: "confirmed",
     sources: [
       {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
-      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/2/mapping-us-troops-and-military-bases-in-the-middle-east"}
+      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
     updated: "Feb 21, 2026",
     changeSummary: "Contradictory evacuation reports, 5th Fleet HQ"
@@ -1256,6 +1258,12 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb25_cia_farsi', text: 'CIA posts Farsi recruitment video on X urging Iranians to contact agency securely -- 3.4M views', date: 'Feb 25, 2026', assetId: null, changeSummary: 'CIA Farsi outreach to Iranian informants'},
+  {id: 'u_feb25_oil_surge', text: 'Iran oil exports surge to 3M bpd from Kharg Island -- nearly tripled since January (Bloomberg/Kpler)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran tripled oil loadings ahead of potential strike'},
+  {id: 'u_feb25_chatham', text: 'Chatham House analyst: war imminent, matter of days -- two sides too far apart', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Top analyst says war imminent in days'},
+  {id: 'u_feb25_ghalibaf', text: 'Iran Parliament speaker Ghalibaf: ready for diplomacy but attackers will taste strong punch', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran parliament warns of military response'},
+  {id: 'u_feb25_saberin', text: 'IRGC appoints new Saberin Special Forces commander BG Hosseini -- counter-insurgency specialist', date: 'Feb 25, 2026', assetId: null, changeSummary: 'IRGC Saberin SF gets new commander'},
+  {id: 'u_feb25_tanker108', text: '108 air tankers in/heading to CENTCOM theater -- 270+ C-17/C-5 cargo flights since January', date: 'Feb 25, 2026', assetId: 'tankers_surge', changeSummary: 'Tanker fleet doubled to 108; 270+ cargo flights'},
   {id: 'u_feb25_verba_deal', text: 'FT: Iran signed $589M deal with Russia for 500 Verba MANPADS + 2,500 missiles (Dec 2025)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran-Russia $589M Verba MANPADS deal revealed'},
   {id: 'u_feb25_cm302', text: 'Reuters: Iran near deal with China for CM-302 supersonic anti-ship missiles (Mach 2.5-4)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran nearing Chinese supersonic missile deal'},
   {id: 'u_feb25_ofac', text: 'Treasury OFAC sanctions 30+ entities/vessels in Iran shadow fleet and IRGC networks', date: 'Feb 25, 2026', assetId: null, changeSummary: 'OFAC sanctions 30+ Iran entities/tankers'},
