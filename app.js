@@ -80,12 +80,12 @@ const assets = [
     name: "USS Gerald R. Ford (CVN-78)",
     type: "carrier",
     class: "Ford-class",
-    lat: 35.48, lng: 24.15,
-    prevLat: 37.5, prevLng: 15.0,
-    prevLabel: "South of Italy (Feb 22)",
-    movementDate: "2026-02-24",
-    location: "Souda Bay, Crete — port stop en route to Israel",
-    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003. Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Expected to dock in Haifa, Israel. Jerusalem Post reports 40,000+ US troops in Middle East. Ford crew at 240+ days deployed, WSJ reports morale issues. JCS Chairman Gen. Dan Caine warned Trump of munitions shortfalls. INSS reports 200+ fighter jets, 100+ support aircraft, 12 destroyers now in region.",
+    lat: 32.82, lng: 34.98,
+    prevLat: 35.48, prevLng: 24.15,
+    prevLabel: "Souda Bay, Crete (Feb 24)",
+    movementDate: "2026-02-25",
+    location: "Haifa, Israel — docked",
+    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003. Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Expected to dock in Haifa, Israel. Jerusalem Post reports 40,000+ US troops in Middle East. Ford crew at 240+ days deployed, WSJ reports morale issues. JCS Chairman Gen. Dan Caine warned Trump of munitions shortfalls. INSS reports 200+ fighter jets, 100+ support aircraft, 12 destroyers now in region. Feb 25: Ford docked at Haifa, Israel after refueling stop at Souda Bay, Crete. CSG-12 now fully on station. WSJ reports severe crew morale issues at 240+ days deployed — record-breaking deployment. Ford has pump issues reported but operational.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
@@ -98,10 +98,12 @@ const assets = [
       {name: "The Media Line Feb 21", url: "https://themedialine.org/top-stories/largest-us-military-buildup-since-2003-raises-prospect-of-multi-week-strike-on-iran/"},
       {name: "ItaMilRadar Feb 24", url: "https://www.itamilradar.com/2026/02/24/uss-gerald-r-ford-stops-in-souda-bay-forward-presence-signals-us-readiness-amid-iran-tensions/"},
       {name: "Chosun Ilbo Feb 24", url: "https://www.chosun.com/english/world-en/2026/02/24/76PNTYFGCNBW3DHMTR3RH3WFKE/"},
-      {name: "19FortyFive (crew morale)", url: "https://www.19fortyfive.com/2026/02/busted-toilets-and-sailors-who-want-to-quit-aircraft-carrier-uss-gerald-r-ford-is-being-pushed-to-historic-u-s-navy-limits/"}
+      {name: "19FortyFive (crew morale)", url: "https://www.19fortyfive.com/2026/02/busted-toilets-and-sailors-who-want-to-quit-aircraft-carrier-uss-gerald-r-ford-is-being-pushed-to-historic-u-s-navy-limits/"},
+      {name: "Jerusalem Post Feb 25", url: "https://www.yahoo.com/news/articles/americas-deadliest-fighter-jet-f-124042443.html"},
+      {name: "Al Arabiya (Ford Haifa)", url: "https://www.instagram.com/reel/DVL2KdEAMnp/"}
     ],
-    updated: "Feb 24, 2026",
-    changeSummary: "Arrived Souda Bay, Crete; heading to Haifa, Israel"
+    updated: "Feb 25, 2026",
+    changeSummary: "Docked at Haifa, Israel"
   },
   {
     id: "cvn72",
@@ -113,15 +115,16 @@ const assets = [
     prevLabel: "South China Sea (Jan 2026)",
     movementDate: "2026-01-20",
     location: "Arabian Sea — ~500 nm south of Iran",
-    mission: "Deployed Nov 5, 2025. Redirected from South China Sea to Arabian Sea amid Iran tensions. On Feb 3, an F-35C from CVW-9 shot down an Iranian Shahed-139 drone. Third time CSG-3 redirected from Indo-Pacific to Middle East.",
+    mission: "Deployed Nov 5, 2025. Redirected from South China Sea to Arabian Sea amid Iran tensions. On Feb 3, an F-35C from CVW-9 shot down an Iranian Shahed-139 drone. Third time CSG-3 redirected from Indo-Pacific to Middle East. Feb 25: INSS reports USS Michael Murphy (DDG-112) entered Persian Gulf. USS John Finn (DDG-113) joined CSG in Arabian Sea. USS Delbert D. Black (DDG-119) departed Red Sea to northern Arabian Sea. Total 12 US warships in and around ME waters. 250+ US fighter jets in region (350+ including Europe-based).",
     strikeGroup: "CSG-3 / CVW-9 (incl. F-35C)",
     confidence: "confirmed",
     sources: [
       {name: "Forbes Feb 5", url: "https://www.forbes.com/sites/petersuciu/2026/02/05/the-abraham-lincoln-carrier-strike-group-is-operating-near-iran/"},
-      {name: "19FortyFive Feb 12", url: "https://www.19fortyfive.com/2026/02/supercarrier-surge-the-u-s-navy-is-preparing-to-send-multiple-aircraft-carriers-to-strike-iran/"}
+      {name: "19FortyFive Feb 12", url: "https://www.19fortyfive.com/2026/02/supercarrier-surge-the-u-s-navy-is-preparing-to-send-multiple-aircraft-carriers-to-strike-iran/"},
+      {name: "Ynet Feb 25", url: "https://www.ynetnews.com/article/sykrwfnuwg"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "Stationed in Arabian Sea near Iran"
+    updated: "Feb 25, 2026",
+    changeSummary: "12 warships in region; Murphy entered Persian Gulf"
   },
   {
     id: "cvn73",
@@ -247,15 +250,16 @@ const assets = [
     prevLabel: "Barksdale AFB, LA (May 2025)",
     movementDate: "2025-05-15",
     location: "Diego Garcia — 4 aircraft deployed since May 2025",
-    mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite. Feb 21: UK PM Starmer denied US use of Diego Garcia for bomber strikes against Iran.",
+    mission: "4 B-52Hs from Barksdale AFB replaced B-2 Spirits in May 2025. Supported by KC-135 tankers. Current status in Feb 2026 unclear — may have rotated. B-2 hangars inactive per satellite. Feb 21: UK PM Starmer denied US use of Diego Garcia for bomber strikes against Iran. Feb 25: F-16CMs from 35th FW (Misawa, Japan) deployed to Diego Garcia for force protection per satellite imagery (The War Zone). KC-135 tankers, C-17, P-8 also visible on apron. UK still blocking use for Iran strikes but force-protection mission critical.",
     strikeGroup: "AFGSC deployed",
     confidence: "unconfirmed",
     sources: [
       {name: "The War Zone", url: "https://www.twz.com/air/b-52s-join-b-2s-on-diego-garcia10-bombers-now-on-indian-ocean-island"},
-      {name: "The Week Feb 20", url: "https://www.theweek.in/news/middle-east/2026/02/20/no-b-2s-for-iran-trumps-magnificent-bombers-face-hurdle-as-uk-denies-base-access.html"}
+      {name: "The Week Feb 20", url: "https://www.theweek.in/news/middle-east/2026/02/20/no-b-2s-for-iran-trumps-magnificent-bombers-face-hurdle-as-uk-denies-base-access.html"},
+      {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"}
     ],
-    updated: "Feb 22, 2026",
-    changeSummary: "UK denied base access for Iran strikes"
+    updated: "Feb 25, 2026",
+    changeSummary: "F-16s from Japan deployed for base defense"
   },
   {
     id: "b2_whiteman",
@@ -300,15 +304,15 @@ const assets = [
   // === FIGHTERS ===
   {
     id: "f22_staging",
-    name: "F-22A Raptors (12 aircraft)",
+    name: "F-22A Raptors (11 at Ovda + 6 en route)",
     type: "fighter",
     class: "F-22A Raptor",
-    lat: 31.83, lng: 36.79,
+    lat: 29.94, lng: 34.94,
     prevLat: 52.41, prevLng: 0.56,
     prevLabel: "RAF Lakenheath, UK (Feb 17-24)",
     movementDate: "2026-02-24",
-    location: "En route to CENTCOM bases — 6 departed UK today, 6 departed earlier",
-    mission: "12 F-22s from 1st Fighter Wing, Langley. Wave 1: 6 arrived Feb 17 at Lakenheath. Wave 2: 6 sighted Feb 20 at Mildenhall with ferry tanks. Heading to CENTCOM. All 12 F-22As confirmed on tarmac at Lakenheath. Brief delay due to tanker issue resolved. Departing for Middle East Monday Feb 23. Same staging pattern as pre-Midnight Hammer (June 2025). Feb 24: 6 F-22s (TREND 51-56) departed RAF Lakenheath for Middle East supported by KC-46/KC-135 tankers from Mildenhall. This completes the 12-aircraft deployment from 1st FW Langley. Expected destinations: Muwaffaq Salti AB, Jordan or other CENTCOM bases.",
+    location: "Ovda Air Base, Negev Desert, Israel — 11 aircraft (1 returned to UK with fuel leak)",
+    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Possibly 6 MORE coming tomorrow — total could reach 24 Raptors. F-22s co-located with KC-135 tankers in Israel. In 2025, Raptors arrived just 4 days before Operation Midnight Hammer began.",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
@@ -316,10 +320,14 @@ const assets = [
       {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-raptors-sighted-in-uk-may-indicate-possible-reinforcement-of-middle-east-airpower-posture"},
       {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025356418384327035"},
       {name: "JFeed Feb 24", url: "https://www.jfeed.com/news-world/us-military-buildup-middle-east-2"},
-      {name: "Iran Intl Feb 24", url: "https://www.facebook.com/IranIntlEnglish/posts/the-us-military-has-begun-moving-12-f-22-stealth-fighter-jets-toward-the-middle-/1432024522267970/"}
+      {name: "Iran Intl Feb 24", url: "https://www.facebook.com/IranIntlEnglish/posts/the-us-military-has-begun-moving-12-f-22-stealth-fighter-jets-toward-the-middle-/1432024522267970/"},
+      {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"},
+      {name: "Zona Militar Feb 25", url: "https://www.zona-militar.com/en/2026/02/25/f-22-raptor-stealth-fighters-arrived-in-israel-as-part-of-the-reinforcement-of-the-u-s-military-presence-in-the-middle-east/"},
+      {name: "Aerospace Global News Feb 25", url: "https://aerospaceglobalnews.com/news/us-f22-raptors-israel-ford-middle-east/"},
+      {name: "Times of Israel", url: "https://www.timesofisrael.com/liveblog_entry/us-said-to-begin-moving-another-six-f-22-stealth-fighters-toward-middle-east/"}
     ],
-    updated: "Feb 24, 2026",
-    changeSummary: "All 12 Raptors departed UK for Middle East"
+    updated: "Feb 25, 2026",
+    changeSummary: "11 Raptors at Ovda, Israel; 6 more en route"
   },
   {
     id: "f35_jordan",
@@ -437,7 +445,7 @@ const assets = [
     prevLat: 34.05, prevLng: -80.97,
     prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
     movementDate: "2026-02-19",
-    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
+    location: "Lajes Field, Azores, Portugal \u2014 largest-ever US aircraft surge",
     mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials. Feb 21: 15 KC-46A Pegasus tankers now at Lajes — up from 11. Also 11 KC-135s. 400 US personnel on Terceira Island. Over 120 US aircraft tracked eastbound in past 72 hours.",
     strikeGroup: "AMC / ANG",
     confidence: "confirmed",
@@ -734,14 +742,14 @@ const assets = [
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "Arabian Gulf — 5th Fleet / CENTCOM operations",
-    mission: "Forward deployed LCS in Arabian Gulf. Joint training with A-10 documented Feb 2, 2026.",
+    mission: "Forward deployed LCS in Arabian Gulf. Joint training with A-10 documented Feb 2, 2026. Feb 25: USS Santa Barbara and USS Tulsa left Persian Gulf, now in northern Arabian Sea per INSS.",
     strikeGroup: "5th Fleet",
     confidence: "confirmed",
     sources: [
       {name: "CENTCOM Official", url: "https://www.centcom.mil/MEDIA/igphoto/2002555983/"}
     ],
-    updated: "Feb 2, 2026",
-    changeSummary: "Forward deployed in Arabian Gulf"
+    updated: "Feb 25, 2026",
+    changeSummary: "Departed Persian Gulf to northern Arabian Sea"
   },
 
   // === MAJOR BASES ===
@@ -1172,12 +1180,61 @@ const assets = [
     ],
     updated: "Feb 24, 2026",
     changeSummary: "8+ C-17s crossing Atlantic with weapons/equipment"
+  },
+
+  // === NEW ASSETS (Feb 25, 2026) ===
+  {
+    id: "f16_diego",
+    name: "F-16CM Fighting Falcons (35th FW, Diego Garcia)",
+    type: "fighter",
+    class: "F-16CM",
+    lat: -7.31, lng: 72.43,
+    prevLat: 40.87, prevLng: 141.38,
+    prevLabel: "Misawa AB, Japan (Feb 2026)",
+    movementDate: "2026-02-23",
+    location: "Diego Garcia — force protection",
+    mission: "F-16CMs from 35th Fighter Wing (Misawa, Japan) deployed to Diego Garcia for base defense per satellite imagery. Visible on apron alongside KC-135 tankers, C-17, P-8. Critical force protection as Diego Garcia increasingly threatened by Iranian long-range drones and missiles. UK blocking use for Iran strikes.",
+    strikeGroup: "35th FW",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "F-16s from Misawa deployed for Diego Garcia defense"
+  },
+  {
+    id: "fifth_fleet_dispersal",
+    name: "5th Fleet Vessels (Bahrain dispersal)",
+    type: "special_naval",
+    class: "Multiple surface combatants",
+    lat: 25.5, lng: 53.0,
+    prevLat: 26.23, prevLng: 50.63,
+    prevLabel: "NSA Bahrain (prior to Feb 25)",
+    movementDate: "2026-02-25",
+    location: "Persian Gulf / Arabian Sea — dispersed at sea",
+    mission: "Feb 25: AP/Planet Labs satellite imagery shows all vessels typically docked at NSA Bahrain (5th Fleet HQ) are now at sea. Same dispersal pattern observed before Iran's attack on Qatar in June 2025. Protective measure against potential Iranian missile strikes on port facilities.",
+    strikeGroup: "NAVCENT / 5th Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "AP/Military.com Feb 25", url: "https://www.military.com/daily-news/2026/02/25/iran-pushes-back-against-trump-ahead-of-geneva-talks-face-of-major-us-military-deployment.html"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "All 5th Fleet ships dispersed from Bahrain port"
   }
 ];
 
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb25_ford_haifa', text: 'USS Gerald R. Ford docked at Haifa, Israel', date: 'Feb 25, 2026', assetId: 'cvn78', changeSummary: 'Docked at Haifa, Israel'},
+  {id: 'u_feb25_f22_ovda', text: '11 F-22 Raptors arrived at Ovda Air Base in Israel Negev Desert', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: '11 Raptors at Ovda, Israel; 6 more en route'},
+  {id: 'u_feb25_f22_wave2', text: '6 MORE F-22s departing Langley for UK/ME — total may reach 24 Raptors', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: 'Second wave of 6 F-22s heading to theater'},
+  {id: 'u_feb25_f16_diego', text: 'F-16CMs from Misawa Japan deployed to Diego Garcia for force protection', date: 'Feb 25, 2026', assetId: 'f16_diego', changeSummary: 'F-16s from Japan deployed for Diego Garcia defense'},
+  {id: 'u_feb25_bahrain', text: 'All 5th Fleet ships dispersed from Bahrain — same pattern as pre-June 2025 attack', date: 'Feb 25, 2026', assetId: 'fifth_fleet_dispersal', changeSummary: 'All 5th Fleet ships dispersed from port'},
+  {id: 'u_feb25_murphy', text: 'USS Michael Murphy entered Persian Gulf; USS John Finn joined Lincoln CSG', date: 'Feb 25, 2026', assetId: 'cvn72', changeSummary: '12 warships in region'},
+  {id: 'u_feb25_sotu', text: 'Trump State of Union: Iran will never have nuclear weapon; prefers diplomacy', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Trump SOTU address on Iran'},
+  {id: 'u_feb25_hezbollah', text: 'Hezbollah signals it will not intervene if US launches limited strikes on Iran', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Hezbollah signals non-intervention'},
+  {id: 'u_feb25_350jets', text: 'INSS: 250+ fighter jets in region, 350+ including Europe — over 300 total aircraft', date: 'Feb 25, 2026', assetId: null, changeSummary: '350+ US jets deployed to region'},
   {id: 'u_feb24_ford_crete', text: 'USS Gerald R. Ford arrived at Souda Bay, Crete — heading to Haifa, Israel', date: 'Feb 24, 2026', assetId: 'cvn78', changeSummary: 'Arrived Souda Bay, Crete; heading to Haifa, Israel'},
   {id: 'u_feb24_f22_depart', text: '6 F-22 Raptors departed RAF Lakenheath for Middle East (TREND 51-56)', date: 'Feb 24, 2026', assetId: 'f22_staging', changeSummary: 'All 12 Raptors departed UK for Middle East'},
   {id: 'u_feb24_c17_surge', text: '8+ C-17 heavy transports crossing Atlantic with weapons/equipment', date: 'Feb 24, 2026', assetId: 'c17_airlift', changeSummary: '8+ C-17s crossing Atlantic'},
