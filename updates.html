@@ -36,7 +36,6 @@
       color: var(--text-primary);
     }
 
-    /* Scanline overlay */
     body::after {
       content: '';
       position: fixed;
@@ -49,7 +48,6 @@
       );
     }
 
-    /* Header */
     .header {
       position: sticky;
       top: 0;
@@ -64,364 +62,61 @@
       backdrop-filter: blur(14px);
     }
 
-    .header-left {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header-title {
-      font-family: var(--font-mono);
-      font-size: 16px;
-      letter-spacing: 3px;
-      color: var(--amber);
-      text-shadow: 0 0 20px rgba(255,179,0,0.35);
-    }
-
-    .header-subtitle {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: var(--text-secondary);
-      margin-top: 2px;
-    }
-
-    .back-link {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      color: var(--amber);
-      text-decoration: none;
-      padding: 6px 14px;
-      border: 1px solid rgba(255,179,0,0.3);
-      border-radius: 3px;
-      background: rgba(255,179,0,0.06);
-      transition: all 0.2s;
-    }
-
-    .back-link:hover {
-      background: rgba(255,179,0,0.12);
-      border-color: var(--amber);
-    }
-
-    /* Filters */
-    .filter-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-bottom: 1px solid var(--border);
-      background: var(--bg-secondary);
-      flex-wrap: wrap;
-    }
-
-    .filter-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: var(--amber-dim);
-      margin-right: 4px;
-    }
-
-    .filter-chip {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1px;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      background: transparent;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-    }
-
-    .filter-chip:hover {
-      border-color: var(--border-bright);
-      color: var(--text-primary);
-    }
-
-    .filter-chip.active {
-      border-color: var(--amber);
-      color: var(--amber);
-      background: rgba(255,179,0,0.08);
-    }
-
-    /* Container */
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-
-    .summary-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 16px;
-      margin-bottom: 12px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 1px;
-      color: var(--text-secondary);
-    }
-
-    .summary-count {
-      color: var(--amber);
-      font-weight: 700;
-    }
-
-    /* Update cards */
-    .update-card {
-      display: flex;
-      align-items: stretch;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      background: var(--bg-secondary);
-      margin-bottom: 8px;
-      cursor: pointer;
-      transition: border-color 0.15s, background 0.15s;
-      overflow: hidden;
-    }
-
-    .update-card:hover {
-      border-color: var(--border-bright);
-      background: var(--bg-tertiary);
-    }
-
-    .update-card.expanded {
-      border-color: var(--amber);
-    }
-
-    .card-color-bar {
-      width: 4px;
-      flex-shrink: 0;
-    }
-
-    .card-main {
-      flex: 1;
-      padding: 14px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .card-icon {
-      width: 36px; height: 36px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card-icon svg {
-      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.6));
-    }
-
-    .card-info {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .card-name {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      color: var(--text-primary);
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .card-location {
-      font-size: 12px;
-      color: var(--text-secondary);
-      margin-top: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .card-summary {
-      font-size: 11px;
-      color: var(--amber);
-      margin-top: 4px;
-      font-style: italic;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      opacity: 0.85;
-    }
-
-    .card-rel {
-      color: var(--amber);
-      font-size: 9px;
-      margin-left: 4px;
-      font-weight: 600;
-    }
-
-    .card-meta {
-      flex-shrink: 0;
-      text-align: right;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 4px;
-    }
-
-    .card-date {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-
-    .card-badge {
-      font-family: var(--font-mono);
-      font-size: 9px;
-      letter-spacing: 1px;
-      padding: 2px 6px;
-      border-radius: 2px;
-    }
-
-    .card-badge.confirmed {
-      background: rgba(102,187,106,0.12);
-      color: var(--green);
-      border: 1px solid rgba(102,187,106,0.3);
-    }
-
-    .card-badge.unconfirmed {
-      background: rgba(255,179,0,0.12);
-      color: var(--amber);
-      border: 1px solid rgba(255,179,0,0.3);
-    }
-
-    .card-expand-icon {
-      flex-shrink: 0;
-      width: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-size: 14px;
-      transition: transform 0.2s;
-    }
-
-    .update-card.expanded .card-expand-icon {
-      transform: rotate(180deg);
-    }
-
-    /* Expanded detail */
-    .card-detail {
-      display: none;
-      padding: 0 16px 16px 52px;
-      border-top: 1px solid var(--border);
-      background: rgba(0,0,0,0.15);
-    }
-
-    .update-card.expanded .card-detail {
-      display: block;
-    }
-
-    .detail-row {
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
-    }
-
-    .detail-row:last-child {
-      border-bottom: none;
-    }
-
-    .detail-row-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      color: var(--amber-dim);
-      margin-bottom: 3px;
-    }
-
-    .detail-row-value {
-      font-size: 12px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .detail-row-value a {
-      color: var(--cyan);
-      text-decoration: none;
-    }
-
-    .detail-row-value a:hover {
-      text-decoration: underline;
-      color: var(--blue);
-    }
-
-    .map-link-btn {
-      display: inline-block;
-      margin-top: 10px;
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      padding: 6px 14px;
-      border: 1px solid var(--cyan);
-      color: var(--cyan);
-      text-decoration: none;
-      border-radius: 3px;
-      background: rgba(38,198,218,0.08);
-      transition: all 0.15s;
-    }
-
-    .map-link-btn:hover {
-      background: rgba(38,198,218,0.16);
-    }
-
-    /* Responsive */
+    .header-left { display: flex; flex-direction: column; }
+    .header-title { font-family: var(--font-mono); font-size: 16px; letter-spacing: 3px; color: var(--amber); text-shadow: 0 0 20px rgba(255,179,0,0.35); }
+    .header-subtitle { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; color: var(--text-secondary); margin-top: 2px; }
+    .back-link { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; color: var(--amber); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(255,179,0,0.3); border-radius: 3px; background: rgba(255,179,0,0.06); transition: all 0.2s; }
+    .back-link:hover { background: rgba(255,179,0,0.12); border-color: var(--amber); }
+    .filter-row { display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-bottom: 1px solid var(--border); background: var(--bg-secondary); flex-wrap: wrap; }
+    .filter-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; color: var(--amber-dim); margin-right: 4px; }
+    .filter-chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; padding: 4px 10px; border: 1px solid var(--border); border-radius: 2px; background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .filter-chip:hover { border-color: var(--border-bright); color: var(--text-primary); }
+    .filter-chip.active { border-color: var(--amber); color: var(--amber); background: rgba(255,179,0,0.08); }
+    .container { max-width: 960px; margin: 0 auto; padding: 16px; }
+    .summary-bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; margin-bottom: 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; color: var(--text-secondary); }
+    .summary-count { color: var(--amber); font-weight: 700; }
+    .update-card { display: flex; align-items: stretch; border: 1px solid var(--border); border-radius: 4px; background: var(--bg-secondary); margin-bottom: 8px; cursor: pointer; transition: border-color 0.15s, background 0.15s; overflow: hidden; }
+    .update-card:hover { border-color: var(--border-bright); background: var(--bg-tertiary); }
+    .update-card.expanded { border-color: var(--amber); }
+    .card-color-bar { width: 4px; flex-shrink: 0; }
+    .card-main { flex: 1; padding: 14px 16px; display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .card-icon { width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .card-icon svg { filter: drop-shadow(0 1px 3px rgba(0,0,0,0.6)); }
+    .card-info { flex: 1; min-width: 0; }
+    .card-name { font-family: var(--font-mono); font-size: 13px; color: var(--text-primary); letter-spacing: 0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-location { font-size: 12px; color: var(--text-secondary); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-summary { font-size: 11px; color: var(--amber); margin-top: 4px; font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: 0.85; }
+    .card-rel { color: var(--amber); font-size: 9px; margin-left: 4px; font-weight: 600; }
+    .card-meta { flex-shrink: 0; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+    .card-date { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; color: var(--text-muted); }
+    .card-badge { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; padding: 2px 6px; border-radius: 2px; }
+    .card-badge.confirmed { background: rgba(102,187,106,0.12); color: var(--green); border: 1px solid rgba(102,187,106,0.3); }
+    .card-badge.unconfirmed { background: rgba(255,179,0,0.12); color: var(--amber); border: 1px solid rgba(255,179,0,0.3); }
+    .card-expand-icon { flex-shrink: 0; width: 20px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 14px; transition: transform 0.2s; }
+    .update-card.expanded .card-expand-icon { transform: rotate(180deg); }
+    .card-detail { display: none; padding: 0 16px 16px 52px; border-top: 1px solid var(--border); background: rgba(0,0,0,0.15); }
+    .update-card.expanded .card-detail { display: block; }
+    .detail-row { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-row-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; color: var(--amber-dim); margin-bottom: 3px; }
+    .detail-row-value { font-size: 12px; color: var(--text-secondary); line-height: 1.6; }
+    .detail-row-value a { color: var(--cyan); text-decoration: none; }
+    .detail-row-value a:hover { text-decoration: underline; color: var(--blue); }
+    .map-link-btn { display: inline-block; margin-top: 10px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; padding: 6px 14px; border: 1px solid var(--cyan); color: var(--cyan); text-decoration: none; border-radius: 3px; background: rgba(38,198,218,0.08); transition: all 0.15s; }
+    .map-link-btn:hover { background: rgba(38,198,218,0.16); }
     @media (max-width: 768px) {
-      .header {
-        padding: 10px 12px;
-      }
-      .header-title {
-        font-size: 12px;
-        letter-spacing: 2px;
-      }
-      .header-subtitle {
-        font-size: 8px;
-      }
-      .back-link {
-        font-size: 10px;
-        padding: 5px 10px;
-      }
-      .filter-row {
-        padding: 8px 12px;
-        gap: 6px;
-      }
-      .filter-chip {
-        font-size: 9px;
-        padding: 5px 10px;
-      }
-      .container {
-        padding: 10px;
-      }
-      .card-main {
-        padding: 10px 12px;
-        gap: 8px;
-      }
-      .card-icon {
-        width: 28px; height: 28px;
-      }
-      .card-name {
-        font-size: 11px;
-      }
-      .card-location {
-        font-size: 11px;
-      }
-      .card-detail {
-        padding: 0 12px 12px 12px;
-      }
+      .header { padding: 10px 12px; }
+      .header-title { font-size: 12px; letter-spacing: 2px; }
+      .header-subtitle { font-size: 8px; }
+      .back-link { font-size: 10px; padding: 5px 10px; }
+      .filter-row { padding: 8px 12px; gap: 6px; }
+      .filter-chip { font-size: 9px; padding: 5px 10px; }
+      .container { padding: 10px; }
+      .card-main { padding: 10px 12px; gap: 8px; }
+      .card-icon { width: 28px; height: 28px; }
+      .card-name { font-size: 11px; }
+      .card-location { font-size: 11px; }
+      .card-detail { padding: 0 12px 12px 12px; }
     }
   </style>
 </head>
@@ -451,7 +146,6 @@
   </div>
 
   <script>
-    // === ASSET TYPE DEFINITIONS (mirrored from app.js) ===
     const ASSET_TYPES = {
       carrier: { label: 'Aircraft Carrier', color: '#4FC3F7', shape: 'hexagon' },
       bomber: { label: 'Bomber', color: '#EF5350', shape: 'bomber' },
@@ -465,11 +159,8 @@
       drone: { label: 'Drone', color: '#F48FB1', shape: 'smalldiamond' },
       special_naval: { label: 'Special Naval', color: '#B0BEC5', shape: 'hexoutline' }
     };
-
-    // Minimal SVG icon generator for the list
     function miniIcon(type, color) {
-      const size = 28;
-      const half = size / 2;
+      const size = 28, half = size / 2;
       const icons = {
         hexagon: `<path d="M-9,1.5 L-7.5,-0.75 -6,-2.25 6,-2.25 7.5,-0.75 9,1.5 7.5,3 -7.5,3 Z" fill="${color}" fill-opacity="0.9" stroke="${color}" stroke-width="0.8"/><line x1="-6" y1="-2.25" x2="6" y2="-2.25" stroke="${color}" stroke-width="1" opacity="0.8"/>`,
         bomber: `<path d="M0,-7.5 L1.5,-4.5 9,1.5 7.5,3 1.5,1.5 0.75,4.5 3,7.5 1.5,7.5 0,5.25 -1.5,7.5 -3,7.5 -0.75,4.5 -1.5,1.5 -7.5,3 -9,1.5 -1.5,-4.5 Z" fill="${color}" fill-opacity="0.9" stroke="${color}" stroke-width="0.6"/>`,
@@ -487,152 +178,38 @@
       const icon = icons[shapeKey] || icons.square;
       return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg"><g transform="translate(${half},${half})">${icon}</g></svg>`;
     }
-
-    // === ASSET DATA (loaded from shared data file or inline) ===
-    // We'll load assets from a script tag referencing the shared data
-    // For now, inline the data:
-
     function loadAssets() {
-      // Fetch app.js and extract asset data
-      return fetch('./app.js')
-        .then(r => r.text())
-        .then(text => {
-          // Extract the assets array and ASSET_TYPES from app.js
-          const match = text.match(/const assets = \[([\s\S]*?)\n\];/);
-          if (match) {
-            try {
-              const assetsStr = '[' + match[1] + ']';
-              // Use Function to evaluate safely
-              return new Function('return ' + assetsStr)();
-            } catch(e) {
-              console.error('Failed to parse assets', e);
-              return [];
-            }
-          }
-          return [];
-        });
+      return fetch('./app.js').then(r => r.text()).then(text => {
+        const match = text.match(/const assets = \[([\s\S]*?)\n\];/);
+        if (match) { try { return new Function('return [' + match[1] + ']')(); } catch(e) { console.error('Failed to parse assets', e); return []; } }
+        return [];
+      });
     }
-
-    function parseUpdateDate(str) {
-      const cleaned = str.replace(/\s*\(.*\)/, '');
-      const d = new Date(cleaned);
-      return isNaN(d.getTime()) ? new Date(2020, 0, 1) : d;
-    }
-
-    let allAssets = [];
-    let currentFilter = 'all';
-
-    function relativeTime(dateStr) {
-      const d = parseUpdateDate(dateStr);
-      if (d.getFullYear() <= 2020) return '';
-      const now = new Date();
-      const diffMs = now - d;
-      const diffMins = Math.floor(diffMs / 60000);
-      const diffHrs = Math.floor(diffMs / 3600000);
-      const diffDays = Math.floor(diffMs / 86400000);
-      if (diffMins < 60) return diffMins + 'm ago';
-      if (diffHrs < 24) return diffHrs + 'h ago';
-      if (diffDays < 30) return diffDays + 'd ago';
-      return '';
-    }
-
+    function parseUpdateDate(str) { const cleaned = str.replace(/\s*\(.*\)/, ''); const d = new Date(cleaned); return isNaN(d.getTime()) ? new Date(2020, 0, 1) : d; }
+    let allAssets = []; let currentFilter = 'all';
+    function relativeTime(dateStr) { const d = parseUpdateDate(dateStr); if (d.getFullYear() <= 2020) return ''; const now = new Date(); const diffMs = now - d; const diffMins = Math.floor(diffMs / 60000); const diffHrs = Math.floor(diffMs / 3600000); const diffDays = Math.floor(diffMs / 86400000); if (diffMins < 60) return diffMins + 'm ago'; if (diffHrs < 24) return diffHrs + 'h ago'; if (diffDays < 30) return diffDays + 'd ago'; return ''; }
     function renderUpdates() {
-      const list = document.getElementById('updates-list');
-      const countEl = document.getElementById('update-count');
-
+      const list = document.getElementById('updates-list'); const countEl = document.getElementById('update-count');
       let filtered = [...allAssets];
-      if (currentFilter === 'confirmed') {
-        filtered = filtered.filter(a => a.confidence === 'confirmed');
-      } else if (currentFilter === 'unconfirmed') {
-        filtered = filtered.filter(a => a.confidence !== 'confirmed');
-      }
-
-      // Sort by date
+      if (currentFilter === 'confirmed') filtered = filtered.filter(a => a.confidence === 'confirmed');
+      else if (currentFilter === 'unconfirmed') filtered = filtered.filter(a => a.confidence !== 'confirmed');
       filtered.sort((a, b) => parseUpdateDate(b.updated) - parseUpdateDate(a.updated));
-
       countEl.textContent = filtered.length;
-
       list.innerHTML = filtered.map((asset, idx) => {
         const typeInfo = ASSET_TYPES[asset.type] || { label: 'Unknown', color: '#888' };
         const isConf = asset.confidence === 'confirmed';
-        const shortLoc = asset.location.split(' — ')[0];
+        const shortLoc = asset.location.split(' \u2014 ')[0];
         const rel = relativeTime(asset.updated);
         const relHtml = rel ? `<span class="card-rel">${rel}</span>` : '';
         const summaryHtml = asset.changeSummary ? `<div class="card-summary">${asset.changeSummary}</div>` : '';
-
-        const sources = (asset.sources || []).map(s =>
-          `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`
-        ).join(' &bull; ');
-
-        const movement = (asset.prevLat !== null && asset.prevLabel)
-          ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} \u2192 Current position</div></div>`
-          : '';
-
-        return `
-          <div class="update-card" data-idx="${idx}" onclick="toggleCard(this)">
-            <div class="card-color-bar" style="background:${typeInfo.color}"></div>
-            <div>
-              <div class="card-main">
-                <div class="card-icon">${miniIcon(asset.type, typeInfo.color)}</div>
-                <div class="card-info">
-                  <div class="card-name">${asset.name}</div>
-                  <div class="card-location">${shortLoc}</div>
-                  ${summaryHtml}
-                </div>
-                <div class="card-meta">
-                  <span class="card-date">${asset.updated} ${relHtml}</span>
-                  <span class="card-badge ${isConf ? 'confirmed' : 'unconfirmed'}">${isConf ? 'CONFIRMED' : 'UNCONFIRMED'}</span>
-                </div>
-                <div class="card-expand-icon">\u25BE</div>
-              </div>
-              <div class="card-detail">
-                <div class="detail-row">
-                  <div class="detail-row-label">TYPE / CLASS</div>
-                  <div class="detail-row-value">${typeInfo.label} \u2014 ${asset.class || 'N/A'}</div>
-                </div>
-                ${asset.strikeGroup ? `<div class="detail-row"><div class="detail-row-label">STRIKE GROUP / UNIT</div><div class="detail-row-value">${asset.strikeGroup}</div></div>` : ''}
-                <div class="detail-row">
-                  <div class="detail-row-label">LOCATION</div>
-                  <div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}\u00b0N, ${asset.lng.toFixed(2)}\u00b0${asset.lng >= 0 ? 'E' : 'W'}</span></div>
-                </div>
-                ${movement}
-                <div class="detail-row">
-                  <div class="detail-row-label">MISSION / DEPLOYMENT</div>
-                  <div class="detail-row-value">${asset.mission}</div>
-                </div>
-                ${sources ? `<div class="detail-row"><div class="detail-row-label">SOURCES</div><div class="detail-row-value">${sources}</div></div>` : ''}
-                <a href="./index.html" class="map-link-btn">VIEW ON MAP \u25b8</a>
-              </div>
-            </div>
-          </div>
-        `;
+        const sources = (asset.sources || []).map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`).join(' &bull; ');
+        const movement = (asset.prevLat !== null && asset.prevLabel) ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} \u2192 Current position</div></div>` : '';
+        return `<div class="update-card" data-idx="${idx}" onclick="toggleCard(this)"><div class="card-color-bar" style="background:${typeInfo.color}"></div><div><div class="card-main"><div class="card-icon">${miniIcon(asset.type, typeInfo.color)}</div><div class="card-info"><div class="card-name">${asset.name}</div><div class="card-location">${shortLoc}</div>${summaryHtml}</div><div class="card-meta"><span class="card-date">${asset.updated} ${relHtml}</span><span class="card-badge ${isConf ? 'confirmed' : 'unconfirmed'}">${isConf ? 'CONFIRMED' : 'UNCONFIRMED'}</span></div><div class="card-expand-icon">\u25BE</div></div><div class="card-detail"><div class="detail-row"><div class="detail-row-label">TYPE / CLASS</div><div class="detail-row-value">${typeInfo.label} \u2014 ${asset.class || 'N/A'}</div></div>${asset.strikeGroup ? `<div class="detail-row"><div class="detail-row-label">STRIKE GROUP / UNIT</div><div class="detail-row-value">${asset.strikeGroup}</div></div>` : ''}<div class="detail-row"><div class="detail-row-label">LOCATION</div><div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}\u00b0N, ${asset.lng.toFixed(2)}\u00b0${asset.lng >= 0 ? 'E' : 'W'}</span></div></div>${movement}<div class="detail-row"><div class="detail-row-label">MISSION / DEPLOYMENT</div><div class="detail-row-value">${asset.mission}</div></div>${sources ? `<div class="detail-row"><div class="detail-row-label">SOURCES</div><div class="detail-row-value">${sources}</div></div>` : ''}<a href="./index.html" class="map-link-btn">VIEW ON MAP \u25b8</a></div></div></div>`;
       }).join('');
     }
-
-    function toggleCard(el) {
-      // Only toggle if not clicking a link
-      if (event.target.tagName === 'A') return;
-      el.classList.toggle('expanded');
-    }
-
-    // Filter buttons
-    document.querySelectorAll('.filter-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
-        renderUpdates();
-      });
-    });
-
-    // Load and render
-    loadAssets().then(data => {
-      allAssets = data;
-      renderUpdates();
-    }).catch(err => {
-      console.error('Failed to load assets:', err);
-      document.getElementById('updates-list').innerHTML = '<p style="padding:20px;color:var(--text-muted)">Failed to load asset data.</p>';
-    });
+    function toggleCard(el) { if (event.target.tagName === 'A') return; el.classList.toggle('expanded'); }
+    document.querySelectorAll('.filter-chip').forEach(btn => { btn.addEventListener('click', () => { document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active')); btn.classList.add('active'); currentFilter = btn.dataset.filter; renderUpdates(); }); });
+    loadAssets().then(data => { allAssets = data; renderUpdates(); }).catch(err => { console.error('Failed to load assets:', err); document.getElementById('updates-list').innerHTML = '<p style="padding:20px;color:var(--text-muted)">Failed to load asset data.</p>'; });
   </script>
 </body>
 </html>
