@@ -864,7 +864,7 @@ const assets = [
     confidence: "confirmed",
     sources: [
       {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
-      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
+      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/2/mapping-us-troops-and-military-bases-in-the-middle-east"}
     ],
     updated: "Feb 21, 2026",
     changeSummary: "Contradictory evacuation reports, 5th Fleet HQ"
@@ -1228,12 +1228,42 @@ const assets = [
     ],
     updated: "Feb 25, 2026",
     changeSummary: "All 5th Fleet ships dispersed from Bahrain port"
+  },
+  // === SYRIA WITHDRAWAL ===
+  {
+    id: "syria_withdrawal",
+    name: "US Forces Withdrawal from Syria (100+ trucks)",
+    type: "base",
+    class: "Multiple ground units / logistics",
+    lat: 36.85, lng: 41.15,
+    prevLat: 33.38, prevLng: 38.62,
+    prevLabel: "Al-Tanf Garrison, Syria (withdrawn Feb 11)",
+    movementDate: "2026-02-23",
+    location: "Qasrak Base, Hasakah Province, Syria -- withdrawing to Iraqi Kurdistan",
+    mission: "Feb 23-25: US forces began withdrawing from last major base at Qasrak (Northern Landing Zone). AFP footage shows 100+ truck convoy carrying armored vehicles and prefab structures heading to Iraqi Kurdistan. Full withdrawal expected within 1 month. Previously withdrew from al-Tanf (Feb 11) and al-Shaddadi (Feb 15). ~1,000 US troops still in Syria. Syrian govt forces backfilling all positions. Coalition against ISIS formally ending presence after ~12 years.",
+    strikeGroup: "CJTF-OIR",
+    confidence: "confirmed",
+    sources: [
+      {name: "Reuters Feb 23", url: "https://www.reuters.com/world/middle-east/us-military-begins-withdrawing-main-base-northeast-syria-syrian-sources-say-2026-02-23/"},
+      {name: "AFP/M5 Defence", url: "https://defence.m5dergi.com/one-cikan/us-forces-to-complete-withdrawal-from-syria-within-a-month/"},
+      {name: "Critical Threats Feb 24", url: "https://www.criticalthreats.org/analysis/iran-update-february-24-2026"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "100+ truck convoy leaving Qasrak for Iraq"
   }
 ];
 
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb25_verba_deal', text: 'FT: Iran signed $589M deal with Russia for 500 Verba MANPADS + 2,500 missiles (Dec 2025)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran-Russia $589M Verba MANPADS deal revealed'},
+  {id: 'u_feb25_cm302', text: 'Reuters: Iran near deal with China for CM-302 supersonic anti-ship missiles (Mach 2.5-4)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran nearing Chinese supersonic missile deal'},
+  {id: 'u_feb25_ofac', text: 'Treasury OFAC sanctions 30+ entities/vessels in Iran shadow fleet and IRGC networks', date: 'Feb 25, 2026', assetId: null, changeSummary: 'OFAC sanctions 30+ Iran entities/tankers'},
+  {id: 'u_feb25_bertha', text: 'US military seizes sanctioned oil tanker Bertha in Indian Ocean (Iranian oil)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'US seizes Iranian oil tanker in Indian Ocean'},
+  {id: 'u_feb25_syria', text: 'US begins final Syria withdrawal -- 100+ truck convoy from Qasrak to Iraq', date: 'Feb 25, 2026', assetId: 'syria_withdrawal', changeSummary: 'Final US Syria withdrawal underway'},
+  {id: 'u_feb25_modi', text: 'Indian PM Modi arrives Israel for 2-day visit -- action against Iran unlikely during visit', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Modi in Israel; Iran strike unlikely during visit'},
+  {id: 'u_feb25_araghchi', text: 'Iranian FM Araghchi departs Tehran for Geneva -- says deal within reach', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran FM heads to Geneva, says deal within reach'},
+  {id: 'u_feb25_hormuz_drill', text: 'IRGC Hormuz exercise: shore-to-sea fire at Bandar Abbas + Nazeat Islands with Shahed drones', date: 'Feb 25, 2026', assetId: null, changeSummary: 'IRGC Hormuz drill with drones and missiles'},
   {id: 'u_feb25_saudi_oil', text: 'Saudi Arabia activates oil surge contingency for potential US-Iran disruption (Reuters)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Saudi oil surge contingency activated'},
   {id: 'u_feb25_geneva_confirmed', text: 'Geneva talks Feb 26 confirmed -- massive US delegation: Witkoff, Rubio, Kushner, Vance, Ratcliffe, Hegseth', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Geneva talks confirmed, top US officials attend'},
   {id: 'u_feb25_e4b_andrews', text: 'E-4B Doomsday Plane at Andrews AFB before Trump SOTU -- arrived from Barksdale AFB', date: 'Feb 25, 2026', assetId: 'e4b_nightwatch', changeSummary: 'Doomsday Plane at Andrews before SOTU'},
