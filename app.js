@@ -308,7 +308,7 @@ const assets = [
   // === FIGHTERS ===
   {
     id: "f22_staging",
-    name: "F-22A Raptors (11 at Ovda + 6 en route)",
+    name: "F-22A Raptors (24 total — 11 Ovda + 6 Lakenheath + 6 en route)",
     type: "fighter",
     class: "F-22A Raptor",
     lat: 29.94, lng: 34.94,
@@ -316,7 +316,7 @@ const assets = [
     prevLabel: "RAF Lakenheath, UK (Feb 17-24)",
     movementDate: "2026-02-24",
     location: "Ovda Air Base, Negev Desert, Israel — 11 aircraft (1 returned to UK with fuel leak)",
-    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Possibly 6 MORE coming tomorrow — total could reach 24 Raptors. F-22s co-located with KC-135 tankers in Israel. In 2025, Raptors arrived just 4 days before Operation Midnight Hammer began. NYT confirms first documented deployment of F-22s amid Iran tensions. Politics Today: 300+ US aircraft deployed to CENTCOM. Anadolu Agency confirms exact composition: 84 F/A-18E/F, 36 F-15E, 48 F-16C/CJ/CM, 42 F-35A/C, 18 EA-18G, 12 A-10C, 6 E-3 AWACS, 5 E-11A BACN. Iran Deputy FM Takht-Ravanchi (NPR): 'ready to reach agreement ASAP.' Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads for Iran strikes. Jordan: 'will not act as a launchpad for attacks against Iran.' Saudi MBS told Iran's Pezeshkian that Kingdom will not allow its territory for military actions against Iran. This makes Israel-based F-22s and carrier-based aviation even more critical for any strike package.",
+    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Feb 25: THIRD wave of 6 F-22s confirmed airborne from Langley to Lakenheath (DefenceGeek), bringing total F-22 deployment to 24 aircraft. WSJ (Feb 26): First-ever US combat aircraft deployed to Israel for potential wartime mission. US using Israeli bases to DISPERSE warplanes rather than concentrating at vulnerable Gulf airfields — critical after Saudi Arabia and UAE denied basing. This makes Israeli-based F-22s and carrier-based aviation the backbone of any strike package. Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads. Rubio (Feb 25): Iran pursuing ICBMs, refuses to discuss ballistic missiles — 'big, big problem.'",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
@@ -333,10 +333,11 @@ const assets = [
       {name: "NYT Feb 25", url: "https://www.nytimes.com/2026/02/24/us/politics/f-22-fighter-jets-israel.html"},
       {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
       {name: "Army Recognition Feb 25", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-stealth-fighters-reportedly-land-in-israel-amid-iran-tensions-and-regional-buildup"},
+      {name: "WSJ (dispersal strategy)", url: "https://www.wsj.com/politics/national-security/f-22-stealth-fighters-head-to-israel-a-first-for-the-us-c3b9f4a2"},
       {name: "Newsweek (allies refuse basing)", url: "https://www.newsweek.com/trumps-middle-east-friends-wont-let-him-use-their-bases-to-strike-iran-11569309"}
     ],
-    updated: "Feb 25, 2026",
-    changeSummary: "7 ME allies refuse base access; Israel critical"
+    updated: "Feb 26, 2026",
+    changeSummary: "24 F-22s confirmed; WSJ: dispersal across Israeli bases"
   },
   {
     id: "f35_jordan",
@@ -1259,10 +1260,12 @@ const assets = [
   }
 ];
 
-
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_rubio_icbm', text: 'SecState Rubio: Iran pursuing ICBMs capable of reaching US mainland -- refusal to discuss missiles a "big, big problem" ahead of Geneva talks (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Rubio warns Iran developing ICBMs targeting US'},
+  {id: 'u_feb26_wsj_dispersal', text: 'WSJ: US dispersing warplanes across Israeli bases to avoid concentrating air power at vulnerable Gulf airfields -- first-ever US combat aircraft deployment to Israel for wartime mission', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'US dispersing jets across Israeli bases (WSJ)'},
+  {id: 'u_feb26_f22_wave3', text: 'Third wave of 6 F-22 Raptors airborne from Langley to RAF Lakenheath -- total F-22 deployment now confirmed at 24 aircraft (DefenceGeek)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '3rd F-22 wave airborne; 24 total confirmed'},
   {id: 'u_feb26_msb2026', text: 'Maritime Security Belt 2026: Iran-Russia joint naval exercises in Strait of Hormuz & Gulf of Oman — Alvand destroyer, warships, subs, helos (China reportedly withdrew)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran-Russia joint naval drills in Hormuz/Oman'},
   {id: 'u_feb26_vance_rebuild', text: 'VP Vance: US has evidence Iran trying to rebuild nuclear weapon — envoys Witkoff & Kushner heading to Geneva (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Vance confirms evidence of Iran nuclear rebuild'},
   {id: 'u_feb26_trump_15days', text: 'Trump extends Iran deal deadline from 10 to 10-15 days — warns bad things will happen if no deal', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump extends Iran deadline to 10-15 days'},
