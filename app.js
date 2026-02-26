@@ -80,12 +80,12 @@ const assets = [
     name: "USS Gerald R. Ford (CVN-78)",
     type: "carrier",
     class: "Ford-class",
-    lat: 32.82, lng: 34.98,
+    lat: 34.20, lng: 28.50,
     prevLat: 35.48, prevLng: 24.15,
-    prevLabel: "Souda Bay, Crete (Feb 24)",
-    movementDate: "2026-02-25",
-    location: "Haifa, Israel — docked",
-    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Feb 22: NYT reports Ford is south of Italy, expected to position off Israel shortly. Note: USS Churchill (DDG-81, air defense commander) only just transited Gibraltar per OSINT — CSG not yet fully assembled. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Analysts report possibly 4 CSGs converging — largest naval concentration near Iran since 2003. Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Expected to dock in Haifa, Israel. Jerusalem Post reports 40,000+ US troops in Middle East. Ford crew at 240+ days deployed, WSJ reports morale issues. JCS Chairman Gen. Dan Caine warned Trump of munitions shortfalls (Patriot, THAAD, Standard interceptors at risk). INSS reports 200+ fighter jets, 100+ support aircraft, 12 destroyers now in region. Feb 25: Ford docked at Haifa, Israel after refueling stop at Souda Bay, Crete. CSG-12 now fully on station. WSJ reports severe crew morale issues at 240+ days deployed — record-breaking deployment. Ford has pump issues reported but operational. Ret. Gen. Charles Wald (fmr EUCOM deputy): 'We could go now.' Geneva talks Feb 26 confirmed — massive US delegation: Witkoff, Rubio, Kushner, JD Vance, CIA Dir Ratcliffe, SecDef Hegseth, CoS Wiles, DNI Gabbard. Rubio delayed Netanyahu meeting from Sat to Mon. WSJ: Ford on track for potential 11-month deployment (would break US Navy record). CO Capt. Skarosi wrote letter to crew. Ret. RAdm Mark Montgomery: unprecedented. Sewage/toilet issues persist — Ford's VCHT vacuum sewage system recorded 205 toilet breakdowns in 4 days (Mar 2025); at least 1 daily sewage call during Venezuela deployment (Marine Insight). Some sailors say they want to leave the Navy. CNN (Feb 25 evening): US military prepared to strike Iran as early as this weekend; NSC met in Situation Room, Trump privately arguing both for and against; has not made final decision.",
+    prevLabel: "Souda Bay, Crete (Feb 22-26)",
+    movementDate: "2026-02-26",
+    location: "Eastern Mediterranean — en route to Israel (ETA ~24 hrs)",
+    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Spent 4 days resupplying. WSJ reports severe crew morale issues at 240+ days deployed — potential 11-month deployment (record). Sewage/toilet issues persist. CNN (Feb 25): US military prepared to strike Iran as early as this weekend. Feb 26: Ford departed Souda Bay Crete heading eastern Med — Israel Hayom reports expected off Israel coast within 24 hours. Crew took on supplies/equipment during 4-day stop. CORRECTION: Previous reports of Ford docking at Haifa were premature; Ford was at Souda Bay Feb 22-26. Now en route to join Lincoln CSG. Geneva Round 3 talks kicked off same day. CSG-12 not yet at final station.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
@@ -104,10 +104,11 @@ const assets = [
       {name: "The War Zone Feb 25 (full analysis)", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"},
       {name: "19FortyFive (11-month deploy)", url: "https://www.19fortyfive.com/2026/02/sewage-problems-and-sailors-who-want-out-aircraft-carrier-uss-gerald-r-ford-is-being-pushed-to-historic-u-s-navy-limits/"},
       {name: "CNN (strike as early as this weekend)", url: "https://www.cnn.com/2026/02/25/politics/caine-iran-hegseth-trump"},
-      {name: "Marine Insight (toilet details)", url: "https://www.marineinsight.com/shipping-news/worlds-largest-us-aircraft-carrier-uss-gerald-r-ford-battles-massive-toilet-failure-amid-iran-tensions/"}
+      {name: "Marine Insight (toilet details)", url: "https://www.marineinsight.com/shipping-news/worlds-largest-us-aircraft-carrier-uss-gerald-r-ford-battles-massive-toilet-failure-amid-iran-tensions/"},
+      {name: "Israel Hayom Feb 26 (Ford departed Crete)", url: "https://www.israelhayom.com/2026/02/26/uss-gerald-r-ford-expected-to-reach-israel-within-24-hours/"}
     ],
-    updated: "Feb 25, 2026",
-    changeSummary: "CNN: Strike possible this weekend; toilet crisis"
+    updated: "Feb 26, 2026",
+    changeSummary: "Departed Crete, ETA off Israel ~24 hrs"
   },
   {
     id: "cvn72",
@@ -458,7 +459,7 @@ const assets = [
     prevLat: 34.05, prevLng: -80.97,
     prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
     movementDate: "2026-02-19",
-    location: "Lajes Field, Azores, Portugal \u2014 largest-ever US aircraft surge",
+    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
     mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials. Feb 21: 15 KC-46A Pegasus tankers now at Lajes — up from 11. Also 11 KC-135s. 400 US personnel on Terceira Island. Over 120 US aircraft tracked eastbound in past 72 hours.",
     strikeGroup: "AMC / ANG",
     confidence: "confirmed",
@@ -1261,10 +1262,16 @@ const assets = [
   }
 ];
 
-
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_ford_depart_crete', text: 'USS Gerald R. Ford departed Souda Bay Crete after 4-day resupply stop — heading to eastern Mediterranean, expected off Israel coast within 24 hours. Previous reports of Haifa docking were premature (Israel Hayom)', date: 'Feb 26, 2026', assetId: 'cvn78', changeSummary: 'Ford leaves Crete, ETA Israel 24 hrs'},
+  {id: 'u_feb26_geneva_r3_started', text: 'Geneva Round 3 nuclear talks officially kicked off — Araghchi vs Witkoff/Kushner via Omani mediation. Omani FM: negotiators showed "unprecedented openness" to new creative ideas (AP/Reuters/Times of Oman)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva Round 3 talks now underway'},
+  {id: 'u_feb26_graham_screwthat', text: 'Sen. Lindsey Graham on Iran enrichment deal: "screw that" — opposes allowing even token enrichment for face-saving. Calls regime "religious Nazis," wants regime change. "I hope help is on the way" (Jewish Insider/X)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Graham slams any Iran enrichment concession'},
+  {id: 'u_feb26_iran_bonanza', text: 'FT: Iran offering Trump financial "bonanza" — oil/gas/mining rights and critical minerals as incentive to reach deal, mirroring Venezuela approach. Specifically directed at Trump\'s deal-making affinity (Financial Times via Times of Israel)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran dangles oil/gas bonanza for Trump deal'},
+  {id: 'u_feb26_khamenei_successors', text: 'NYT via CTP-ISW: Khamenei has named 4 potential successors for every military and government post he appoints — preparing for potential US/Israeli decapitation campaign. Delegated authority to trusted circle if he cannot be reached or is killed', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Khamenei pre-designates 4 successors per post'},
+  {id: 'u_feb26_iraqi_militia_threat', text: 'Iraqi Resistance Coordination Committee (Kataib Hezbollah, AAH, Nujaba et al.) warns of action to "end US occupation" in Iraq. CTP-ISW assesses militias may attack US forces in Kurdistan if US/Israel strikes Iran (Critical Threats/ISW Feb 25)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iraqi militias threaten US forces in Kurdistan'},
+  {id: 'u_feb26_kurdish_coalition', text: 'Anti-regime Kurdish groups form "Coalition of Political Forces in Iranian Kurdistan" — planning administration of Kurdish areas if regime collapses. Includes PDKI, PAK, PJAK. Reflects potential for Iran to fracture post-regime (CTP-ISW Feb 25)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Kurdish coalition plans post-regime governance'},
   {id: 'u_feb26_shamkhani_fatwa', text: 'Ali Shamkhani, Supreme Leader\'s rep on Defense Council: "immediate agreement attainable" if core issue is nuclear weapons ban -- aligns with Khamenei\'s fatwa; says Araghchi has sufficient authority to sign deal (WANA)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Khamenei envoy signals deal authority granted'},
   {id: 'u_feb26_guardian_5pct', text: 'Guardian: Witkoff and Kushner privately greenlighted enrichment below 5% (civilian JCPOA level) during earlier rounds -- flexible opener caught Iranian negotiators off-guard (Gulf News/The Guardian)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US secretly offered sub-5% enrichment deal'},
   {id: 'u_feb26_nyt_twoplans', text: 'NYT: Trump weighing two distinct military plans -- (1) comprehensive campaign targeting Khamenei & regime or (2) limited strikes on nuclear/missile sites. If limited fails, would escalate to full campaign (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump has two Iran strike plans ready'},
