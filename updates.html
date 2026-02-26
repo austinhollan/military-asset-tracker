@@ -36,6 +36,7 @@
       color: var(--text-primary);
     }
 
+    /* Scanline overlay */
     body::after {
       content: '';
       position: fixed;
@@ -48,6 +49,7 @@
       );
     }
 
+    /* Header */
     .header {
       position: sticky;
       top: 0;
@@ -62,7 +64,10 @@
       backdrop-filter: blur(14px);
     }
 
-    .header-left { display: flex; flex-direction: column; }
+    .header-left {
+      display: flex;
+      flex-direction: column;
+    }
 
     .header-title {
       font-family: var(--font-mono);
@@ -98,6 +103,7 @@
       border-color: var(--amber);
     }
 
+    /* Filters */
     .filter-row {
       display: flex;
       align-items: center;
@@ -141,6 +147,7 @@
       background: rgba(255,179,0,0.08);
     }
 
+    /* Container */
     .container {
       max-width: 960px;
       margin: 0 auto;
@@ -167,6 +174,7 @@
       font-weight: 700;
     }
 
+    /* Update cards */
     .update-card {
       display: flex;
       align-items: stretch;
@@ -307,6 +315,7 @@
       transform: rotate(180deg);
     }
 
+    /* Expanded detail */
     .card-detail {
       display: none;
       padding: 0 16px 16px 52px;
@@ -370,19 +379,49 @@
       background: rgba(38,198,218,0.16);
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
-      .header { padding: 10px 12px; }
-      .header-title { font-size: 12px; letter-spacing: 2px; }
-      .header-subtitle { font-size: 8px; }
-      .back-link { font-size: 10px; padding: 5px 10px; }
-      .filter-row { padding: 8px 12px; gap: 6px; }
-      .filter-chip { font-size: 9px; padding: 5px 10px; }
-      .container { padding: 10px; }
-      .card-main { padding: 10px 12px; gap: 8px; }
-      .card-icon { width: 28px; height: 28px; }
-      .card-name { font-size: 11px; }
-      .card-location { font-size: 11px; }
-      .card-detail { padding: 0 12px 12px 12px; }
+      .header {
+        padding: 10px 12px;
+      }
+      .header-title {
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+      .header-subtitle {
+        font-size: 8px;
+      }
+      .back-link {
+        font-size: 10px;
+        padding: 5px 10px;
+      }
+      .filter-row {
+        padding: 8px 12px;
+        gap: 6px;
+      }
+      .filter-chip {
+        font-size: 9px;
+        padding: 5px 10px;
+      }
+      .container {
+        padding: 10px;
+      }
+      .card-main {
+        padding: 10px 12px;
+        gap: 8px;
+      }
+      .card-icon {
+        width: 28px; height: 28px;
+      }
+      .card-name {
+        font-size: 11px;
+      }
+      .card-location {
+        font-size: 11px;
+      }
+      .card-detail {
+        padding: 0 12px 12px 12px;
+      }
     }
   </style>
 </head>
@@ -406,12 +445,13 @@
   <div class="container">
     <div class="summary-bar">
       <span><span class="summary-count" id="update-count">0</span> UPDATES</span>
-      <span>DATA AS OF FEB 25, 2026</span>
+      <span>DATA AS OF FEB 26, 2026</span>
     </div>
     <div id="updates-list"></div>
   </div>
 
   <script>
+    // === ASSET TYPE DEFINITIONS (mirrored from app.js) ===
     const ASSET_TYPES = {
       carrier: { label: 'Aircraft Carrier', color: '#4FC3F7', shape: 'hexagon' },
       bomber: { label: 'Bomber', color: '#EF5350', shape: 'bomber' },
@@ -426,6 +466,7 @@
       special_naval: { label: 'Special Naval', color: '#B0BEC5', shape: 'hexoutline' }
     };
 
+    // Minimal SVG icon generator for the list
     function miniIcon(type, color) {
       const size = 28;
       const half = size / 2;
@@ -447,14 +488,21 @@
       return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg"><g transform="translate(${half},${half})">${icon}</g></svg>`;
     }
 
+    // === ASSET DATA (loaded from shared data file or inline) ===
+    // We'll load assets from a script tag referencing the shared data
+    // For now, inline the data:
+
     function loadAssets() {
+      // Fetch app.js and extract asset data
       return fetch('./app.js')
         .then(r => r.text())
         .then(text => {
+          // Extract the assets array and ASSET_TYPES from app.js
           const match = text.match(/const assets = \[([\s\S]*?)\n\];/);
           if (match) {
             try {
               const assetsStr = '[' + match[1] + ']';
+              // Use Function to evaluate safely
               return new Function('return ' + assetsStr)();
             } catch(e) {
               console.error('Failed to parse assets', e);
@@ -499,6 +547,7 @@
         filtered = filtered.filter(a => a.confidence !== 'confirmed');
       }
 
+      // Sort by date
       filtered.sort((a, b) => parseUpdateDate(b.updated) - parseUpdateDate(a.updated));
 
       countEl.textContent = filtered.length;
@@ -516,7 +565,7 @@
         ).join(' &bull; ');
 
         const movement = (asset.prevLat !== null && asset.prevLabel)
-          ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} → Current position</div></div>`
+          ? `<div class="detail-row"><div class="detail-row-label">MOVEMENT</div><div class="detail-row-value">${asset.prevLabel} \u2192 Current position</div></div>`
           : '';
 
         return `
@@ -534,17 +583,17 @@
                   <span class="card-date">${asset.updated} ${relHtml}</span>
                   <span class="card-badge ${isConf ? 'confirmed' : 'unconfirmed'}">${isConf ? 'CONFIRMED' : 'UNCONFIRMED'}</span>
                 </div>
-                <div class="card-expand-icon">▾</div>
+                <div class="card-expand-icon">\u25BE</div>
               </div>
               <div class="card-detail">
                 <div class="detail-row">
                   <div class="detail-row-label">TYPE / CLASS</div>
-                  <div class="detail-row-value">${typeInfo.label} — ${asset.class || 'N/A'}</div>
+                  <div class="detail-row-value">${typeInfo.label} \u2014 ${asset.class || 'N/A'}</div>
                 </div>
                 ${asset.strikeGroup ? `<div class="detail-row"><div class="detail-row-label">STRIKE GROUP / UNIT</div><div class="detail-row-value">${asset.strikeGroup}</div></div>` : ''}
                 <div class="detail-row">
                   <div class="detail-row-label">LOCATION</div>
-                  <div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}°N, ${asset.lng.toFixed(2)}°${asset.lng >= 0 ? 'E' : 'W'}</span></div>
+                  <div class="detail-row-value">${asset.location}<br><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">${asset.lat.toFixed(2)}\u00b0N, ${asset.lng.toFixed(2)}\u00b0${asset.lng >= 0 ? 'E' : 'W'}</span></div>
                 </div>
                 ${movement}
                 <div class="detail-row">
@@ -552,7 +601,7 @@
                   <div class="detail-row-value">${asset.mission}</div>
                 </div>
                 ${sources ? `<div class="detail-row"><div class="detail-row-label">SOURCES</div><div class="detail-row-value">${sources}</div></div>` : ''}
-                <a href="./index.html" class="map-link-btn">VIEW ON MAP ▸</a>
+                <a href="./index.html" class="map-link-btn">VIEW ON MAP \u25b8</a>
               </div>
             </div>
           </div>
@@ -561,10 +610,12 @@
     }
 
     function toggleCard(el) {
+      // Only toggle if not clicking a link
       if (event.target.tagName === 'A') return;
       el.classList.toggle('expanded');
     }
 
+    // Filter buttons
     document.querySelectorAll('.filter-chip').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
@@ -574,6 +625,7 @@
       });
     });
 
+    // Load and render
     loadAssets().then(data => {
       allAssets = data;
       renderUpdates();
