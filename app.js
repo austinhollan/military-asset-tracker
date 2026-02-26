@@ -1260,9 +1260,14 @@ const assets = [
   }
 ];
 
+
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_politico_israel1st', text: 'Politico: Senior Trump advisers prefer Israel strikes Iran first before US launches large-scale air campaign -- "politics are better if Israelis go first and alone" (2 sources)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Advisers want Israel to strike Iran first'},
+  {id: 'u_feb26_nato_turkey_iran', text: 'NATO air surveillance assets in Turkey shifted focus from Russia to Iran -- AWACS and reconnaissance flights reoriented (Bloomberg)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NATO Turkey surveillance pivots to Iran'},
+  {id: 'u_feb26_leave_iran', text: 'Multiple countries urging citizens to leave Iran immediately -- travel advisories escalating amid strike fears (Al Jazeera)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Countries tell citizens to leave Iran now'},
+  {id: 'u_feb26_iraq_deadline', text: 'US sets Friday deadline for Iraq to form government free of Iran-linked Maliki or face sanctions (Al-Hadath/JPost)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US ultimatum to Iraq: drop Maliki by Friday'},
   {id: 'u_feb26_rubio_icbm', text: 'SecState Rubio: Iran pursuing ICBMs capable of reaching US mainland -- refusal to discuss missiles a "big, big problem" ahead of Geneva talks (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Rubio warns Iran developing ICBMs targeting US'},
   {id: 'u_feb26_wsj_dispersal', text: 'WSJ: US dispersing warplanes across Israeli bases to avoid concentrating air power at vulnerable Gulf airfields -- first-ever US combat aircraft deployment to Israel for wartime mission', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'US dispersing jets across Israeli bases (WSJ)'},
   {id: 'u_feb26_f22_wave3', text: 'Third wave of 6 F-22 Raptors airborne from Langley to RAF Lakenheath -- total F-22 deployment now confirmed at 24 aircraft (DefenceGeek)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '3rd F-22 wave airborne; 24 total confirmed'},
