@@ -308,7 +308,7 @@ const assets = [
   // === FIGHTERS ===
   {
     id: "f22_staging",
-    name: "F-22A Raptors (24 total — 11 Ovda + 6 Lakenheath + 6 en route)",
+    name: "F-22A Raptors (24 total — 11 Ovda + 13 Lakenheath, to Israel by Fri)",
     type: "fighter",
     class: "F-22A Raptor",
     lat: 29.94, lng: 34.94,
@@ -316,7 +316,7 @@ const assets = [
     prevLabel: "RAF Lakenheath, UK (Feb 17-24)",
     movementDate: "2026-02-24",
     location: "Ovda Air Base, Negev Desert, Israel — 11 aircraft (1 returned to UK with fuel leak)",
-    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Feb 25: THIRD wave of 6 F-22s confirmed airborne from Langley to Lakenheath (DefenceGeek), bringing total F-22 deployment to 24 aircraft. WSJ (Feb 26): First-ever US combat aircraft deployed to Israel for potential wartime mission. US using Israeli bases to DISPERSE warplanes rather than concentrating at vulnerable Gulf airfields — critical after Saudi Arabia and UAE denied basing. This makes Israeli-based F-22s and carrier-based aviation the backbone of any strike package. Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads. Rubio (Feb 25): Iran pursuing ICBMs, refuses to discuss ballistic missiles — 'big, big problem.'",
+    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Feb 25: THIRD wave of 6 F-22s confirmed airborne from Langley to Lakenheath (DefenceGeek), bringing total F-22 deployment to 24 aircraft. WSJ (Feb 26): First-ever US combat aircraft deployed to Israel for potential wartime mission. US using Israeli bases to DISPERSE warplanes rather than concentrating at vulnerable Gulf airfields — critical after Saudi Arabia and UAE denied basing. This makes Israeli-based F-22s and carrier-based aviation the backbone of any strike package. Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads. Rubio (Feb 25): Iran pursuing ICBMs, refuses to discuss ballistic missiles — 'big, big problem.' OSINTdefender (Feb 26): 13 F-22s now at Lakenheath (12 new arrivals from Langley + 1 returned from Israel with fuel leak), all expected to continue to Israel by Friday.",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
@@ -334,10 +334,11 @@ const assets = [
       {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
       {name: "Army Recognition Feb 25", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-22-stealth-fighters-reportedly-land-in-israel-amid-iran-tensions-and-regional-buildup"},
       {name: "WSJ (dispersal strategy)", url: "https://www.wsj.com/politics/national-security/f-22-stealth-fighters-head-to-israel-a-first-for-the-us-c3b9f4a2"},
-      {name: "Newsweek (allies refuse basing)", url: "https://www.newsweek.com/trumps-middle-east-friends-wont-let-him-use-their-bases-to-strike-iran-11569309"}
+      {name: "Newsweek (allies refuse basing)", url: "https://www.newsweek.com/trumps-middle-east-friends-wont-let-him-use-their-bases-to-strike-iran-11569309"},
+      {name: "OSINTdefender (13 at Lakenheath)", url: "https://x.com/sentdefender/status/2026886621442756874"}
     ],
     updated: "Feb 26, 2026",
-    changeSummary: "24 F-22s confirmed; WSJ: dispersal across Israeli bases"
+    changeSummary: "13 F-22s staged at Lakenheath, moving to Israel by Friday"
   },
   {
     id: "f35_jordan",
@@ -1260,10 +1261,12 @@ const assets = [
   }
 ];
 
-
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_irgc_dhafra', text: 'IRGC conducts missile drill targeting replica of US Al Dhafra Air Base (UAE) -- bunker-penetrating warheads tested against mock hardened shelters (Defence Security Asia/Oneindia)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'IRGC rehearses strike on US base in UAE'},
+  {id: 'u_feb26_dia_icbm60', text: 'DIA report: Iran could field 60 ICBMs capable of reaching US homeland by 2035 -- currently has no deployed ICBMs but developing launch vehicles (NBC News/Defence Industry Europe)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'DIA: Iran could have 60 ICBMs by 2035'},
+  {id: 'u_feb26_f22_13lakenheath', text: 'OSINTdefender: 13 F-22 Raptors now at RAF Lakenheath (12 new from Langley + 1 fuel-leak return from Israel) -- all expected to continue to Israel by Friday', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '13 F-22s at Lakenheath, to Israel by Friday'},
   {id: 'u_feb26_politico_israel1st', text: 'Politico: Senior Trump advisers prefer Israel strikes Iran first before US launches large-scale air campaign -- "politics are better if Israelis go first and alone" (2 sources)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Advisers want Israel to strike Iran first'},
   {id: 'u_feb26_nato_turkey_iran', text: 'NATO air surveillance assets in Turkey shifted focus from Russia to Iran -- AWACS and reconnaissance flights reoriented (Bloomberg)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NATO Turkey surveillance pivots to Iran'},
   {id: 'u_feb26_leave_iran', text: 'Multiple countries urging citizens to leave Iran immediately -- travel advisories escalating amid strike fears (Al Jazeera)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Countries tell citizens to leave Iran now'},
