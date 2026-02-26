@@ -458,7 +458,7 @@ const assets = [
     prevLat: 34.05, prevLng: -80.97,
     prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
     movementDate: "2026-02-19",
-    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
+    location: "Lajes Field, Azores, Portugal \u2014 largest-ever US aircraft surge",
     mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials. Feb 21: 15 KC-46A Pegasus tankers now at Lajes — up from 11. Also 11 KC-135s. 400 US personnel on Terceira Island. Over 120 US aircraft tracked eastbound in past 72 hours.",
     strikeGroup: "AMC / ANG",
     confidence: "confirmed",
@@ -1265,6 +1265,10 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_shamkhani_fatwa', text: 'Ali Shamkhani, Supreme Leader\'s rep on Defense Council: "immediate agreement attainable" if core issue is nuclear weapons ban -- aligns with Khamenei\'s fatwa; says Araghchi has sufficient authority to sign deal (WANA)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Khamenei envoy signals deal authority granted'},
+  {id: 'u_feb26_guardian_5pct', text: 'Guardian: Witkoff and Kushner privately greenlighted enrichment below 5% (civilian JCPOA level) during earlier rounds -- flexible opener caught Iranian negotiators off-guard (Gulf News/The Guardian)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US secretly offered sub-5% enrichment deal'},
+  {id: 'u_feb26_nyt_twoplans', text: 'NYT: Trump weighing two distinct military plans -- (1) comprehensive campaign targeting Khamenei & regime or (2) limited strikes on nuclear/missile sites. If limited fails, would escalate to full campaign (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump has two Iran strike plans ready'},
+  {id: 'u_feb26_iran_round3_proposal', text: 'Iran formally submits comprehensive proposal during Geneva Round 3 via Omani FM -- claims to "address all US pretexts" on nuclear program; warns rejection confirms US not serious about diplomacy (WANA/JPost)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran delivers formal proposal in Round 3'},
   {id: 'u_feb26_witkoff_nosunset', text: 'Axios: Witkoff told AIPAC donors US demands any Iran deal last indefinitely -- no sunset provisions. Trump may accept "token" enrichment if Iran proves non-weaponizable. Geneva Round 3 seen as last chance for diplomacy before military action (Axios/Kurdistan24)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US demands permanent deal, no sunset clause'},
   {id: 'u_feb26_iran_proposal', text: 'Iran proposal revealed: reduce enrichment from 60% to 3.6% (JCPOA level), 7-year suspension -- US wants 10 years. Key dispute: Iran refuses to ship HEU stockpile abroad, offers dilution only; US insists removal (Ynet/Kan)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran offers 3.6% enrichment, 7-yr suspension'},
   {id: 'u_feb26_pentagon_7days', text: 'NYT: Two US military officials say Pentagon lacks resources for prolonged Iran bombing -- could sustain strikes for only 7-10 days before running low on key munitions', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Pentagon can only sustain 7-10 days of strikes'},
