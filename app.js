@@ -80,12 +80,12 @@ const assets = [
     name: "USS Gerald R. Ford (CVN-78)",
     type: "carrier",
     class: "Ford-class",
-    lat: 34.20, lng: 28.50,
-    prevLat: 35.48, prevLng: 24.15,
-    prevLabel: "Souda Bay, Crete (Feb 22-26)",
+    lat: 34.50, lng: 30.50,
+    prevLat: 34.20, prevLng: 28.50,
+    prevLabel: "South of Crete (Feb 26 AM)",
     movementDate: "2026-02-26",
-    location: "Eastern Mediterranean — en route to Israel (ETA ~24 hrs)",
-    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Spent 4 days resupplying. WSJ reports severe crew morale issues at 240+ days deployed — potential 11-month deployment (record). Sewage/toilet issues persist. CNN (Feb 25): US military prepared to strike Iran as early as this weekend. Feb 26: Ford departed Souda Bay Crete heading eastern Med — Israel Hayom reports expected off Israel coast within 24 hours. Crew took on supplies/equipment during 4-day stop. CORRECTION: Previous reports of Ford docking at Haifa were premature; Ford was at Souda Bay Feb 22-26. Now en route to join Lincoln CSG. Geneva Round 3 talks kicked off same day. CSG-12 not yet at final station.",
+    location: "Eastern Mediterranean — en route to Haifa, Israel (ETA Friday Feb 27)",
+    mission: "Deployment Day 244+. Transited Strait of Gibraltar Feb 20. Escorts: USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8: 4x F/A-18E/F squadrons, EA-18G (VAQ-142), E-2D (VAW-124). Feb 24: Ford arrived at Souda Bay, Crete (NATO base). Spent 4 days resupplying. WSJ reports severe crew morale issues at 240+ days deployed — potential 11-month deployment (record). Sewage/toilet issues persist. CNN (Feb 25): US military prepared to strike Iran as early as this weekend. Feb 26: Ford departed Souda Bay Crete heading eastern Med. Reuters/Israel Hayom now report ETA Haifa Friday Feb 27. ItaMilRadar: Ford heading toward Levant basin, could provide air cover to Israel in case of Iranian attack. Al Bawaba confirms USS Mahan (DDG-72) escorting. If docked at Haifa, would be first US carrier at Israeli port during active crisis — symbolic and operational message unmistakable. CSG-12 not yet at final station.",
     strikeGroup: "CSG-12 / CVW-8 / DESRON 2",
     confidence: "confirmed",
     sources: [
@@ -105,10 +105,13 @@ const assets = [
       {name: "19FortyFive (11-month deploy)", url: "https://www.19fortyfive.com/2026/02/sewage-problems-and-sailors-who-want-out-aircraft-carrier-uss-gerald-r-ford-is-being-pushed-to-historic-u-s-navy-limits/"},
       {name: "CNN (strike as early as this weekend)", url: "https://www.cnn.com/2026/02/25/politics/caine-iran-hegseth-trump"},
       {name: "Marine Insight (toilet details)", url: "https://www.marineinsight.com/shipping-news/worlds-largest-us-aircraft-carrier-uss-gerald-r-ford-battles-massive-toilet-failure-amid-iran-tensions/"},
-      {name: "Israel Hayom Feb 26 (Ford departed Crete)", url: "https://www.israelhayom.com/2026/02/26/uss-gerald-r-ford-expected-to-reach-israel-within-24-hours/"}
+      {name: "Israel Hayom Feb 26 (Ford departed Crete)", url: "https://www.israelhayom.com/2026/02/26/uss-gerald-r-ford-expected-to-reach-israel-within-24-hours/"},
+      {name: "ItaMilRadar Feb 26 (air cover role)", url: "https://www.itamilradar.com/2026/02/26/uss-gerald-r-ford-moves-toward-israel-as-iran-tensions-raise-prospect-of-us-air-cover-role/"},
+      {name: "Iran International (Reuters ETA Friday)", url: "https://www.iranintl.com/en/202602264679"},
+      {name: "Al Bawaba (Mahan escort)", url: "https://www.albawaba.com/news/uss-gerald-r-ford-leaves-crete-island-1622917"}
     ],
     updated: "Feb 26, 2026",
-    changeSummary: "Departed Crete, ETA off Israel ~24 hrs"
+    changeSummary: "En route Haifa, ETA Friday Feb 27"
   },
   {
     id: "cvn72",
@@ -1304,14 +1307,19 @@ const assets = [
   }
 ];
 
+
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_wsj_us_demands', text: 'WSJ: US demands in Geneva are maximalist -- zero uranium enrichment on Iranian soil, dismantlement of Fordow/Natanz/Isfahan nuclear facilities, transfer of ALL enriched uranium to US custody, and any deal must be permanent (no sunset). May allow very low-level Tehran reactor for medical isotopes (i24News/WSJ)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'WSJ reveals rigid US demands at Geneva'},
+  {id: 'u_feb26_nyt_iran_proposal_detail', text: 'NYT: Detailed Iran proposal -- suspend enrichment 3-5 years (not 7), then join regional nuclear consortium. Maintain only 1.5% enrichment for medical research. Dilute 400kg HEU stockpile in phases under IAEA monitoring. Also offering to buy US aircraft, invite American firms into Iran energy/mining/lithium sectors (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NYT details Iran 3-5yr halt, 1.5% proposal'},
+  {id: 'u_feb26_geneva_resume_baghaei', text: 'Geneva R3 talks resumed after recess at ~1700 GMT. Iran FM spokesperson Baghaei: "crucial and actionable proposals" introduced on both nuclear AND sanctions relief, "both teams engaged with utmost seriousness." Senior Iranian official told Reuters talks produced "new ideas" requiring Tehran consultation. Framework possible if US separates nuclear from non-nuclear issues (CNN/IRIB/Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva resumes; Baghaei: actionable proposals'},
+  {id: 'u_feb26_airlift_continues', text: 'Heavy airlift continues during Geneva recess: 13x C-17A Globemaster III, 1x C-5M Super Galaxy, 2x KC-46A Pegasus tracked in transit to Middle East. Military buildup unabated even as diplomats negotiate (OSINTdefender)', date: 'Feb 26, 2026', assetId: 'tanker_fleet', changeSummary: '16 heavy-lift aircraft in transit during talks'},
   {id: 'u_feb26_cobra_gold', text: 'Exercise Cobra Gold 2026 opens in Thailand -- 8,000+ troops from 30 nations. USS Ashland (LSD-48) arrived with TF Ashland (~600 Marines/Sailors from 15th MEU). Amphibious assault, live-fire, jungle warfare, NEO drills. 45th iteration of largest mainland Asia exercise (INDOPACOM)', date: 'Feb 26, 2026', assetId: 'cobra_gold_26', changeSummary: 'Cobra Gold 2026: 8K troops, 30 nations, Thailand'},
   {id: 'u_feb26_justified_accord', text: 'Exercise Justified Accord 2026 begins across Kenya, Tanzania & Djibouti -- AFRICOM\'s largest East Africa exercise. 1,500+ personnel incl. 173rd Airborne, MA & NE Nat\'l Guard. Live-fire, urban combat, jungle warfare, cyber ops, UAS tech expo. Runs through Mar 13 (National Guard)', date: 'Feb 26, 2026', assetId: 'justified_accord_26', changeSummary: 'AFRICOM exercise: 1,500 troops, 3 countries'},
   {id: 'u_feb26_geneva_3hr_recess', text: 'Geneva Round 3 first session lasted 3 hours before both sides retired for internal deliberations -- talks to resume "in a few hours." Substantive engagement suggests real negotiation underway, not symbolic session (IRNA via OSINTdefender)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva R3: 3-hr session, recess, resuming'},
   {id: 'u_feb26_dg_satdetail', text: 'MizarVision satellite imagery (Feb 25) reveals full Diego Garcia air composition: 6x F-16, 3x KC-135, 2x P-8A Poseidon, 2x C-130J, 3x C-17A, 1x C-5M, plus Arleigh Burke DDG at wharf. Atlas Air 747 cargo charter from Philippines also arrived -- stockpile buildup for surge ops (Army Recognition)', date: 'Feb 26, 2026', assetId: 'diego_garcia_base', changeSummary: 'Satellite reveals full Diego Garcia buildup'},
-  {id: 'u_feb26_ford_depart_crete', text: 'USS Gerald R. Ford departed Souda Bay Crete after 4-day resupply stop — heading to eastern Mediterranean, expected off Israel coast within 24 hours. Previous reports of Haifa docking were premature (Israel Hayom)', date: 'Feb 26, 2026', assetId: 'cvn78', changeSummary: 'Ford leaves Crete, ETA Israel 24 hrs'},
+  {id: 'u_feb26_ford_depart_crete', text: 'USS Gerald R. Ford departed Souda Bay Crete after 4-day resupply stop — heading to Haifa, Israel. Reuters/Israel Hayom report ETA Friday Feb 27. ItaMilRadar: Ford could provide air cover role to Israel. Al Bawaba: USS Mahan (DDG-72) confirmed escorting. First US carrier at Israeli port during active crisis (ItaMilRadar/Reuters)', date: 'Feb 26, 2026', assetId: 'cvn78', changeSummary: 'Ford en route Haifa, ETA Friday Feb 27'},
   {id: 'u_feb26_geneva_r3_started', text: 'Geneva Round 3 nuclear talks officially kicked off — Araghchi vs Witkoff/Kushner via Omani mediation. Omani FM: negotiators showed "unprecedented openness" to new creative ideas (AP/Reuters/Times of Oman)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva Round 3 talks now underway'},
   {id: 'u_feb26_graham_screwthat', text: 'Sen. Lindsey Graham on Iran enrichment deal: "screw that" — opposes allowing even token enrichment for face-saving. Calls regime "religious Nazis," wants regime change. "I hope help is on the way" (Jewish Insider/X)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Graham slams any Iran enrichment concession'},
   {id: 'u_feb26_iran_bonanza', text: 'FT: Iran offering Trump financial "bonanza" — oil/gas/mining rights and critical minerals as incentive to reach deal, mirroring Venezuela approach. Specifically directed at Trump\'s deal-making affinity (Financial Times via Times of Israel)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran dangles oil/gas bonanza for Trump deal'},
@@ -1996,6 +2004,7 @@ function updateStats() {
 }
 
 updateStats();
+
 
 // ============================================================
 // ZOOM-BASED LABEL VISIBILITY
