@@ -180,15 +180,17 @@ const assets = [
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "Atlantic Ocean — COMPTUEX, ~100nm off East Coast",
-    mission: "COMPTUEX workups. Pentagon ordered spin-up for potential Middle East deployment Feb 11. Could be deployed in weeks if expedited. WSJ: 'could potentially expedite those exercises.'",
-    strikeGroup: "CSG-10 / CVW-7",
+    mission: "COMPTUEX (Composite Training Unit Exercise) actively underway as of Feb 21-26. Pentagon ordered spin-up for potential Middle East deployment Feb 11. Escorts confirmed: USS Ross (DDG-71) and USS Mason (DDG-87). Replenishment-at-sea with USNS John Lenthall (TAO-189) on Feb 15. COMPTUEX is the Joint Force's most complex at-sea certification -- final step before deployment. Could be combat-ready and en route to ME within days of completion. If expedited, Bush CSG would provide a THIRD carrier strike group for the Iran theater alongside Ford and Lincoln.",
+    strikeGroup: "CSG-10 / CVW-7 / DESRON 22",
     confidence: "confirmed",
     sources: [
       {name: "The War Zone Feb 11", url: "https://www.twz.com/news-features/second-carrier-strike-group-ordered-to-spin-up-for-deployment-to-middle-east-report"},
-      {name: "OSINT @ianellisjones", url: "https://x.com/ianellisjones/status/2012324333025169649"}
+      {name: "OSINT @ianellisjones", url: "https://x.com/ianellisjones/status/2012324333025169649"},
+      {name: "SURFLANT (Ross/Mason)", url: "https://www.facebook.com/SURFLANT/posts/1340431311448747/"},
+      {name: "US 2nd Fleet (COMPTUEX)", url: "https://www.facebook.com/US2ndFleet/posts/1376568311179151/"}
     ],
-    updated: "Feb 11, 2026",
-    changeSummary: "COMPTUEX workups, potential ME deployment ordered"
+    updated: "Feb 26, 2026",
+    changeSummary: "COMPTUEX active with Ross/Mason, near deployment-ready"
   },
   // === AMPHIBIOUS READY GROUPS ===
   {
@@ -1311,6 +1313,10 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_geneva_direct_talks', text: 'Axios: Geneva R3 included DIRECT exchanges between US (Witkoff/Kushner) and Iranian (Araghchi) delegations -- not just indirect via Omani mediation. Both formats used in same session. Iran submitted eagerly-awaited draft proposal. IAEA Director Grossi also participated. US demanded surrender of 10,000 kg enriched uranium stockpile (Axios)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Direct US-Iran talks confirmed at Geneva R3'},
+  {id: 'u_feb26_war_powers_vote', text: 'House Dem leadership (Jeffries, Clark, Aguilar) + ranking members (Meeks, Himes, Smith) formally announce vote on Khanna-Massie Iran War Powers Resolution next week when Congress reconvenes. Would require congressional authorization before any Iran strike. 82 co-sponsors (81 Dem + 1 GOP). YouGov: only 27% support military force, 49% oppose (House Democrats)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'House to vote on Iran war powers next week'},
+  {id: 'u_feb26_bush_comptuex', text: 'USS George H.W. Bush (CVN-77) CSG actively conducting COMPTUEX (final pre-deployment certification) with escorts USS Ross (DDG-71) and USS Mason (DDG-87). Replenishment-at-sea with USNS John Lenthall. COMPTUEX is last step before deployment -- Bush could provide THIRD carrier for Iran theater alongside Ford and Lincoln (SURFLANT/US 2nd Fleet)', date: 'Feb 26, 2026', assetId: 'cvn77', changeSummary: 'Bush CSG nearing deployment-ready status'},
+  {id: 'u_feb26_geneva_second_pause', text: 'Geneva R3 evening session paused AGAIN as both sides break to consult with capitals -- two officials confirm to NYT. Second recess of the day suggests proposals produced enough substance to require leadership-level decisions in Washington and Tehran (NYT live)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva pauses again for capital consultations'},
   {id: 'u_feb26_wsj_us_demands', text: 'WSJ: US demands in Geneva are maximalist -- zero uranium enrichment on Iranian soil, dismantlement of Fordow/Natanz/Isfahan nuclear facilities, transfer of ALL enriched uranium to US custody, and any deal must be permanent (no sunset). May allow very low-level Tehran reactor for medical isotopes (i24News/WSJ)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'WSJ reveals rigid US demands at Geneva'},
   {id: 'u_feb26_nyt_iran_proposal_detail', text: 'NYT: Detailed Iran proposal -- suspend enrichment 3-5 years (not 7), then join regional nuclear consortium. Maintain only 1.5% enrichment for medical research. Dilute 400kg HEU stockpile in phases under IAEA monitoring. Also offering to buy US aircraft, invite American firms into Iran energy/mining/lithium sectors (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NYT details Iran 3-5yr halt, 1.5% proposal'},
   {id: 'u_feb26_geneva_resume_baghaei', text: 'Geneva R3 talks resumed after recess at ~1700 GMT. Iran FM spokesperson Baghaei: "crucial and actionable proposals" introduced on both nuclear AND sanctions relief, "both teams engaged with utmost seriousness." Senior Iranian official told Reuters talks produced "new ideas" requiring Tehran consultation. Framework possible if US separates nuclear from non-nuclear issues (CNN/IRIB/Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva resumes; Baghaei: actionable proposals'},
