@@ -1259,9 +1259,14 @@ const assets = [
   }
 ];
 
+
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_msb2026', text: 'Maritime Security Belt 2026: Iran-Russia joint naval exercises in Strait of Hormuz & Gulf of Oman — Alvand destroyer, warships, subs, helos (China reportedly withdrew)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran-Russia joint naval drills in Hormuz/Oman'},
+  {id: 'u_feb26_vance_rebuild', text: 'VP Vance: US has evidence Iran trying to rebuild nuclear weapon — envoys Witkoff & Kushner heading to Geneva (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Vance confirms evidence of Iran nuclear rebuild'},
+  {id: 'u_feb26_trump_15days', text: 'Trump extends Iran deal deadline from 10 to 10-15 days — warns bad things will happen if no deal', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump extends Iran deadline to 10-15 days'},
+  {id: 'u_feb26_china_satimages', text: 'Chinese military releases satellite imagery of US bases in Middle East — possible ISR support signal to Iran (Atlantic Council/SCMP)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'China releases satellite images of US bases'},
   {id: 'u_feb25_araghchi_draft', text: 'Iran FM Araghchi presented draft proposal to Omani FM in Geneva -- provisions for nuclear deal and sanctions relief (Al Jazeera/TASS)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran presents draft nuclear deal proposal'},
   {id: 'u_feb25_strike_weekend', text: 'CNN: US military prepared to strike Iran as early as this weekend -- NSC met in Situation Room, Trump yet to decide', date: 'Feb 25, 2026', assetId: null, changeSummary: 'CNN: Strike possible as early as this weekend'},
   {id: 'u_feb25_allies_refuse', text: 'Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, Turkey all refuse to allow bases for Iran strikes (Newsweek)', date: 'Feb 25, 2026', assetId: null, changeSummary: '7 allies refuse base access for Iran strikes'},
