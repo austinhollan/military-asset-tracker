@@ -322,7 +322,7 @@ const assets = [
     prevLabel: "RAF Lakenheath, UK (Feb 17-24)",
     movementDate: "2026-02-24",
     location: "Ovda Air Base, Negev Desert, Israel — 11 aircraft (1 returned to UK with fuel leak)",
-    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Feb 25: THIRD wave of 6 F-22s confirmed airborne from Langley to Lakenheath (DefenceGeek), bringing total F-22 deployment to 24 aircraft. WSJ (Feb 26): First-ever US combat aircraft deployed to Israel for potential wartime mission. US using Israeli bases to DISPERSE warplanes rather than concentrating at vulnerable Gulf airfields — critical after Saudi Arabia and UAE denied basing. This makes Israeli-based F-22s and carrier-based aviation the backbone of any strike package. Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads. Rubio (Feb 25): Iran pursuing ICBMs, refuses to discuss ballistic missiles — 'big, big problem.' OSINTdefender (Feb 26): 13 F-22s now at Lakenheath (12 new arrivals from Langley + 1 returned from Israel with fuel leak), all expected to continue to Israel by Friday.",
+    mission: "Feb 24: 11 F-22s (of 12) arrived at Ovda Air Base in Israel's Negev Desert. One (TREND 66) returned to Lakenheath with fuel tank leak. Ovda hosts Israeli F-16C unit. JINSA report: Ovda already built to US specifications, first-ever deployment of US combat aircraft to Israel — 'America just added a land-based aircraft carrier to the region.' Feb 25: SECOND wave of 6 more F-22s (TABOR 31-36) departed Langley for RAF Lakenheath, supported by 5 KC-135 tankers (GOLD 51-55). Feb 25: THIRD wave of 6 F-22s confirmed airborne from Langley to Lakenheath (DefenceGeek), bringing total F-22 deployment to 24 aircraft. WSJ (Feb 26): First-ever US combat aircraft deployed to Israel for potential wartime mission. US using Israeli bases to DISPERSE warplanes rather than concentrating at vulnerable Gulf airfields — critical after Saudi Arabia and UAE denied basing. This makes Israeli-based F-22s and carrier-based aviation the backbone of any strike package. Distances from Ovda: ~1,540km to Bushehr, ~1,640km to Natanz, ~1,660km to Tehran. BASING CONSTRAINTS: Newsweek (Feb 25) confirms Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, and Turkey all refuse to serve as launchpads. Rubio (Feb 25): Iran pursuing ICBMs, refuses to discuss ballistic missiles — 'big, big problem.' OSINTdefender (Feb 26): 13 F-22s now at Lakenheath (12 new arrivals from Langley + 1 returned from Israel with fuel leak), all expected to continue to Israel by Friday. Feb 26 UPDATE: The Times/CFR report UK expanded base-use ban to airbases IN ENGLAND as well as Diego Garcia -- UK blocking use of RAF Lakenheath and other UK bases for preemptive strikes on Iran. Raptors may transit through but UK refuses to serve as staging base for strike operations.",
     strikeGroup: "1st Fighter Wing",
     confidence: "confirmed",
     sources: [
@@ -1022,7 +1022,7 @@ const assets = [
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "British Indian Ocean Territory — B-52 capable, ~3,000 personnel",
-    mission: "Airfield with B-2/B-52 capable runways. Fuel depots. Maritime pre-positioning. Trump named as Iran strike staging base (Feb 18). Used for B-2 missions in Midnight Hammer. Feb 21: UK PM Starmer REFUSED US requests to use Diego Garcia for B-2/B-52 bomber strikes against Iran, citing international law. Trump criticized UK's Chagos sovereignty transfer as 'big mistake'. UK-Mauritius sovereignty dispute ongoing.",
+    mission: "Airfield with B-2/B-52 capable runways. Fuel depots. Maritime pre-positioning. Trump named as Iran strike staging base (Feb 18). Used for B-2 missions in Midnight Hammer. Feb 21: UK PM Starmer REFUSED US requests to use Diego Garcia for B-2/B-52 bomber strikes against Iran, citing international law. Trump criticized UK's Chagos sovereignty transfer as 'big mistake'. UK-Mauritius sovereignty dispute ongoing. Feb 26: The Times/CFR confirm UK expanded ban to RAF bases in England too -- comprehensive UK refusal to support preemptive strikes.",
     strikeGroup: "USINDOPACOM / CENTCOM",
     confidence: "confirmed",
     sources: [
@@ -1306,6 +1306,47 @@ const assets = [
     ],
     updated: "Feb 26, 2026",
     changeSummary: "1,500 troops across Djibouti, Kenya, Tanzania"
+  },
+
+  // === NEW ASSETS (Feb 26, 2026 — Run #95) ===
+  {
+    id: "mq4c_triton_gulfoman",
+    name: "MQ-4C Triton (HALE ISR — Gulf of Oman)",
+    type: "surveillance",
+    class: "MQ-4C Triton",
+    lat: 24.5, lng: 59.5,
+    prevLat: 24.43, prevLng: 54.65,
+    prevLabel: "Al Dhafra AB, UAE (Feb 26)",
+    movementDate: "2026-02-26",
+    location: "Gulf of Oman — extended high-altitude surveillance orbit",
+    mission: "Feb 26: FlightRadar24/OSINT tracked MQ-4C Triton departing UAE for extended HALE ISR orbit over Gulf of Oman near Strait of Hormuz approaches. Racetrack pattern at 50,000+ ft for 24+ hr endurance. Sensors: AN/ZPY-3 MFAS (X-band AESA radar), EO/IR, SIGINT. 2x P-8A Poseidons concurrently airborne over wider Gulf — creating layered maritime domain awareness (wide-area cueing to tactical prosecution). Triton provides persistent pattern-of-life baseline: can detect IRGC Navy fast attack craft, naval drones, missile dispersals, air defense posture changes. Not armed — ISR only. Part of heightened US surveillance posture during Geneva R3 talks.",
+    strikeGroup: "VP-19 / CTF 57 / 5th Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition Feb 26", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-mq-4c-triton-surveillance-over-gulf-of-oman-reflects-strategic-maritime-signaling-toward-iran"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "Triton ISR + 2x P-8A over Gulf of Oman"
+  },
+  {
+    id: "boxer_arg",
+    name: "USS Boxer (LHD-4) ARG / 11th MEU",
+    type: "amphibious",
+    class: "Wasp-class LHD",
+    lat: 15.0, lng: 140.0,
+    prevLat: 32.68, prevLng: -117.15,
+    prevLabel: "San Diego, CA (Feb 2026)",
+    movementDate: "2026-02-05",
+    location: "Western Pacific — integrated at-sea training",
+    mission: "USS Boxer (LHD-4) with 11th MEU conducting integrated training in Indo-Pacific. VMM-163 MV-22B Ospreys sustaining flight ops for rapid vertical maneuver and distributed force insertion. Air component: MV-22B tiltrotors, CH-53E heavy-lift, AH-1Z attack, UH-1Y utility, F-35B STOVL fighters. Validated sortie generation, amphibious assault sequencing, and ship-to-shore operations (Feb 5-25). Boxer ARG-MEU provides scalable crisis response force with 450nm+ combat radius from Ospreys. Highlighted by US Pacific Fleet Feb 25.",
+    strikeGroup: "Boxer ARG / 11th MEU",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition Feb 26", url: "https://www.armyrecognition.com/news/navy-news/2026/u-s-marines-deploy-mv-22b-osprey-from-uss-boxer-to-boost-indo-pacific-assault-reach"},
+      {name: "US Pacific Fleet Feb 25", url: "https://www.facebook.com/USPacificFleet/posts/1341788107982453/"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "Boxer ARG/11th MEU training in W. Pacific"
   }
 ];
 
@@ -1313,6 +1354,10 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_uk_england_ban', text: 'UK expanded base-use ban to airbases in ENGLAND as well as Diego Garcia -- The Times reports UK blocked US use of RAF Lakenheath and other UK bases for preemptive strikes on Iran, citing international law. Significant for F-22 staging: 13 Raptors currently at Lakenheath may face basing constraints. B-1/B-52 operations from Diego Garcia also blocked. Forces US to rely on Israeli, carrier-based, and CONUS-launched aviation (CFR/The Times/Blue News)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'UK bans use of England bases for Iran strikes'},
+  {id: 'u_feb26_triton_gulfoman', text: 'MQ-4C Triton HALE drone conducting extended surveillance orbit over Gulf of Oman near Strait of Hormuz approaches -- departed UAE, flying racetrack at 50,000+ ft with AN/ZPY-3 AESA radar, EO/IR, SIGINT. 2x P-8A Poseidons concurrently airborne creating layered maritime ISR package. Mapping IRGC Navy patterns, detecting missile dispersals (Army Recognition)', date: 'Feb 26, 2026', assetId: 'mq4c_triton_gulfoman', changeSummary: 'Triton + P-8As create layered Gulf ISR'},
+  {id: 'u_feb26_australia_evac', text: 'Australia offering voluntary evacuation of diplomat families from Middle East -- DFAT ordering departures from posts in Israel, Lebanon, Jordan, Qatar, UAE. Australians in Israel/Lebanon urged to leave while commercial flights available. Follows similar US Embassy Beirut pullout. Multiple nations now pulling staff (ABC News Australia/Sky News)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Australia evacuating diplomat families from ME'},
+  {id: 'u_feb26_boxer_arg', text: 'USS Boxer (LHD-4) with 11th MEU conducting sustained MV-22B Osprey flight ops in Western Pacific -- VMM-163 validating sortie generation, amphibious assault sequencing, and expeditionary readiness. Boxer ARG provides scalable crisis response with 450nm+ Osprey combat radius. Highlighted by US Pacific Fleet Feb 25 (Army Recognition/PACFLT)', date: 'Feb 26, 2026', assetId: 'boxer_arg', changeSummary: 'Boxer ARG/11th MEU active in W. Pacific'},
   {id: 'u_feb26_geneva_direct_talks', text: 'Axios: Geneva R3 included DIRECT exchanges between US (Witkoff/Kushner) and Iranian (Araghchi) delegations -- not just indirect via Omani mediation. Both formats used in same session. Iran submitted eagerly-awaited draft proposal. IAEA Director Grossi also participated. US demanded surrender of 10,000 kg enriched uranium stockpile (Axios)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Direct US-Iran talks confirmed at Geneva R3'},
   {id: 'u_feb26_war_powers_vote', text: 'House Dem leadership (Jeffries, Clark, Aguilar) + ranking members (Meeks, Himes, Smith) formally announce vote on Khanna-Massie Iran War Powers Resolution next week when Congress reconvenes. Would require congressional authorization before any Iran strike. 82 co-sponsors (81 Dem + 1 GOP). YouGov: only 27% support military force, 49% oppose (House Democrats)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'House to vote on Iran war powers next week'},
   {id: 'u_feb26_bush_comptuex', text: 'USS George H.W. Bush (CVN-77) CSG actively conducting COMPTUEX (final pre-deployment certification) with escorts USS Ross (DDG-71) and USS Mason (DDG-87). Replenishment-at-sea with USNS John Lenthall. COMPTUEX is last step before deployment -- Bush could provide THIRD carrier for Iran theater alongside Ford and Lincoln (SURFLANT/US 2nd Fleet)', date: 'Feb 26, 2026', assetId: 'cvn77', changeSummary: 'Bush CSG nearing deployment-ready status'},
