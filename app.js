@@ -1261,9 +1261,14 @@ const assets = [
   }
 ];
 
+
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_iran_proposal', text: 'Iran proposal revealed: reduce enrichment from 60% to 3.6% (JCPOA level), 7-year suspension -- US wants 10 years. Key dispute: Iran refuses to ship HEU stockpile abroad, offers dilution only; US insists removal (Ynet/Kan)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran offers 3.6% enrichment, 7-yr suspension'},
+  {id: 'u_feb26_pentagon_7days', text: 'NYT: Two US military officials say Pentagon lacks resources for prolonged Iran bombing -- could sustain strikes for only 7-10 days before running low on key munitions', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Pentagon can only sustain 7-10 days of strikes'},
+  {id: 'u_feb26_pezeshkian_outlook', text: 'Iranian President Pezeshkian: "favourable outlook for negotiations" -- wants to "move beyond neither war nor peace situation" (Rudaw/TRT World)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran president sees favorable outlook for talks'},
+  {id: 'u_feb26_klm_suspend', text: 'KLM suspends Amsterdam-Tel Aviv daily flights starting March 1 citing rising security tensions in Middle East (Ynet)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'KLM halts Tel Aviv flights from March 1'},
   {id: 'u_feb26_irgc_dhafra', text: 'IRGC conducts missile drill targeting replica of US Al Dhafra Air Base (UAE) -- bunker-penetrating warheads tested against mock hardened shelters (Defence Security Asia/Oneindia)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'IRGC rehearses strike on US base in UAE'},
   {id: 'u_feb26_dia_icbm60', text: 'DIA report: Iran could field 60 ICBMs capable of reaching US homeland by 2035 -- currently has no deployed ICBMs but developing launch vehicles (NBC News/Defence Industry Europe)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'DIA: Iran could have 60 ICBMs by 2035'},
   {id: 'u_feb26_f22_13lakenheath', text: 'OSINTdefender: 13 F-22 Raptors now at RAF Lakenheath (12 new from Langley + 1 fuel-leak return from Israel) -- all expected to continue to Israel by Friday', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '13 F-22s at Lakenheath, to Israel by Friday'},
