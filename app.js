@@ -372,7 +372,7 @@ const assets = [
   },
   {
     id: "f15e_jordan",
-    name: "F-15E Strike Eagles (18 aircraft)",
+    name: "F-15E Strike Eagles (30 aircraft — 18 at Jordan + 12 transiting via Lakenheath)",
     type: "fighter",
     class: "F-15E Strike Eagle",
     lat: 31.85, lng: 36.85,
@@ -380,15 +380,17 @@ const assets = [
     prevLabel: "RAF Lakenheath, UK (48th FW)",
     movementDate: "2026-02-15",
     location: "Muwaffaq Salti AB, Jordan",
-    mission: "3 squadrons including 12 from 48th FW RAF Lakenheath (494th FS) and Mountain Home AFB. Only USAF fighter certified for GBU-28 and GBU-72 deep-penetrating bunker busters — critical for Iran hardened targets. Part of 60+ aircraft buildup at Muwaffaq Salti confirmed by satellite. THAAD battery emplaced at base alongside Patriot systems.",
-    strikeGroup: "48th FW / 366th FW",
+    mission: "3 squadrons including 12 from 48th FW RAF Lakenheath (494th FS) and Mountain Home AFB. Only USAF fighter certified for GBU-28 and GBU-72 deep-penetrating bunker busters — critical for Iran hardened targets. Part of 60+ aircraft buildup at Muwaffaq Salti confirmed by satellite. THAAD battery emplaced at base alongside Patriot systems. Feb 26 UPDATE: 12 additional F-15Es from 4th FW Seymour Johnson AFB (NC) crossed Atlantic in two 6-ship formations (TABOR 11-16, TABOR 21-26) escorted by 2x KC-46 + 4x KC-135. Arrived RAF Lakenheath staging. OSINT indicates final destination likely Ovda Air Base, Israel (JFeed/The War Zone). Total F-15E count now 30.",
+    strikeGroup: "48th FW / 366th FW / 4th FW",
     confidence: "confirmed",
     sources: [
       {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/f-35s-deploy-middle-east-us-talks-iran/"},
-      {name: "BBC", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"}
+      {name: "BBC", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"},
+      {name: "JFeed Feb 26", url: "https://www.jfeed.com/news-world/us-f15-deployment-middle-east"},
+      {name: "The War Zone Feb 26", url: "https://www.twz.com/news-features/uss-gerald-r-fords-imminent-arrival-off-israel-comes-as-negotiations-grind-on"}
     ],
-    updated: "Feb 24, 2026",
-    changeSummary: "18 Strike Eagles deployed for bunker-busting"
+    updated: "Feb 26, 2026",
+    changeSummary: "12 more F-15Es (4th FW) transiting via Lakenheath"
   },
   {
     id: "f16_jordan",
@@ -1348,12 +1350,34 @@ const assets = [
     ],
     updated: "Feb 26, 2026",
     changeSummary: "Boxer ARG/11th MEU training in W. Pacific"
+  },
+  {
+    id: "tf_scorpion",
+    name: "Task Force Scorpion — LUCAS Kamikaze Drones",
+    type: "drone",
+    class: "LUCAS (Shahed-136 clone)",
+    lat: 24.05, lng: 52.10,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    movementDate: null,
+    location: "CENTCOM AOR — exact base undisclosed",
+    mission: "Pentagon's FIRST operational kamikaze drone unit. Task Force Scorpion armed with Low-Cost Uncrewed Combat Attack System (LUCAS) — one-way attack drones reverse-engineered from Iranian Shahed-136 design. Bloomberg (Feb 26): unit now operational and ready if Trump orders strikes on Iran. CENTCOM spokesman Capt. Tim Hawkins confirmed: 'We established the squadron last year to rapidly equip our warfighters with new combat drone capabilities that continue to evolve.' Offers capability to 'flip the script on Iran' using their own drone design against them. Significant force multiplier for attrition strikes on air defenses, radar sites, and dispersed targets.",
+    strikeGroup: "CENTCOM / Task Force Scorpion Strike",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 26", url: "https://www.twz.com/news-features/uss-gerald-r-fords-imminent-arrival-off-israel-comes-as-negotiations-grind-on"},
+      {name: "Bloomberg/Al Arabiya", url: "https://www.facebook.com/alarabiya.english/posts/the-pentagons-first-kamikaze-drone-unit-is-ready-to-participate-if-president-don/1353339763497707/"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "LUCAS kamikaze drone unit operational for Iran"
   }
 ];
 
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_f15e_wave2', text: '12 additional F-15E Strike Eagles from 4th Fighter Wing (Seymour Johnson AFB, NC) crossed Atlantic in two 6-ship formations (TABOR 11-16, TABOR 21-26) escorted by 2x KC-46 + 4x KC-135. Staging at RAF Lakenheath; OSINT indicates final destination likely Ovda Air Base, Israel. Plus 12 F-35As from Hill AFB (Utah) also transiting to Europe. Total new wave: 24 tactical jets (JFeed/The War Zone)', date: 'Feb 26, 2026', assetId: 'f15e_jordan', changeSummary: '12 F-15Es + 12 F-35As crossing Atlantic'},
+  {id: 'u_feb26_tf_scorpion', text: 'Task Force Scorpion -- Pentagon\'s FIRST kamikaze drone unit -- now operational in Middle East and ready if Trump orders Iran strikes. Armed with LUCAS one-way attack drones reverse-engineered from Iranian Shahed-136 design. CENTCOM confirmed unit established to "rapidly equip warfighters with new combat drone capabilities." Offers way to "flip the script on Iran" (Bloomberg/The War Zone)', date: 'Feb 26, 2026', assetId: 'tf_scorpion', changeSummary: 'US kamikaze drone unit operational in ME'},
   {id: 'u_feb26_patriot_ovda', text: 'MizarVision satellite imagery confirms Patriot air defense battery components deployed at Ovda Air Base alongside 11 F-22 Raptors in Israel -- first visual confirmation of integrated air defense at US combat deployment site. Layered defense for F-22s at Israel\'s southernmost base (EGYOSINT/MizarVision/Times of Israel)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'Patriot battery confirmed at Ovda with F-22s'},
   {id: 'u_feb26_point_blank', text: 'Exercise Point Blank: USAF F-15E Strike Eagles (492nd FS) and F-35A Lightning IIs (493rd FS) from RAF Lakenheath deployed to RAF Lossiemouth, Scotland for multinational combat training. Hot-pit refueling cross-certification between 4th/5th gen aircraft, rapid sortie turnaround drills with RAF. Running concurrently with ME buildup (Zona Militar/SSBCrack)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'F-15E + F-35A exercise at RAF Lossiemouth'},
   {id: 'u_feb26_talks_positive', text: 'Post-Geneva reversal: US official tells Axios talks were "positive" -- contradicting earlier "disappointed" reports. Araghchi called it "the best round so far," entered "elements of an agreement" on nuclear AND sanctions. Technical talks resume at IAEA Vienna MONDAY. Both sides consulting capitals. WSJ still says sides "far apart on key issues" (Times of Israel/Axios/Xinhua/The New Region)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US now calls Geneva talks "positive"; Vienna Mon'},
