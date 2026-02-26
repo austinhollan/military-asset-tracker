@@ -1265,6 +1265,7 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb26_witkoff_nosunset', text: 'Axios: Witkoff told AIPAC donors US demands any Iran deal last indefinitely -- no sunset provisions. Trump may accept "token" enrichment if Iran proves non-weaponizable. Geneva Round 3 seen as last chance for diplomacy before military action (Axios/Kurdistan24)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US demands permanent deal, no sunset clause'},
   {id: 'u_feb26_iran_proposal', text: 'Iran proposal revealed: reduce enrichment from 60% to 3.6% (JCPOA level), 7-year suspension -- US wants 10 years. Key dispute: Iran refuses to ship HEU stockpile abroad, offers dilution only; US insists removal (Ynet/Kan)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran offers 3.6% enrichment, 7-yr suspension'},
   {id: 'u_feb26_pentagon_7days', text: 'NYT: Two US military officials say Pentagon lacks resources for prolonged Iran bombing -- could sustain strikes for only 7-10 days before running low on key munitions', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Pentagon can only sustain 7-10 days of strikes'},
   {id: 'u_feb26_pezeshkian_outlook', text: 'Iranian President Pezeshkian: "favourable outlook for negotiations" -- wants to "move beyond neither war nor peace situation" (Rudaw/TRT World)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran president sees favorable outlook for talks'},
