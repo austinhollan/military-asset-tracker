@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header id="header">
     <div class="header-left">
       <div class="header-title">US MILITARY ASSET TRACKER</div>
@@ -20,6 +21,8 @@
       <span class="badge badge-amber">UNCLASSIFIED / PUBLIC DATA ONLY</span>
     </div>
   </header>
+
+  <!-- LEGEND PANEL -->
   <div id="legend" class="panel legend-panel">
     <div class="panel-header" id="legend-toggle">
       <span class="panel-title">LEGEND</span>
@@ -29,28 +32,52 @@
       <div id="legend-items"></div>
       <div class="legend-divider"></div>
       <div class="legend-meta">
-        <div class="legend-meta-row"><span class="line-solid"></span> Confirmed movement</div>
-        <div class="legend-meta-row"><span class="line-dashed"></span> Unconfirmed movement</div>
-        <div class="legend-meta-row"><span class="marker-solid-demo"></span> Confirmed asset</div>
-        <div class="legend-meta-row"><span class="marker-dashed-demo"></span> Unconfirmed / OSINT</div>
+        <div class="legend-meta-row">
+          <span class="line-solid"></span> Confirmed movement
+        </div>
+        <div class="legend-meta-row">
+          <span class="line-dashed"></span> Unconfirmed movement
+        </div>
+        <div class="legend-meta-row">
+          <span class="marker-solid-demo"></span> Confirmed asset
+        </div>
+        <div class="legend-meta-row">
+          <span class="marker-dashed-demo"></span> Unconfirmed / OSINT
+        </div>
       </div>
     </div>
   </div>
-  <div id="filters" class="panel filter-panel"><div class="filter-buttons" id="filter-buttons"></div></div>
+
+  <!-- FILTER BAR -->
+  <div id="filters" class="panel filter-panel">
+    <div class="filter-buttons" id="filter-buttons"></div>
+  </div>
+
+  <!-- MAP -->
   <div id="map"></div>
+
+  <!-- DETAIL PANEL -->
   <div id="detail-panel" class="detail-panel">
     <button class="detail-close" id="detail-close">✕</button>
     <div id="detail-content"></div>
   </div>
+
+  <!-- MOVEMENT TIMELINE FILTER -->
   <div id="timeline-filter" class="timeline-filter">
     <span class="timeline-label">MOVEMENT TIMELINE</span>
     <div class="timeline-buttons" id="timeline-buttons"></div>
   </div>
+
+  <!-- NEWS TICKER -->
   <div id="ticker-bar" class="ticker-bar">
     <div class="ticker-label">INTEL FEED</div>
-    <div class="ticker-track"><div class="ticker-content" id="ticker-content"></div></div>
+    <div class="ticker-track">
+      <div class="ticker-content" id="ticker-content"></div>
+    </div>
     <a href="./updates.html" class="ticker-link" title="View all updates">ALL UPDATES ▸</a>
   </div>
+
+  <!-- STATS BAR -->
   <div id="stats-bar" class="stats-bar">
     <div class="stats-left">
       <span class="stat-item"><span class="stat-num" id="stat-total">0</span> ASSETS TRACKED</span>
@@ -59,8 +86,11 @@
       <span class="stat-divider">|</span>
       <span class="stat-item"><span class="stat-unconfirmed" id="stat-unconfirmed">0</span> UNCONFIRMED</span>
     </div>
-    <div class="stats-right">Data compiled from public sources. All positions approximate.</div>
+    <div class="stats-right">
+      Data compiled from public sources. All positions approximate.
+    </div>
   </div>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="./app.js"></script>
 </body>
