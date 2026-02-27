@@ -420,7 +420,7 @@ const assets = [
   // === TANKERS ===
   {
     id: "tankers_surge",
-    name: "KC-46A/KC-135 Tanker Surge (75+ deployed, 108 total)",
+    name: "KC-46A/KC-135 Tanker Surge (66 in Europe/Israel, 108+ total)",
     type: "tanker",
     class: "KC-46A / KC-135",
     lat: 24.06, lng: 45.52,
@@ -428,7 +428,7 @@ const assets = [
     prevLabel: "Seymour Johnson AFB, NC / CONUS bases (Feb 15-18)",
     movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + en route",
-    mission: "75 KC-46A/KC-135 tankers deployed or en route per Politics Today analysis. Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 108 tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s. Feb 25: 270+ C-17/C-5 cargo flights have supported buildup since early January, delivering personnel, aircraft components, and THAAD/Patriot systems. Feb 26: 6 additional KC-46A tankers en route to Israel -- 5 from Portsmouth Intl (NH), 1 from Seymour Johnson AFB (NC), all heading to Ben Gurion Airport (i24News/Military Air Tracking Alliance).",
+    mission: "75 KC-46A/KC-135 tankers deployed or en route per Politics Today analysis. Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 108 tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s. Feb 25: 270+ C-17/C-5 cargo flights have supported buildup since early January, delivering personnel, aircraft components, and THAAD/Patriot systems. Feb 26: 6 additional KC-46A tankers en route to Israel -- 5 from Portsmouth Intl (NH), 1 from Seymour Johnson AFB (NC), all heading to Ben Gurion Airport. Feb 27: ArmchairAdml counts 310 C-17/C-5 cargo flights since Jan 15 and 66 tankers deployed to Europe+Israel (excl. Al Udeid). OSINTdefender: major overnight pre-positioning wave -- 5x KC-46A + 2+ KC-135 + C-17As bound for Israel.",
     strikeGroup: "CENTCOM AOR",
     confidence: "confirmed",
     sources: [
@@ -438,8 +438,8 @@ const assets = [
       {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
       {name: "Responsible Statecraft", url: "https://responsiblestatecraft.org/iran-war-gulf-states/"}
     ],
-    updated: "Feb 25, 2026",
-    changeSummary: "108 tankers in/heading to theater; 270+ cargo flights"
+    updated: "Feb 27, 2026",
+    changeSummary: "310 cargo flights; 66 tankers Europe/Israel; overnight wave"
   },
   {
     id: "tankers_mildenhall",
@@ -1398,6 +1398,10 @@ const assets = [
 // === INTEL UPDATE TICKER DATA ===
 // Most recent entries first
 const updates = [
+  {id: 'u_feb27_cooper_briefs_trump', text: 'CENTCOM Commander Adm. Brad Cooper briefed President Trump on Thursday about potential military options against Iran, officials tell ABC News. Cooper is the operational commander who would oversee any strikes. Briefing took place as Geneva Round 3 concluded and buildup continued (ABC News via OSINTdefender)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'CENTCOM chief briefs Trump on Iran strike options'},
+  {id: 'u_feb27_warner_no_idea', text: 'Sen. Mark Warner (D-VA), top Democrat on Senate Intelligence Committee and Gang of Eight member, after classified Rubio briefing on Iran: "I don\'t have the slightest idea what the president\'s intentions are." Questioned whether goal is nuclear, regime change, or Israel support. Says Trump must justify action to Congress and public (Fox/TNND)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'Top Intel Dem says no idea on Trump intent'},
+  {id: 'u_feb27_prepo_tonight', text: 'OSINTdefender: "Major pre-positioning moves being made TONIGHT" -- 5x KC-46A Pegasus + 2+ KC-135R/T Stratotankers + multiple C-17A Globemasters bound for Middle East, many for Israeli air bases. 12 F-22 Raptors confirmed at Ovda Airbase, half-dozen tankers at Ben Gurion International (OSINTdefender)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: 'Major overnight pre-positioning wave to Israel'},
+  {id: 'u_feb27_310_flights_66_tankers', text: 'ArmchairAdml Feb 26 summary: 310 C-17/C-5 cargo flights into ME bases since Jan 15 (up from 270+ in prior count). 66 tankers now deployed to airports across Europe and Israel (excl. Al Udeid). CE045 SJ F-15E coronet: only 2 of 12 made it across Atlantic, rest still at Seymour Johnson. CE046 new coronet staging from Beale AFB -- receivers unknown, possibly more F-35s or F-22s from Alaska (ArmchairAdml/@MATA_osint)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: '310 cargo flights; 66 tankers; CE046 pending'},
   {id: 'u_feb26_f15e_mountain_home', text: 'CORRECTION + UPDATE: Aviationist confirms the 12 F-15Es crossing Atlantic via CE 044 (TABOR 11-16, TABOR 21-26) are from 366th FW Mountain Home AFB, Idaho -- NOT Seymour Johnson as initially reported by JFeed. Birds staged at Seymour Johnson before crossing. CE 045 added 2 more F-15Es from Seymour Johnson (TABOR 61-62); 4 others RTB after KC-46 engine failure. TWZ: 6 MORE F-15Es each from Mountain Home and Seymour Johnson still heading to Europe. Total F-15E count now 44 (The Aviationist)', date: 'Feb 26, 2026', assetId: 'f15e_jordan', changeSummary: 'F-15E surge corrected: MH + SJ; total 44'},
   {id: 'u_feb26_cv22_osprey', text: '4x CV-22B Osprey tiltrotors deployed from RAF Mildenhall (352nd SOW, AFSOC) to Middle East via ROOSTER 81 flight. Tracked through Marseille, Naples, Souda Bay then toward Israel. CV-22Bs are special operations CSAR/personnel recovery aircraft -- their deployment signals preparation for combat operations where aircrew recovery deep in hostile territory is anticipated. Critical enabler for any Iran strike campaign (The Aviationist)', date: 'Feb 26, 2026', assetId: 'cv22_me', changeSummary: '4 AFSOC CV-22 Ospreys deployed for CSAR'},
   {id: 'u_feb26_thune_regime_change', text: 'Senate Majority Leader John Thune (R-SD), after receiving Gang of Eight classified Iran briefing: "If you\'re going to do something there, you better well make it about getting new leadership and regime change." Thune says Trump has not made final decision on strikes yet but administration gaming out contingencies. Sen. Cruz also pushing regime change: "The regime has never been weaker" (The Hill/Washington Examiner/Anadolu)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Senate leader Thune calls for regime change'},
