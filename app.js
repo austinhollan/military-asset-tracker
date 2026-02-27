@@ -429,1138 +429,1956 @@ const assets = [
     prevLabel: "Seymour Johnson AFB, NC / CONUS bases (Feb 15-18)",
     movementDate: "2026-02-18",
     location: "Prince Sultan AB, Saudi Arabia + en route",
-    mission: "75 KC-46A/KC-135 tankers deployed or en route per Politics Today analysis. Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 108 tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s. Feb 25: 270+ C-17/C-5 cargo flights have supported buildup since early January, delivering personnel, aircraft components, and THAAD/Patriot systems. Feb 26: MATA breakdown confirms 128 total tankers: 43 CENTCOM (Prince Sultan AB + Qatar + Diego Garcia orbit), 44 Mediterranean (Incirlik + Sigonella + Souda Bay + at-sea shuttle), 41 Europe/UK (Mildenhall + Fairford + Lajes + Moron + Rota). This is the largest tanker surge since 2003 Iraq War. Responsible Statecraft estimate: 108 in theater, Politics Today: 75+ active. Combined total 128 confirmed unique tail numbers across all zones.",
-    strikeGroup: "AMC / 18th AF surge",
+    mission: "75 KC-46A/KC-135 tankers deployed or en route per Politics Today analysis. Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. UK denied use of Diego Garcia and RAF Fairford for bomber strikes — tanker fleet compensating by enabling long-range CONUS-to-target bomber runs. KC-46A first deployment to 378th AEW (77th EARS from Seymour Johnson AFB). Tanker activity increasing at Prince Sultan AB, decreasing at Al Udeid. 15 KC-46A Pegasus tankers now at Lajes Field, Azores — largest ever tanker surge there. Total 108 tankers positioned along Atlantic-Mediterranean air bridge. Flightradar24 reported top 9 most-tracked flights were all KC-135s. Feb 25: 270+ C-17/C-5 cargo flights have supported buildup since early January, delivering personnel, aircraft components, and THAAD/Patriot systems. Feb 26: 6 additional KC-46A tankers en route to Israel -- 5 from Portsmouth Intl (NH), 1 from Seymour Johnson AFB (NC), all heading to Ben Gurion Airport. Feb 27: ArmchairAdml counts 310 C-17/C-5 cargo flights since Jan 15 and 66 tankers deployed to Europe+Israel (excl. Al Udeid). OSINTdefender: major overnight pre-positioning wave -- 5x KC-46A + 2+ KC-135 + C-17As bound for Israel. MATA/DefenceGeek updated count to 128 tanker aircraft confirmed (up from 108): 43 in Red Zone (CENTCOM+DG), 44 in Orange Zone (Med/S.Europe), 41 in Green Zone (N.Europe/UK/Atlantic). Breakdown: 36 KC-46A + 77 KC-135R + 13 KC-135T + 2 KC-135RT. KC-135 tankers photographed at Ben Gurion Airport (Israeli Ch13 military correspondent Or Heller). Aviationist reports significant basing shift: latest deployments moving AWAY from traditional bases (Al Udeid, Al Dhafra) toward less-used sites in Jordan and Israel for force dispersal. ArmchairAdml now counts 8 KC-46s heading to Ben Gurion (up from 6).",
+    strikeGroup: "CENTCOM AOR",
     confidence: "confirmed",
     sources: [
-      {name: "Politics Today (75 tankers)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
-      {name: "Responsible Statecraft (108 tankers)", url: "https://responsiblestatecraft.org/middle-east-iran-war/"},
-      {name: "Air & Space Forces (KC-46 deploy)", url: "https://www.airandspaceforces.com/kc-46-pegasus-tanker-first-time-378th-aew/"},
-      {name: "Flightradar24 (tanker traffic)", url: "https://www.flightradar24.com/blog/military-aircraft-middle-east-buildup-2026/"},
-      {name: "The War Zone Feb 26", url: "https://www.twz.com/news-features/uss-gerald-r-fords-imminent-arrival-off-israel-comes-as-negotiations-grind-on"}
+      {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
+      {name: "ACC Official", url: "https://www.acc.af.mil/News/Article-Display/Article/4400254/next-generation-air-tankers-arrive-in-centcom-aor/"},
+      {name: "AIRLIVE Feb 21", url: "https://airlive.net/military/2026/02/21/a-massive-number-of-us-air-force-tankers-have-been-spotted-at-lajes-field-in-the-azores/"},
+      {name: "Politics Today (300 aircraft)", url: "https://politicstoday.org/300-us-military-aircraft-deployed-to-centcom/"},
+      {name: "Responsible Statecraft", url: "https://responsiblestatecraft.org/iran-war-gulf-states/"},
+      {name: "MATA/DefenceGeek (128 tankers)", url: "https://x.com/DefenceGeek/status/2027115638158717379"},
+      {name: "AP/Military Times Feb 26", url: "https://www.militarytimes.com/news/your-military/2026/02/26/us-military-assembles-largest-force-of-warships-aircraft-in-middle-east-in-decades/"},
+      {name: "Aviationist Feb 26 (base shift)", url: "https://theaviationist.com/2026/02/26/additional-fighters-reinforce-us-buildup/"}
     ],
-    updated: "Feb 26, 2026",
-    changeSummary: "128 total tankers confirmed across CENTCOM/Med/Europe zones"
+    updated: "Feb 27, 2026",
+    changeSummary: "8 KC-46s to Ben Gurion; forces shifting to non-traditional bases"
+  },
+  {
+    id: "tankers_mildenhall",
+    name: "KC-135 Stratotankers (100th ARW)",
+    type: "tanker",
+    class: "KC-135",
+    lat: 52.36, lng: 0.49,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "RAF Mildenhall, UK — permanent tanker wing",
+    mission: "Only permanent USAF air refueling wing in Europe. Supporting F-22/F-35 transatlantic Coronet flights for Middle East surge.",
+    strikeGroup: "100th ARW",
+    confidence: "confirmed",
+    sources: [
+      {name: "USAFE", url: "https://www.usafe.af.mil/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Supporting transatlantic fighter flow to ME"
+  },
+
+  // === LAJES FIELD STAGING ===
+  {
+    id: "lajes_staging",
+    name: "Lajes Field Staging (KC-46/KC-135/F-16/C-17)",
+    type: "tanker",
+    class: "KC-46A / KC-135 / F-16CJ / C-17",
+    lat: 38.76, lng: -27.09,
+    prevLat: 34.05, prevLng: -80.97,
+    prevLabel: "McEntire ANGB, SC + CONUS bases (Feb 17-18)",
+    movementDate: "2026-02-19",
+    location: "Lajes Field, Azores, Portugal — largest-ever US aircraft surge",
+    mission: "Feb 18-19: Largest-ever surge of US aircraft at Lajes. Confirmed: 11 KC-46A Pegasus tankers, 11 KC-135 Stratotankers, 12 F-16CJ Fighting Falcons (South Carolina ANG, SEAD/DEAD role with AGM-88 HARM + 'Angry Kitten' EW pods), and 1 C-17 Globemaster III. Critical mid-Atlantic air bridge node between CONUS and Europe/Middle East. Part of 50+ tanker surge compensating for UK base denials. Feb 21: 15 KC-46A Pegasus tankers now at Lajes — up from 11. Also 11 KC-135s. 400 US personnel on Terceira Island. Over 120 US aircraft tracked eastbound in past 72 hours.",
+    strikeGroup: "AMC / ANG",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
+      {name: "Instagram OSINT Feb 17", url: "https://www.instagram.com/p/DU3KzMtiH4P/"},
+      {name: "AIRLIVE Feb 21", url: "https://airlive.net/military/2026/02/21/a-massive-number-of-us-air-force-tankers-have-been-spotted-at-lajes-field-in-the-azores/"}
+    ],
+    updated: "Feb 24, 2026",
+    changeSummary: "15 KC-46A tankers staged; 400 US personnel at Azores"
   },
 
   // === SURVEILLANCE / ISR ===
   {
-    id: "isr_centcom",
-    name: "ISR Package — P-8, E-8, RC-135, RQ-4, MQ-9 (CENTCOM theater)",
+    id: "e3_saudi",
+    name: "E-3 Sentry AWACS (6 of 16 deployed)",
     type: "surveillance",
-    class: "Mixed ISR",
-    lat: 25.24, lng: 55.35,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Al Dhafra AB, UAE + orbit over Gulf/Red Sea",
-    mission: "P-8A Poseidon (anti-sub/maritime), RC-135V/W Rivet Joint (SIGINT), E-8C JSTARS (ground surveillance), RQ-4 Global Hawk (BAMS-D), MQ-9 Reaper (armed ISR). All assets providing 24/7 coverage of Iran, Houthi positions, Strait of Hormuz. Flightradar24: 3-4 RC-135s on daily orbit over Gulf.",
-    strikeGroup: "CENTCOM ISR",
+    class: "E-3G Sentry",
+    lat: 24.10, lng: 45.60,
+    prevLat: 35.42, prevLng: -97.38,
+    prevLabel: "Tinker AFB, OK (4 aircraft) + Elmendorf, AK (2)",
+    movementDate: "2026-02-18",
+    location: "Prince Sultan AB, Saudi Arabia + staging at Ramstein",
+    mission: "37.5% of entire E-3 fleet deployed in ~48 hours. 4 from Tinker AFB via Ramstein. 2 from Elmendorf via RAF Mildenhall. Kadena stripped of ALL AWACS coverage. Alaska reduced to 1 E-3. >50% of mission-capable aircraft deployed. Feb 24: Defense News confirms E-3s providing airborne command and control. 6 of 16 total fleet deployed — represents >50% of mission-capable aircraft. Feb 25: 2 more E-3B/C Sentry departed Elmendorf AFB Alaska to RAF Mildenhall — total approaching 40%+ of operational fleet. WaPo confirms over 1/3 of active E-3G fleet now deployed to Europe/ME. Anadolu confirms 6 E-3s in CENTCOM theater.",
+    strikeGroup: "552nd ACW",
     confidence: "confirmed",
     sources: [
-      {name: "USAF Official", url: "https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104465/e-8c-joint-stars/"}
+      {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-deploys-nearly-40-of-entire-e-3-sentry-awacs-fleet-to-middle-east-for-potential-war-against-iran"},
+      {name: "The Aviationist Feb 17", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "24/7 ISR coverage of Iran and Strait of Hormuz"
+    updated: "Feb 27, 2026",
+    changeSummary: "6 AWACS confirmed heading to Saudi base per MATA"
+  },
+  {
+    id: "rc135_mildenhall",
+    name: "RC-135V/W Rivet Joint",
+    type: "surveillance",
+    class: "RC-135V/W",
+    lat: 35.48, lng: 24.15,
+    prevLat: 25.12, prevLng: 51.31,
+    prevLabel: "Al Udeid AB, Qatar (Jan-Feb 2026)",
+    movementDate: "2026-02-23",
+    location: "Chania AB, Crete — 3 aircraft relocated",
+    mission: "3 RC-135W Rivet Joint aircraft now at Chania, Crete. One arrived from US, two relocated from Al Udeid AB, Qatar. Move likely to put SIGINT assets beyond range of Iranian air defenses. Additional RC-135 en route from Florida.",
+    strikeGroup: "55th Wing",
+    confidence: "confirmed",
+    sources: [
+      {name: "ItaMilRadar Jan 30", url: "https://www.itamilradar.com/2026/01/30/uk-rc-135-and-us-p-8a-operate-together-over-the-black-sea-tightening-natos-isr-net-near-russias-southern-flank/"},
+      {name: "Army Recognition Jan 6", url: "https://armyrecognition.com/news/aerospace-news/2026/u-s-rc-135w-rivet-joint-reconnaissance-aircraft-conducts-intelligence-mission-near-venezuela"},
+      {name: "Vestnik Kavkaza Feb 23", url: "https://en.vestikavkaza.ru/news/US-deploys-reconnaissance-aircraft-to-Greece.html"},
+      {name: "ClearanceJobs Feb 19", url: "https://news.clearancejobs.com/2026/02/19/stealth-surge-f-22-raptors-cross-atlantic-as-u-s-builds-airpower-near-iran/"}
+    ],
+    updated: "Feb 23, 2026",
+    changeSummary: "3 RC-135s relocated to Crete from Qatar for safety"
+  },
+  {
+    id: "u2_fairford",
+    name: "U-2S Dragon Lady",
+    type: "surveillance",
+    class: "U-2S",
+    lat: 51.68, lng: -1.79,
+    prevLat: 39.13, prevLng: -121.44,
+    prevLabel: "Beale AFB, CA (Feb 19)",
+    movementDate: "2026-02-19",
+    location: "RAF Fairford, UK — 2 aircraft. 1 departed Feb 17 toward Middle East",
+    mission: "Regular ISR rotation station. DRAGON86 arrived Feb 19 from Beale. Another U-2 departed Feb 17 toward suspected Cyprus/Middle East staging. Operates above 70,000ft with ASARS, SYERS, SIGINT. Note: UK PM Starmer denied US use of RAF Fairford for bomber strikes against Iran (Feb 21).",
+    strikeGroup: "9th RW",
+    confidence: "confirmed",
+    sources: [
+      {name: "ItaMilRadar Feb 19", url: "https://www.itamilradar.com/2026/02/19/usaf-u-2-dragon-lady-arrives-at-raf-fairford-possible-transit-signals-continued-isr-posture-shift/"}
+    ],
+    updated: "Feb 22, 2026",
+    changeSummary: "ISR rotation; UK denied bomber base access"
+  },
+  {
+    id: "rq4_sigonella",
+    name: "RQ-4B Global Hawk",
+    type: "drone",
+    class: "RQ-4B",
+    lat: 37.40, lng: 14.92,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "NAS Sigonella, Italy — Mediterranean ISR",
+    mission: "Regular forward deployment. Feb 3: departed for Black Sea surveillance (circular racetrack near Turkish coast). Also operates from Andersen AFB/Guam, Yokota AB/Japan, Ali Al Salem/Kuwait.",
+    strikeGroup: "9th OG / USAFE",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition Feb 3", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-deploys-rq-4b-global-hawk-for-surveillance-mission-over-the-black-sea"}
+    ],
+    updated: "Feb 3, 2026",
+    changeSummary: "Black Sea surveillance from Sigonella"
+  },
+  {
+    id: "p8_hormuz",
+    name: "P-8A Poseidon (4+ aircraft)",
+    type: "surveillance",
+    class: "P-8A Poseidon",
+    lat: 26.0, lng: 56.5,
+    prevLat: 37.40, prevLng: 14.92,
+    prevLabel: "NAS Sigonella, Italy (VP-10, ~Feb 9)",
+    movementDate: "2026-02-09",
+    location: "Strait of Hormuz patrol + Mediterranean transit",
+    mission: "Continuously patrolling Strait of Hormuz. 2 additional P-8s (VP-10) arrived from Sigonella ~Feb 9 at Isa AB (Bahrain) and Thumrait AB (Oman). 2 more spotted over Mediterranean Feb 20. Rare night-time aerial refueling of P-8A by KC-135T observed south of Crete, indicating high-priority continuous sub-hunting/surveillance in Eastern Mediterranean.",
+    strikeGroup: "VP-10",
+    confidence: "confirmed",
+    sources: [
+      {name: "CNN Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
+      {name: "The Aviationist Feb 11", url: "https://theaviationist.com/2026/02/11/vt-ang-f35s-depart-ln-for-middle-east/"},
+      {name: "ItaMilRadar (night ops)", url: "https://www.itamilradar.com/2026/01/02/us-navy-p-8a-awaits-kc-135r-refuelling-south-of-crete-signalling-extended-night-time-surveillance-in-the-eastern-mediterranean/"}
+    ],
+    updated: "Feb 22, 2026",
+    changeSummary: "Night refueling south of Crete, sub-hunting ops"
+  },
+  {
+    id: "e11a_saudi",
+    name: "E-11A BACN (4+ aircraft)",
+    type: "surveillance",
+    class: "E-11A BACN",
+    lat: 24.08, lng: 45.55,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Prince Sultan AB, Saudi Arabia",
+    mission: "Battlefield Airborne Communications Node. 4+ visible at Prince Sultan per CNN satellite imagery. 2 additional en route Feb 17.",
+    strikeGroup: "CENTCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "CNN Satellite", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Comms relay nodes deployed to Prince Sultan"
+  },
+  {
+    id: "mq9_jordan",
+    name: "MQ-9 Reaper Drones",
+    type: "drone",
+    class: "MQ-9 Reaper",
+    lat: 31.78, lng: 36.72,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Muwaffaq Salti AB, Jordan — 2 visible in satellite",
+    mission: "Part of broader fighter/strike package at Muwaffaq Salti. Additional MQ-9s at other CENTCOM bases.",
+    strikeGroup: "CENTCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Reaper drones at Muwaffaq Salti"
+  },
+  {
+    id: "ea18g_jordan",
+    name: "EA-18G Growler (6 aircraft)",
+    type: "fighter",
+    class: "EA-18G Growler",
+    lat: 31.88, lng: 36.82,
+    prevLat: 17.0, prevLng: -65.0,
+    prevLabel: "Caribbean / SOUTHCOM (Feb 2026)",
+    movementDate: "2026-02-15",
+    location: "Muwaffaq Salti AB, Jordan — electronic warfare",
+    mission: "6 Growlers visible at Muwaffaq Salti in satellite imagery. Electronic warfare / SEAD support. Came from SOUTHCOM Caribbean operations.",
+    strikeGroup: "USN EW",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Electronic warfare jets at Jordan"
   },
 
   // === SUBMARINES ===
   {
-    id: "ssbn_deterrent",
-    name: "Ohio-class SSBNs (strategic deterrent patrol)",
-    type: "submarine",
-    class: "Ohio-class SSBN",
-    lat: 0.0, lng: 65.0,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "[CLASSIFIED] — strategic deterrent patrol",
-    mission: "14 Ohio-class SSBNs (8-10 operational at any time). Each carries up to 20 Trident II D5 SLBMs (MIRV). Pentagon confirmed STRATCOM on 'heightened alert' since Nov 2025 Iran crisis. Locations classified.",
-    strikeGroup: "STRATCOM",
-    confidence: "confirmed",
-    sources: [
-      {name: "USNI (SSBN ops)", url: "https://news.usni.org/2025/11/15/u-s-submarine-force"}
-    ],
-    updated: "Feb 20, 2026",
-    changeSummary: "STRATCOM heightened alert since Nov 2025"
-  },
-  {
-    id: "ssgn_ohio",
-    name: "Ohio-class SSGN (cruise missile submarine)",
+    id: "ssgn729",
+    name: "USS Georgia (SSGN-729)",
     type: "submarine",
     class: "Ohio-class SSGN",
-    lat: 24.5, lng: 58.5,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Arabian Sea — likely position",
-    mission: "4 SSGNs converted from Trident subs (USS Ohio, Michigan, Florida, Georgia). Each carries 154 Tomahawk cruise missiles. At least 1-2 likely positioned within strike range of Iran. Florida (SSGN-728) confirmed Arabian Sea in Jan 2026 (USNI). Unconfirmed: Ohio or Michigan may be positioned in Indian Ocean.",
-    strikeGroup: "SUBLANT/SUBPAC",
+    lat: 29.0, lng: 50.0,
+    prevLat: 35.0, prevLng: 33.0,
+    prevLabel: "Mediterranean (2024)",
+    movementDate: "2024-06-01",
+    location: "CENTCOM — between Mediterranean & Persian Gulf",
+    mission: "Continuously deployed since Aug 2024. Participated in Operation Midnight Hammer (June 2025), firing 30+ Tomahawks at Isfahan. OSINT reports (Feb 18-20) indicate continued CENTCOM operations. Navy has not confirmed exact location.",
+    strikeGroup: "CENTCOM attached",
     confidence: "unconfirmed",
     sources: [
-      {name: "USNI Jan 2026", url: "https://news.usni.org/2026/01/15/usni-news-fleet-and-marine-tracker-jan-2026"}
+      {name: "JFeed Feb 18", url: "https://www.jfeed.com/news-world/uss-georgia-submarine-iran"},
+      {name: "National Interest (Midnight Hammer)", url: "https://nationalinterest.org/blog/buzz/this-ohio-class-submarine-blasted-iran-with-cruise-missiles-during-operation-midnight-hammer"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "Florida (SSGN-728) Arabian Sea confirmed Jan 2026"
+    updated: "Feb 18, 2026",
+    changeSummary: "Continuously deployed since Aug 2024, CENTCOM"
   },
   {
-    id: "ssn_gulf",
-    name: "Virginia/Los Angeles-class SSNs",
+    id: "ssgn726",
+    name: "USS Ohio (SSGN-726)",
     type: "submarine",
-    class: "SSN (various)",
-    lat: 23.5, lng: 59.5,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Arabian Sea / Gulf of Oman — forward deployment",
-    mission: "Multiple SSNs likely deployed with carrier strike groups (standard CSG composition includes 1-2 SSNs). Virginia-class carries BGM-109 Tomahawk VLS (40 missiles) plus Mark 48 torpedoes. A-RCM (Advanced Reconfigurable Countermeasures Module) for deception in Strait of Hormuz.",
-    strikeGroup: "CSG-12 / CSG-3 screen",
+    class: "Ohio-class SSGN",
+    lat: 15.0, lng: 120.0,
+    prevLat: 14.79, prevLng: 120.27,
+    prevLabel: "Subic Bay, Philippines (Sep 2025)",
+    movementDate: "2025-09-29",
+    location: "Western Pacific (last known)",
+    mission: "Active in Western Pacific 2025. Port visits: Guam (Apr), Brisbane (Jul), Subic Bay, Philippines (Sep 2025 — rare surfacing photographed). Retirement potentially extended past FY2026.",
+    strikeGroup: "SUBRON 19",
     confidence: "unconfirmed",
     sources: [
-      {name: "USNI Fleet Tracker", url: "https://news.usni.org/category/fleet-tracker"}
+      {name: "USNI News Sep 2025", url: "https://news.usni.org/2025/09/29/u-s-guided-missile-sub-makes-rare-appearance-in-the-philippines"},
+      {name: "National Security Journal", url: "https://nationalsecurityjournal.org/the-u-s-navys-great-ohio-class-ssgn-submarine-comeback-has-begun/"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "SSNs likely deployed with each CSG"
+    updated: "Sep 2025 (last known)",
+    changeSummary: "Western Pacific, last seen Subic Bay Sep 2025"
+  },
+  {
+    id: "ssn21",
+    name: "USS Seawolf (SSN-21)",
+    type: "submarine",
+    class: "Seawolf-class",
+    lat: 25.0, lng: 125.0,
+    prevLat: 35.28, prevLng: 139.67,
+    prevLabel: "Yokosuka, Japan (Dec 16, 2025)",
+    movementDate: "2025-12-16",
+    location: "Western Pacific — operating with Lincoln CSG",
+    mission: "Port visit to Yokosuka Dec 16, 2025. Operating with USS Abraham Lincoln CSG in Western Pacific / South China Sea before Lincoln was redirected to Arabian Sea.",
+    strikeGroup: "DEVRON 5",
+    confidence: "unconfirmed",
+    sources: [
+      {name: "DVIDS Dec 2025", url: "https://www.dvidshub.net/image/9458368/uss-seawolf-ssn-21-pulls-into-fleet-activities-yokosuka"},
+      {name: "19FortyFive", url: "https://www.19fortyfive.com/2026/01/the-u-s-navy-sent-a-nuclear-aircraft-carrier-and-seawolf-class-stealth-sub-into-chinas-backyard/"}
+    ],
+    updated: "Dec 2025",
+    changeSummary: "Operating with Lincoln CSG in Western Pacific"
+  },
+  {
+    id: "ssbn_bangor",
+    name: "SSBN Deterrence Patrols (Pacific)",
+    type: "submarine",
+    class: "Ohio-class SSBN",
+    lat: 47.73, lng: -122.71,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Naval Submarine Base Bangor, WA — 8 SSBNs homeported",
+    mission: "Continuous at-sea deterrence patrols (Pacific). Exact patrol locations classified. Sep 2025: 4 Trident II D5LE test launches demonstrated readiness. 70% of US deployed strategic nuclear warheads.",
+    strikeGroup: "USSTRATCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "SSP Official", url: "https://www.ssp.navy.mil/About-Us/SSP-Mission/Sustainment/"},
+      {name: "Seapower Magazine", url: "https://seapowermagazine.org/successful-trident-ii-d5-life-extension-d5le-launches-demonstrate-continued-readiness-of-nations-sea-based-deterrent/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Continuous Pacific deterrence patrols"
+  },
+  {
+    id: "ssbn_kingsbay",
+    name: "SSBN Deterrence Patrols (Atlantic)",
+    type: "submarine",
+    class: "Ohio-class SSBN",
+    lat: 30.79, lng: -81.51,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Naval Submarine Base Kings Bay, GA — 6 SSBNs homeported",
+    mission: "Continuous at-sea deterrence patrols (Atlantic). Exact patrol locations classified. USS Louisiana currently in mid-life Engineered Refueling Overhaul.",
+    strikeGroup: "USSTRATCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "SSP Official", url: "https://www.ssp.navy.mil/About-Us/SSP-Mission/Sustainment/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Continuous Atlantic deterrence patrols"
+  },
+
+  // === SPECIAL NAVAL ===
+  {
+    id: "ddg1000",
+    name: "USS Zumwalt (DDG-1000)",
+    type: "special_naval",
+    class: "Zumwalt-class (CPS hypersonic)",
+    lat: 30.35, lng: -88.53,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "HII Ingalls Shipbuilding, Pascagoula, MS",
+    mission: "Completed builder's sea trials Jan 21, 2026 after 3-year CPS hypersonic weapon installation. Will be world's first surface ship armed with hypersonic missiles upon Navy acceptance. Expected active service 2026.",
+    strikeGroup: "N/A (testing)",
+    confidence: "confirmed",
+    sources: [
+      {name: "HII Official Jan 2026", url: "https://hii.com/news/hii-completes-builders-sea-trials-for-uss-zumwalt-ddg-1000/"}
+    ],
+    updated: "Jan 21, 2026",
+    changeSummary: "Hypersonic weapon install, sea trials complete"
+  },
+  {
+    id: "lcs32",
+    name: "USS Santa Barbara (LCS-32)",
+    type: "special_naval",
+    class: "Independence-class LCS",
+    lat: 26.5, lng: 52.0,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Arabian Gulf — 5th Fleet / CENTCOM operations",
+    mission: "Forward deployed LCS in Arabian Gulf. Joint training with A-10 documented Feb 2, 2026. Feb 25: USS Santa Barbara and USS Tulsa left Persian Gulf, now in northern Arabian Sea per INSS.",
+    strikeGroup: "5th Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "CENTCOM Official", url: "https://www.centcom.mil/MEDIA/igphoto/2002555983/"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "Departed Persian Gulf to northern Arabian Sea"
+  },
+
+  // === MAJOR BASES ===
+  {
+    id: "ramstein",
+    name: "Ramstein Air Base",
+    type: "base",
+    class: "USAFE HQ / Major Air Base",
+    lat: 49.44, lng: 7.60,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Rhineland-Palatinate, Germany — ~16,200 personnel",
+    mission: "HQ USAFE-AFAFRICA. 86th Airlift Wing. Major drone control node. Staging point for E-3 AWACS heading to Middle East. Part of Kaiserslautern Military Community (~56,000).",
+    strikeGroup: "USAFE",
+    confidence: "confirmed",
+    sources: [
+      {name: "CEPA", url: "https://cepa.org/article/going-going-the-us-base-network-in-europe/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Staging AWACS and transiting assets to ME"
+  },
+  {
+    id: "al_udeid",
+    name: "Al Udeid Air Base",
+    type: "base",
+    class: "CENTCOM Forward HQ",
+    lat: 25.12, lng: 51.32,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Qatar — dispersal underway, tanker drawdown visible",
+    mission: "Largest US base in Middle East. CENTCOM forward HQ. 379th AEW. Struck by Iran June 23, 2025 (retaliation for Midnight Hammer). Feb 20-21: NYT reports hundreds of troops evacuated (Pentagon denies via Fox News — contradictory reports). Satellite imagery shows continuous decline in tanker aircraft vs. increase at Prince Sultan AB. Vulnerability to Iranian ballistic missiles driving asset dispersal to Jordan and Saudi Arabia. THAAD + Patriot still defending.",
+    strikeGroup: "CENTCOM/379th AEW",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 20", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"},
+      {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
+      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
+    ],
+    updated: "Feb 21, 2026",
+    changeSummary: "Tanker drawdown, dispersal to Jordan/Saudi"
+  },
+  {
+    id: "camp_humphreys",
+    name: "Camp Humphreys / USFK HQ",
+    type: "base",
+    class: "Largest US Overseas Base",
+    lat: 37.12, lng: 126.97,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Pyeongtaek, South Korea — ~28,500 USFK total",
+    mission: "Largest US overseas base by area. USFK HQ. 8th Army. Combined Forces Command. Potential hub for both Korean Peninsula and Taiwan contingency.",
+    strikeGroup: "USFK",
+    confidence: "confirmed",
+    sources: [
+      {name: "CRS Report", url: "https://www.everycrsreport.com/files/2026-02-05_IF12604_f36b7c6fadf8166b14633da7b1fe0635a054fbcc.html"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Largest US overseas base, USFK HQ"
+  },
+  {
+    id: "kadena",
+    name: "Kadena Air Base",
+    type: "base",
+    class: "Largest USAF Base in East Asia",
+    lat: 26.36, lng: 127.77,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Okinawa, Japan — 18th Wing. AWACS stripped for ME surge",
+    mission: "Most active USAF base in East Asia. F-15EX arrival (2 aircraft Feb 2026, 36 permanent spring 2026). ALL E-3 AWACS withdrawn for Middle East surge — Indo-Pacific early warning degraded.",
+    strikeGroup: "PACAF / 18th Wing",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition", url: "https://www.armyrecognition.com/news/aerospace-news/2026/us-deploys-nearly-40-of-entire-e-3-sentry-awacs-fleet-to-middle-east-for-potential-war-against-iran"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "All AWACS stripped for Middle East surge"
+  },
+  {
+    id: "camp_lemonnier",
+    name: "Camp Lemonnier",
+    type: "base",
+    class: "Only Permanent US Base in Africa",
+    lat: 11.55, lng: 43.16,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Djibouti — ~4,000 personnel",
+    mission: "Only permanent US military base in Africa. CJTF-HOA. JSOC task force. SOF hub. Drone ops from nearby Chabelley Airport. 20-year lease ($63M/year). Houthi threat range now reaches base.",
+    strikeGroup: "AFRICOM / CJTF-HOA",
+    confidence: "confirmed",
+    sources: [
+      {name: "Camp Lemonnier Official", url: "https://cnreurafcent.cnic.navy.mil/Installations/Camp-Lemonnier-Djibouti/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "Only permanent US base in Africa"
+  },
+  {
+    id: "nsa_bahrain",
+    name: "NSA Bahrain / 5th Fleet HQ",
+    type: "base",
+    class: "Naval Support Activity",
+    lat: 26.22, lng: 50.60,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Bahrain — ~9,000 DoD personnel (evacuations reported)",
+    mission: "HQ US Naval Forces Central Command (NAVCENT). 5th Fleet. Secures Persian Gulf/Red Sea shipping. Feb 20-21: NYT reports evacuations at Bahrain bases housing 5th Fleet (Pentagon denies via Fox News — contradictory reports). Vulnerability concerns amid Iran tensions.",
+    strikeGroup: "NAVCENT / 5th Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "ZeroHedge (NYT/Fox contradictions)", url: "https://www.zerohedge.com/markets/us-evacuates-troops-exposed-qatar-bahrain-bases-weekend-strike-coming"},
+      {name: "Al Jazeera", url: "https://www.aljazeera.com/news/2025/6/12/mapping-us-troops-and-military-bases-in-the-middle-east"}
+    ],
+    updated: "Feb 21, 2026",
+    changeSummary: "Contradictory evacuation reports, 5th Fleet HQ"
+  },
+  {
+    id: "rota",
+    name: "Naval Station Rota / Aegis BMD Destroyers",
+    type: "missile_defense",
+    class: "Naval Station / BMD",
+    lat: 36.64, lng: -6.35,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Rota, Spain — 4 Aegis BMD destroyers homeported",
+    mission: "Homeport of 4 Aegis BMD destroyers. Key logistics hub for Europe/Africa/MENA. 6th destroyer deployment planned. Part of NATO EPAA BMD network.",
+    strikeGroup: "6th Fleet / NATO BMD",
+    confidence: "confirmed",
+    sources: [
+      {name: "Defense Priorities", url: "https://www.defensepriorities.org/explainers/aligning-global-military-posture-with-us-interests/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "4 Aegis BMD destroyers homeported"
   },
 
   // === MISSILE DEFENSE ===
   {
-    id: "thaad_israel",
-    name: "THAAD Battery — Israel (Muwaffaq Salti / Negev)",
+    id: "thaad_korea",
+    name: "THAAD Battery (Seongju)",
     type: "missile_defense",
     class: "THAAD",
-    lat: 31.00, lng: 35.00,
+    lat: 35.92, lng: 128.18,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Israel — Muwaffaq Salti AB, Jordan & Negev sites",
-    mission: "THAAD battery emplaced at Muwaffaq Salti AB alongside Patriot systems. Provides upper-tier missile defense for Jordan/Israel airspace. 7-7.5m mile intercept range at 93-mile altitude. Additional THAAD units in Saudi Arabia and UAE. Feb 26: Patriot components also confirmed at Ovda Air Base (alongside F-22s) via MizarVision satellite. Multi-layered defense: THAAD + Patriot + Israeli Iron Dome/Arrow 3.",
-    strikeGroup: "32nd AAMDC",
+    location: "Seongju, South Korea — permanent",
+    mission: "Operational since Sep 2017. 6 launchers, 48 interceptors, AN/TPY-2 radar. Covers Camp Humphreys. 35th ADA Brigade. Chinese objection ongoing.",
+    strikeGroup: "35th ADA Brigade",
     confidence: "confirmed",
     sources: [
-      {name: "The War Zone", url: "https://www.twz.com/news-features/final-pieces-moving-into-place-for-potential-attack-on-iran"},
-      {name: "Army Recognition", url: "https://www.armyrecognition.com/news/army-news/2026/us-patriot-air-defense-systems-confirmed-deployed-to-muwaffaq-salti-air-base-in-jordan"}
+      {name: "MDAA", url: "https://www.missiledefenseadvocacy.org/defense-systems/terminal-high-altitude-area-defense-thaad/"}
     ],
-    updated: "Feb 26, 2026",
-    changeSummary: "Patriot also confirmed at Ovda, multi-layer defense active"
+    updated: "Feb 2026",
+    changeSummary: "Permanent THAAD battery, 48 interceptors"
   },
   {
-    id: "patriot_gulf",
-    name: "Patriot Batteries — Gulf States (Saudi, UAE, Kuwait, Qatar)",
+    id: "thaad_guam",
+    name: "THAAD Battery (Guam)",
     type: "missile_defense",
-    class: "Patriot PAC-3",
-    lat: 25.00, lng: 51.00,
+    class: "THAAD",
+    lat: 13.50, lng: 144.80,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Gulf States — multiple batteries",
-    mission: "Multiple Patriot PAC-3 batteries across Saudi Arabia, UAE, Kuwait, Qatar. Protecting US installations and allied infrastructure. Additional batteries reportedly being surged Feb 2026 per CENTCOM surge orders. MIM-104F PAC-3 MSE with 35km intercept range.",
-    strikeGroup: "32nd AAMDC / host-nation",
+    location: "Guam — permanent since June 2016",
+    mission: "Defends against North Korean/Chinese IRBMs. Infrastructure challenges (GAO 2025 report). Guam Defense System expansion planned FY2027-2032.",
+    strikeGroup: "Task Force Talon",
     confidence: "confirmed",
     sources: [
-      {name: "USCENTCOM Press", url: "https://www.centcom.mil/MEDIA/NEWS-ARTICLES/News-Article-View/Article/3988124/"}
+      {name: "Defense News GAO", url: "https://www.defensenews.com/pentagon/2025/05/28/no-clear-plan-for-supporting-guam-missile-defense-system-gao-finds/"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "Additional batteries surged, Gulf installations protected"
+    updated: "Feb 2026",
+    changeSummary: "Permanent since 2016, expansion planned"
   },
-
-  // === GROUND BASES ===
   {
-    id: "aludeid",
-    name: "Al Udeid AB, Qatar (379th AEW)",
-    type: "base",
-    class: "Air Base",
-    lat: 25.12, lng: 51.31,
+    id: "thaad_me",
+    name: "THAAD Batteries (Middle East surge)",
+    type: "missile_defense",
+    class: "THAAD",
+    lat: 29.20, lng: 48.00,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Al Udeid AB, Qatar — AFCENT HQ",
-    mission: "Forward HQ, AFCENT. 10,000+ US personnel. Hosts E-3 AWACS, C-17s, KC-135s. Activity reportedly shifting to Prince Sultan AB as Qatar distances from Iran conflict. Still critical CAOC.",
-    strikeGroup: "379th AEW / AFCENT",
-    confidence: "confirmed",
+    location: "Kuwait/Jordan/Qatar area — surging",
+    mission: "12 THAAD and Patriot air defense systems deploying to Middle East. Protecting Al Udeid, al-Dhafra, Muwaffaq Salti, Prince Sultan AB, and key bases from Iranian ballistic missiles. Limited global inventory (~8 THAAD batteries total, multiple Patriot batteries surging).",
+    strikeGroup: "CENTCOM ADA",
+    confidence: "unconfirmed",
     sources: [
-      {name: "USAF Official", url: "https://www.afcent.af.mil/About/Fact-Sheets/Display/Article/217803/379th-air-expeditionary-wing/"}
+      {name: "Army Recognition", url: "https://armyrecognition.com/news/army-news/2026/u-s-deploys-more-thaad-air-defense-missiles-to-middle-east-amid-possible-military-action-against-iran"},
+      {name: "CNN", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "Activity shifting to Prince Sultan as Qatar distances itself"
+    updated: "Feb 22, 2026",
+    changeSummary: "12 THAAD and Patriot systems deploying"
   },
   {
-    id: "princesultan",
-    name: "Prince Sultan AB, Saudi Arabia (378th AEW)",
-    type: "base",
-    class: "Air Base",
-    lat: 24.06, lng: 45.52,
+    id: "aegis_romania",
+    name: "Aegis Ashore (Romania)",
+    type: "missile_defense",
+    class: "Aegis Ashore BMD",
+    lat: 44.10, lng: 24.18,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Prince Sultan AB, Saudi Arabia",
-    mission: "Rapidly expanding as primary CENTCOM air hub. Major tanker surge hub — KC-46A first deployment (77th EARS). F-15Es and ISR assets increasing. Saudi Arabia reportedly allowing US buildup but not active strike operations. 20,000 personnel capacity.",
-    strikeGroup: "378th AEW",
+    location: "NSF Deveselu, Romania — operational since 2016",
+    mission: "SM-3 interceptors. Protects Europe from Iranian ballistic missiles. Retained during Oct 2025 US drawdown from Romania.",
+    strikeGroup: "NATO EPAA",
     confidence: "confirmed",
     sources: [
-      {name: "Air & Space Forces", url: "https://www.airandspaceforces.com/kc-46-pegasus-tanker-first-time-378th-aew/"}
+      {name: "US Navy", url: "https://www.navy.mil/Press-Office/News-Stories/Article/3620258/the-aegis-ashore-missile-defense-system-in-naval-support-facility-redizkowo-pol/"}
     ],
-    updated: "Feb 20, 2026",
-    changeSummary: "Major tanker/strike hub, rapid expansion"
+    updated: "Feb 2026",
+    changeSummary: "SM-3 interceptors operational since 2016"
   },
   {
-    id: "diegogarcia",
-    name: "Diego Garcia (Joint Military Facility)",
+    id: "aegis_poland",
+    name: "Aegis Ashore (Poland)",
+    type: "missile_defense",
+    class: "Aegis Ashore BMD",
+    lat: 54.07, lng: 17.50,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "NSF Redzikowo, Poland — operational",
+    mission: "Accepted Dec 2023. Full NATO integration 2024. New CO assigned Dec 22, 2025. Part of NATO EPAA network with Romania and Rota destroyers.",
+    strikeGroup: "NATO EPAA",
+    confidence: "confirmed",
+    sources: [
+      {name: "Defence Industry EU", url: "https://defence-industry.eu/u-s-navy-appoints-new-commander-at-redzikowo-aegis-ashore-missile-defence-facility-in-poland/"}
+    ],
+    updated: "Dec 2025",
+    changeSummary: "NATO EPAA network, operational"
+  },
+  {
+    id: "muwaffaq_base",
+    name: "Muwaffaq Salti Air Base",
     type: "base",
-    class: "Naval/Air Base",
+    class: "Major Forward Air Hub",
+    lat: 31.83, lng: 36.76,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Azraq, Jordan — 70+ combat aircraft, MAJOR SURGE hub",
+    mission: "Feb 21 MAJOR SURGE: 70+ combat aircraft confirmed. Includes ~30 F-35As, 18 F-15Es, 12+ F-16s, 12 A-10C Thunderbolt IIs (newly arrived from Moody AFB), 6 EA-18Gs, 2+ MQ-9s. Every visible parking spot filled per satellite. Expanded air defense perimeter. Patriot batteries + possible THAAD. Primary forward strike hub for any Iran operation.",
+    strikeGroup: "CENTCOM Strike Hub",
+    confidence: "confirmed",
+    sources: [
+      {name: "CNN Satellite Feb 20", url: "https://www.cnn.com/2026/02/20/politics/military-power-buildup-us-iran-intl-vis"},
+      {name: "The War Zone", url: "https://www.twz.com/news-features/final-pieces-moving-into-place-for-potential-attack-on-iran"}
+    ],
+    updated: "Feb 22, 2026",
+    changeSummary: "70+ combat aircraft, primary forward strike hub"
+  },
+  {
+    id: "diego_garcia_base",
+    name: "Diego Garcia Strategic Base",
+    type: "base",
+    class: "Strategic Air/Naval Base",
     lat: -7.31, lng: 72.43,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Diego Garcia, British Indian Ocean Territory",
-    mission: "Critical Indian Ocean hub. UK-US agreement. Feb 21: UK PM Starmer denied US use for bomber strikes on Iran. Force protection F-16CMs from Misawa deployed. KC-135s, C-17, P-8 visible. Ongoing negotiations regarding bomber basing rights. UK sovereignty discussions continue with Mauritius re: island ownership.",
-    strikeGroup: "Joint Military Facility",
+    location: "British Indian Ocean Territory — B-52 capable, ~3,000 personnel",
+    mission: "Airfield with B-2/B-52 capable runways. Fuel depots. Maritime pre-positioning. Trump named as Iran strike staging base (Feb 18). Used for B-2 missions in Midnight Hammer. Feb 21: UK PM Starmer REFUSED US requests to use Diego Garcia for B-2/B-52 bomber strikes against Iran, citing international law. UK-Mauritius sovereignty dispute ongoing. Feb 26: The Times/CFR confirm UK expanded ban to RAF bases in England too. Feb 27: TWZ reports 'indications that a bomber deployment to Diego Garcia could be imminent' despite UK objections. Starmer 'could still change his mind.' DG re-emerging as critical hub for bomber/fighter support. F-16CMs from Misawa already on-island for force protection.",
+    strikeGroup: "USINDOPACOM / CENTCOM",
     confidence: "confirmed",
     sources: [
-      {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"}
+      {name: "Chatham House", url: "https://www.chathamhouse.org/2026/02/us-military-base-diego-garcia-what-its-strategic-importance"}
     ],
-    updated: "Feb 25, 2026",
-    changeSummary: "UK blocking bomber ops; F-16s deployed for base defense"
+    updated: "Feb 27, 2026",
+    changeSummary: "Bomber deployment imminent per TWZ despite UK ban"
   },
   {
-    id: "muwaffaq",
-    name: "Muwaffaq Salti AB, Jordan (primary buildup hub)",
+    id: "edca_philippines",
+    name: "Philippines EDCA Sites (9 total)",
     type: "base",
-    class: "Air Base",
-    lat: 31.83, lng: 36.79,
+    class: "Enhanced Defense Cooperation Agreement",
+    lat: 14.99, lng: 120.49,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "9 EDCA sites across Philippines — Luzon, Palawan, Cebu, Mindanao",
+    mission: "US pre-positioning rights at 9 sites. $82M allocated. Typhoon/NMESIS anti-ship missiles deployed during Balikatan 25. Critical for Taiwan contingency. Sites face South China Sea and Taiwan Strait.",
+    strikeGroup: "INDOPACOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "PACOM EDCA", url: "https://www.pacom.mil/Media/NEWS/Article/3350502/philippines-us-announce-locations-of-four-new-edca-sites/"}
+    ],
+    updated: "Feb 2026",
+    changeSummary: "9 EDCA sites, Taiwan contingency posture"
+  },
+  {
+    id: "mrf_darwin",
+    name: "MRF-D (Marine Rotational Force Darwin)",
+    type: "base",
+    class: "Marine Rotational Force",
+    lat: -12.46, lng: 130.85,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Darwin, Australia — ~2,500 Marines (first time at max)",
+    mission: "14th rotation (2025). First time at 2,500 authorized maximum. Includes HIMARS platoon. MAGTF structure. Operates across Northern Territory and Indo-Pacific.",
+    strikeGroup: "I MEF / MRF-D",
+    confidence: "confirmed",
+    sources: [
+      {name: "PACOM", url: "https://www.pacom.mil/Media/NEWS/Article/1918439/us-marines-reach-2500-in-darwin-for-first-time/"}
+    ],
+    updated: "2025",
+    changeSummary: "2,500 Marines with HIMARS, max strength"
+  },
+  {
+    id: "manda_bay",
+    name: "Camp Simba / Manda Bay",
+    type: "base",
+    class: "Air Base (Kenya)",
+    lat: -2.30, lng: 40.90,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Lamu County, Kenya — ~200-400 US personnel",
+    mission: "406th AEW. ISR over Somalia (contractor-operated). $70M runway expansion groundbreaking Jan 29, 2026. Used for Somalia counterterrorism. 126 attacks in Somalia in 2025 (record).",
+    strikeGroup: "AFRICOM / 406th AEW",
+    confidence: "confirmed",
+    sources: [
+      {name: "Task & Purpose", url: "https://taskandpurpose.com/news/us-kenya-manda-bay-somalia/"}
+    ],
+    updated: "Jan 2026",
+    changeSummary: "$70M runway expansion, Somalia counterterror"
+  },
+
+  // === NEW ASSETS (Feb 22, 2026) ===
+  {
+    id: "e4b_nightwatch",
+    name: "E-4B Nightwatch ('Doomsday Plane')",
+    type: "surveillance",
+    class: "E-4B NAOC",
+    lat: 38.89, lng: -77.03,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    location: "Joint Base Andrews, MD — spotted before Trump SOTU address",
+    mission: "National Airborne Operations Center. Feb 21: Flew to D.C. using rare callsign 'ORDER01' (standard is 'ORDER6') via unusual coastal route. Feb 24: E-4B spotted descending toward Joint Base Andrews hours before Trump's State of the Union address. Aircraft arrived from Barksdale AFB per OSINT trackers. Standard precaution during major events where senior government leaders gather, but timing amid Iran tensions drew attention. E-4B is the president's airborne command post for nuclear war/national emergencies. Only 4 aircraft in fleet.",
+    strikeGroup: "USSTRATCOM / NCA",
+    confidence: "confirmed",
+    sources: [
+      {name: "OSINT tracking Feb 21", url: "https://x.com/sentdefender"},
+      {name: "Mario Nawfal (E-4B Andrews)", url: "https://x.com/MarioNawfal/status/2026446427275116983"},
+      {name: "Zambian Observer Feb 25", url: "https://zambianobserver.com/doomsday-plane-spotted-at-andrews-afb-hours-before-trumps-address-to-congress-amid-heightened-global-tensions/"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "At Andrews AFB before Trump SOTU address"
+  },
+  {
+    id: "airlift_surge",
+    name: "C-17/C-5M Airlift Surge (38+ heavy transports)",
+    type: "tanker",
+    class: "C-17A / C-5M",
+    lat: 49.0, lng: 12.0,
+    prevLat: 31.0, prevLng: -84.0,
+    prevLabel: "Fort Hood TX / East Coast CONUS (Feb 20-21)",
+    movementDate: "2026-02-21",
+    location: "Europe-to-Middle East corridor — 31 C-17s + 7 C-5Ms tracked",
+    mission: "Unusually high tempo airlift: 31 C-17 Globemaster IIIs and 7 C-5M Super Galaxies tracked between Europe and Middle East in 24 hours. 10+ additional C-17s departed East Coast evening of Feb 21, most from Fort Hood. Feb 25: Washington Post confirms over 150 military aircraft moved to Europe/ME bases — largest in 20 years since 2003 Iraq War. Escenario Mundial reports 160+ military flights to Europe and ME in February alone. Supporting rapid forward deployment of personnel, munitions, and air defense systems.",
+    strikeGroup: "AMC / TRANSCOM",
+    confidence: "confirmed",
+    sources: [
+      {name: "BBC Feb 21", url: "https://www.bbc.com/news/live/c0rj5dwjx2pt"},
+      {name: "Sentinel Defense Feb 21", url: "https://x.com/sentdefender/status/2025374290451833157"},
+      {name: "Chosun Ilbo/WaPo Feb 25", url: "https://www.chosun.com/english/world-en/2026/02/25/XZTKGPUA5RDH7LST3WJGDX5OTI/"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "WaPo: 150+ aircraft moved, largest since 2003"
+  },
+  {
+    id: "a10_jordan",
+    name: "A-10C Thunderbolt II (Muwaffaq Salti)",
+    type: "fighter",
+    class: "A-10C Thunderbolt II",
+    lat: 31.86, lng: 36.84,
     prevLat: null, prevLng: null,
     prevLabel: null,
     location: "Muwaffaq Salti AB, Jordan",
-    mission: "Primary buildup hub per satellite imagery. 60+ US aircraft confirmed: F-35As, F-15Es, F-16s, A-10Cs. THAAD + Patriot batteries emplaced. 68 cargo aircraft delivered munitions/equipment past week. Jordan allowing US buildup on territory but NOT as launchpad per Newsweek. Critical pre-positioning for any Iran operation.",
-    strikeGroup: "CENTCOM surge",
+    mission: "A-10C Thunderbolts visible in satellite imagery at Muwaffaq Salti. Provide close air support and base defense options. Part of 60+ aircraft buildup at base. 12 A-10C ground-attack aircraft from 23rd Wing, Moody AFB deployed to Jordan. 30mm GAU-8 Avenger rotary cannon. Close air support and battlefield interdiction role. Adds CAS capability to the predominantly air superiority/SEAD package at Muwaffaq Salti.",
+    strikeGroup: "23rd Wing",
     confidence: "confirmed",
     sources: [
-      {name: "Newsweek Satellite Feb 24", url: "https://www.newsweek.com/satellite-pictures-show-surge-us-aircraft-middle-east-11571894"},
-      {name: "Army Recognition Feb 21", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-strengthens-air-combat-forces-at-jordans-muwaffaq-salti-base-near-israel-as-iran-tensions-escalate"}
+      {name: "Army Recognition Feb 21", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-strengthens-air-combat-forces-at-jordans-muwaffaq-salti-base-near-israel-as-iran-tensions-escalate"},
+      {name: "The War Zone Feb 21", url: "https://www.twz.com/news-features/supercarrier-uss-gerald-r-ford-has-crossed-into-the-mediterranean"}
     ],
     updated: "Feb 24, 2026",
-    changeSummary: "60+ US aircraft confirmed by satellite at Jordan base"
+    changeSummary: "A-10 Warthogs visible at Jordan base"
   },
   {
-    id: "raf_lakenheath",
-    name: "RAF Lakenheath, UK (48th FW staging hub)",
-    type: "base",
-    class: "Air Base",
-    lat: 52.41, lng: 0.56,
+    id: "lhd3_kearsarge",
+    name: "USS Kearsarge (LHD-3)",
+    type: "amphibious",
+    class: "Wasp-class LHD (F-35B capable)",
+    lat: 36.0, lng: -72.0,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "RAF Lakenheath, Suffolk, UK",
-    mission: "Primary staging hub for USAFE aircraft deploying to Middle East. F-22s (13 now here), F-35As (12 Hill AFB transiting), F-15Es (staging here). Feb 26: UK govt (The Times/CFR) reportedly expanded ban — RAF Lakenheath and UK airbases cannot be used for preemptive strike operations on Iran (in addition to Diego Garcia ban). Raptors may transit but UK refuses to serve as strike staging base. F-22s likely continuing directly to Israel rather than staging long-term in UK.",
-    strikeGroup: "USAFE / 48th FW",
+    location: "Atlantic — newly F-35B qualified",
+    mission: "Feb 10: Completed first-ever F-35B flight operations with VMFA-542. Atlantic amphibious forces now fifth-gen capable. Potential rapid deployment asset for Middle East if needed. Could serve as light carrier with F-35B stealth fighters.",
+    strikeGroup: "VMFA-542 / 2nd Fleet",
     confidence: "confirmed",
     sources: [
-      {name: "The Aviationist", url: "https://theaviationist.com/2026/02/17/six-f22-raptors-arrive-raf-lakenheath/"},
-      {name: "The Times/CFR Feb 26 (UK ban)", url: "https://www.cfr.org/article/us-iran-crisis-2026"}
+      {name: "Military Leak Feb 21", url: "https://militaryleak.com/2026/02/21/amphibious-assault-ship-uss-kearsarge-lhd-3-conducts-f-35b-flight-operations-for-the-first-time/"}
     ],
-    updated: "Feb 26, 2026",
-    changeSummary: "UK expanded ban to Lakenheath; F-22s transit only"
+    updated: "Feb 22, 2026",
+    changeSummary: "Newly F-35B qualified, fifth-gen capable"
   },
   {
-    id: "ovda",
-    name: "Ovda Air Base, Israel (F-22 deployment)",
-    type: "base",
-    class: "Air Base",
-    lat: 29.94, lng: 34.94,
+    id: "thaad_jordan",
+    name: "THAAD Battery (Muwaffaq Salti, Jordan)",
+    type: "missile_defense",
+    class: "THAAD",
+    lat: 31.82, lng: 36.76,
     prevLat: null, prevLng: null,
     prevLabel: null,
-    location: "Ovda AB, Negev Desert, Israel",
-    mission: "Historic first deployment of US combat aircraft to Israel. 11 F-22s arrived Feb 24. MizarVision satellite (Feb 26) confirms Patriot battery components also at Ovda. Built to US specifications (JINSA). Distances to key Iran targets: Bushehr ~1,540km, Natanz ~1,640km, Tehran ~1,660km. Within combat radius for F-22 with KC-46 tanker support. WSJ: US dispersal strategy using Israeli bases to avoid vulnerability of fixed Gulf airfields.",
-    strikeGroup: "1st FW deployed",
+    location: "Muwaffaq Salti AB, Jordan",
+    mission: "THAAD battery emplaced at Muwaffaq Salti per satellite imagery analysis. Combined with Patriot systems for layered defense of 60+ combat aircraft at base. Covers medium/intermediate-range ballistic missile threats from Iran.",
+    strikeGroup: "CENTCOM AMD",
     confidence: "confirmed",
     sources: [
-      {name: "JINSA (Ovda analysis)", url: "https://jinsa.org/jinsas-ruhe-america-just-added-a-land-based-aircraft-carrier-to-the-middle-east/"},
-      {name: "MizarVision Feb 26", url: "https://www.timesofisrael.com/us-iran-said-to-agree-to-further-talks-next-week-as-mediator-claims-progress/"}
+      {name: "Army Recognition Feb 21", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-strengthens-air-combat-forces-at-jordans-muwaffaq-salti-base-near-israel-as-iran-tensions-escalate"},
+      {name: "Defence Security Asia", url: "https://defencesecurityasia.com/en/iran-an-tpy2-radar-threat-gulf-trump-missile-defense-thaad-patriot/"}
     ],
-    updated: "Feb 26, 2026",
-    changeSummary: "Patriot battery confirmed; first-ever US combat aircraft in Israel"
+    updated: "Feb 24, 2026",
+    changeSummary: "THAAD battery emplaced to protect Jordan airbase"
+  },
+  {
+    id: "c17_airlift",
+    name: "C-17 Globemaster III Airlift Surge (8+ aircraft)",
+    type: "tanker",
+    class: "C-17 Globemaster III",
+    lat: 38.76, lng: -27.09,
+    prevLat: 35.05, prevLng: -80.97,
+    prevLabel: "US East Coast / Fort Hood, TX (Feb 23-24)",
+    movementDate: "2026-02-24",
+    location: "Transatlantic — 8+ C-17s crossing Atlantic eastbound",
+    mission: "Feb 24: At least 8 C-17 heavy transport aircraft crossing Atlantic simultaneously. Carrying weapons, air defense systems, and logistics support. Over 200 heavy transport flights have delivered equipment to ME hubs since mid-January. 150+ cargo flights with weapons systems and ammunition per Axios.",
+    strikeGroup: "AMC",
+    confidence: "confirmed",
+    sources: [
+      {name: "JFeed Feb 24", url: "https://www.jfeed.com/news-world/us-military-buildup-middle-east-2"}
+    ],
+    updated: "Feb 24, 2026",
+    changeSummary: "8+ C-17s crossing Atlantic with weapons/equipment"
   },
 
-  // === SPECIAL NAVAL / DESTROYERS ===
+  // === NEW ASSETS (Feb 25, 2026) ===
   {
-    id: "destroyers_me",
-    name: "US Destroyers / Cruisers — Middle East (16 ships total)",
+    id: "f16_diego",
+    name: "F-16CM Fighting Falcons (35th FW, Diego Garcia)",
+    type: "fighter",
+    class: "F-16CM",
+    lat: -7.31, lng: 72.43,
+    prevLat: 40.87, prevLng: 141.38,
+    prevLabel: "Misawa AB, Japan (Feb 2026)",
+    movementDate: "2026-02-23",
+    location: "Diego Garcia — force protection",
+    mission: "6x F-16CMs from 35th Fighter Wing (Misawa, Japan) deployed to Diego Garcia for base defense. MizarVision satellite imagery (Feb 25) reveals full air composition: 6x F-16, 3x KC-135 Stratotanker, 2x P-8A Poseidon (ASW/maritime patrol), 2x C-130J Super Hercules, 3x C-17A Globemaster III, 1x C-5M Super Galaxy. Arleigh Burke DDG moored at wharf providing Aegis air/missile defense. Atlas Air 747-4B5F cargo charter from Philippines also arrived. UK blocking use for Iran strikes but force-protection and stockpile buildup critical -- Diego Garcia only major US base outside Iranian ballistic missile range.",
+    strikeGroup: "35th FW / NAVSUPPFAC DG",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 25", url: "https://www.twz.com/news-features/f-16s-arrive-to-protect-diego-garcia-f-22s-forward-deploy-to-israel"},
+      {name: "Army Recognition Feb 26 (satellite detail)", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-f-16-deployment-to-diego-garcia-highlights-indian-ocean-base-security-amid-iran-tensions"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "Satellite reveals full DG air composition"
+  },
+  {
+    id: "fifth_fleet_dispersal",
+    name: "5th Fleet Vessels (Bahrain dispersal)",
     type: "special_naval",
-    class: "Arleigh Burke DDG",
-    lat: 26.0, lng: 56.5,
-    prevLat: null, prevLng: null,
-    prevLabel: null,
-    location: "Persian Gulf / Arabian Sea / Red Sea",
-    mission: "AP (Feb 26) confirms at least 16 US warships now in Middle East waters with Ford's arrival — dwarfing 11-ship Caribbean fleet. Includes: Mahan (DDG-72), Bainbridge (DDG-96), Winston S. Churchill (DDG-81) [Ford escorts]; Michael Murphy (DDG-112) [entered Persian Gulf per INSS]; John Finn (DDG-113) [joined Lincoln CSG]; Delbert D. Black (DDG-119) [moved to northern Arabian Sea]; plus additional DDGs/CGs screen for CSG-3 and CSG-12. Each destroyer carries 96 VLS cells (mix of Tomahawk, SM-2/6, ESSM, ASROC). Total Tomahawk capacity across 16 ships: 800-1,000+ missiles.",
-    strikeGroup: "DESRON 2 + DESRON 21 + CSG-3",
+    class: "Multiple surface combatants",
+    lat: 25.5, lng: 53.0,
+    prevLat: 26.23, prevLng: 50.63,
+    prevLabel: "NSA Bahrain (prior to Feb 25)",
+    movementDate: "2026-02-25",
+    location: "Persian Gulf / Arabian Sea — dispersed at sea",
+    mission: "Feb 25: AP/Planet Labs satellite imagery shows all vessels typically docked at NSA Bahrain (5th Fleet HQ) are now at sea. Same dispersal pattern observed before Iran's attack on Qatar in June 2025. Protective measure against potential Iranian missile strikes on port facilities.",
+    strikeGroup: "NAVCENT / 5th Fleet",
     confidence: "confirmed",
     sources: [
-      {name: "AP/Military Times (16 ships)", url: "https://apnews.com/article/us-military-iran-buildup-nuclear-program-5663a8b0d81c8439adfaa010c59a36f5"},
-      {name: "INSS Feb 25", url: "https://www.ynetnews.com/article/sykrwfnuwg"},
-      {name: "Reuters Feb 24", url: "https://www.reuters.com/world/middle-east/us-carriers-warships-near-iran/"}
+      {name: "AP/Military.com Feb 25", url: "https://www.military.com/daily-news/2026/02/25/iran-pushes-back-against-trump-ahead-of-geneva-talks-face-of-major-us-military-deployment.html"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "All 5th Fleet ships dispersed from Bahrain port"
+  },
+  // === SYRIA WITHDRAWAL ===
+  {
+    id: "syria_withdrawal",
+    name: "US Forces Withdrawal from Syria (100+ trucks)",
+    type: "base",
+    class: "Multiple ground units / logistics",
+    lat: 36.85, lng: 41.15,
+    prevLat: 33.38, prevLng: 38.62,
+    prevLabel: "Al-Tanf Garrison, Syria (withdrawn Feb 11)",
+    movementDate: "2026-02-23",
+    location: "Qasrak Base, Hasakah Province, Syria -- withdrawing to Iraqi Kurdistan",
+    mission: "Feb 23-25: US forces began withdrawing from last major base at Qasrak (Northern Landing Zone). AFP footage shows 100+ truck convoy carrying armored vehicles and prefab structures heading to Iraqi Kurdistan. Full withdrawal expected within 1 month. Previously withdrew from al-Tanf (Feb 11) and al-Shaddadi (Feb 15). ~1,000 US troops still in Syria. Syrian govt forces backfilling all positions. Coalition against ISIS formally ending presence after ~12 years.",
+    strikeGroup: "CJTF-OIR",
+    confidence: "confirmed",
+    sources: [
+      {name: "Reuters Feb 23", url: "https://www.reuters.com/world/middle-east/us-military-begins-withdrawing-main-base-northeast-syria-syrian-sources-say-2026-02-23/"},
+      {name: "AFP/M5 Defence", url: "https://defence.m5dergi.com/one-cikan/us-forces-to-complete-withdrawal-from-syria-within-a-month/"},
+      {name: "Critical Threats Feb 24", url: "https://www.criticalthreats.org/analysis/iran-update-february-24-2026"}
+    ],
+    updated: "Feb 25, 2026",
+    changeSummary: "100+ truck convoy leaving Qasrak for Iraq"
+  },
+  // === EXERCISES & MULTINATIONAL OPS ===
+  {
+    id: "cobra_gold_26",
+    name: "Exercise Cobra Gold 2026 / TF Ashland",
+    type: "amphibious",
+    class: "USS Ashland (LSD-48) + 15th MEU elements",
+    lat: 12.7, lng: 100.9,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    movementDate: null,
+    location: "Chonburi / Rayong Province, Thailand",
+    mission: "Feb 24-ongoing: 45th Cobra Gold -- largest joint exercise in mainland Asia. 8,000+ personnel from 30 countries (US, Thailand, Japan, S. Korea, Singapore, Indonesia, Malaysia). Task Force Ashland (~600 Marines/Sailors from 15th MEU, 3rd AABn, CLR-17) conducting amphibious assault, combined arms live-fire, jungle warfare, CBRN exchange, NEO exercise. USS Ashland arrived Sattahip. MDSU-1 and EOD/NMCB from TF-73/75 also participating.",
+    strikeGroup: "INDOPACOM / 7th Fleet / I MEF",
+    confidence: "confirmed",
+    sources: [
+      {name: "INDOPACOM Feb 26", url: "https://www.pacom.mil/Media/NEWS/News-Article-View/Article/4415090/task-force-ashland-uss-ashland-arrive-in-thailand-for-exercise-cobra-gold-2026/"},
+      {name: "DWS News Feb 26", url: "https://www.youtube.com/watch?v=YKv37UeoQEU"}
     ],
     updated: "Feb 26, 2026",
-    changeSummary: "AP: 16 ships now in ME waters, largest since 2003"
+    changeSummary: "8,000 troops from 30 nations in Thai exercise"
+  },
+  {
+    id: "justified_accord_26",
+    name: "Exercise Justified Accord 2026",
+    type: "base",
+    class: "SETAF-AF / MA & NE Nat'l Guard / 173rd Airborne",
+    lat: -1.3, lng: 36.8,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    movementDate: null,
+    location: "Nairobi & Isiolo, Kenya; Djibouti; Tanzania",
+    mission: "Feb 23 - Mar 13: AFRICOM's largest annual East Africa exercise. 1,500+ personnel from US, Kenya, Tanzania, Djibouti, UK & others. Led by SETAF-AF. MA Nat'l Guard partners with Kenya on kinetic ops/urban combat; NE Nat'l Guard with Tanzania on medical/jungle warfare. 173rd Airborne providing conventional forces. Live-fire, CPX integrating SOF + conventional, air-ground integration, defensive cyber ops, UAS/C-UAS tech expo with US Commerce Dept.",
+    strikeGroup: "AFRICOM / SETAF-AF",
+    confidence: "confirmed",
+    sources: [
+      {name: "National Guard Feb 25", url: "https://www.nationalguard.mil/News/Article-View/Article/4414635/exercise-justified-accord-2026-begins-in-kenya-tanzania/"},
+      {name: "Streamline Kenya Feb 26", url: "https://streamlinefeed.co.ke/news/justified-accord-2026-begins-in-kenya-tanzania-djibouti"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "1,500 troops across Djibouti, Kenya, Tanzania"
+  },
+
+  // === NEW ASSETS (Feb 26, 2026 — Run #95) ===
+  {
+    id: "mq4c_triton_gulfoman",
+    name: "MQ-4C Triton (HALE ISR — Gulf of Oman)",
+    type: "surveillance",
+    class: "MQ-4C Triton",
+    lat: 24.5, lng: 59.5,
+    prevLat: 24.43, prevLng: 54.65,
+    prevLabel: "Al Dhafra AB, UAE (Feb 26)",
+    movementDate: "2026-02-26",
+    location: "Gulf of Oman — extended high-altitude surveillance orbit",
+    mission: "Feb 26: FlightRadar24/OSINT tracked MQ-4C Triton departing UAE for extended HALE ISR orbit over Gulf of Oman near Strait of Hormuz approaches. Racetrack pattern at 50,000+ ft for 24+ hr endurance. Sensors: AN/ZPY-3 MFAS (X-band AESA radar), EO/IR, SIGINT. 2x P-8A Poseidons concurrently airborne over wider Gulf — creating layered maritime domain awareness (wide-area cueing to tactical prosecution). Triton provides persistent pattern-of-life baseline: can detect IRGC Navy fast attack craft, naval drones, missile dispersals, air defense posture changes. Not armed — ISR only. Part of heightened US surveillance posture during Geneva R3 talks.",
+    strikeGroup: "VP-19 / CTF 57 / 5th Fleet",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition Feb 26", url: "https://www.armyrecognition.com/news/aerospace-news/2026/u-s-mq-4c-triton-surveillance-over-gulf-of-oman-reflects-strategic-maritime-signaling-toward-iran"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "Triton ISR + 2x P-8A over Gulf of Oman"
+  },
+  {
+    id: "boxer_arg",
+    name: "USS Boxer (LHD-4) ARG / 11th MEU",
+    type: "amphibious",
+    class: "Wasp-class LHD",
+    lat: 15.0, lng: 140.0,
+    prevLat: 32.68, prevLng: -117.15,
+    prevLabel: "San Diego, CA (Feb 2026)",
+    movementDate: "2026-02-05",
+    location: "Western Pacific — integrated at-sea training",
+    mission: "USS Boxer (LHD-4) with 11th MEU conducting integrated training in Indo-Pacific. VMM-163 MV-22B Ospreys sustaining flight ops for rapid vertical maneuver and distributed force insertion. Air component: MV-22B tiltrotors, CH-53E heavy-lift, AH-1Z attack, UH-1Y utility, F-35B STOVL fighters. Validated sortie generation, amphibious assault sequencing, and ship-to-shore operations (Feb 5-25). Boxer ARG-MEU provides scalable crisis response force with 450nm+ combat radius from Ospreys. Highlighted by US Pacific Fleet Feb 25.",
+    strikeGroup: "Boxer ARG / 11th MEU",
+    confidence: "confirmed",
+    sources: [
+      {name: "Army Recognition Feb 26", url: "https://www.armyrecognition.com/news/navy-news/2026/u-s-marines-deploy-mv-22b-osprey-from-uss-boxer-to-boost-indo-pacific-assault-reach"},
+      {name: "US Pacific Fleet Feb 25", url: "https://www.facebook.com/USPacificFleet/posts/1341788107982453/"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "Boxer ARG/11th MEU training in W. Pacific"
+  },
+  {
+    id: "tf_scorpion",
+    name: "Task Force Scorpion — LUCAS Kamikaze Drones",
+    type: "drone",
+    class: "LUCAS (Shahed-136 clone)",
+    lat: 24.05, lng: 52.10,
+    prevLat: null, prevLng: null,
+    prevLabel: null,
+    movementDate: null,
+    location: "CENTCOM AOR — exact base undisclosed",
+    mission: "Pentagon's FIRST operational kamikaze drone unit. Task Force Scorpion armed with Low-Cost Uncrewed Combat Attack System (LUCAS) — one-way attack drones reverse-engineered from Iranian Shahed-136 design. Bloomberg (Feb 26): unit now operational and ready if Trump orders strikes on Iran. CENTCOM spokesman Capt. Tim Hawkins confirmed: 'We established the squadron last year to rapidly equip our warfighters with new combat drone capabilities that continue to evolve.' Offers capability to 'flip the script on Iran' using their own drone design against them. Significant force multiplier for attrition strikes on air defenses, radar sites, and dispersed targets.",
+    strikeGroup: "CENTCOM / Task Force Scorpion Strike",
+    confidence: "confirmed",
+    sources: [
+      {name: "The War Zone Feb 26", url: "https://www.twz.com/news-features/uss-gerald-r-fords-imminent-arrival-off-israel-comes-as-negotiations-grind-on"},
+      {name: "Bloomberg/Al Arabiya", url: "https://www.facebook.com/alarabiya.english/posts/the-pentagons-first-kamikaze-drone-unit-is-ready-to-participate-if-president-don/1353339763497707/"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "LUCAS kamikaze drone unit operational for Iran"
+  },
+  {
+    id: "cv22_me",
+    name: "CV-22B Osprey Tiltrotors (4 aircraft — AFSOC)",
+    type: "special_naval",
+    class: "CV-22B Osprey",
+    lat: 32.00, lng: 34.90,
+    prevLat: 52.36, prevLng: 0.49,
+    prevLabel: "RAF Mildenhall, UK (352nd SOW)",
+    movementDate: "2026-02-24",
+    location: "Israel / ME — exact base undisclosed",
+    mission: "4x CV-22B Osprey tiltrotors deployed from RAF Mildenhall (352nd Special Operations Wing) to Middle East. ROOSTER 81 flight tracked via Marseille, Naples, Souda Bay (Greece) then toward Israel on Feb 24. CV-22Bs are AFSOC special operations aircraft used for Combat Search and Rescue (CSAR), personnel recovery, and special operations insertion/extraction. Critical enabler for any Iran strike campaign -- ability to recover downed pilots deep in hostile territory. Tiltrotor configuration provides helicopter-like hover with 280kt cruise speed and 500nm+ range. Their deployment signals preparation for combat operations where aircrew recovery is anticipated (The Aviationist).",
+    strikeGroup: "AFSOC / 352nd SOW",
+    confidence: "confirmed",
+    sources: [
+      {name: "The Aviationist Feb 26", url: "https://theaviationist.com/2026/02/26/additional-fighters-reinforce-us-buildup/"}
+    ],
+    updated: "Feb 26, 2026",
+    changeSummary: "4 AFSOC Ospreys deployed to ME for CSAR/SOF"
   }
 ];
 
-// === TICKER UPDATES ===
-const tickerUpdates = [
-  {
-    id: 'u_feb27_128_tankers',
-    date: 'Feb 27',
-    headline: 'MATA CONFIRMS: 128 TANKERS DEPLOYED — 43 CENTCOM / 44 MED / 41 EUROPE',
-    detail: 'Military Asset Tracker analysis confirms 128 total KC-46A/KC-135 tankers deployed across three zones: 43 in CENTCOM theater (Prince Sultan AB, Qatar, Diego Garcia orbit), 44 in Mediterranean (Incirlik, Sigonella, Souda Bay), 41 in Europe/UK (Mildenhall, Fairford, Lajes, Moron). Largest tanker surge since 2003. Enables CONUS-to-target bomber runs without forward basing.',
-    type: 'tanker',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb27_16_ships',
-    date: 'Feb 27',
-    headline: 'AP: US NAVY NOW AT 16 SHIPS IN MIDDLE EAST — LARGEST SINCE 2003',
-    detail: 'Associated Press and Military Times confirm: with USS Gerald R. Ford strike group arrival, US Navy now has at least 16 warships in Middle East waters. Dwarfs 11-ship Caribbean fleet. Experts say forces clearly designed for attacking Iran and defending against retaliation. Includes 2 carrier strike groups, destroyers in Persian Gulf, Arabian Sea, and Red Sea.',
-    type: 'naval',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb27_f16_near_miss_yemen',
-    date: 'Feb 27',
-    headline: 'F-16 NEAR-MISS: HOUTHI SAM NEAR-MISS OVER YEMEN — PILOT EVADED WITH FLARES/JAMMER',
-    detail: 'Unconfirmed report (single source): An F-16C conducting a strike sortie over Yemen experienced a near-miss from a Houthi surface-to-air missile. Pilot evaded using flares and onboard jamming (AN/ALQ-184 pod). Aircraft returned safely to base. Not officially confirmed by CENTCOM. Highlights ongoing SAM threat in Yemen airspace — Iranian-supplied SA-6 Gainful and Buk-M2 systems remain active.',
-    type: 'incident',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb27_ford_arrival',
-    date: 'Feb 27',
-    headline: 'USS GERALD R. FORD ETA REVISED TO MONDAY — HAIFA DOCKING QUESTIONED',
-    detail: 'Jerusalem Post revises Ford ETA from Friday to Monday at Haifa. The War Zone questions wisdom of carrier docking at fixed port — would become a high-value fixed target for Iranian attack, losing defensive benefits of maneuverability. Ford departed Souda Bay, Crete Thursday heading eastern Med. Day 250+ deployment.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb27_patriot_ovda',
-    date: 'Feb 27',
-    headline: 'SATELLITE: PATRIOT BATTERY CONFIRMED AT OVDA ALONGSIDE F-22s',
-    detail: 'MizarVision satellite imagery (via EGYOSINT/Times of Israel) confirms Patriot air defense battery components deployed at Ovda Air Base alongside the 11 F-22 Raptors. First confirmation of integrated air defense at Israel deployment site. Multi-layered defense now: THAAD (Muwaffaq Salti/Jordan), Patriot (Ovda/Israel), plus Israeli Arrow 3 and Iron Dome.',
-    type: 'missile_defense',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_f22_24_total',
-    date: 'Feb 26',
-    headline: 'F-22 RAPTOR TOTAL REACHES 24 — 13 NOW AT LAKENHEATH, CONTINUING TO ISRAEL',
-    detail: 'Third wave of 6 F-22s departed Langley for RAF Lakenheath (DefenceGeek). Combined with 12 new arrivals and 1 returned from Israel (fuel leak), 13 F-22s now at Lakenheath. All expected to continue to Ovda AB, Israel by Friday. First-ever US combat aircraft deployed to Israel. Total F-22 deployment: 24 aircraft (11 Ovda + 13 Lakenheath en route).',
-    type: 'air',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb26_uk_ban_expanded',
-    date: 'Feb 26',
-    headline: 'UK EXPANDS BASE BAN TO RAF LAKENHEATH — BLOCKS ALL UK AIRBASES FOR IRAN STRIKES',
-    detail: 'The Times and CFR report UK govt expanded ban to include RAF Lakenheath and all UK airbases — not just Diego Garcia. UK refuses to allow US use of British territory for preemptive strikes on Iran. F-22s may transit Lakenheath but UK will not serve as staging base for strike operations. Significant constraint: Lakenheath was the primary Atlantic bridge for F-22/F-35/F-15E deployments.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb26_f35_hill',
-    date: 'Feb 26',
-    headline: '12 MORE F-35As FROM HILL AFB CROSSING ATLANTIC — TOTAL F-35As NOW ~42',
-    detail: 'F-35As from 388th FW / 419th FW (Hill AFB, Utah) crossing Atlantic in two 6-ship cells via CE 047. 14 initially launched, 2 spares. Staging at RAF Lakenheath before continuing to Middle East. Total F-35A count approaching 42. Vermont ANG 134th FS (SEAD specialists) included in earlier waves.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_f15e_44_total',
-    date: 'Feb 26',
-    headline: 'F-15E STRIKE EAGLES REACH 44 TOTAL — LARGEST SURGE SINCE 2003',
-    detail: 'The Aviationist confirms: CE 044 carried 12 F-15Es from 366th FW Mountain Home (Idaho) in two 6-ship cells. CE 045 added 2 from Seymour Johnson (4 RTB after KC-46 engine failure over Nova Scotia). TWZ: another 6 F-15Es each from Mountain Home and Seymour Johnson still en route to Europe. Total F-15Es now 44 (18 original + 14 SJ + 12 MH). Only F-15E certified for GBU-28 bunker busters.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_wsj_dispersal',
-    date: 'Feb 26',
-    headline: 'WSJ: US USING ISRAEL TO DISPERSE WARPLANES — GULF BASING DENIED BY ALL PARTNERS',
-    detail: 'Wall Street Journal analysis: US deploying F-22s to Israel because all Gulf partners refused basing for strike operations. Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, Turkey all declined to serve as launchpads. Israeli-based F-22s + carrier aviation now backbone of any strike package. BASING DENIED: 7 US partners refused in addition to UK Lakenheath/Diego Garcia ban.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb26_ford_departed_crete',
-    date: 'Feb 26',
-    headline: 'USS FORD DEPARTS SOUDA BAY — EN ROUTE TO EASTERN MED/ISRAEL',
-    detail: 'USS Gerald R. Ford departed Souda Bay, Crete Thursday heading eastern Mediterranean. Israel Hayom initially reported 24-hour ETA (Friday); Jerusalem Post revised to Monday. Day 250+ deployment. ItaMilRadar: Ford moving toward Israel as Iran tensions raise prospect of US air cover role.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_bush_comptuex',
-    date: 'Feb 26',
-    headline: 'USS BUSH COMPTUEX ACTIVE WITH ROSS/MASON — NEAR DEPLOYMENT-READY',
-    detail: 'USS George H.W. Bush COMPTUEX actively underway Feb 21-26 with escorts USS Ross (DDG-71) and USS Mason (DDG-87). COMPTUEX is final certification before deployment. If expedited, Bush CSG could be en route to Middle East within days of completion — providing third carrier strike group for Iran theater alongside Ford and Lincoln.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_f16_diego_garcia',
-    date: 'Feb 25',
-    headline: 'F-16CMs FROM JAPAN DEPLOYED TO DIEGO GARCIA FOR BASE DEFENSE',
-    detail: 'The War Zone reports satellite imagery confirms F-16CMs from 35th FW (Misawa AB, Japan) deployed to Diego Garcia for force protection. KC-135 tankers, C-17 transports, P-8 maritime patrol also visible on apron. UK blocking use for Iran strike operations but force protection mission active.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_b2_antisurface',
-    date: 'Feb 25',
-    headline: 'B-2 AND CVW REHEARSE ANTI-SHIP STRIKE MISSIONS OFF CALIFORNIA',
-    detail: 'USNI News: B-2 Spirit and Navy carrier air wing fighters rehearsed anti-ship strike missions off California coast. Joint-service maritime strike integration relevant to Strait of Hormuz contingency. B-2 carrying anti-ship munitions (Harpoon upgrade or LRASM adaptation) would represent new capability against Iranian naval forces.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_rubio_icbm',
-    date: 'Feb 25',
-    headline: 'RUBIO: IRAN PURSUING ICBMs, REFUSES BALLISTIC MISSILE TALKS — "BIG, BIG PROBLEM"',
-    detail: 'Secretary of State Rubio says Iran is actively pursuing intercontinental ballistic missiles and refuses to discuss ballistic missiles in nuclear talks. Calls it a "big, big problem." Iran pursuing ICBMs would represent direct threat to continental US — significant escalation beyond regional delivery systems.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_cnn_weekend',
-    date: 'Feb 25',
-    headline: 'CNN: TRUMP ADMIN CONSIDERING IRAN STRIKE "AS EARLY AS THIS WEEKEND"',
-    detail: 'CNN reports Trump administration has been discussing potential strike on Iran as early as this weekend. Sources: Defense Secretary Hegseth meeting with senior military commanders, Caine briefed. Final decision has not been made. Nuclear talks continuing in parallel — Oman serving as intermediary.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_newsweek_allies',
-    date: 'Feb 25',
-    headline: 'NEWSWEEK: JORDAN, SAUDI, UAE, QATAR, BAHRAIN, KUWAIT, TURKEY ALL REFUSED BASING',
-    detail: 'Newsweek confirms 7 US regional partners refused to allow American forces to use their territory as launchpads for strikes on Iran. Creates acute basing constraint: only Israel (Ovda), carriers (Ford/Lincoln), and potentially CONUS-based bombers available for strike operations. Unprecedented refusal by traditional US partners.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_jinsa_ovda',
-    date: 'Feb 25',
-    headline: 'JINSA: OVDA DEPLOYMENT "AMERICA JUST ADDED A LAND-BASED AIRCRAFT CARRIER"',
-    detail: 'JINSA analysis: Ovda Air Base built to US specifications, making F-22 deployment functionally equivalent to adding a land-based aircraft carrier to the region. First-ever deployment of US combat aircraft to Israel. Distances: Bushehr ~1,540km, Natanz ~1,640km, Tehran ~1,660km — all within F-22 combat radius with tanker support.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_twz_analysis',
-    date: 'Feb 25',
-    headline: 'THE WAR ZONE: ALL PIECES NOW IN PLACE FOR POTENTIAL IRAN STRIKE',
-    detail: 'TWZ comprehensive analysis: F-22s at Ovda, F-16s at Diego Garcia, F-35As/F-15Es at Jordan, tanker surge, carrier positioning — all final pieces now in place. TWZ notes carrier docking at Haifa would be unprecedented risk. Dispersal strategy across Israel, carriers, and bombers minimizes vulnerability vs concentrated Gulf basing.',
-    type: 'analysis',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_nyt_f22',
-    date: 'Feb 25',
-    headline: 'NYT: F-22s ARRIVING IN ISRAEL — FIRST-EVER US COMBAT AIRCRAFT IN ISRAEL',
-    detail: 'New York Times confirms F-22 Raptors arriving at Ovda Air Base, marking first-ever deployment of US combat aircraft to Israel. Cited as significant escalation in regional posture. F-22s provide stealth capability and electronic warfare for potential penetration of Iranian integrated air defense system.',
-    type: 'air',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_wsj_f22',
-    date: 'Feb 25',
-    headline: 'WSJ: F-22s TO ISRAEL — FIRST WARTIME COMBAT MISSION DEPLOYMENT IN US HISTORY',
-    detail: 'Wall Street Journal: F-22 deployment to Israel is first-ever for potential wartime mission. US using Israeli bases to disperse warplanes — critical strategic shift after Gulf partners refused basing. Distances from Ovda make F-22s viable for Iran strike with tanker support.',
-    type: 'air',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_b21_production',
-    date: 'Feb 25',
-    headline: 'B-21 RAIDER PRODUCTION CAPACITY BOOSTED 25% — $4.5B ACCELERATION DEAL',
-    detail: 'Air Force and Northrop Grumman agreed to boost B-21 production capacity by 25%. $4.5B in approved funding. IOC still 2027 at Ellsworth AFB. Not immediately relevant to Iran contingency (not operational) but signals long-term USAF bomber modernization accelerating.',
-    type: 'air',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb25_b52_nuclear',
-    date: 'Feb 25',
-    headline: 'AFGSC: ALL 76 B-52Hs CAN BE RESTORED TO NUCLEAR CAPABILITY',
-    detail: '19FortyFive: AFGSC confirms entire B-52 fleet can be restored to nuclear weapons capability. 30 of 76 currently conventional-only (New START limitations expired). Also confirmed: Minuteman III can be upgraded to MIRV configuration. B-52J upgrade ($2B Rolls-Royce/Boeing contract) ongoing. Not immediate Iran factor but nuclear signaling context.',
-    type: 'air',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb24_f22_ovda',
-    date: 'Feb 24',
-    headline: '11 F-22 RAPTORS LAND AT OVDA, ISRAEL — FIRST EVER US COMBAT AIRCRAFT THERE',
-    detail: '11 of 12 F-22s that transited RAF Lakenheath arrived at Ovda Air Base, Negev Desert. One (TREND 66) RTB to Lakenheath with fuel tank leak. Ovda is built to US specifications (JINSA report). This is the first-ever deployment of US combat aircraft to Israeli soil. US Air Force has never before based combat aircraft in Israel.',
-    type: 'air',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb24_ford_crete',
-    date: 'Feb 24',
-    headline: 'USS FORD ARRIVES SOUDA BAY CRETE — RESUPPLY STOP BEFORE EASTERN MED',
-    detail: 'USS Gerald R. Ford and CSG-12 arrived at Souda Bay, Crete (NATO facility) for 4-day resupply. Crew morale severely strained (WSJ reports broken toilets, sailors wanting to quit at Day 240+). 19FortyFive: approaching post-Vietnam deployment record of 285 days (USS Truman 2021).',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb24_trump_nyt',
-    date: 'Feb 24',
-    headline: 'NYT: TRUMP CONSIDERING TARGETED IRAN STRIKE FOLLOWED BY LARGER ATTACK',
-    detail: 'New York Times reports Trump is considering a targeted initial strike on Iran followed by a larger attack. Pentagon modeling multiple scenarios. Talks with Iran continuing via Oman as intermediary but nuclear demands unresolved. Feb 26: NY Times updates — negotiations reportedly progressing but strike option remains on table.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb24_uk_diego',
-    date: 'Feb 24',
-    headline: 'UK DENIES DIEGO GARCIA FOR IRAN STRIKES — STARMER CONFIRMED',
-    detail: 'UK PM Starmer confirmed: US cannot use Diego Garcia for bomber strikes against Iran. Significant operational constraint as B-2s previously struck Iran from Diego Garcia (Operation Midnight Hammer). US must find alternative basing or use CONUS-to-target missions with heavy tanker support.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb24_satellite_jordan',
-    date: 'Feb 24',
-    headline: 'SATELLITE IMAGERY CONFIRMS 60+ US AIRCRAFT AT MUWAFFAQ SALTI, JORDAN',
-    detail: 'Newsweek publishes satellite images confirming 60+ US combat aircraft at Muwaffaq Salti Air Base in Jordan. F-35As, F-15Es, F-16s, A-10C Thunderbolts all visible. THAAD + Patriot batteries emplaced. 68 cargo aircraft delivered munitions/equipment in past week. Largest US air force concentration in Middle East since 2003.',
-    type: 'air',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb23_f15e_bunker',
-    date: 'Feb 23',
-    headline: 'F-15E UNIQUELY CERTIFIED FOR GBU-28 AND GBU-72 BUNKER BUSTERS — CRITICAL IRAN ROLE',
-    detail: 'Only USAF fighter certified to carry GBU-28 Hard Target Penetrator (4,700 lbs, penetrates 100ft concrete) and the newer GBU-72 Advanced Bunker Buster. Critical for Iran hardened targets: Fordow enrichment site (buried 80m under mountain), Natanz centrifuge halls. F-15E deployment surge directly linked to need for bunker-busting capability against hardened nuclear sites.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb23_f35_norway',
-    date: 'Feb 23',
-    headline: 'US PULLS F-35s FROM NATO COLD RESPONSE 2026 IN NORWAY — REDIRECTED TO ME',
-    detail: 'Norwegian defense officials confirm US pulled F-35s and other assets from Cold Response 2026 exercise in Norway. Redirected to Middle East buildup. Signals priority: Iran contingency now supersedes NATO exercise commitments. Some Vermont ANG F-35s came from Cold Response rotation.',
-    type: 'diplomatic',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb22_ford_transits',
-    date: 'Feb 22',
-    headline: 'USS FORD TRANSITS STRAIT OF GIBRALTAR — ENTERING MEDITERRANEAN',
-    detail: 'USS Gerald R. Ford and CSG-12 confirmed transiting Strait of Gibraltar on Feb 20. Escorted by USS Mahan (DDG-72), USS Bainbridge (DDG-96), USS Winston S. Churchill (DDG-81). CVW-8 embarked with 4x F/A-18E/F squadrons, EA-18G Growlers, E-2D Hawkeyes.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb21_lincoln_drone',
-    date: 'Feb 21',
-    headline: 'LINCOLN F-35C SHOOTS DOWN IRANIAN SHAHED-139 DRONE OVER ARABIAN SEA',
-    detail: 'Feb 3 incident confirmed by USNI/Forbes: An F-35C from CVW-9 aboard USS Abraham Lincoln shot down an Iranian Shahed-139 drone over the Arabian Sea. Third time CSG-3 has been redirected from Indo-Pacific to Middle East in its current deployment. Lincoln now operating ~500nm south of Iran.',
-    type: 'incident',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb20_media_line',
-    date: 'Feb 20',
-    headline: 'MEDIA LINE: LARGEST US MILITARY BUILDUP SINCE 2003 — MULTI-WEEK IRAN STRIKE POSSIBLE',
-    detail: 'The Media Line analysis: current US military buildup is the largest since the 2003 Iraq invasion. Reports US military planning for a multi-week strike campaign against Iran — not a single hit. Would target nuclear sites, missile production, IRGC command nodes. 250+ US fighter jets in region (350+ including Europe-based).',
-    type: 'analysis',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb20_b52_jasdf',
-    date: 'Feb 20',
-    headline: 'B-52/JASDF COMBINED ESCORT MISSIONS OVER PACIFIC — FIRST OF 2026',
-    detail: 'First B-52 + JASDF fighter escort missions of 2026. 23rd Expeditionary Bomb Squadron B-52Hs from Andersen AFB escorted by JASDF F-15Js (7th, 8th Air Wings) and F-2s (9th Air Wing) Feb 16-18. Demonstrates continued Indo-Pacific bomber task force posture despite Middle East focus.',
-    type: 'air',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb18_tanker_azores',
-    date: 'Feb 18',
-    headline: '15 KC-46A TANKERS AT LAJES FIELD, AZORES — LARGEST SURGE EVER AT THAT BASE',
-    detail: 'Largest ever KC-46A Pegasus surge at Lajes Field, Azores. 15 KC-46As positioned for Atlantic bridge role — refueling fighters and bombers crossing from CONUS to Mediterranean/Middle East. Prince Sultan AB activity increasing, Al Udeid decreasing as Qatar distances from conflict.',
-    type: 'tanker',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb17_f22_lakenheath',
-    date: 'Feb 17',
-    headline: 'FIRST 6 F-22 RAPTORS ARRIVE RAF LAKENHEATH — START OF MULTI-WAVE DEPLOYMENT',
-    detail: 'The Aviationist: First 6 F-22A Raptors from 1st FW (Langley AFB, VA) arrived at RAF Lakenheath, UK — beginning of unprecedented F-22 deployment to region. This wave later continued to Ovda AB, Israel. Multiple subsequent waves followed: total now 24 F-22s deployed.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb15_f35_vermont',
-    date: 'Feb 15',
-    headline: 'VERMONT ANG F-35s DEPLOY TO MIDDLE EAST — SEAD SPECIALISTS',
-    detail: 'Vermont Air National Guard 134th Fighter Squadron F-35As deployed to Middle East. These are SEAD specialists — trained for Suppression of Enemy Air Defenses. Critical role against Iranian IADS. Came from Cold Response Norway exercise. Confirmed at Muwaffaq Salti by subsequent satellite imagery.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb12_supercarrier_surge',
-    date: 'Feb 12',
-    headline: '19FORTYFIVE: US NAVY PREPARING TO SEND MULTIPLE CARRIERS TO STRIKE IRAN',
-    detail: '19FortyFive analysis: US Navy preparing unprecedented multi-carrier surge to Middle East. At the time: Lincoln in Arabian Sea, Ford transiting Atlantic, Bush spinning up for potential third deployment. Largest carrier concentration since Operation Iraqi Freedom 2003.',
-    type: 'naval',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb11_bush_spinup',
-    date: 'Feb 11',
-    headline: 'PENTAGON ORDERS USS BUSH STRIKE GROUP TO SPIN UP FOR MIDDLE EAST DEPLOYMENT',
-    detail: 'The War Zone: Pentagon ordered USS George H.W. Bush (CVN-77) to accelerate COMPTUEX for potential Middle East deployment. This would provide third carrier in Iran theater. Bush CSG includes CVW-7 and DESRON 22.',
-    type: 'naval',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb05_lincoln_arabian',
-    date: 'Feb 5',
-    headline: 'USS LINCOLN CSG CONFIRMED OPERATING IN ARABIAN SEA NEAR IRAN',
-    detail: 'Forbes confirms USS Abraham Lincoln carrier strike group operating in Arabian Sea approximately 500nm south of Iran. CSG-3 includes F-35C-equipped CVW-9. Third time this deployment has been redirected from Indo-Pacific to Middle East. F-35C shot down Iranian drone Feb 3.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_jan20_lincoln_redirect',
-    date: 'Jan 20',
-    headline: 'USS LINCOLN REDIRECTED FROM SOUTH CHINA SEA TO ARABIAN SEA',
-    detail: 'USS Abraham Lincoln and CSG-3 redirected from South China Sea operations to Arabian Sea amid escalating Iran tensions. Previous position: South China Sea. New position: Arabian Sea to provide combat presence near Iranian waters.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_dec11_washington_maintenance',
-    date: 'Dec 11, 2025',
-    headline: 'USS GEORGE WASHINGTON RETURNS TO YOKOSUKA FOR MAINTENANCE',
-    detail: 'USS George Washington completed 2025 deployment and returned to Yokosuka, Japan for maintenance. Forward-deployed 7th Fleet carrier unlikely to redeploy until second half of 2026. Reduces available carrier assets for any contingency.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_nov05_lincoln_deploy',
-    date: 'Nov 5, 2025',
-    headline: 'USS LINCOLN DEPLOYS FROM SAN DIEGO — NOW ON EXTENDED DEPLOYMENT',
-    detail: 'USS Abraham Lincoln and CSG-3 departed San Diego beginning extended deployment. Has since been redirected three times from original Indo-Pacific mission to Middle East operations. Now at Day 115+ of deployment.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_jun25_midnight_hammer',
-    date: 'Jun 2025',
-    headline: 'OPERATION MIDNIGHT HAMMER: 7 B-2s STRUCK FORDOW AND NATANZ WITH 14 MOPs',
-    detail: 'Historical context: June 2025, USAF conducted Operation Midnight Hammer — 7 B-2 Spirit stealth bombers struck Iranian nuclear facilities at Fordow and Natanz using 14 GBU-57 Massive Ordnance Penetrators (MOPs). Initial damage was significant but Iran reconstituted and enrichment resumed at backup sites. MOP restocking underway via Boeing contract.',
-    type: 'historical',
-    priority: 'critical'
-  },
-  // === ADDITIONAL TICKER ENTRIES — NAVAL SHIPS ===
-  {
-    id: 'u_feb26_murphy_gulf',
-    date: 'Feb 26',
-    headline: 'USS MICHAEL MURPHY (DDG-112) ENTERS PERSIAN GULF — INSS CONFIRMS',
-    detail: 'INSS (Israeli National Security Studies) confirms USS Michael Murphy (DDG-112) entered the Persian Gulf. Arleigh Burke-class destroyer carries 96 VLS cells (Tomahawk/SM-2/6/ESSM). Persian Gulf entry by DDG represents forward positioning for potential strike mission.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_finn_arabian',
-    date: 'Feb 26',
-    headline: 'USS JOHN FINN (DDG-113) JOINS LINCOLN CSG IN ARABIAN SEA',
-    detail: 'USS John Finn (DDG-113, Arleigh Burke Flight IIA) confirmed joining USS Abraham Lincoln carrier strike group in Arabian Sea. Provides additional Tomahawk/SM-6 VLS capacity to CSG-3. Part of Lincoln screen against Iranian surface/submarine forces in Arabian Sea.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_black_redsea',
-    date: 'Feb 26',
-    headline: 'USS DELBERT D. BLACK (DDG-119) MOVES FROM RED SEA TO NORTHERN ARABIAN SEA',
-    detail: 'USS Delbert D. Black (DDG-119) departed Red Sea positioning and moved to northern Arabian Sea. Closer proximity to Strait of Hormuz and Iranian naval forces. Arleigh Burke Flight III — newest DDG variant with AN/SPY-6 AESA radar (15x more capable than previous radar).',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb26_ap_16ships',
-    date: 'Feb 26',
-    headline: 'AP CONFIRMS: 16 US WARSHIPS IN MIDDLE EAST — LARGEST FLEET SINCE 2003',
-    detail: 'Associated Press and Military Times confirm the US now has at least 16 warships in Middle East waters with USS Ford strike group arrival. This dwarfs the 11-ship Caribbean fleet assembled for Operation South Spear. Experts quoted: forces clearly designed for attacking Iran and defending against retaliation.',
-    type: 'naval',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb26_churchill_escort',
-    date: 'Feb 26',
-    headline: 'USS WINSTON S. CHURCHILL (DDG-81) CONFIRMED ESCORTING USS FORD TO EASTERN MED',
-    detail: 'USS Winston S. Churchill (DDG-81) confirmed as Ford CSG escort heading to eastern Mediterranean. Churchill (named for the British PM) carries Tomahawk cruise missiles and SM-2/6 AAW missiles. Part of DESRON 2 screen alongside Mahan and Bainbridge.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb26_bainbridge_escort',
-    date: 'Feb 26',
-    headline: 'USS BAINBRIDGE (DDG-96) PART OF FORD CSG ESCORT — EASTERN MEDITERRANEAN',
-    detail: 'USS Bainbridge (DDG-96) part of Ford carrier strike group escort heading to eastern Mediterranean. Arleigh Burke Flight IIA destroyer. Provides anti-submarine warfare, anti-air, and Tomahawk strike capability to CSG-12 screen.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  // === GROUND/AIR ASSETS ===
-  {
-    id: 'u_feb26_a10_jordan',
-    date: 'Feb 26',
-    headline: 'A-10C THUNDERBOLTS CONFIRMED AT MUWAFFAQ SALTI VIA SATELLITE IMAGERY',
-    detail: 'Satellite imagery confirms A-10C Thunderbolt II close air support aircraft visible at Muwaffaq Salti AB, Jordan alongside F-35As, F-15Es, and F-16s. A-10 role in Iran contingency unclear — likely for force protection, convoy escort, or post-strike SAR support. Significant: A-10s are survivable low-altitude platforms but vulnerable to modern SAMs.',
-    type: 'air',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb25_270_cargo',
-    date: 'Feb 25',
-    headline: '270+ C-17/C-5 CARGO FLIGHTS SUPPORT BUILDUP — THAAD/PATRIOT SYSTEMS DELIVERED',
-    detail: '270+ C-17 Globemaster III and C-5 Galaxy cargo flights have supported the buildup since early January. Delivered: aircraft components, THAAD batteries, Patriot systems, munitions, personnel. 68 cargo planes delivered to Muwaffaq Salti alone in past week.',
-    type: 'logistics',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_politics_today_300',
-    date: 'Feb 25',
-    headline: 'POLITICS TODAY: 300 US MILITARY AIRCRAFT NOW IN CENTCOM THEATER',
-    detail: 'Politics Today analysis: 300 US military aircraft now deployed to CENTCOM theater. Including: 75+ tankers, 44 F-15Es, 42 F-35As, 48 F-16s, 24 F-22s, 10+ ISR aircraft, maritime patrol, cargo. 350+ total including Europe-based (Lakenheath, Aviano, etc.).',
-    type: 'analysis',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb25_thaad_jordan',
-    date: 'Feb 25',
-    headline: 'THAAD BATTERY CONFIRMED AT MUWAFFAQ SALTI ALONGSIDE PATRIOT SYSTEMS',
-    detail: 'THAAD (Terminal High Altitude Area Defense) battery emplaced at Muwaffaq Salti AB, Jordan alongside Patriot PAC-3 systems. Provides upper-tier missile defense for Jordan/Israel airspace. 7-7.5 mile intercept range at up to 93-mile altitude. Complements Israeli Arrow 3 and Iron Dome.',
-    type: 'missile_defense',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb25_ford_morale',
-    date: 'Feb 25',
-    headline: 'WSJ/19FORTYFIVE: USS FORD CREW MORALE CRISIS — BROKEN TOILETS, SAILORS WANT OUT',
-    detail: 'WSJ and 19FortyFive report severe morale crisis aboard USS Gerald R. Ford at Day 240+. Broken toilet systems (advanced waste collection causing sewage backups), sailors expressing desire to leave service after deployment. 19FortyFive: approaching post-Vietnam record of 285 days at sea (USS Truman 2021). Marine Insight: massive toilet failure being managed while ship heads toward potential combat zone.',
-    type: 'logistics',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb24_kc46_378aew',
-    date: 'Feb 24',
-    headline: 'KC-46A PEGASUS FIRST-EVER DEPLOYMENT TO 378TH AEW PRINCE SULTAN AB',
-    detail: 'Air & Space Forces Magazine: KC-46A Pegasus deployed to 378th Air Expeditionary Wing at Prince Sultan Air Base, Saudi Arabia for the first time. 77th Expeditionary Air Refueling Squadron from Seymour Johnson AFB. Tanker activity increasing at Prince Sultan AB as Qatar distances itself from Iran conflict.',
-    type: 'tanker',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb24_fr24_tankers',
-    date: 'Feb 24',
-    headline: 'FLIGHTRADAR24: TOP 9 MOST-TRACKED FLIGHTS WORLDWIDE ALL KC-135 TANKERS',
-    detail: 'Flightradar24 reports the 9 most-tracked military flights globally are all KC-135 Stratotanker refueling aircraft. Unprecedented. Tankers tracked by aviation enthusiasts en route from CONUS to Mediterranean/Middle East. Visible public signal of massive logistics chain supporting the buildup.',
-    type: 'tanker',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb23_responsible_108',
-    date: 'Feb 23',
-    headline: 'RESPONSIBLE STATECRAFT: 108 AIR TANKERS POSITIONED FOR IRAN STRIKE',
-    detail: 'Responsible Statecraft reports 108 total air tankers in or heading to CENTCOM theater. Includes KC-135 Stratotankers and KC-46A Pegasus. Analysis: tanker fleet is the "hidden key" enabling the buildup — allows fighters and bombers to reach Iran from dispersed bases (Israel, Jordan, carriers, CONUS) without forward basing in Gulf states.',
-    type: 'tanker',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb22_redsea_houthis',
-    date: 'Feb 22',
-    headline: 'ONGOING: US NAVY CONTINUING ANTI-HOUTHI OPERATIONS IN RED SEA',
-    detail: 'US Navy continuing Operation Prosperity Guardian anti-Houthi operations in Red Sea. Multiple DDGs conducting CIWS intercepts of Houthi UAVs and anti-ship missiles. USS Delbert D. Black (DDG-119) recently departed Red Sea to northern Arabian Sea — potential redeployment to Iran-focused posture.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb21_isr_24_7',
-    date: 'Feb 21',
-    headline: 'RC-135/P-8/RQ-4 PROVIDING 24/7 ISR COVERAGE OF IRAN AND HORMUZ',
-    detail: 'Flightradar24/aviation OSINT: 3-4 RC-135V/W Rivet Joint SIGINT aircraft on daily orbit over Persian Gulf. P-8A Poseidon maritime patrol, RQ-4 Global Hawk, MQ-9 Reaper all active. 24/7 coverage provides real-time intelligence on Iranian naval movements, missile sites, and air defense radar emissions.',
-    type: 'surveillance',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb20_angry_kitten',
-    date: 'Feb 20',
-    headline: 'F-16CJ WILD WEASELS WITH "ANGRY KITTEN" EW PODS — IRAN SEAD MISSION',
-    detail: 'The War Zone: F-16CJ Wild Weasel jets deployed with AN/ASQ-213 HARM Targeting Systems and ALQ-184 "Angry Kitten" electronic warfare pods. Mission: Suppression of Enemy Air Defenses (SEAD). Iran operates S-300PMU-2, Bavar-373, and Khordad-15 SAM systems — US SEAD package specifically designed to counter these.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb19_f35_sead',
-    date: 'Feb 19',
-    headline: 'F-35A SEAD PACKAGE: AARGM-ER AND JSOW FOR IRAN AIR DEFENSE SUPPRESSION',
-    detail: 'F-35As confirmed carrying AGM-88G AARGM-ER (Advanced Anti-Radiation Guided Missile - Extended Range) for anti-radiation missions. AARGM-ER targets radar emitters — critical against Iranian SA-20/S-300 and Bavar-373 SAM radars. Vermont ANG 134th FS specializes in this mission. Combined with F-16CJ Wild Weasels creates layered SEAD package.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb18_ssgn_florida',
-    date: 'Feb 18',
-    headline: 'USS FLORIDA (SSGN-728) CONFIRMED IN ARABIAN SEA — 154 TOMAHAWKS ABOARD',
-    detail: 'USNI confirmed USS Florida (SSGN-728, Ohio-class cruise missile submarine) operating in Arabian Sea as of January 2026. SSGN carries 154 Tomahawk Block V cruise missiles across 22 VLS tubes. Provides massive standoff strike capability against Iranian targets without risking surface ships to Iranian A2/AD.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb17_stratcom_alert',
-    date: 'Feb 17',
-    headline: 'STRATCOM ON HEIGHTENED ALERT — SSBN PATROLS INCREASED SINCE NOV 2025',
-    detail: 'Pentagon confirmed US Strategic Command on heightened alert since November 2025 Iran crisis escalation. Ohio-class SSBN patrols increased. Each SSBN carries up to 20 Trident II D5 SLBMs (MIRV, up to 8 warheads each). Strategic deterrence messaging to prevent Iranian nuclear escalation in response to conventional strikes.',
-    type: 'nuclear',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb16_mop_restock',
-    date: 'Feb 16',
-    headline: 'PENTAGON ORDERS $100M+ MOP RESTOCK — BOEING CONTRACT FOR MASSIVE ORDNANCE PENETRATORS',
-    detail: 'Air & Space Forces: Pentagon awarded Boeing contract to restock GBU-57 Massive Ordnance Penetrators used in Operation Midnight Hammer (June 2025). MOPs cost ~$3.5M each. Contract implies depletion from previous strikes. GBU-57 is the only US weapon capable of destroying deeply buried targets like Fordow (80m underground).',
-    type: 'logistics',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb15_cargo_munitions',
-    date: 'Feb 15',
-    headline: '68 CARGO AIRCRAFT DELIVERED MUNITIONS TO MUWAFFAQ SALTI IN ONE WEEK',
-    detail: '68 cargo aircraft (C-17s and C-5s) delivered munitions, equipment, and aircraft components to Muwaffaq Salti AB, Jordan in a single week. Scale equivalent to early OIF/OEF buildup rates. GBU-28 bunker busters, AIM-120D AMRAAMs, AGM-154 JSOWs, and JDAM-ER kits confirmed in manifest.',
-    type: 'logistics',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb14_cvn71_workup',
-    date: 'Feb 14',
-    headline: 'USS THEODORE ROOSEVELT IN COMPTUEX — COULD DEPLOY SPRING 2026',
-    detail: 'USS Theodore Roosevelt (CVN-71) and CSG-9 conducting COMPTUEX off San Diego. Previous deployment was 278 days. Earliest possible deployment: late spring 2026. Could join Ford and Lincoln in Middle East for unprecedented three-carrier Iran theater if ordered to expedite.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb13_uk_sovereignty',
-    date: 'Feb 13',
-    headline: 'UK-MAURITIUS SOVEREIGNTY DISPUTE OVER DIEGO GARCIA — COMPLICATES US BASING',
-    detail: 'Ongoing UK-Mauritius negotiations over Diego Garcia sovereignty add legal complexity to US basing rights. UK refusing to grant US bomber strike access (citing political and legal complications). Mauritius claims the Chagos Islands (including Diego Garcia) were illegally detached during decolonization.',
-    type: 'diplomatic',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb10_lajes_surge',
-    date: 'Feb 10',
-    headline: 'LAJES FIELD, AZORES HOSTING LARGEST TANKER SURGE IN BASE HISTORY',
-    detail: '15 KC-46A Pegasus tankers at Lajes Field, Azores — largest in the base\'s history. Lajes plays critical Atlantic bridge role: refueling fighters and bombers crossing from US East Coast to Europe/Mediterranean. The island\'s strategic mid-Atlantic location makes it irreplaceable for CONUS-to-theater operations.',
-    type: 'tanker',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb09_ford_250days',
-    date: 'Feb 9',
-    headline: 'USS FORD PASSES 200 DAYS DEPLOYED — APPROACHING RECORD TERRITORY',
-    detail: 'USS Gerald R. Ford passed 200-day deployment milestone. Post-Vietnam record: 285 days (USS Harry S. Truman, 2021). Ford is at Day 210+ when this update was logged, now 250+ (Feb 26). 19FortyFive notes historical context: longest carrier deployment reflects extraordinary strategic demands.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb08_hormuz_patrols',
-    date: 'Feb 8',
-    headline: 'US WARSHIPS INCREASING STRAIT OF HORMUZ TRANSIT FREQUENCY — IRGCN MONITORING',
-    detail: 'US Navy increasing Strait of Hormuz freedom of navigation transits. IRGCN (Islamic Revolutionary Guard Corps Navy) fast boats and submarines monitoring all US transits. USS Michael Murphy transit to Persian Gulf is latest example. Hormuz is 21-mile wide choke point — critical vulnerability for oil tanker traffic and US naval movement.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_feb07_oman_talks',
-    date: 'Feb 7',
-    headline: 'OMAN MEDIATING US-IRAN NUCLEAR TALKS — PARALLEL TO MILITARY BUILDUP',
-    detail: 'Oman serving as intermediary for US-Iran nuclear talks running parallel to the military buildup. Trump administration insists Iran dismantle nuclear program entirely. Iran rejecting full dismantlement. Gap: Iran willing to limit enrichment but not end program. Rubio (Feb 25): Iran refusing to discuss ballistic missiles — additional dealbreaker.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb06_irgcn_threat',
-    date: 'Feb 6',
-    headline: 'IRGCN ASYMMETRIC THREAT: FAST BOATS, MINES, ANTI-SHIP MISSILES IN HORMUZ',
-    detail: 'Intelligence assessment: IRGCN posing asymmetric threats in Strait of Hormuz. Noor anti-ship missile (Mach 3, 300km range), Khalij Fars ballistic missile (anti-ship), Nasr anti-ship missile (smaller vessels), and contact/pressure mines. IRGCN fast boat swarm tactics designed to overwhelm US DDG close-in defenses. US SSNs providing counter-mine and ASW screen.',
-    type: 'analysis',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb05_iran_enrichment',
-    date: 'Feb 5',
-    headline: 'IAEA: IRAN CONTINUING 60% ENRICHMENT — NUCLEAR BREAKOUT ESTIMATED 1-2 WEEKS',
-    detail: 'IAEA report: Iran continuing uranium enrichment at 60% purity at Fordow and Natanz backup sites. Sufficient enriched uranium for multiple weapons (90% threshold). Nuclear breakout time (enrichment to weapons-grade): estimated 1-2 weeks if decision made. Weaponization (building actual warhead): 6-18 months additional. This intelligence is the core driver of the US military buildup.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_feb04_iran_defense',
-    date: 'Feb 4',
-    headline: 'IRAN AIR DEFENSE: S-300PMU-2, BAVAR-373, KHORDAD-15 — FORMIDABLE IADS',
-    detail: 'Iran operates an Integrated Air Defense System (IADS): S-300PMU-2 (SA-20) at key sites, indigenously-developed Bavar-373 (S-300 equivalent), and Khordad-15 (medium-range). F-22/F-35 stealth essential to penetrate. F-16CJ Wild Weasels with HARM missiles target radar emitters. EA-18G Growlers from CVW-8 provide dedicated electronic attack. Multi-layer SEAD required.',
-    type: 'analysis',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb03_shahed_shootdown',
-    date: 'Feb 3',
-    headline: 'F-35C SHOOTS DOWN IRANIAN SHAHED-139 DRONE OVER ARABIAN SEA',
-    detail: 'USS Lincoln CVW-9 F-35C shot down Iranian Shahed-139 loitering munition over Arabian Sea. Shahed-139 (Iranian-made) same type supplied to Russia for Ukraine war. Incident at ~500nm south of Iran. No US casualties, no escalation. Third Lincoln redirect to ME theater. Confirmed by USNI and Forbes.',
-    type: 'incident',
-    priority: 'high'
-  },
-  {
-    id: 'u_feb02_31meu_exercise',
-    date: 'Feb 2',
-    headline: '31ST MEU CONDUCTS MECHANIZED RAID EXERCISE IN PHILIPPINE SEA',
-    detail: 'USMC 31st Marine Expeditionary Unit conducted mechanized raid exercise in Philippine Sea. USS Tripoli (LHA-7) serving as forward-deployed ARG platform. Exercise includes AAV assault, helo insertion, and amphibious raid. Demonstrates INDOPACOM capabilities maintained despite ME focus.',
-    type: 'naval',
-    priority: 'low'
-  },
-  {
-    id: 'u_feb01_iran_missiles',
-    date: 'Feb 1',
-    headline: 'IRAN BALLISTIC MISSILE FORCE: 3,000+ MISSILES INCLUDING SHAHAB-3, EMAD, GHADR',
-    detail: 'Iran ballistic missile inventory: Shahab-3 (1,300km range), Emad (1,700km, precision-guided), Ghadr (1,950km), Khorramshahr (2,000km MIRV), Sejjil (2,500km solid-fuel). Kheibar Shekan (1,450km, precision, maneuvering RV). Total: 3,000+ missiles. THAAD and Patriot provide partial defense. Threat to US bases in region and Israel/Saudi Arabia.',
-    type: 'analysis',
-    priority: 'high'
-  },
-  {
-    id: 'u_jan25_israel_arrow',
-    date: 'Jan 25',
-    headline: 'ISRAEL ARROW 3 AND IRON DOME INTEGRATED WITH US THAAD/PATRIOT',
-    detail: 'Israeli Arrow 3 (exo-atmospheric intercept) and Iron Dome (short-range rockets/mortars) integrated with US THAAD (upper tier) and Patriot PAC-3 (terminal phase). Multi-layered defense against Iranian ballistic missiles and cruise missiles. US-Israel joint air defense exercises Jan 2026. Barak-8 naval variant on Israeli/US ships.',
-    type: 'missile_defense',
-    priority: 'high'
-  },
-  {
-    id: 'u_jan20_iran_oman',
-    date: 'Jan 20',
-    headline: 'TRUMP SENDS LETTER TO IRAN — OMAN DELIVERS AS INTERMEDIARY',
-    detail: 'Trump sent personal letter to Iran Supreme Leader via Oman on Jan 20, 2026 — same day of Lincoln redirect to Arabian Sea. Letter: accept deal or face military action. Iran initial response: negative. Oman continued as intermediary. Feb 7 context: talks resumed but fundamental gap on dismantlement vs. limitation remains.',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_jan15_florida_arabian',
-    date: 'Jan 15',
-    headline: 'USS FLORIDA SSGN OPERATING IN ARABIAN SEA — CONFIRMED BY USNI TRACKER',
-    detail: 'USNI Fleet Tracker (Jan 2026): USS Florida (SSGN-728) operating in Arabian Sea. Ohio-class conversion carries 154 BGM-109 Tomahawk Block V cruise missiles in 22 of 24 Trident missile tubes (2 tubes converted to lock-out chambers for special operations). Single submarine equals the strike capacity of a DDG squadron.',
-    type: 'naval',
-    priority: 'high'
-  },
-  {
-    id: 'u_jan10_centcom_surge',
-    date: 'Jan 10',
-    headline: 'CENTCOM SURGE ORDER: ALL AVAILABLE FORCES ACCELERATE MIDDLE EAST DEPLOYMENT',
-    detail: 'Pentagon issued CENTCOM surge orders Jan 10, 2026 following Iran intelligence reports of accelerated enrichment. All available air, naval, and ground forces directed to accelerate deployment to theater. This triggered the subsequent waves of fighter jets, tankers, carriers, and missile defense systems now flowing into the region.',
-    type: 'logistics',
-    priority: 'critical'
-  },
-  {
-    id: 'u_jan05_iran_fordow',
-    date: 'Jan 5',
-    headline: 'INTELLIGENCE: IRAN REBUILDING FORDOW UNDERGROUND FACILITY AFTER JUNE 2025 STRIKES',
-    detail: 'Intelligence reports: Iran rapidly rebuilding and deepening Fordow underground enrichment facility after June 2025 bombing. Using $100B+ in assets unfrozen under 2023 JCPOA partial deal. New tunnels being dug at lower levels — targeting depth may require improved MOPs or multiple B-2 strikes. MOPs must penetrate 80m minimum.',
-    type: 'analysis',
-    priority: 'critical'
-  },
-  {
-    id: 'u_dec25_bush_comptuex',
-    date: 'Dec 25, 2025',
-    headline: 'USS GEORGE H.W. BUSH BEGINS COMPTUEX — POTENTIAL DEPLOYMENT TRACK',
-    detail: 'USS George H.W. Bush (CVN-77) and CSG-10 began COMPTUEX exercises off East Coast in late December 2025. At this point Pentagon had not ordered Middle East deployment. Feb 11, 2026: Pentagon ordered spin-up — COMPTUEX now accelerated for potential Iran deployment. Escorts Ross and Mason confirmed.',
-    type: 'naval',
-    priority: 'medium'
-  },
-  {
-    id: 'u_dec20_mop_contract',
-    date: 'Dec 20, 2025',
-    headline: 'BOEING AWARDED MOP RESTOCK CONTRACT — $100M+ FOR GBU-57 PRODUCTION',
-    detail: 'Boeing awarded contract to restock GBU-57 Massive Ordnance Penetrator inventory following Operation Midnight Hammer. $100M+ contract. Production timeline: 18-24 months for full restock. However, sufficient existing inventory (pre-Midnight Hammer stockpile) to conduct follow-on strikes. Fordow is primary target requiring MOPs.',
-    type: 'logistics',
-    priority: 'high'
-  },
-  {
-    id: 'u_dec15_lincoln_f35c',
-    date: 'Dec 15, 2025',
-    headline: 'CVW-9 F-35Cs: FIRST CARRIER WING WITH FULL F-35C SQUADRON IN COMBAT ZONE',
-    detail: 'USS Lincoln CVW-9 is operating the first full F-35C Lightning II squadron (VFA-147 Argonauts) in an active combat zone. F-35C provides stealth, sensor fusion, and network-centric warfare capability not available on F/A-18E/F. Critical for penetrating Iranian IADS and providing targeting data to non-stealth aircraft.',
-    type: 'air',
-    priority: 'high'
-  },
-  {
-    id: 'u_dec10_irgc_hardening',
-    date: 'Dec 10, 2025',
-    headline: 'IRGC HARDENING DISPERSED COMMAND CENTERS — DISPERSAL AFTER JUNE 2025 STRIKES',
-    detail: 'Intelligence reports: IRGC hardening and dispersing command and control centers after June 2025 Operation Midnight Hammer. Using tunnel networks, mobile command posts, and multiple backup comms. Harder targeting problem than June 2025. US adding B-2 anti-radiation and direct-attack options.',
-    type: 'analysis',
-    priority: 'high'
-  },
-  {
-    id: 'u_nov25_stratcom_alert',
-    date: 'Nov 25, 2025',
-    headline: 'STRATCOM HEIGHTENED ALERT DECLARED — SSBN PATROLS INCREASED',
-    detail: 'US Strategic Command declared heightened alert status November 2025. SSBN patrols increased from normal rotation. Purpose: deter Iranian nuclear retaliation (or acceleration of program) in response to any US conventional strike. Ohio-class SSBNs carry Trident II D5 SLBMs.',
-    type: 'nuclear',
-    priority: 'critical'
-  },
-  {
-    id: 'u_nov15_midnight_hammer_aftermath',
-    date: 'Nov 15, 2025',
-    headline: 'MIDNIGHT HAMMER AFTERMATH: IRAN RECONSTITUTING AT BACKUP SITES',
-    detail: 'Post-Midnight Hammer assessment: Iran damaged but not destroyed. Fordow damaged but using backup sites. Natanz centrifuge halls hit but rebuilding in hardened tunnels. Enrichment paused for weeks, then resumed at dispersed sites. US intelligence: Iran accelerating timeline to weapons-grade material in response to June 2025 strikes.',
-    type: 'analysis',
-    priority: 'critical'
-  },
-  {
-    id: 'u_oct15_iran_reconstitute',
-    date: 'Oct 15, 2025',
-    headline: 'IAEA: IRAN RESUMED ENRICHMENT AT DISPERSED SITES — HARDER TO TARGET',
-    detail: 'IAEA confirms Iran resumed uranium enrichment at dispersed, hardened sites after June 2025 strikes. Some sites unknown to IAEA inspectors. US intelligence tracking via NRO satellites and RC-135 SIGINT. Multiple backup enrichment cascades harder to target in follow-on strike. Drives need for comprehensive multi-site strike campaign (not just 1-2 targets).',
-    type: 'diplomatic',
-    priority: 'critical'
-  },
-  {
-    id: 'u_sep25_bavar373',
-    date: 'Sep 25, 2025',
-    headline: 'IRAN DEPLOYS ADDITIONAL BAVAR-373 BATTERIES — UPGRADES AIR DEFENSE AFTER HAMMER',
-    detail: 'Iran deployed additional Bavar-373 air defense batteries following Operation Midnight Hammer. Bavar-373 is Iran\'s indigenously-developed S-300 equivalent. Range: 200km. Altitude: 27km. ECCM-resistant radar. Deployed to protect rebuilt nuclear sites and Tehran/Isfahan. US SEAD package (F-22, F-35, F-16CJ, EA-18G) specifically designed to defeat Bavar-373.',
-    type: 'analysis',
-    priority: 'high'
-  }
+// === INTEL UPDATE TICKER DATA ===
+// Most recent entries first
+const updates = [
+  {id: 'u_feb27_vance_wapo_no_long_war', text: 'VP Vance tells Washington Post: military strikes on nuclear/missile sites "remain under consideration" but "no chance" of years-long war. Vance: "The idea that we\'re going to be in a Middle Eastern war for years with no end in sight -- there is no chance that will happen." Still describes himself as "skeptic of foreign military interventions" -- a description he says continues to apply to Trump. Signals administration framing any action as limited, not Iraq-style campaign (Washington Post via OSINTdefender)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'Vance: strikes possible but no long war'},
+  {id: 'u_feb27_cnn_options_narrowing', text: 'CNN analysis: Trump\'s military options "diminishing week by week" -- Pentagon cannot maintain this force posture indefinitely. Regime change deemed implausible: no ground component, would require "miraculous coordinated popular uprising." Limited strikes risk revealing limits of US willingness to engage. Iran may conclude buildup is "ultimately manageable." Single missile evading defenses could trigger retaliation cycle into discretionary war (CNN)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'CNN: options narrowing, regime change implausible'},
+  {id: 'u_feb27_base_shift_pattern', text: 'Aviationist reports significant basing shift: latest deployments moving AWAY from traditional US bases (Al Udeid Qatar, Al Dhafra UAE) toward less frequently used bases in Jordan and Israel. Pattern suggests force dispersal to reduce vulnerability to Iranian missile retaliation. 8 KC-46s now heading to Ben Gurion Airport per ArmchairAdml (up from 6 previously tracked). F-22s at Ovda, fighters at Muwaffaq Salti -- all non-traditional locations (The Aviationist/ArmchairAdml)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: 'Forces shifting to non-traditional bases'},
+  {id: 'u_feb27_128_tankers', text: 'MATA/DefenceGeek updated tanker fleet count to 128 confirmed aircraft -- up from 108 previously tracked. Zone breakdown: 43 in Red Zone (CENTCOM + Diego Garcia), 44 in Orange Zone (Mediterranean + Southern Europe), 41 in Green Zone (Northern Europe, UK, Atlantic). Fleet composition: 36 KC-46A Pegasus + 77 KC-135R + 13 KC-135T + 2 KC-135RT Stratotankers. Israeli Channel 13 military correspondent Or Heller published photos of KC-135s at Ben Gurion Airport. Largest tanker surge in decades (MATA/DefenceGeek/@OrHeller)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: '128 tankers confirmed; MATA zone breakdown'},
+  {id: 'u_feb27_16_ships_ap', text: 'AP/Military Times major comprehensive piece confirms Navy presence "rising to at least 16 ships" with Ford arrival -- up from 12 warships previously tracked. Brookings analyst O\'Hanlon: forces "clearly designed for attacking targets in Iran AND defending against retaliation" -- not just nuclear strikes. ICG expert Vaez: Iran "concluded the only way to stop this cycle is to draw blood and inflict significant harm on US and Israel, even at high cost" -- expects much stronger retaliation than after June 2025 Midnight Hammer (AP/Military Times)', date: 'Feb 27, 2026', assetId: 'cvn78', changeSummary: '16 ships confirmed; experts warn of escalation'},
+  {id: 'u_feb27_f16_near_miss_yemen', text: 'First USAF account reveals F-16 was within 30 feet of being shot down by Houthi missile over Yemen during Operation ROUGH RIDER. Previous reports mentioned close calls between Houthi missiles and Navy ships but this is the first Air Force confirmation of a near-miss involving a manned fighter aircraft. Highlights persistent threat to US aviation in the region (TheIntelFrog/USAF)', date: 'Feb 27, 2026', assetId: 'f16_jordan', changeSummary: 'F-16 nearly shot down over Yemen by Houthis'},
+  {id: 'u_feb27_scang_f16cm_sead', text: 'F-16CM Block 52 Fighting Falcons from South Carolina Air National Guard deployed to Middle East -- specialized in Suppression/Destruction of Enemy Air Defenses (SEAD/DEAD). Notably equipped with Angry Kitten electronic warfare pods for jamming enemy radar. SEAD aircraft are a critical precursor capability for any strike campaign against Iran\'s air defense network (The Aviationist/MATA)', date: 'Feb 27, 2026', assetId: 'f16_jordan', changeSummary: 'SC ANG SEAD F-16CMs with EW pods deployed'},
+  {id: 'u_feb27_awacs_saudi_confirmed', text: 'MATA member Steffan Watkins confirms 6x E-3 AWACS early-warning aircraft tracked heading to a base in Saudi Arabia -- key for coordinating operations with large numbers of aircraft. Saudi Arabia denied basing for combat aircraft but appears to allow C2 support. E-3s essential for managing 300+ aircraft in any Iran strike (Military Times/MATA)', date: 'Feb 27, 2026', assetId: 'e3_saudi', changeSummary: '6 AWACS confirmed heading to Saudi base'},
+  {id: 'u_feb27_dg_bomber_imminent', text: 'The War Zone reports "indications that a bomber deployment to Diego Garcia could be imminent" -- B-2/B-52 capable island base used for Midnight Hammer B-2 missions in June 2025. UK ban on using DG for strikes creates political friction but Starmer "could still change his mind." DG re-emerging as critical hub despite UK objections (The War Zone)', date: 'Feb 27, 2026', assetId: 'diego_garcia_base', changeSummary: 'Bomber deployment to Diego Garcia imminent per TWZ'},
+  {id: 'u_feb27_ford_eta_monday', text: 'Jerusalem Post now reports USS Ford due to dock at Haifa on MONDAY -- not Friday as earlier reported by Reuters/Israel Hayom. TWZ questions wisdom of docking carrier at fixed location: would be "very attractive high-volume target" for Iranian attack, losing benefit of own defenses and escorts. 19FortyFive: Ford at Day 250+, approaching post-Vietnam deployment record (Jerusalem Post/TWZ/19FortyFive)', date: 'Feb 27, 2026', assetId: 'cvn78', changeSummary: 'Ford ETA revised to Monday; docking questioned'},
+  {id: 'u_feb27_cooper_briefs_trump', text: 'CENTCOM Commander Adm. Brad Cooper briefed President Trump on Thursday about potential military options against Iran, officials tell ABC News. Cooper is the operational commander who would oversee any strikes. Briefing took place as Geneva Round 3 concluded and buildup continued (ABC News via OSINTdefender)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'CENTCOM chief briefs Trump on Iran strike options'},
+  {id: 'u_feb27_warner_no_idea', text: 'Sen. Mark Warner (D-VA), top Democrat on Senate Intelligence Committee and Gang of Eight member, after classified Rubio briefing on Iran: "I don\'t have the slightest idea what the president\'s intentions are." Questioned whether goal is nuclear, regime change, or Israel support. Says Trump must justify action to Congress and public (Fox/TNND)', date: 'Feb 27, 2026', assetId: null, changeSummary: 'Top Intel Dem says no idea on Trump intent'},
+  {id: 'u_feb27_prepo_tonight', text: 'OSINTdefender: "Major pre-positioning moves being made TONIGHT" -- 5x KC-46A Pegasus + 2+ KC-135R/T Stratotankers + multiple C-17A Globemasters bound for Middle East, many for Israeli air bases. 12 F-22 Raptors confirmed at Ovda Airbase, half-dozen tankers at Ben Gurion International (OSINTdefender)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: 'Major overnight pre-positioning wave to Israel'},
+  {id: 'u_feb27_310_flights_66_tankers', text: 'ArmchairAdml Feb 26 summary: 310 C-17/C-5 cargo flights into ME bases since Jan 15 (up from 270+ in prior count). 66 tankers now deployed to airports across Europe and Israel (excl. Al Udeid). CE045 SJ F-15E coronet: only 2 of 12 made it across Atlantic, rest still at Seymour Johnson. CE046 new coronet staging from Beale AFB -- receivers unknown, possibly more F-35s or F-22s from Alaska (ArmchairAdml/@MATA_osint)', date: 'Feb 27, 2026', assetId: 'tankers_surge', changeSummary: '310 cargo flights; 66 tankers; CE046 pending'},
+  {id: 'u_feb26_f15e_mountain_home', text: 'CORRECTION + UPDATE: Aviationist confirms the 12 F-15Es crossing Atlantic via CE 044 (TABOR 11-16, TABOR 21-26) are from 366th FW Mountain Home AFB, Idaho -- NOT Seymour Johnson as initially reported by JFeed. Birds staged at Seymour Johnson before crossing. CE 045 added 2 more F-15Es from Seymour Johnson (TABOR 61-62); 4 others RTB after KC-46 engine failure. TWZ: 6 MORE F-15Es each from Mountain Home and Seymour Johnson still heading to Europe. Total F-15E count now 44 (The Aviationist)', date: 'Feb 26, 2026', assetId: 'f15e_jordan', changeSummary: 'F-15E surge corrected: MH + SJ; total 44'},
+  {id: 'u_feb26_cv22_osprey', text: '4x CV-22B Osprey tiltrotors deployed from RAF Mildenhall (352nd SOW, AFSOC) to Middle East via ROOSTER 81 flight. Tracked through Marseille, Naples, Souda Bay then toward Israel. CV-22Bs are special operations CSAR/personnel recovery aircraft -- their deployment signals preparation for combat operations where aircrew recovery deep in hostile territory is anticipated. Critical enabler for any Iran strike campaign (The Aviationist)', date: 'Feb 26, 2026', assetId: 'cv22_me', changeSummary: '4 AFSOC CV-22 Ospreys deployed for CSAR'},
+  {id: 'u_feb26_thune_regime_change', text: 'Senate Majority Leader John Thune (R-SD), after receiving Gang of Eight classified Iran briefing: "If you\'re going to do something there, you better well make it about getting new leadership and regime change." Thune says Trump has not made final decision on strikes yet but administration gaming out contingencies. Sen. Cruz also pushing regime change: "The regime has never been weaker" (The Hill/Washington Examiner/Anadolu)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Senate leader Thune calls for regime change'},
+  {id: 'u_feb26_aviationist_total', text: 'The Aviationist comprehensive tally: 38 fighters arrived at RAF Lakenheath in past 48 hours alone (12 F-22s + 14 F-15Es + 12 F-35As). Total buildup now defined as "largest deployment of US forces in region since the Gulf War" -- exceeding analysts\' previous "since 2003" assessment. Military Times/AP: Navy presence rising to 16 ships with Ford arrival. 45,000+ US troops and personnel now in region (The Aviationist/AP/Military Times)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Largest US force since Gulf War per analysts'},
+  {id: 'u_feb26_f15e_wave2', text: '12 additional F-15E Strike Eagles from 4th Fighter Wing (Seymour Johnson AFB, NC) crossed Atlantic in two 6-ship formations (TABOR 11-16, TABOR 21-26) escorted by 2x KC-46 + 4x KC-135. Staging at RAF Lakenheath; OSINT indicates final destination likely Ovda Air Base, Israel. Plus 12 F-35As from Hill AFB (Utah) also transiting to Europe. Total new wave: 24 tactical jets (JFeed/The War Zone)', date: 'Feb 26, 2026', assetId: 'f15e_jordan', changeSummary: '12 F-15Es + 12 F-35As crossing Atlantic'},
+  {id: 'u_feb26_tf_scorpion', text: 'Task Force Scorpion -- Pentagon\'s FIRST kamikaze drone unit -- now operational in Middle East and ready if Trump orders Iran strikes. Armed with LUCAS one-way attack drones reverse-engineered from Iranian Shahed-136 design. CENTCOM confirmed unit established to "rapidly equip warfighters with new combat drone capabilities." Offers way to "flip the script on Iran" (Bloomberg/The War Zone)', date: 'Feb 26, 2026', assetId: 'tf_scorpion', changeSummary: 'US kamikaze drone unit operational in ME'},
+  {id: 'u_feb26_patriot_ovda', text: 'MizarVision satellite imagery confirms Patriot air defense battery components deployed at Ovda Air Base alongside 11 F-22 Raptors in Israel -- first visual confirmation of integrated air defense at US combat deployment site. Layered defense for F-22s at Israel\'s southernmost base (EGYOSINT/MizarVision/Times of Israel)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'Patriot battery confirmed at Ovda with F-22s'},
+  {id: 'u_feb26_point_blank', text: 'Exercise Point Blank: USAF F-15E Strike Eagles (492nd FS) and F-35A Lightning IIs (493rd FS) from RAF Lakenheath deployed to RAF Lossiemouth, Scotland for multinational combat training. Hot-pit refueling cross-certification between 4th/5th gen aircraft, rapid sortie turnaround drills with RAF. Running concurrently with ME buildup (Zona Militar/SSBCrack)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'F-15E + F-35A exercise at RAF Lossiemouth'},
+  {id: 'u_feb26_talks_positive', text: 'Post-Geneva reversal: US official tells Axios talks were "positive" -- contradicting earlier "disappointed" reports. Araghchi called it "the best round so far," entered "elements of an agreement" on nuclear AND sanctions. Technical talks resume at IAEA Vienna MONDAY. Both sides consulting capitals. WSJ still says sides "far apart on key issues" (Times of Israel/Axios/Xinhua/The New Region)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US now calls Geneva talks "positive"; Vienna Mon'},
+  {id: 'u_feb26_yahsat_blackout', text: 'All Persian-language news and political networks broadcast by UAE-based Yahsat Satellite Communications went OFFLINE across Iran and Middle East -- reason unclear. Yahsat is a UAE government-backed satellite operator. Outage affects Iranian state media reception across ME. Potential information warfare, jamming, or pre-strike communications disruption (OSINTdefender)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Persian-language satellite broadcasts go dark'},
+  {id: 'u_feb26_iran_state_tv_hardline', text: 'Iranian state television reported post-Geneva hardline stance: Tehran DETERMINED to continue enriching uranium, REJECTED proposals to transfer uranium abroad, and demands lifting of all international sanctions. Signals Iran not prepared to meet Trump\'s maximalist demands despite "significant progress" rhetoric (AP/PBS/multiple)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran state TV: will keep enriching, rejects transfers'},
+  {id: 'u_feb26_landsman_dem_strikes', text: 'Democrat Rep. Greg Landsman (OH) breaks with party: says US and allies "may very well need to take defensive action, targeting military assets in Iran." Calls for strikes on ballistic missiles, rocket infrastructure, weapons depots, and nuclear assets. Joins Gottheimer and Moskowitz as Democrats opposing war powers resolution. Landsman: "targeted strikes could prevent war" (Jewish Insider)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Dem Rep. Landsman endorses Iran strikes'},
+  {id: 'u_feb26_senate_war_powers', text: 'Sen. Tim Kaine (D-VA) says SENATE war powers resolution blocking unauthorized Iran military action likely to come up for vote NEXT WEEK alongside House version. Kaine: Trump "made no real case" for war during SOTU. Only Sen. Fetterman opposed similar resolution after June strikes. Ford carrier deployment length flagged as "beyond normal limits" (Jewish Insider)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Senate war powers vote also next week'},
+  {id: 'u_feb26_geneva_r3_concluded', text: 'Geneva Round 3 CONCLUDED -- Omani FM Albusaidi announces "significant progress" made. Both sides will now consult with capitals. NEXT ROUND: technical-level talks in Vienna next week (not decision-maker level). Albusaidi thanked negotiators, IAEA, and Swiss hosts. De-escalation signal but no deal yet (OSINTdefender/News.Az/i24News)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva R3 ends; significant progress; Vienna next'},
+  {id: 'u_feb26_witkoff_disappointed', text: 'Axios: Witkoff and Kushner reportedly DISAPPOINTED by Iran\'s draft proposal presented to Omani mediators. Barring significant positional shift from Iran on ballistic missiles, this round unlikely to yield a deal. Evening session continued but gaps remain on key issues (Axios via OSINTdefender)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US disappointed by Iran draft proposal'},
+  {id: 'u_feb26_kc46_to_israel', text: '6 additional KC-46A Pegasus tankers en route to Israel -- 5 departing Portsmouth International Airport (NH) and 1 from Seymour Johnson AFB (NC), all destined for Ben Gurion Airport. Adds to tankers and cargo planes already observed at Ben Gurion this week alongside 11 F-22s at Ovda (i24News/Military Air Tracking Alliance)', date: 'Feb 26, 2026', assetId: 'tankers_surge', changeSummary: '6 KC-46 tankers heading to Israel'},
+  {id: 'u_feb26_b2_antiship_drill', text: 'B-2 Spirit bomber and Navy fighters from CVW rehearsed anti-ship strike missions off California coast -- USNI News reports joint service integration drill. B-2s practicing maritime strike role relevant to Strait of Hormuz contingency and IRGC Navy targeting (USNI News)', date: 'Feb 26, 2026', assetId: 'b2_whiteman', changeSummary: 'B-2 and Navy fighters rehearse anti-ship strikes'},
+  {id: 'u_feb26_uk_england_ban', text: 'UK expanded base-use ban to airbases in ENGLAND as well as Diego Garcia -- The Times reports UK blocked US use of RAF Lakenheath and other UK bases for preemptive strikes on Iran, citing international law. Significant for F-22 staging: 13 Raptors currently at Lakenheath may face basing constraints. B-1/B-52 operations from Diego Garcia also blocked. Forces US to rely on Israeli, carrier-based, and CONUS-launched aviation (CFR/The Times/Blue News)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'UK bans use of England bases for Iran strikes'},
+  {id: 'u_feb26_triton_gulfoman', text: 'MQ-4C Triton HALE drone conducting extended surveillance orbit over Gulf of Oman near Strait of Hormuz approaches -- departed UAE, flying racetrack at 50,000+ ft with AN/ZPY-3 AESA radar, EO/IR, SIGINT. 2x P-8A Poseidons concurrently airborne creating layered maritime ISR package. Mapping IRGC Navy patterns, detecting missile dispersals (Army Recognition)', date: 'Feb 26, 2026', assetId: 'mq4c_triton_gulfoman', changeSummary: 'Triton + P-8As create layered Gulf ISR'},
+  {id: 'u_feb26_australia_evac', text: 'Australia offering voluntary evacuation of diplomat families from Middle East -- DFAT ordering departures from posts in Israel, Lebanon, Jordan, Qatar, UAE. Australians in Israel/Lebanon urged to leave while commercial flights available. Follows similar US Embassy Beirut pullout. Multiple nations now pulling staff (ABC News Australia/Sky News)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Australia evacuating diplomat families from ME'},
+  {id: 'u_feb26_boxer_arg', text: 'USS Boxer (LHD-4) with 11th MEU conducting sustained MV-22B Osprey flight ops in Western Pacific -- VMM-163 validating sortie generation, amphibious assault sequencing, and expeditionary readiness. Boxer ARG provides scalable crisis response with 450nm+ Osprey combat radius. Highlighted by US Pacific Fleet Feb 25 (Army Recognition/PACFLT)', date: 'Feb 26, 2026', assetId: 'boxer_arg', changeSummary: 'Boxer ARG/11th MEU active in W. Pacific'},
+  {id: 'u_feb26_geneva_direct_talks', text: 'Axios: Geneva R3 included DIRECT exchanges between US (Witkoff/Kushner) and Iranian (Araghchi) delegations -- not just indirect via Omani mediation. Both formats used in same session. Iran submitted eagerly-awaited draft proposal. IAEA Director Grossi also participated. US demanded surrender of 10,000 kg enriched uranium stockpile (Axios)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Direct US-Iran talks confirmed at Geneva R3'},
+  {id: 'u_feb26_war_powers_vote', text: 'House Dem leadership (Jeffries, Clark, Aguilar) + ranking members (Meeks, Himes, Smith) formally announce vote on Khanna-Massie Iran War Powers Resolution next week when Congress reconvenes. Would require congressional authorization before any Iran strike. 82 co-sponsors (81 Dem + 1 GOP). YouGov: only 27% support military force, 49% oppose (House Democrats)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'House to vote on Iran war powers next week'},
+  {id: 'u_feb26_bush_comptuex', text: 'USS George H.W. Bush (CVN-77) CSG actively conducting COMPTUEX (final pre-deployment certification) with escorts USS Ross (DDG-71) and USS Mason (DDG-87). Replenishment-at-sea with USNS John Lenthall. COMPTUEX is last step before deployment -- Bush could provide THIRD carrier for Iran theater alongside Ford and Lincoln (SURFLANT/US 2nd Fleet)', date: 'Feb 26, 2026', assetId: 'cvn77', changeSummary: 'Bush CSG nearing deployment-ready status'},
+  {id: 'u_feb26_geneva_second_pause', text: 'Geneva R3 evening session paused AGAIN as both sides break to consult with capitals -- two officials confirm to NYT. Second recess of the day suggests proposals produced enough substance to require leadership-level decisions in Washington and Tehran (NYT live)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva pauses again for capital consultations'},
+  {id: 'u_feb26_wsj_us_demands', text: 'WSJ: US demands in Geneva are maximalist -- zero uranium enrichment on Iranian soil, dismantlement of Fordow/Natanz/Isfahan nuclear facilities, transfer of ALL enriched uranium to US custody, and any deal must be permanent (no sunset). May allow very low-level Tehran reactor for medical isotopes (i24News/WSJ)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'WSJ reveals rigid US demands at Geneva'},
+  {id: 'u_feb26_nyt_iran_proposal_detail', text: 'NYT: Detailed Iran proposal -- suspend enrichment 3-5 years (not 7), then join regional nuclear consortium. Maintain only 1.5% enrichment for medical research. Dilute 400kg HEU stockpile in phases under IAEA monitoring. Also offering to buy US aircraft, invite American firms into Iran energy/mining/lithium sectors (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NYT details Iran 3-5yr halt, 1.5% proposal'},
+  {id: 'u_feb26_geneva_resume_baghaei', text: 'Geneva R3 talks resumed after recess at ~1700 GMT. Iran FM spokesperson Baghaei: "crucial and actionable proposals" introduced on both nuclear AND sanctions relief, "both teams engaged with utmost seriousness." Senior Iranian official told Reuters talks produced "new ideas" requiring Tehran consultation. Framework possible if US separates nuclear from non-nuclear issues (CNN/IRIB/Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva resumes; Baghaei: actionable proposals'},
+  {id: 'u_feb26_airlift_continues', text: 'Heavy airlift continues during Geneva recess: 13x C-17A Globemaster III, 1x C-5M Super Galaxy, 2x KC-46A Pegasus tracked in transit to Middle East. Military buildup unabated even as diplomats negotiate (OSINTdefender)', date: 'Feb 26, 2026', assetId: 'tanker_fleet', changeSummary: '16 heavy-lift aircraft in transit during talks'},
+  {id: 'u_feb26_cobra_gold', text: 'Exercise Cobra Gold 2026 opens in Thailand -- 8,000+ troops from 30 nations. USS Ashland (LSD-48) arrived with TF Ashland (~600 Marines/Sailors from 15th MEU). Amphibious assault, live-fire, jungle warfare, NEO drills. 45th iteration of largest mainland Asia exercise (INDOPACOM)', date: 'Feb 26, 2026', assetId: 'cobra_gold_26', changeSummary: 'Cobra Gold 2026: 8K troops, 30 nations, Thailand'},
+  {id: 'u_feb26_justified_accord', text: 'Exercise Justified Accord 2026 begins across Kenya, Tanzania & Djibouti -- AFRICOM\'s largest East Africa exercise. 1,500+ personnel incl. 173rd Airborne, MA & NE Nat\'l Guard. Live-fire, urban combat, jungle warfare, cyber ops, UAS tech expo. Runs through Mar 13 (National Guard)', date: 'Feb 26, 2026', assetId: 'justified_accord_26', changeSummary: 'AFRICOM exercise: 1,500 troops, 3 countries'},
+  {id: 'u_feb26_geneva_3hr_recess', text: 'Geneva Round 3 first session lasted 3 hours before both sides retired for internal deliberations -- talks to resume "in a few hours." Substantive engagement suggests real negotiation underway, not symbolic session (IRNA via OSINTdefender)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva R3: 3-hr session, recess, resuming'},
+  {id: 'u_feb26_dg_satdetail', text: 'MizarVision satellite imagery (Feb 25) reveals full Diego Garcia air composition: 6x F-16, 3x KC-135, 2x P-8A Poseidon, 2x C-130J, 3x C-17A, 1x C-5M, plus Arleigh Burke DDG at wharf. Atlas Air 747 cargo charter from Philippines also arrived -- stockpile buildup for surge ops (Army Recognition)', date: 'Feb 26, 2026', assetId: 'diego_garcia_base', changeSummary: 'Satellite reveals full Diego Garcia buildup'},
+  {id: 'u_feb26_ford_depart_crete', text: 'USS Gerald R. Ford departed Souda Bay Crete after 4-day resupply stop — heading to Haifa, Israel. Reuters/Israel Hayom report ETA Friday Feb 27. ItaMilRadar: Ford could provide air cover role to Israel. Al Bawaba: USS Mahan (DDG-72) confirmed escorting. First US carrier at Israeli port during active crisis (ItaMilRadar/Reuters)', date: 'Feb 26, 2026', assetId: 'cvn78', changeSummary: 'Ford en route Haifa, ETA Friday Feb 27'},
+  {id: 'u_feb26_geneva_r3_started', text: 'Geneva Round 3 nuclear talks officially kicked off — Araghchi vs Witkoff/Kushner via Omani mediation. Omani FM: negotiators showed "unprecedented openness" to new creative ideas (AP/Reuters/Times of Oman)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Geneva Round 3 talks now underway'},
+  {id: 'u_feb26_graham_screwthat', text: 'Sen. Lindsey Graham on Iran enrichment deal: "screw that" — opposes allowing even token enrichment for face-saving. Calls regime "religious Nazis," wants regime change. "I hope help is on the way" (Jewish Insider/X)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Graham slams any Iran enrichment concession'},
+  {id: 'u_feb26_iran_bonanza', text: 'FT: Iran offering Trump financial "bonanza" — oil/gas/mining rights and critical minerals as incentive to reach deal, mirroring Venezuela approach. Specifically directed at Trump\'s deal-making affinity (Financial Times via Times of Israel)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran dangles oil/gas bonanza for Trump deal'},
+  {id: 'u_feb26_khamenei_successors', text: 'NYT via CTP-ISW: Khamenei has named 4 potential successors for every military and government post he appoints — preparing for potential US/Israeli decapitation campaign. Delegated authority to trusted circle if he cannot be reached or is killed', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Khamenei pre-designates 4 successors per post'},
+  {id: 'u_feb26_iraqi_militia_threat', text: 'Iraqi Resistance Coordination Committee (Kataib Hezbollah, AAH, Nujaba et al.) warns of action to "end US occupation" in Iraq. CTP-ISW assesses militias may attack US forces in Kurdistan if US/Israel strikes Iran (Critical Threats/ISW Feb 25)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iraqi militias threaten US forces in Kurdistan'},
+  {id: 'u_feb26_kurdish_coalition', text: 'Anti-regime Kurdish groups form "Coalition of Political Forces in Iranian Kurdistan" — planning administration of Kurdish areas if regime collapses. Includes PDKI, PAK, PJAK. Reflects potential for Iran to fracture post-regime (CTP-ISW Feb 25)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Kurdish coalition plans post-regime governance'},
+  {id: 'u_feb26_shamkhani_fatwa', text: 'Ali Shamkhani, Supreme Leader\'s rep on Defense Council: "immediate agreement attainable" if core issue is nuclear weapons ban -- aligns with Khamenei\'s fatwa; says Araghchi has sufficient authority to sign deal (WANA)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Khamenei envoy signals deal authority granted'},
+  {id: 'u_feb26_guardian_5pct', text: 'Guardian: Witkoff and Kushner privately greenlighted enrichment below 5% (civilian JCPOA level) during earlier rounds -- flexible opener caught Iranian negotiators off-guard (Gulf News/The Guardian)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US secretly offered sub-5% enrichment deal'},
+  {id: 'u_feb26_nyt_twoplans', text: 'NYT: Trump weighing two distinct military plans -- (1) comprehensive campaign targeting Khamenei & regime or (2) limited strikes on nuclear/missile sites. If limited fails, would escalate to full campaign (NYT)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump has two Iran strike plans ready'},
+  {id: 'u_feb26_iran_round3_proposal', text: 'Iran formally submits comprehensive proposal during Geneva Round 3 via Omani FM -- claims to "address all US pretexts" on nuclear program; warns rejection confirms US not serious about diplomacy (WANA/JPost)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran delivers formal proposal in Round 3'},
+  {id: 'u_feb26_witkoff_nosunset', text: 'Axios: Witkoff told AIPAC donors US demands any Iran deal last indefinitely -- no sunset provisions. Trump may accept "token" enrichment if Iran proves non-weaponizable. Geneva Round 3 seen as last chance for diplomacy before military action (Axios/Kurdistan24)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US demands permanent deal, no sunset clause'},
+  {id: 'u_feb26_iran_proposal', text: 'Iran proposal revealed: reduce enrichment from 60% to 3.6% (JCPOA level), 7-year suspension -- US wants 10 years. Key dispute: Iran refuses to ship HEU stockpile abroad, offers dilution only; US insists removal (Ynet/Kan)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran offers 3.6% enrichment, 7-yr suspension'},
+  {id: 'u_feb26_pentagon_7days', text: 'NYT: Two US military officials say Pentagon lacks resources for prolonged Iran bombing -- could sustain strikes for only 7-10 days before running low on key munitions', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Pentagon can only sustain 7-10 days of strikes'},
+  {id: 'u_feb26_pezeshkian_outlook', text: 'Iranian President Pezeshkian: "favourable outlook for negotiations" -- wants to "move beyond neither war nor peace situation" (Rudaw/TRT World)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran president sees favorable outlook for talks'},
+  {id: 'u_feb26_klm_suspend', text: 'KLM suspends Amsterdam-Tel Aviv daily flights starting March 1 citing rising security tensions in Middle East (Ynet)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'KLM halts Tel Aviv flights from March 1'},
+  {id: 'u_feb26_irgc_dhafra', text: 'IRGC conducts missile drill targeting replica of US Al Dhafra Air Base (UAE) -- bunker-penetrating warheads tested against mock hardened shelters (Defence Security Asia/Oneindia)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'IRGC rehearses strike on US base in UAE'},
+  {id: 'u_feb26_dia_icbm60', text: 'DIA report: Iran could field 60 ICBMs capable of reaching US homeland by 2035 -- currently has no deployed ICBMs but developing launch vehicles (NBC News/Defence Industry Europe)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'DIA: Iran could have 60 ICBMs by 2035'},
+  {id: 'u_feb26_f22_13lakenheath', text: 'OSINTdefender: 13 F-22 Raptors now at RAF Lakenheath (12 new from Langley + 1 fuel-leak return from Israel) -- all expected to continue to Israel by Friday', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '13 F-22s at Lakenheath, to Israel by Friday'},
+  {id: 'u_feb26_politico_israel1st', text: 'Politico: Senior Trump advisers prefer Israel strikes Iran first before US launches large-scale air campaign -- "politics are better if Israelis go first and alone" (2 sources)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Advisers want Israel to strike Iran first'},
+  {id: 'u_feb26_nato_turkey_iran', text: 'NATO air surveillance assets in Turkey shifted focus from Russia to Iran -- AWACS and reconnaissance flights reoriented (Bloomberg)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'NATO Turkey surveillance pivots to Iran'},
+  {id: 'u_feb26_leave_iran', text: 'Multiple countries urging citizens to leave Iran immediately -- travel advisories escalating amid strike fears (Al Jazeera)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Countries tell citizens to leave Iran now'},
+  {id: 'u_feb26_iraq_deadline', text: 'US sets Friday deadline for Iraq to form government free of Iran-linked Maliki or face sanctions (Al-Hadath/JPost)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'US ultimatum to Iraq: drop Maliki by Friday'},
+  {id: 'u_feb26_rubio_icbm', text: 'SecState Rubio: Iran pursuing ICBMs capable of reaching US mainland -- refusal to discuss missiles a "big, big problem" ahead of Geneva talks (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Rubio warns Iran developing ICBMs targeting US'},
+  {id: 'u_feb26_wsj_dispersal', text: 'WSJ: US dispersing warplanes across Israeli bases to avoid concentrating air power at vulnerable Gulf airfields -- first-ever US combat aircraft deployment to Israel for wartime mission', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: 'US dispersing jets across Israeli bases (WSJ)'},
+  {id: 'u_feb26_f22_wave3', text: 'Third wave of 6 F-22 Raptors airborne from Langley to RAF Lakenheath -- total F-22 deployment now confirmed at 24 aircraft (DefenceGeek)', date: 'Feb 26, 2026', assetId: 'f22_staging', changeSummary: '3rd F-22 wave airborne; 24 total confirmed'},
+  {id: 'u_feb26_msb2026', text: 'Maritime Security Belt 2026: Iran-Russia joint naval exercises in Strait of Hormuz & Gulf of Oman — Alvand destroyer, warships, subs, helos (China reportedly withdrew)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Iran-Russia joint naval drills in Hormuz/Oman'},
+  {id: 'u_feb26_vance_rebuild', text: 'VP Vance: US has evidence Iran trying to rebuild nuclear weapon — envoys Witkoff & Kushner heading to Geneva (Reuters)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Vance confirms evidence of Iran nuclear rebuild'},
+  {id: 'u_feb26_trump_15days', text: 'Trump extends Iran deal deadline from 10 to 10-15 days — warns bad things will happen if no deal', date: 'Feb 26, 2026', assetId: null, changeSummary: 'Trump extends Iran deadline to 10-15 days'},
+  {id: 'u_feb26_china_satimages', text: 'Chinese military releases satellite imagery of US bases in Middle East — possible ISR support signal to Iran (Atlantic Council/SCMP)', date: 'Feb 26, 2026', assetId: null, changeSummary: 'China releases satellite images of US bases'},
+  {id: 'u_feb25_araghchi_draft', text: 'Iran FM Araghchi presented draft proposal to Omani FM in Geneva -- provisions for nuclear deal and sanctions relief (Al Jazeera/TASS)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran presents draft nuclear deal proposal'},
+  {id: 'u_feb25_strike_weekend', text: 'CNN: US military prepared to strike Iran as early as this weekend -- NSC met in Situation Room, Trump yet to decide', date: 'Feb 25, 2026', assetId: null, changeSummary: 'CNN: Strike possible as early as this weekend'},
+  {id: 'u_feb25_allies_refuse', text: 'Jordan, Saudi Arabia, UAE, Qatar, Bahrain, Kuwait, Turkey all refuse to allow bases for Iran strikes (Newsweek)', date: 'Feb 25, 2026', assetId: null, changeSummary: '7 allies refuse base access for Iran strikes'},
+  {id: 'u_feb25_parchin_fortify', text: 'Satellite imagery shows Iran fortifying Parchin military complex -- new concrete shielding buried underground (AP/Fox)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran burying Parchin complex under concrete'},
+  {id: 'u_feb25_caine_plans', text: 'CNN: Gen. Caine held private Pentagon meetings on Iran strike plans -- options range from limited strikes to regime change', date: 'Feb 25, 2026', assetId: null, changeSummary: 'JCS Chair develops full Iran strike options'},
+  {id: 'u_feb25_grossi_geneva', text: 'IAEA Director General Grossi to attend third round of Geneva talks on Feb 26', date: 'Feb 25, 2026', assetId: null, changeSummary: 'IAEA chief joining Geneva nuclear talks'},
+  {id: 'u_feb25_centcom_comp', text: 'CENTCOM air force confirmed: 84 F/A-18s, 36 F-15Es, 48 F-16s, 42 F-35s, 18 EA-18G Growlers, 12 A-10Cs, 6 AWACS, 5 BACNs', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: 'Full CENTCOM air composition breakdown confirmed'},
+  {id: 'u_feb25_iran_cobra', text: 'Iranian Army AH-1J Super Cobra crashed into fruit market in Isfahan -- 4 killed (2 crew, 2 civilians)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran military helo crash shows fleet age'},
+  {id: 'u_feb25_ford_11mo', text: 'USS Ford heading toward possible 11-month deployment -- would break US Navy record (WSJ)', date: 'Feb 25, 2026', assetId: 'cvn78', changeSummary: 'Ford may set 11-month deployment record'},
+  {id: 'u_feb25_ironfist', text: 'Exercise Iron Fist 26: 2,400 Marines + 1,800 sailors in amphibious exercise with Japan at Okinawa', date: 'Feb 25, 2026', assetId: null, changeSummary: 'US-Japan amphibious exercise underway'},
+  {id: 'u_feb25_osint_kinetic', text: 'OSINTdefender: kinetic action against Iran highly unlikely to be averted -- last talks were a nothing burger', date: 'Feb 25, 2026', assetId: null, changeSummary: 'OSINT: Iran strike highly likely'},
+  {id: 'u_feb25_cia_farsi', text: 'CIA posts Farsi recruitment video on X urging Iranians to contact agency securely -- 3.4M views', date: 'Feb 25, 2026', assetId: null, changeSummary: 'CIA Farsi outreach to Iranian informants'},
+  {id: 'u_feb25_oil_surge', text: 'Iran oil exports surge to 3M bpd from Kharg Island -- nearly tripled since January (Bloomberg/Kpler)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran tripled oil loadings ahead of potential strike'},
+  {id: 'u_feb25_chatham', text: 'Chatham House analyst: war imminent, matter of days -- two sides too far apart', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Top analyst says war imminent in days'},
+  {id: 'u_feb25_ghalibaf', text: 'Iran Parliament speaker Ghalibaf: ready for diplomacy but attackers will taste strong punch', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran parliament warns of military response'},
+  {id: 'u_feb25_saberin', text: 'IRGC appoints new Saberin Special Forces commander BG Hosseini -- counter-insurgency specialist', date: 'Feb 25, 2026', assetId: null, changeSummary: 'IRGC Saberin SF gets new commander'},
+  {id: 'u_feb25_tanker108', text: '108 air tankers in/heading to CENTCOM theater -- 270+ C-17/C-5 cargo flights since January', date: 'Feb 25, 2026', assetId: 'tankers_surge', changeSummary: 'Tanker fleet doubled to 108; 270+ cargo flights'},
+  {id: 'u_feb25_verba_deal', text: 'FT: Iran signed $589M deal with Russia for 500 Verba MANPADS + 2,500 missiles (Dec 2025)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran-Russia $589M Verba MANPADS deal revealed'},
+  {id: 'u_feb25_cm302', text: 'Reuters: Iran near deal with China for CM-302 supersonic anti-ship missiles (Mach 2.5-4)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran nearing Chinese supersonic missile deal'},
+  {id: 'u_feb25_ofac', text: 'Treasury OFAC sanctions 30+ entities/vessels in Iran shadow fleet and IRGC networks', date: 'Feb 25, 2026', assetId: null, changeSummary: 'OFAC sanctions 30+ Iran entities/tankers'},
+  {id: 'u_feb25_bertha', text: 'US military seizes sanctioned oil tanker Bertha in Indian Ocean (Iranian oil)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'US seizes Iranian oil tanker in Indian Ocean'},
+  {id: 'u_feb25_syria', text: 'US begins final Syria withdrawal -- 100+ truck convoy from Qasrak to Iraq', date: 'Feb 25, 2026', assetId: 'syria_withdrawal', changeSummary: 'Final US Syria withdrawal underway'},
+  {id: 'u_feb25_modi', text: 'Indian PM Modi arrives Israel for 2-day visit -- action against Iran unlikely during visit', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Modi in Israel; Iran strike unlikely during visit'},
+  {id: 'u_feb25_araghchi', text: 'Iranian FM Araghchi departs Tehran for Geneva -- says deal within reach', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Iran FM heads to Geneva, says deal within reach'},
+  {id: 'u_feb25_hormuz_drill', text: 'IRGC Hormuz exercise: shore-to-sea fire at Bandar Abbas + Nazeat Islands with Shahed drones', date: 'Feb 25, 2026', assetId: null, changeSummary: 'IRGC Hormuz drill with drones and missiles'},
+  {id: 'u_feb25_saudi_oil', text: 'Saudi Arabia activates oil surge contingency for potential US-Iran disruption (Reuters)', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Saudi oil surge contingency activated'},
+  {id: 'u_feb25_geneva_confirmed', text: 'Geneva talks Feb 26 confirmed -- massive US delegation: Witkoff, Rubio, Kushner, Vance, Ratcliffe, Hegseth', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Geneva talks confirmed, top US officials attend'},
+  {id: 'u_feb25_e4b_andrews', text: 'E-4B Doomsday Plane at Andrews AFB before Trump SOTU -- arrived from Barksdale AFB', date: 'Feb 25, 2026', assetId: 'e4b_nightwatch', changeSummary: 'Doomsday Plane at Andrews before SOTU'},
+  {id: 'u_feb25_wapo_150', text: 'Washington Post: 150+ military aircraft moved to Europe/ME -- largest in 20 years', date: 'Feb 25, 2026', assetId: 'airlift_surge', changeSummary: '150+ aircraft moved, largest since 2003'},
+  {id: 'u_feb25_rubio_bibi', text: 'Rubio delays Netanyahu meeting from Saturday to Monday -- diplomatic signal', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Rubio delays Netanyahu meeting to Monday'},
+  {id: 'u_feb25_ford_haifa', text: 'USS Gerald R. Ford docked at Haifa, Israel', date: 'Feb 25, 2026', assetId: 'cvn78', changeSummary: 'Docked at Haifa, Israel'},
+  {id: 'u_feb25_f22_ovda', text: '11 F-22 Raptors arrived at Ovda Air Base in Israel Negev Desert', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: '11 Raptors at Ovda, Israel; 6 more en route'},
+  {id: 'u_feb25_f22_wave2', text: '6 MORE F-22s departing Langley for UK/ME — total may reach 24 Raptors', date: 'Feb 25, 2026', assetId: 'f22_staging', changeSummary: 'Second wave of 6 F-22s heading to theater'},
+  {id: 'u_feb25_f16_diego', text: 'F-16CMs from Misawa Japan deployed to Diego Garcia for force protection', date: 'Feb 25, 2026', assetId: 'f16_diego', changeSummary: 'F-16s from Japan deployed for Diego Garcia defense'},
+  {id: 'u_feb25_bahrain', text: 'All 5th Fleet ships dispersed from Bahrain — same pattern as pre-June 2025 attack', date: 'Feb 25, 2026', assetId: 'fifth_fleet_dispersal', changeSummary: 'All 5th Fleet ships dispersed from port'},
+  {id: 'u_feb25_murphy', text: 'USS Michael Murphy entered Persian Gulf; USS John Finn joined Lincoln CSG', date: 'Feb 25, 2026', assetId: 'cvn72', changeSummary: '12 warships in region'},
+  {id: 'u_feb25_sotu', text: 'Trump State of Union: Iran will never have nuclear weapon; prefers diplomacy', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Trump SOTU address on Iran'},
+  {id: 'u_feb25_hezbollah', text: 'Hezbollah signals it will not intervene if US launches limited strikes on Iran', date: 'Feb 25, 2026', assetId: null, changeSummary: 'Hezbollah signals non-intervention'},
+  {id: 'u_feb25_350jets', text: 'INSS: 250+ fighter jets in region, 350+ including Europe — over 300 total aircraft', date: 'Feb 25, 2026', assetId: null, changeSummary: '350+ US jets deployed to region'},
+  {id: 'u_feb24_ford_crete', text: 'USS Gerald R. Ford arrived at Souda Bay, Crete — heading to Haifa, Israel', date: 'Feb 24, 2026', assetId: 'cvn78', changeSummary: 'Arrived Souda Bay, Crete; heading to Haifa, Israel'},
+  {id: 'u_feb24_f22_depart', text: '6 F-22 Raptors departed RAF Lakenheath for Middle East (TREND 51-56)', date: 'Feb 24, 2026', assetId: 'f22_staging', changeSummary: 'All 12 Raptors departed UK for Middle East'},
+  {id: 'u_feb24_c17_surge', text: '8+ C-17 heavy transports crossing Atlantic with weapons/equipment', date: 'Feb 24, 2026', assetId: 'c17_airlift', changeSummary: '8+ C-17s crossing Atlantic'},
+  {id: 'u_feb24_rc135_crete', text: '3 RC-135 Rivet Joint SIGINT aircraft relocated to Crete from Qatar', date: 'Feb 23, 2026', assetId: 'rc135_mildenhall', changeSummary: '3 RC-135s relocated to Crete for safety'},
+  {id: 'u_feb24_embassy', text: 'US Embassy Beirut evacuated 50 non-essential staff amid Iran tensions', date: 'Feb 23, 2026', assetId: null, changeSummary: 'US Embassy Beirut partial evacuation'},
+  {id: 'u_feb24_muwaffaq', text: 'Satellite confirms 60+ US combat aircraft at Muwaffaq Salti AB, Jordan', date: 'Feb 24, 2026', assetId: 'f35_jordan', changeSummary: '60+ aircraft confirmed at Jordan base'},
+  {id: 'u_feb24_irgc', text: 'IRGC conducts Combined Exercise 1404 on southern coast — drones, missiles, coastal defense', date: 'Feb 24, 2026', assetId: null, changeSummary: 'IRGC coastal defense drill'},
+  {id: 'u_feb24_b21', text: 'B-21 Raider production capacity boosted 25% with $4.5B funding', date: 'Feb 24, 2026', assetId: 'b21_edwards', changeSummary: 'B-21 production accelerated'}
 ];
 
-// === FILTER STATE ===
-let activeFilters = new Set();
-let activeTypeFilters = new Set();
-let activeConfidenceFilters = new Set();
-let timelineFilter = null; // { start: Date, end: Date } or null for all
-let activeRegions = new Set(); // 'ME' | 'PACIFIC' | 'ATLANTIC' | 'OTHER'
 
 // ============================================================
-// RENDERING
-// ============================================================
+// SVG MARKER GENERATORS
 
-function renderAssets() {
-  // ... (rendering logic)
+function createSVGString(type, color, isConfirmed, size) {
+  size = size || 32;
+  const s = size;
+  const half = s / 2;
+  const dash = isConfirmed ? '' : 'stroke-dasharray="3,2"';
+  const fO = isConfirmed ? '0.95' : '0.5';
+  const sO = isConfirmed ? '1' : '0.6';
+
+  const icons = {
+    hexagon: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M-12,2 L-10,-1 -8,-3 8,-3 10,-1 12,2 10,4 -10,4 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="1" ${dash}/>
+      <rect x="-8" y="-3" width="16" height="1" fill="${color}" fill-opacity="${fO}" opacity="0.6"/>
+      <rect x="3" y="-7" width="3" height="4" rx="0.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.7" ${dash}/>
+      <line x1="-8" y1="-3" x2="8" y2="-3" stroke="${color}" stroke-width="1.2" opacity="${sO}"/>
+    </g>`,
+    bomber: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M0,-10 L2,-6 12,2 10,4 2,2 1,6 4,10 2,10 0,7 -2,10 -4,10 -1,6 -2,2 -10,4 -12,2 -2,-6 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+    </g>`,
+    triangle: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M0,-10 L2,-5 9,1 8,3 2,1 1,5 4,9 2,9 0,6 -2,9 -4,9 -1,5 -2,1 -8,3 -9,1 -2,-5 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+    </g>`,
+    diamond: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M0,-9 C4,-4 7,0 7,4 C7,8 4,10 0,10 C-4,10 -7,8 -7,4 C-7,0 -4,-4 0,-9 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="1" ${dash}/>
+      <text x="0" y="5" text-anchor="middle" font-size="9" font-weight="bold" font-family="sans-serif" fill="#0d1117" opacity="0.7">F</text>
+    </g>`,
+    eye: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M-11,0 C-6,-7 6,-7 11,0 C6,7 -6,7 -11,0 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+      <circle cx="0" cy="0" r="4" fill="#0d1117" opacity="0.6"/>
+      <circle cx="0" cy="0" r="2" fill="${color}" opacity="0.9"/>
+    </g>`,
+    invtriangle: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <ellipse cx="0" cy="2" rx="11" ry="4" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+      <rect x="-2" y="-4" width="4" height="6" rx="1" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.7" ${dash}/>
+      <line x1="0" y1="-6" x2="0" y2="-4" stroke="${color}" stroke-width="1" opacity="${sO}"/>
+    </g>`,
+    square: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <rect x="-8" y="-2" width="16" height="12" rx="1" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+      <rect x="-9" y="-2" width="4" height="3" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <rect x="5" y="-2" width="4" height="3" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <rect x="-2" y="-5" width="4" height="6" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <rect x="-10" y="-6" width="3" height="1.5" fill="${color}" fill-opacity="${fO}"/>
+      <rect x="-5" y="-6" width="3" height="1.5" fill="${color}" fill-opacity="${fO}"/>
+      <rect x="3" y="-6" width="3" height="1.5" fill="${color}" fill-opacity="${fO}"/>
+      <rect x="7" y="-6" width="3" height="1.5" fill="${color}" fill-opacity="${fO}"/>
+      <rect x="-1" y="-9" width="2" height="2" fill="${color}" fill-opacity="${fO}"/>
+    </g>`,
+    shield: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <rect x="-2" y="-4" width="4" height="12" rx="1.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+      <polygon points="0,-10 -3,-4 3,-4" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <polygon points="-2,8 -5,12 -2,10" fill="${color}" fill-opacity="${fO}"/>
+      <polygon points="2,8 5,12 2,10" fill="${color}" fill-opacity="${fO}"/>
+      <line x1="-2" y1="0" x2="2" y2="0" stroke="#0d1117" stroke-width="0.8" opacity="0.4"/>
+    </g>`,
+    pentagon: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <path d="M-11,3 L-9,-1 -7,-3 7,-3 9,-1 11,3 9,5 -9,5 Z" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.8" ${dash}/>
+      <rect x="-4" y="-6" width="8" height="3" rx="0.5" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <line x1="-7" y1="-3" x2="7" y2="-3" stroke="${color}" stroke-width="1" opacity="${sO}"/>
+    </g>`,
+    smalldiamond: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <ellipse cx="0" cy="0" rx="3" ry="2" fill="${color}" fill-opacity="${fO}" stroke="${color}" stroke-width="0.6" ${dash}/>
+      <line x1="0" y1="0" x2="-8" y2="-6" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
+      <line x1="0" y1="0" x2="8" y2="-6" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
+      <line x1="0" y1="0" x2="-8" y2="6" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
+      <line x1="0" y1="0" x2="8" y2="6" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
+      <circle cx="-8" cy="-6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
+      <circle cx="8" cy="-6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
+      <circle cx="-8" cy="6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
+      <circle cx="8" cy="6" r="2.5" fill="none" stroke="${color}" stroke-width="0.8" opacity="${sO}" ${dash}/>
+    </g>`,
+    hexoutline: `<g transform="translate(${half},${half}) scale(${s/32})">
+      <circle cx="0" cy="-7" r="3" fill="none" stroke="${color}" stroke-width="1.2" opacity="${sO}" ${dash}/>
+      <line x1="0" y1="-4" x2="0" y2="10" stroke="${color}" stroke-width="1.5" opacity="${sO}" ${dash}/>
+      <line x1="-6" y1="-1" x2="6" y2="-1" stroke="${color}" stroke-width="1.5" opacity="${sO}" ${dash}/>
+      <path d="M-8,8 C-4,4 0,10 0,10 C0,10 4,4 8,8" fill="none" stroke="${color}" stroke-width="1.5" opacity="${sO}" ${dash}/>
+    </g>`
+  };
+
+  const shapeKey = ASSET_TYPES[type] ? ASSET_TYPES[type].shape : 'square';
+  const icon = icons[shapeKey] || icons.square;
+
+  return `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" xmlns="http://www.w3.org/2000/svg">${icon}</svg>`;
 }
 
+function svgToDataUri(svgString) {
+  return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+}
+
+function createMapIcon(type, color, isConfirmed) {
+  const svg = createSVGString(type, color, isConfirmed, 38);
+  return L.icon({
+    iconUrl: svgToDataUri(svg),
+    iconSize: [38, 38],
+    iconAnchor: [19, 19]
+  });
+}
+
+function createSmallSVGForLegend(type, color) {
+  return createSVGString(type, color, true, 22);
+}
+
+
 // ============================================================
-// FILTER FUNCTIONS
+// MAP INITIALIZATION
 // ============================================================
 
-function buildTypeFilter() {
-  const container = document.getElementById('typeFilterContainer');
-  if (!container) return;
-  container.innerHTML = '';
+const map = L.map('map', {
+  center: [30, 40],
+  zoom: 3,
+  minZoom: 2,
+  maxZoom: 14,
+  zoomControl: true,
+  attributionControl: true,
+  worldCopyJump: true
+});
 
-  const typeGroups = {};
-  assets.forEach(asset => {
-    const def = ASSET_TYPES[asset.type];
-    if (!def) return;
-    const group = def.filterGroup;
-    if (!typeGroups[group]) typeGroups[group] = { type: asset.type, color: def.color, count: 0 };
-    typeGroups[group].count++;
+// CartoDB Dark Matter tiles
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+// Move zoom control to bottom-left
+map.zoomControl.setPosition('bottomleft');
+
+
+// ============================================================
+// STATE
+// ============================================================
+
+let activeFilters = new Set(Object.keys(ASSET_TYPES).map(k => ASSET_TYPES[k].filterGroup));
+let markerLayers = {};  // id -> { marker, line, type }
+let allLayerGroup = L.layerGroup().addTo(map);
+let lineLayerGroup = L.layerGroup().addTo(map);
+let selectedAssetId = null;
+
+
+// ============================================================
+// OFFSET OVERLAPPING MARKERS
+// ============================================================
+
+// Store original positions before offsetting (for movement lines)
+assets.forEach(a => {
+  a._origLat = a.lat;
+  a._origLng = a.lng;
+});
+
+function applyOffsets(assetList) {
+  const groups = {};
+  assetList.forEach(a => {
+    const key = `${Math.round(a._origLat * 4) / 4}_${Math.round(a._origLng * 4) / 4}`;
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(a);
   });
 
-  Object.entries(typeGroups).forEach(([group, info]) => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn' + (activeTypeFilters.has(info.type) ? ' active' : '');
-    btn.style.borderColor = info.color;
-    if (activeTypeFilters.has(info.type)) btn.style.backgroundColor = info.color + '33';
-    btn.textContent = `${group} (${info.count})`;
-    btn.addEventListener('click', () => {
-      if (activeTypeFilters.has(info.type)) {
-        activeTypeFilters.delete(info.type);
-      } else {
-        activeTypeFilters.add(info.type);
+  Object.values(groups).forEach(group => {
+    if (group.length <= 1) return;
+    const angleStep = (2 * Math.PI) / group.length;
+    const radius = 0.08 + (group.length * 0.03);
+    group.forEach((a, i) => {
+      if (i === 0) return;
+      a.lat = a._origLat + radius * Math.cos(angleStep * i);
+      a.lng = a._origLng + radius * Math.sin(angleStep * i);
+    });
+  });
+}
+
+applyOffsets(assets);
+
+// Generate a great-circle arc between two points.
+// Returns { segments: [ [[lat,lng],...], ... ], allPoints: [[lat,lng],...] }
+// If the arc crosses the antimeridian, segments contains 2 polylines
+// (one ending at map edge, one starting from the opposite edge).
+// allPoints is always the full arc for arrowhead/origin calculations.
+function greatCircleArc(lat1, lng1, lat2, lng2, numPoints) {
+  numPoints = numPoints || 40;
+  const toRad = Math.PI / 180;
+  const toDeg = 180 / Math.PI;
+
+  const φ1 = lat1 * toRad, λ1 = lng1 * toRad;
+  const φ2 = lat2 * toRad, λ2 = lng2 * toRad;
+  const d = 2 * Math.asin(Math.sqrt(
+    Math.pow(Math.sin((φ2 - φ1) / 2), 2) +
+    Math.cos(φ1) * Math.cos(φ2) * Math.pow(Math.sin((λ2 - λ1) / 2), 2)
+  ));
+  if (d < 0.001) return { segments: [[[lat1, lng1], [lat2, lng2]]], allPoints: [[lat1, lng1], [lat2, lng2]] };
+
+  const pts = [];
+  for (let i = 0; i <= numPoints; i++) {
+    const f = i / numPoints;
+    const A = Math.sin((1 - f) * d) / Math.sin(d);
+    const B = Math.sin(f * d) / Math.sin(d);
+    const x = A * Math.cos(φ1) * Math.cos(λ1) + B * Math.cos(φ2) * Math.cos(λ2);
+    const y = A * Math.cos(φ1) * Math.sin(λ1) + B * Math.cos(φ2) * Math.sin(λ2);
+    const z = A * Math.sin(φ1) + B * Math.sin(φ2);
+    let lat = Math.atan2(z, Math.sqrt(x * x + y * y)) * toDeg;
+    let lng = Math.atan2(y, x) * toDeg;
+    pts.push([lat, lng]);
+  }
+
+  // Check if we need antimeridian handling
+  let dLng = lng2 - lng1;
+  if (Math.abs(dLng) <= 180) {
+    // No antimeridian crossing — single segment
+    return { segments: [pts], allPoints: pts };
+  }
+
+  // The great-circle crosses the antimeridian.
+  // Split into two segments: one per side of ±180.
+  // Find the crossing point(s) where consecutive lng values jump > 180°.
+  const segments = [];
+  let currentSeg = [pts[0]];
+
+  for (let i = 1; i < pts.length; i++) {
+    const pLng = pts[i - 1][1];
+    const cLng = pts[i][1];
+    const cLat = pts[i][0];
+    const jump = cLng - pLng;
+
+    if (Math.abs(jump) > 180) {
+      // Antimeridian crossing between pts[i-1] and pts[i]
+      // Interpolate the latitude at the crossing
+      const pLat = pts[i - 1][0];
+
+      // Normalize: figure out the actual small longitude step
+      let fromLng = pLng;
+      let toLng = cLng;
+      if (jump > 180) {
+        toLng -= 360; // e.g. -179 -> 179 becomes -179 -> -181
+      } else if (jump < -180) {
+        toLng += 360; // e.g. 179 -> -179 becomes 179 -> 181
       }
-      renderAssets();
-      buildTypeFilter();
+      // Fraction along segment where lng crosses ±180
+      const boundary = (fromLng < 0) ? -180 : 180;
+      const frac = (boundary - fromLng) / (toLng - fromLng);
+      const crossLat = pLat + frac * (cLat - pLat);
+
+      // End current segment at the boundary
+      currentSeg.push([crossLat, boundary]);
+      segments.push(currentSeg);
+
+      // Start new segment from the opposite boundary
+      currentSeg = [[ crossLat, -boundary ]];
+      currentSeg.push([cLat, cLng]);
+    } else {
+      currentSeg.push([cLat, cLng]);
+    }
+  }
+  if (currentSeg.length > 0) segments.push(currentSeg);
+
+  return { segments: segments, allPoints: pts };
+}
+
+
+// ============================================================
+// CREATE MARKERS & LINES
+// ============================================================
+
+function getShortName(name) {
+  // Extract short identifier
+  const match = name.match(/USS\s+(\S+)/);
+  if (match) return match[1];
+  // For non-USS assets, try to get a meaningful short name
+  const parenMatch = name.match(/^([^(]+)/);
+  if (parenMatch) {
+    let short = parenMatch[1].trim();
+    if (short.length > 22) {
+      // Try splitting on spaces and taking first meaningful words
+      const words = short.split(/\s+/);
+      short = words.slice(0, 2).join(' ');
+    }
+    return short.substring(0, 22);
+  }
+  return name.substring(0, 22);
+}
+
+assets.forEach(asset => {
+  const typeInfo = ASSET_TYPES[asset.type];
+  if (!typeInfo) return;
+  const isConfirmed = asset.confidence === 'confirmed';
+  const color = typeInfo.color;
+
+  const icon = createMapIcon(asset.type, color, isConfirmed);
+
+  const marker = L.marker([asset.lat, asset.lng], { icon: icon, riseOnHover: true })
+    .on('click', () => openDetailPanel(asset));
+
+  // Use Leaflet tooltip for label instead of DOM label
+  marker.bindTooltip(getShortName(asset.name), {
+    permanent: true,
+    direction: 'bottom',
+    offset: [0, 12],
+    className: 'asset-tooltip',
+    opacity: 1
+  });
+
+  // Movement line — great circle arc from origin to ORIGINAL (pre-offset) position
+  let line = null;
+  let movementLayers = [];
+  if (asset.prevLat !== null && asset.prevLng !== null) {
+    const arcResult = greatCircleArc(asset.prevLat, asset.prevLng, asset._origLat, asset._origLng, 50);
+    const dashArray = isConfirmed ? '10 5' : '5 7';
+    const lineStyle = {
+      color: color,
+      weight: isConfirmed ? 1.8 : 1.2,
+      opacity: isConfirmed ? 0.45 : 0.22,
+      dashArray: dashArray,
+      lineCap: 'round',
+      lineJoin: 'round'
+    };
+    // Draw each segment as a separate polyline (handles antimeridian splits)
+    arcResult.segments.forEach(seg => {
+      const polyline = L.polyline(seg, lineStyle);
+      movementLayers.push(polyline);
+    });
+    line = movementLayers[0]; // keep reference for legacy
+
+    // Use allPoints for arrowhead calculation (consistent regardless of splits)
+    const arcPoints = arcResult.allPoints;
+    // Arrowhead near destination (at 85% along the arc)
+    const arrIdx = Math.floor(arcPoints.length * 0.85);
+    const arrPrev = arcPoints[Math.max(0, arrIdx - 2)];
+    const arrPt = arcPoints[arrIdx];
+    // For arrow angle, handle antimeridian: use shortest lng diff
+    let adx = arrPt[1] - arrPrev[1];
+    if (adx > 180) adx -= 360;
+    if (adx < -180) adx += 360;
+    const ady = arrPt[0] - arrPrev[0];
+    const arrAngle = Math.atan2(adx, ady) * (180 / Math.PI);
+
+    const arrowMarkerIcon = L.divIcon({
+      className: 'arrow-marker',
+      html: `<svg width="12" height="12" viewBox="0 0 12 12" style="transform:rotate(${-arrAngle + 180}deg)"><polygon points="6,0 12,12 6,8 0,12" fill="${color}" opacity="${isConfirmed ? 0.55 : 0.3}"/></svg>`,
+      iconSize: [12, 12],
+      iconAnchor: [6, 6]
+    });
+    const arrowMarker = L.marker(arrPt, { icon: arrowMarkerIcon, interactive: false });
+    movementLayers.push(arrowMarker);
+
+    // Origin dot
+    const originIcon = L.divIcon({
+      className: 'arrow-marker',
+      html: `<svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="2.5" fill="none" stroke="${color}" stroke-width="1" opacity="${isConfirmed ? 0.45 : 0.2}"/><circle cx="4" cy="4" r="0.8" fill="${color}" opacity="${isConfirmed ? 0.45 : 0.2}"/></svg>`,
+      iconSize: [8, 8],
+      iconAnchor: [4, 4]
+    });
+    const originMarker = L.marker([asset.prevLat, asset.prevLng], { icon: originIcon, interactive: false });
+    movementLayers.push(originMarker);
+
+    markerLayers[asset.id] = {
+      marker, movementLayers, type: asset.type,
+      filterGroup: typeInfo.filterGroup,
+      movementDate: asset.movementDate || null
+    };
+
+    return;
+  }
+
+  markerLayers[asset.id] = {
+    marker, movementLayers: [], type: asset.type,
+    filterGroup: typeInfo.filterGroup,
+    movementDate: null
+  };
+});
+
+let activeTimelineHours = null; // null = ALL (show all movement lines)
+
+function renderMarkers() {
+  allLayerGroup.clearLayers();
+  lineLayerGroup.clearLayers();
+
+  const now = new Date();
+
+  Object.values(markerLayers).forEach(entry => {
+    const typeInfo = ASSET_TYPES[entry.type];
+    if (!typeInfo) return;
+    if (!activeFilters.has(typeInfo.filterGroup)) return;
+
+    allLayerGroup.addLayer(entry.marker);
+    if (entry.movementLayers && entry.movementLayers.length > 0) {
+      // Check timeline filter
+      let showMovement = true;
+      if (activeTimelineHours !== null && entry.movementDate) {
+        const moveDate = new Date(entry.movementDate + 'T12:00:00Z');
+        const hoursAgo = (now - moveDate) / (1000 * 60 * 60);
+        showMovement = hoursAgo <= activeTimelineHours;
+      } else if (activeTimelineHours !== null && !entry.movementDate) {
+        showMovement = false; // No date info — hide if filtering
+      }
+      if (showMovement) {
+        entry.movementLayers.forEach(layer => lineLayerGroup.addLayer(layer));
+      }
+    }
+  });
+
+  // Update tooltip visibility after re-rendering
+  setTimeout(function() {
+    if (typeof updateLabelVisibility === 'function') updateLabelVisibility();
+  }, 50);
+}
+
+renderMarkers();
+
+// Initial label visibility (hide tooltips at low zoom)
+setTimeout(function() { updateLabelVisibility(); }, 100);
+
+
+// ============================================================
+// LEGEND
+// ============================================================
+
+function buildLegend() {
+  const container = document.getElementById('legend-items');
+  container.innerHTML = '';
+
+  Object.entries(ASSET_TYPES).forEach(([key, info]) => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `
+      <div class="legend-icon">${createSmallSVGForLegend(key, info.color)}</div>
+      <span>${info.label}</span>
+    `;
+    container.appendChild(item);
+  });
+}
+
+buildLegend();
+
+// Legend collapse toggle
+document.getElementById('legend-toggle').addEventListener('click', () => {
+  document.getElementById('legend').classList.toggle('collapsed');
+});
+
+
+// ============================================================
+// FILTERS
+// ============================================================
+
+function buildFilters() {
+  const container = document.getElementById('filter-buttons');
+  container.innerHTML = '';
+
+  // Show All button
+  const showAllBtn = document.createElement('button');
+  showAllBtn.className = 'filter-btn show-all';
+  showAllBtn.textContent = 'ALL';
+  showAllBtn.addEventListener('click', () => {
+    activeFilters = new Set(Object.keys(ASSET_TYPES).map(k => ASSET_TYPES[k].filterGroup));
+    updateFilterUI();
+    renderMarkers();
+    updateStats();
+  });
+  container.appendChild(showAllBtn);
+
+  // Individual filter buttons
+  const groups = new Map();
+  Object.entries(ASSET_TYPES).forEach(([key, info]) => {
+    if (!groups.has(info.filterGroup)) {
+      groups.set(info.filterGroup, info);
+    }
+  });
+
+  groups.forEach((info, group) => {
+    const btn = document.createElement('button');
+    btn.className = `filter-btn ${activeFilters.has(group) ? 'active' : ''}`;
+    btn.style.setProperty('--color', info.color);
+    btn.textContent = group;
+    btn.dataset.group = group;
+    btn.addEventListener('click', () => {
+      if (activeFilters.has(group)) {
+        activeFilters.delete(group);
+      } else {
+        activeFilters.add(group);
+      }
+      updateFilterUI();
+      renderMarkers();
+      updateStats();
     });
     container.appendChild(btn);
   });
 }
 
-function buildConfidenceFilter() {
-  const container = document.getElementById('confidenceFilterContainer');
-  if (!container) return;
-  container.innerHTML = '';
-
-  const levels = [
-    { key: 'confirmed', label: 'CONFIRMED', color: '#4CAF50' },
-    { key: 'likely', label: 'LIKELY', color: '#FFC107' },
-    { key: 'unconfirmed', label: 'UNCONFIRMED', color: '#F44336' }
-  ];
-
-  levels.forEach(level => {
-    const count = assets.filter(a => a.confidence === level.key).length;
-    if (count === 0) return;
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn' + (activeConfidenceFilters.has(level.key) ? ' active' : '');
-    btn.style.borderColor = level.color;
-    if (activeConfidenceFilters.has(level.key)) btn.style.backgroundColor = level.color + '33';
-    btn.textContent = `${level.label} (${count})`;
-    btn.addEventListener('click', () => {
-      if (activeConfidenceFilters.has(level.key)) {
-        activeConfidenceFilters.delete(level.key);
-      } else {
-        activeConfidenceFilters.add(level.key);
-      }
-      renderAssets();
-      buildConfidenceFilter();
-    });
-    container.appendChild(btn);
+function updateFilterUI() {
+  document.querySelectorAll('.filter-btn[data-group]').forEach(btn => {
+    btn.classList.toggle('active', activeFilters.has(btn.dataset.group));
   });
 }
+
+buildFilters();
+
+
+// ============================================================
+// DETAIL PANEL
+// ============================================================
+
+function openDetailPanel(asset) {
+  selectedAssetId = asset.id;
+  const panel = document.getElementById('detail-panel');
+  const content = document.getElementById('detail-content');
+  const typeInfo = ASSET_TYPES[asset.type];
+  const isConfirmed = asset.confidence === 'confirmed';
+
+  let movementHTML = '';
+  if (asset.prevLat !== null && asset.prevLabel) {
+    movementHTML = `
+      <div class="detail-section">
+        <div class="detail-section-title">MOVEMENT HISTORY</div>
+        <div class="detail-movement">
+          ${asset.prevLabel} <span class="detail-movement-arrow">→</span> Current position
+        </div>
+      </div>
+    `;
+  }
+
+  let sourcesHTML = '';
+  if (asset.sources && asset.sources.length > 0) {
+    sourcesHTML = `
+      <div class="detail-section">
+        <div class="detail-section-title">SOURCES</div>
+        <ul class="detail-sources">
+          ${asset.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a></li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
+  content.innerHTML = `
+    <div class="detail-name">${asset.name}</div>
+    <div class="detail-badges">
+      <span class="detail-badge badge-type" style="color: ${typeInfo.color}; border-color: ${typeInfo.color}40">${typeInfo.label.toUpperCase()}</span>
+      <span class="detail-badge ${isConfirmed ? 'badge-confirmed' : 'badge-unconfirmed'}">${isConfirmed ? 'CONFIRMED' : 'UNCONFIRMED / OSINT'}</span>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">CLASS</div>
+      <div class="detail-strike-group">${asset.class}</div>
+    </div>
+
+    ${asset.strikeGroup ? `
+    <div class="detail-section">
+      <div class="detail-section-title">STRIKE GROUP / UNIT</div>
+      <div class="detail-strike-group">${asset.strikeGroup}</div>
+    </div>
+    ` : ''}
+
+    <div class="detail-section">
+      <div class="detail-section-title">CURRENT LOCATION</div>
+      <div class="detail-location">${asset.location}</div>
+      <div class="detail-coords">${asset.lat.toFixed(2)}°N, ${asset.lng.toFixed(2)}°${asset.lng >= 0 ? 'E' : 'W'}</div>
+    </div>
+
+    ${movementHTML}
+
+    <div class="detail-section">
+      <div class="detail-section-title">MISSION / DEPLOYMENT</div>
+      <div class="detail-mission">${asset.mission}</div>
+    </div>
+
+    ${sourcesHTML}
+
+    <div class="detail-updated">LAST UPDATED: ${asset.updated}</div>
+  `;
+
+  panel.classList.add('open');
+
+  // Pan map to asset
+  map.panTo([asset.lat, asset.lng], { animate: true, duration: 0.5 });
+}
+
+document.getElementById('detail-close').addEventListener('click', () => {
+  document.getElementById('detail-panel').classList.remove('open');
+  selectedAssetId = null;
+});
+
+// Close panel on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.getElementById('detail-panel').classList.remove('open');
+    selectedAssetId = null;
+  }
+});
+
+
+// ============================================================
+// STATS BAR
+// ============================================================
+
+function updateStats() {
+  const visible = assets.filter(a => {
+    const typeInfo = ASSET_TYPES[a.type];
+    return typeInfo && activeFilters.has(typeInfo.filterGroup);
+  });
+
+  const confirmed = visible.filter(a => a.confidence === 'confirmed').length;
+  const unconfirmed = visible.filter(a => a.confidence !== 'confirmed').length;
+
+  document.getElementById('stat-total').textContent = visible.length;
+  document.getElementById('stat-confirmed').textContent = confirmed;
+  document.getElementById('stat-unconfirmed').textContent = unconfirmed;
+}
+
+updateStats();
+
+
+// ============================================================
+// ZOOM-BASED LABEL VISIBILITY
+// ============================================================
+
+function updateLabelVisibility() {
+  const zoom = map.getZoom();
+  const show = zoom >= 4;
+  document.querySelectorAll('.asset-tooltip').forEach(el => {
+    el.style.display = show ? 'block' : 'none';
+  });
+}
+
+map.on('zoomend', updateLabelVisibility);
+
+// ============================================================
+// MAP CLICK TO CLOSE DETAIL
+// ============================================================
+
+map.on('click', () => {
+  if (selectedAssetId) {
+    document.getElementById('detail-panel').classList.remove('open');
+    selectedAssetId = null;
+  }
+});
+
+
+// ============================================================
+// MOBILE BEHAVIORS
+// ============================================================
+
+const isMobile = () => window.innerWidth <= 768;
+
+// Auto-collapse legend on mobile
+if (isMobile()) {
+  document.getElementById('legend').classList.add('collapsed');
+}
+
+// Swipe-to-dismiss for mobile detail bottom sheet
+(function setupMobileSwipeDismiss() {
+  const panel = document.getElementById('detail-panel');
+  let startY = 0;
+  let currentY = 0;
+  let isDragging = false;
+
+  panel.addEventListener('touchstart', (e) => {
+    if (!isMobile()) return;
+    startY = e.touches[0].clientY;
+    isDragging = true;
+    panel.style.transition = 'none';
+  }, { passive: true });
+
+  panel.addEventListener('touchmove', (e) => {
+    if (!isDragging || !isMobile()) return;
+    currentY = e.touches[0].clientY;
+    const diff = currentY - startY;
+    if (diff > 0) {
+      // Only allow dragging downward
+      panel.style.transform = `translateY(${diff}px)`;
+    }
+  }, { passive: true });
+
+  panel.addEventListener('touchend', () => {
+    if (!isDragging || !isMobile()) return;
+    isDragging = false;
+    panel.style.transition = '';
+    const diff = currentY - startY;
+    if (diff > 100) {
+      // Swiped down far enough — dismiss
+      panel.classList.remove('open');
+      selectedAssetId = null;
+    }
+    // Reset transform (CSS transition will animate it back)
+    panel.style.transform = '';
+  });
+})();
+
+// On mobile, when detail panel opens, adjust map center slightly upward
+const originalOpenDetailPanel = openDetailPanel;
+openDetailPanel = function(asset) {
+  originalOpenDetailPanel(asset);
+  if (isMobile()) {
+    // Pan the map so the asset is in the upper portion of the visible area
+    setTimeout(() => {
+      const point = map.latLngToContainerPoint([asset.lat, asset.lng]);
+      const offsetY = window.innerHeight * 0.2; // shift up by 20% of screen
+      const newPoint = L.point(point.x, point.y - offsetY);
+      const newLatLng = map.containerPointToLatLng(newPoint);
+      map.panTo(newLatLng, { animate: true, duration: 0.3 });
+    }, 50);
+  }
+};
+
+
+// ============================================================
+// NEWS TICKER
+// ============================================================
+
+function buildTicker() {
+  const tickerEl = document.getElementById('ticker-content');
+  if (!tickerEl) return;
+
+  // Relative time helper
+  function relativeTime(dateStr) {
+    const d = parseUpdateDate(dateStr);
+    if (d.getFullYear() <= 2020) return '';
+    const now = new Date();
+    const diffMs = now - d;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHrs = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    if (diffMins < 60) return diffMins + 'm ago';
+    if (diffHrs < 24) return diffHrs + 'h ago';
+    if (diffDays < 30) return diffDays + 'd ago';
+    return '';
+  }
+
+  // Build ticker items — updates array first, then recent asset changes
+  function buildItems() {
+    // Explicit intel updates from updates array (most recent first)
+    const updateItems = updates.map(u => {
+      const asset = u.assetId ? assets.find(a => a.id === u.assetId) : null;
+      const typeInfo = asset ? ASSET_TYPES[asset.type] : null;
+      const color = typeInfo ? typeInfo.color : '#4FC3F7';
+      const onclick = asset ? `onclick="tickerClick('${u.assetId}')"` : '';
+      const rel = relativeTime(u.date);
+      const timeDisplay = rel ? `${u.date} <span class="ticker-rel">${rel}</span>` : u.date;
+      return `<span class="ticker-item" ${onclick} style="cursor:${asset ? 'pointer' : 'default'}">` +
+        `<span class="ticker-dot confirmed"></span>` +
+        `<span style="color:${color}">${u.text}</span> ` +
+        `<span class="ticker-time">${timeDisplay}</span>` +
+        `</span><span class="ticker-sep">│</span>`;
+    }).join('');
+
+    // Recent asset updates (top 12 by recency)
+    const sorted = [...assets].sort((a, b) => parseUpdateDate(b.updated) - parseUpdateDate(a.updated));
+    const recent = sorted.slice(0, 12);
+    const assetItems = recent.map(asset => {
+      const typeInfo = ASSET_TYPES[asset.type];
+      const isConf = asset.confidence === 'confirmed';
+      const shortLoc = asset.location.split(' — ')[0].substring(0, 50);
+      const rel = relativeTime(asset.updated);
+      const timeDisplay = rel ? `${asset.updated} <span class="ticker-rel">${rel}</span>` : asset.updated;
+      return `<span class="ticker-item" data-id="${asset.id}" onclick="tickerClick('${asset.id}')">${
+        '<span class="ticker-dot ' + (isConf ? 'confirmed' : 'unconfirmed') + '"></span>'}` +
+        `<span style="color:${typeInfo.color}">${getShortName(asset.name)}</span> ` +
+        `${shortLoc} ` +
+        `<span class="ticker-time">${timeDisplay}</span>` +
+        `</span><span class="ticker-sep">│</span>`;
+    }).join('');
+
+    return updateItems + assetItems;
+  }
+
+  // Duplicate content for seamless infinite scroll
+  tickerEl.innerHTML = buildItems() + buildItems();
+}
+
+function parseUpdateDate(str) {
+  // Handle various formats: "Feb 20, 2026", "Feb 2026", "May 2025 (status unclear)", "Sep 2025 (last known)"
+  const cleaned = str.replace(/\s*\(.*\)/, '');
+  const d = new Date(cleaned);
+  return isNaN(d.getTime()) ? new Date(2020, 0, 1) : d;
+}
+
+function tickerClick(assetId) {
+  const asset = assets.find(a => a.id === assetId);
+  if (asset) {
+    openDetailPanel(asset);
+    map.setView([asset.lat, asset.lng], Math.max(map.getZoom(), 5), { animate: true });
+  }
+}
+
+// Make tickerClick available globally
+window.tickerClick = tickerClick;
+
+buildTicker();
+
+
+// ============================================================
+// MOVEMENT TIMELINE FILTER
+// ============================================================
+
+const TIMELINE_OPTIONS = [
+  { label: 'ALL', hours: null },
+  { label: '12H', hours: 12 },
+  { label: '24H', hours: 24 },
+  { label: '36H', hours: 36 },
+  { label: '48H', hours: 48 },
+  { label: '72H', hours: 72 },
+  { label: '7D', hours: 168 },
+  { label: '14D+', hours: 336 }
+];
 
 function buildTimelineFilter() {
-  const container = document.getElementById('timelineFilterContainer');
+  const container = document.getElementById('timeline-buttons');
   if (!container) return;
   container.innerHTML = '';
 
-  // Build date range from all movement dates
-  const dates = assets
-    .filter(a => a.movementDate)
-    .map(a => new Date(a.movementDate))
-    .sort((a, b) => a - b);
-
-  if (dates.length === 0) return;
-
-  const minDate = dates[0];
-  const maxDate = dates[dates.length - 1];
-
-  // Create slider container
-  const sliderDiv = document.createElement('div');
-  sliderDiv.className = 'timeline-slider-container';
-
-  const label = document.createElement('div');
-  label.className = 'timeline-label';
-  label.textContent = timelineFilter
-    ? `Showing movements: ${timelineFilter.start.toLocaleDateString()} – ${timelineFilter.end.toLocaleDateString()}`
-    : 'Showing all movements';
-
-  const resetBtn = document.createElement('button');
-  resetBtn.className = 'filter-btn';
-  resetBtn.textContent = 'Reset Timeline';
-  resetBtn.addEventListener('click', () => {
-    timelineFilter = null;
-    renderAssets();
-    buildTimelineFilter();
+  TIMELINE_OPTIONS.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'timeline-btn' + (activeTimelineHours === opt.hours ? ' active' : '');
+    btn.textContent = opt.label;
+    btn.dataset.hours = opt.hours === null ? 'all' : opt.hours;
+    btn.addEventListener('click', () => {
+      activeTimelineHours = opt.hours;
+      updateTimelineUI();
+      renderMarkers();
+      updateMovementCount();
+    });
+    container.appendChild(btn);
   });
+}
 
-  sliderDiv.appendChild(label);
-  sliderDiv.appendChild(resetBtn);
-  container.appendChild(sliderDiv);
+function updateTimelineUI() {
+  document.querySelectorAll('.timeline-btn').forEach(btn => {
+    const val = btn.dataset.hours;
+    const isActive = (val === 'all' && activeTimelineHours === null) ||
+                     (val !== 'all' && parseInt(val) === activeTimelineHours);
+    btn.classList.toggle('active', isActive);
+  });
 }
 
 function updateMovementCount() {
-  const countEl = document.getElementById('movementCount');
-  if (!countEl) return;
-  const visible = assets.filter(asset => {
-    if (activeTypeFilters.size > 0 && !activeTypeFilters.has(asset.type)) return false;
-    if (activeConfidenceFilters.size > 0 && !activeConfidenceFilters.has(asset.confidence)) return false;
-    return true;
+  const now = new Date();
+  let visibleMovements = 0;
+  Object.values(markerLayers).forEach(entry => {
+    if (!entry.movementLayers || entry.movementLayers.length === 0) return;
+    const typeInfo = ASSET_TYPES[entry.type];
+    if (!typeInfo || !activeFilters.has(typeInfo.filterGroup)) return;
+    if (activeTimelineHours === null) {
+      visibleMovements++;
+    } else if (entry.movementDate) {
+      const moveDate = new Date(entry.movementDate + 'T12:00:00Z');
+      const hoursAgo = (now - moveDate) / (1000 * 60 * 60);
+      if (hoursAgo <= activeTimelineHours) visibleMovements++;
+    }
   });
-  countEl.textContent = visible.length;
+  // Update the timeline label to show count
+  const label = document.querySelector('.timeline-label');
+  if (label) {
+    const suffix = activeTimelineHours === null ? '' : ` (${visibleMovements})`;
+    label.textContent = 'MOVEMENT TIMELINE' + suffix;
+  }
 }
 
 buildTimelineFilter();
